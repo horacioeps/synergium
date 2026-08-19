@@ -13,6 +13,9 @@ Formularios publicados (no confundir con la spec en `formulario-es.md` / `formul
 | **Idioma** | Inglés |
 | **Guardado** | 2026-08-19 |
 | **Notas** | Investigadores candidatos Synergium (gratis a cambio de feedback profundo). Actualizar este archivo si cambia el enlace o se publica la versión ES. |
+| **Hoja respuestas** | https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit?usp=sharing |
+| **Sheet ID** | `19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w` |
+| **Respuestas (2026-08-19)** | 20 filas (14–19 ago 2026) |
 
 ## ES
 

@@ -21,7 +21,7 @@ Análisis sobre las **20 respuestas** del [Google Sheets EN](https://docs.google
 
 **Intro sugerida (borrador):** coautoría empírica salud mental — dataset Chile + línea clínica España.
 
-**Estado:** Pendiente de enviar.
+**Estado:** Borrador mensaje Valentina → [intro-valentina-borrador.md](intro-valentina-borrador.md)
 
 ---
 

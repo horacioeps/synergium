@@ -15,6 +15,7 @@ PhD en Chile (salud mental, estigma, help-seeking). **Origen:** email campaña p
 | [historial-contacto.md](historial-contacto.md) | Cuándo y cómo nos relacionamos (form, WhatsApp, email…) |
 | [urgencia-y-match.md](urgencia-y-match.md) | Por qué marcamos «urgente» y emparejamiento top propuesto |
 | [emparejamientos.md](emparejamientos.md) | Pares candidatos y rationale |
+| [intro-valentina-borrador.md](intro-valentina-borrador.md) | Texto para contactar a Valentina (WA / email) |
 | [articulos/](articulos/) | PDF recibido por email (VR + estigma esquizofrenia) — pendiente procesar |
 
 ## Fuentes externas

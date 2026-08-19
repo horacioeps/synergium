@@ -19,3 +19,4 @@ Evolución hospedada (URL `forms.synergium.net/…`, BD propia, email al enviar)
 2. Crear los dos Google Forms con `brief-google-forms.md` + `formulario-es.md` / `formulario-en.md` (o migrar a Synergium Forms cuando el MVP esté listo).
 3. Pegar los mensajes de `mensaje-whatsapp-es.md` y `mensaje-whatsapp-en.md` (no soltar el link a pelo).
 4. Cuando haya respuestas: `playbook-matching.md`.
+5. Enlaces publicados (formularios vivos): `casos/2026-08-14-formulario-matching/enlaces-vivos.md`.

@@ -4,8 +4,10 @@
 
 | Campo | Valor |
 |-------|--------|
-| **Nombre completo** | Matias E. Rodriguez-Rivas |
-| **Email** | matiaserodriguezrivas@gmail.com |
+| **Nombre completo** | Matías Enrique Rodríguez Rivas |
+| **Email (form)** | matiaserodriguezrivas@gmail.com |
+| **Email institucional** | mrodriguezri@udla.cl |
+| **Cargo (firma email)** | Académico Investigador, Facultad de Salud y Ciencias Sociales, UDLA |
 | **WhatsApp** | +56930322072 |
 | **País** | Chile |
 | **Ciudad** | Santiago |
@@ -22,7 +24,7 @@
 | **Tipo institución** | Private uni |
 | **Años en investigación** | 6–10 |
 | **Áreas (form)** | HPC/simulation, Social sciences, Education, Other |
-| **Línea** | Salud mental, estigma, help-seeking; adultos emergentes y población universitaria |
+| **Línea** | Salud mental, estigma, help-seeking; adultos emergentes y población universitaria. **Paper reciente (email):** intervención VR para reducir estigma relacionado con esquizofrenia (hallazgos cualitativos) |
 | **Métodos** | Experimental, Computational/data, Theoretical, Clinical |
 | **Enfoque metodológico** | Cuantitativo y mixed methods: longitudinal, SEM, psicometría, experimental; mediación y moderación |
 | **Aplicado** | Riesgo psicosocial, bienestar, entornos de atención sanitaria |

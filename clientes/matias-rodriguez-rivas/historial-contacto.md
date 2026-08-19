@@ -4,64 +4,90 @@ Documento vivo. Actualizar cada vez que haya email, WhatsApp, intro o reunión.
 
 ---
 
-## Lo que sabemos hoy (2026-08-19)
+## Origen del cliente
 
-En **este repositorio** no hay registro de conversaciones previas one-to-one entre Horacio y Matías (ni en `chats/`, `sesiones/`, outreach ni comunidad). El **primer punto de contacto documentado** es la respuesta al Google Form EN de la comunidad.
+**Primer contacto:** email (cold request PDF podcast), **no** WhatsApp directo previo.
 
-| Fecha (aprox.) | Canal | Dirección | Qué pasó | Fuente |
-|----------------|-------|-----------|----------|--------|
-| **2026-08-14** ~21:31 | **Google Form** (Community directory EN) | Matías → Horacio | Envió el directorio completo (31 campos). Consentimiento match + compartir email/WhatsApp/LinkedIn. | [Hoja respuestas](https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit?usp=sharing) fila 6 |
-| — | **Email directo Horacio → Matías** | — | **No consta** en repo | — |
-| — | **WhatsApp directo Horacio → Matías** | — | **No consta** en repo | — |
-| — | **Intro a tercero** | — | **Pendiente** (match Valentina u otro) | [emparejamientos.md](emparejamientos.md) |
+Matías respondió al email de Horacio enviando el PDF del artículo sobre **VR y estigma en esquizofrenia**. Ocho días después rellenó el **Google Form EN** (Community directory). El hilo de email explica por qué en el form marcó «Last email to a paper author → Replied+led somewhere»: contigo sí respondió y entregó el paper.
 
 ---
 
-## Cómo llegó al formulario (inferencia)
+## Línea temporal
 
-El form EN se difundió en la **comunidad WhatsApp EN** del podcast (*Investigando la research* / Community directory), según playbook del caso [2026-08-14-formulario-matching](../../comunidad/casos/2026-08-14-formulario-matching/00-resumen.md): mensaje en chat, no link suelto.
-
-**Matías no rellenó** la pregunta «cómo conociste el formulario» (no existe como campo separado). Sí indicó que su **último colaborador desconocido** lo encontró vía **email a autor de paper** (patrón habitual en investigadores, no implica contacto previo contigo).
+| Fecha | Canal | De → A | Qué pasó | Fuente |
+|-------|-------|--------|----------|--------|
+| **2026-08-06** 20:04 | **Email** | Horacio → Matías | Solicitud de PDF del artículo VR/estigma esquizofrenia (podcast *Investigando la Investigación*) | Hilo email (Horacio) |
+| **2026-08-06** ~noche | **Email** | Matías → Horacio | «Buenas noches Horacio, adjunto artículo. Quedo atento.» + PDF | Hilo email + [articulos/](articulos/) |
+| **2026-08-14** ~21:31 | **Google Form EN** | Matías → Horacio | Community directory (31 campos). Match Yes. Urgencia «This month». | [Hoja respuestas](https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit?usp=sharing) fila 6 |
+| — | **WhatsApp directo** | — | **No consta** conversación 1:1 previa al form | — |
+| — | **Intro a tercero** | — | **Pendiente** (Valentina u otro) | [emparejamientos.md](emparejamientos.md) |
 
 ---
 
-## Contacto previo *de él* con otros (autorreportado)
+## Email — detalle del hilo (2026-08-06)
+
+### Horacio → Matías
+
+| Campo | Valor |
+|-------|--------|
+| **De** | Horacio Perez Sanchez \<horacio@horacio-ps.com\> |
+| **Para** | Matías Enrique Rodriguez Rivas \<mrodriguezri@udla.cl\> |
+| **Fecha envío** | jueves, 6 de agosto de 2026, 20:04 |
+| **Asunto** | Solicitud de PDF: A Virtual Reality Intervention to Reduce Schizophrenia-Related Stigma: Qualitative Findings on Mechanisms of Change, Perceived Advantages, and Implementation Challenges |
+| **Cuerpo** | Hola, me gustaría leer con calma tu artículo «…». ¿Me lo podrías enviar en PDF? Gracias de antemano, Horacio. Firma podcast horacio-ps.com |
+
+### Matías → Horacio (respuesta)
+
+| Campo | Valor |
+|-------|--------|
+| **Texto** | Buenas noches Horacio, adjunto artículo. Quedo atento, |
+| **Firma** | Matías Rodríguez Rivas — Académico Investigador, Facultad de Salud y Ciencias Sociales — ORCID 0000-0003-2596-4642 |
+| **Adjunto** | PDF → almacenado en [articulos/A_Virtual_Reality_Intervention_to_Reduce_Schizophr.pdf](articulos/A_Virtual_Reality_Intervention_to_Reduce_Schizophr.pdf) |
+
+### Emails en juego
+
+| Uso | Email |
+|-----|--------|
+| Institucional (email PDF) | mrodriguezri@udla.cl |
+| Form / personal | matiaserodriguezrivas@gmail.com |
+
+---
+
+## Cómo llegó al formulario
+
+Tras el intercambio de email (6-ago), rellenó el **Community directory EN** el **14-ago** (~8 días después). Coherente con comunidad podcast + contacto previo por solicitud de paper (patrón «email paper author» del formulario).
+
+---
+
+## Contacto previo *de él* con otros (autorreportado en form)
 
 | Tema | Detalle |
 |------|---------|
 | Último colaborador vía | Email paper author |
-| Resultado cold email | Replied + led somewhere |
-| Follow-up le cuesta | **No** (a diferencia de otros en la hoja) |
+| Resultado cold email | Replied + led somewhere ← **encaja con Horacio** |
+| Follow-up le cuesta | No |
 | Barreras actuales | Autores no responden; no sabe con quién; confianza/fit |
 
 ---
 
 ## Canales autorizados para intro
 
-Según formulario, Horacio **puede compartir** con un match:
-
-- Nombre / área / país  
-- Email  
-- WhatsApp (+56930322072)  
-- LinkedIn / ORCID  
-
-Canal de intro preferido: **Whatever** (WhatsApp, email o LinkedIn).
+Según formulario (2026-08-14), Horacio **puede compartir** con un match: nombre/área/país, email, WhatsApp (+56930322072), LinkedIn/ORCID. Canal intro: **Whatever**.
 
 ---
 
-## Pendiente de confirmar contigo (Horacio)
+## Pendiente de confirmar
 
-Marcar cuando sepamos:
-
-- [ ] ¿Estaba ya en la comunidad WhatsApp EN antes del 14-ago?  
-- [ ] ¿Algún mensaje privado tuyo antes del form?  
-- [ ] ¿Participó en el chat ES también? (él marcó «Both»)  
-- [ ] ¿Primer contacto Synergium piloto — cuándo y por qué canal?
+- [x] ¿Contacto previo Horacio? → **Sí, email 2026-08-06**
+- [ ] ¿Estaba en comunidad WhatsApp EN/ES antes del form?
+- [ ] ¿Seguimiento tuyo tras «Quedo atento» antes del 14-ago?
 
 ---
 
-## Log de contactos (rellenar a partir de ahora)
+## Log de contactos (a partir de ahora)
 
 | Fecha | Canal | De → A | Resumen | Resultado |
 |-------|-------|--------|---------|-----------|
-| | | | | |
+| 2026-08-06 | Email | H → M | Solicitud PDF artículo VR/estigma | Enviado |
+| 2026-08-06 | Email | M → H | PDF adjunto + «Quedo atento» | Recibido, [PDF archivado](articulos/) |
+| 2026-08-14 | Form | M → H | Community directory | 31 campos, match Yes |

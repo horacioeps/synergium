@@ -4,7 +4,7 @@ Cliente / candidato piloto Synergium. Primer expediente creado **2026-08-19**.
 
 ## Resumen en una línea
 
-PhD en Chile (salud mental, estigma, help-seeking). Busca **coautores para papers este mes**. Perfil cuantitativo fuerte (SEM, psicometría, longitudinal). Consentimiento explícito para intro y contacto Synergium posterior.
+PhD en Chile (salud mental, estigma, help-seeking). **Origen:** email podcast (PDF VR/estigma esquizofrenia, 6-ago-2026) → form EN (14-ago). Busca coautores **este mes**.
 
 ## Documentos
 
@@ -15,6 +15,7 @@ PhD en Chile (salud mental, estigma, help-seeking). Busca **coautores para paper
 | [historial-contacto.md](historial-contacto.md) | Cuándo y cómo nos relacionamos (form, WhatsApp, email…) |
 | [urgencia-y-match.md](urgencia-y-match.md) | Por qué marcamos «urgente» y emparejamiento top propuesto |
 | [emparejamientos.md](emparejamientos.md) | Pares candidatos y rationale |
+| [articulos/](articulos/) | PDF recibido por email (VR + estigma esquizofrenia) — pendiente procesar |
 
 ## Fuentes externas
 

@@ -24,7 +24,7 @@ Detalle: [docs/QUE-ES-SYNERGIUM.md](docs/QUE-ES-SYNERGIUM.md)
 | [comunidad/](comunidad/) | Directorio WhatsApp / matching |
 | [web-direcciones/](web-direcciones/) | Mockups y propuestas web |
 | [outreach/](outreach/) | Outreach (Tec Monterrey, etc.) |
-| [scripts/](scripts/) | Publicación forms, utilidades |
+| [scripts/](scripts/) | Publicación forms, **vault_ssh_ro.sh**, utilidades |
 | [chats/](chats/) | Volcados sesiones Cursor |
 | [sesiones/](sesiones/) | Volcados en bruto |
 
@@ -41,11 +41,17 @@ Detalle: [docs/QUE-ES-SYNERGIUM.md](docs/QUE-ES-SYNERGIUM.md)
 
 Leer **[AGENTS.md](AGENTS.md)** antes de cualquier tarea Synergium.
 
-## Vault Obsidian (solo lectura)
+## Vault en el VPS (solo lectura)
 
-Las notas fuente (ideas, conversaciones comerciales) siguen en la vault personal. Los agentes la leen por SSH según secrets del entorno; **no escribir en vault** salvo petición explícita.
+Las notas fuente (ideas, conversaciones comerciales) están en la vault del VPS. Los agentes **leen por SSH** cuando hace falta:
 
-## Referencias antiguas (Obsidian repo)
+```bash
+scripts/vault_ssh_ro.sh cat "ruta/nota.md"
+```
+
+[docs/VAULT-ACCESO.md](docs/VAULT-ACCESO.md) · `.cursor/rules/vault-cloud-ssh.mdc`
+
+## Referencias antiguas (repo Obsidian legacy)
 
 Material duplicado previo al 2026-08-19 en el repo Obsidian: [REFERENCIAS-LEGACY-OBSIDIAN.md](REFERENCIAS-LEGACY-OBSIDIAN.md)
 

@@ -1,0 +1,54 @@
+---
+description: Acceso de solo lectura a la vault desde Cloud Agents via SSH secrets
+alwaysApply: true
+---
+
+# Vault desde Cloud Agents (repo Synergium)
+
+En Cloud Agents la vault **no** está en el filesystem local. Se lee por SSH con secrets del entorno — **igual que en el repo Obsidian legacy**.
+
+## Secrets (solo nombres; valores en el entorno)
+
+- `EXPLORE_LABS_SSH_HOST` <!-- pragma: allowlist secret -->
+- `EXPLORE_LABS_SSH_OBISIDIAN_USER` <!-- pragma: allowlist secret -->
+  (typo histórico en el nombre de la variable: falta una letra respecto a la grafía habitual)
+- `EXPLORE_LABS_SSH_OBSIDIAN_PASSWORD` <!-- pragma: allowlist secret -->
+- `EXPLORE_LABS_OBSIDIAN_VAULT_PATH` <!-- pragma: allowlist secret -->
+  → directorio padre remoto; la vault canónica está en `$EXPLORE_LABS_OBSIDIAN_VAULT_PATH/Horacio` <!-- pragma: allowlist secret -->
+- Opcional sistema: `EXPLORE_LABS_SSH_HORACIO_USER` / `EXPLORE_LABS_SSH_HORACIO_PASSWORD` <!-- pragma: allowlist secret -->
+
+Preferir el usuario vault (`…_OBISIDIAN_USER`) y el helper de **este repo**. <!-- pragma: allowlist secret -->
+
+## Rutas en el VPS (usuario vault)
+
+| Ruta | Rol |
+|------|-----|
+| `~/Horacio` | **Canónica** — Sync (Headless `ob`) | <!-- pragma: allowlist secret -->
+| `~/Horacio.legacy-pre-sync-20260814` | Copia FS antigua (pre-Sync); no usar | <!-- pragma: allowlist secret -->
+| `~/sync/Horacio` | **Obsoleta** — no usar | <!-- pragma: allowlist secret -->
+
+## Helper (este repo)
+
+```bash
+scripts/vault_ssh_ro.sh count-md
+scripts/vault_ssh_ro.sh ls Inbox
+scripts/vault_ssh_ro.sh cat "ruta/relativa/nota.md"
+scripts/vault_ssh_ro.sh get "ruta/relativa/nota.md" /tmp/nota.md
+scripts/vault_ssh_ro.sh root
+```
+
+Requiere `sshpass` (Cloud Agents: suele estar disponible).
+
+## Cuándo leer la vault en tareas Synergium
+
+- Notas maestras de ideas de negocio, conversaciones comerciales (Fabián, Alexander, etc.)
+- Contexto comunidad WhatsApp / podcast
+- Cualquier análisis que cite notas que no están en git
+
+## Política
+
+- **Solo lectura** salvo petición explícita del usuario.
+- No dejar archivos de prueba en el remoto.
+- Todo lo **generado** va en **este repo** (`estrategia/`, `web/`, `docs/`, etc.) — no en la vault ni en el repo Obsidian legacy.
+
+Detalle ampliado: [docs/VAULT-ACCESO.md](../docs/VAULT-ACCESO.md)

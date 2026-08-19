@@ -8,5 +8,5 @@ alwaysApply: true
 - **Todo** el trabajo Synergium va en **este repo** (`horacioeps/synergium`).
 - El repo Obsidian tiene **copias antiguas** (pre-2026-08-19) en `generado/web-synergium/`, `generado/synergium-forms/`, etc. — **no escribir ahí**.
 - Índice legacy: [REFERENCIAS-LEGACY-OBSIDIAN.md](../REFERENCIAS-LEGACY-OBSIDIAN.md)
-- Vault personal: solo lectura (SSH vía secrets; ver repo Obsidian `vault-cloud-ssh.mdc`).
+- **Vault VPS:** solo lectura cuando haga falta — `scripts/vault_ssh_ro.sh` + `.cursor/rules/vault-cloud-ssh.mdc` + [docs/VAULT-ACCESO.md](../docs/VAULT-ACCESO.md)
 - Sesiones Synergium: `chats/` y `sesiones/` **en este repo**.

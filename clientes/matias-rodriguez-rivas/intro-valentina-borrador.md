@@ -1,7 +1,7 @@
 # Intro — Valentina Lucena Jurado (borrador para Horacio)
 
 **Match:** Matías Rodríguez-Rivas (Chile) ↔ Valentina  
-**Estado:** Borrador — pendiente envío a Valentina  
+**Estado:** **Enviado por Horacio** (2026-08-19) — pendiente respuesta sí/no  
 **Fecha:** 2026-08-19
 
 ---
@@ -14,7 +14,8 @@ Según su formulario (Community directory EN):
 |-------|------|--------|
 | **WhatsApp** | **+34 661 347 478** | **Canal de intro preferido (P30)** ← usar este |
 | Email | valentina.lucena@gmail.com | Alternativa si no responde WA |
-| LinkedIn/ORCID | Autorizó compartir | Tras aceptar intro |
+| **Email UCO (Córdoba)** | **ed1lujuv@uco.es** | Institucional; ORCID / web uco.es |
+| LinkedIn/ORCID | [0000-0002-7011-6661](https://orcid.org/0000-0002-7011-6661) | Autorizó compartir |
 
 Idioma: **español** (match language = Spanish; también comunidad ES).
 

@@ -8,7 +8,8 @@ Análisis sobre las **20 respuestas** del [Google Sheets EN](https://docs.google
 
 | | Matías | Valentina |
 |---|--------|-----------|
-| **Email** | matiaserodriguezrivas@gmail.com | valentina.lucena@gmail.com |
+| **Institución** | Universidad de Las Américas (Chile) | **Universidad de Córdoba (UCO)**, Córdoba, España |
+| **Email** | matiaserodriguezrivas@gmail.com | valentina.lucena@gmail.com · **ed1lujuv@uco.es** |
 | **WhatsApp** | +56930322072 | +34661347478 |
 | **Rol** | PhD | PhD |
 | **Área** | Salud mental, estigma, help-seeking | Uso problemático internet, bienestar emocional, conducta suicida, sustancias |
@@ -21,7 +22,7 @@ Análisis sobre las **20 respuestas** del [Google Sheets EN](https://docs.google
 
 **Intro sugerida (borrador):** coautoría empírica salud mental — dataset Chile + línea clínica España.
 
-**Estado:** Borrador mensaje Valentina → [intro-valentina-borrador.md](intro-valentina-borrador.md)
+**Estado:** Mensaje enviado a Valentina (2026-08-19) — esperando sí/no → [intro-valentina-borrador.md](intro-valentina-borrador.md)
 
 ---
 
@@ -53,6 +54,6 @@ No aplica — Matías pidió match activo.
 
 ## Próxima acción
 
-1. Confirmar con Horacio si hubo contacto previo no registrado.  
-2. Redactar mensaje doble opt-in o intro directa según [playbook-matching](../../comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md).  
-3. Registrar en [historial-contacto.md](historial-contacto.md).
+1. ~~Enviar mensaje a Valentina~~ → **hecho 2026-08-19**; esperar respuesta.  
+2. Si Valentina dice sí: doble opt-in con Matías + intro conjunta ([playbook-matching](../../comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md)).  
+3. Anotar respuesta en [historial-contacto.md](historial-contacto.md) e [intro-valentina-borrador.md](intro-valentina-borrador.md).

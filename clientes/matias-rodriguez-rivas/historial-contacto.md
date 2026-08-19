@@ -101,3 +101,9 @@ Según formulario (2026-08-14), Horacio **puede compartir** con un match: nombre
 | 2026-08-06 | Email | M → H | PDF adjunto + «Quedo atento» | [PDF archivado](articulos/) |
 | ~ago-2026 | WhatsApp comunidad | Campaña | Email campaña → grupo; origen form | Confirmado Horacio |
 | 2026-08-14 | Form EN | M → H | Community directory + teléfono | Match Yes |
+
+### Match Valentina Lucena Jurado (pendiente respuesta)
+
+| Fecha | Canal | De → A | Resumen | Resultado |
+|-------|-------|--------|---------|-----------|
+| 2026-08-19 | WhatsApp (prob.) | H → Valentina | Propuesta intro coautoría salud mental; borrador en [intro-valentina-borrador.md](intro-valentina-borrador.md) | **Enviado** — pendiente sí/no |

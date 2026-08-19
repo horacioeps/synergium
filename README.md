@@ -22,6 +22,7 @@ Detalle: [docs/QUE-ES-SYNERGIUM.md](docs/QUE-ES-SYNERGIUM.md)
 | [forms/](forms/) | forms.synergium.net — PocketBase, deploy |
 | [prospectos/](prospectos/) | Buscador de prospectos v1 (web + NCPs) |
 | [comunidad/](comunidad/) | Directorio WhatsApp / matching |
+| [clientes/](clientes/) | Expedientes por investigador (piloto, matching, contacto) |
 | [web-direcciones/](web-direcciones/) | Mockups y propuestas web |
 | [outreach/](outreach/) | Outreach (Tec Monterrey, etc.) |
 | [scripts/](scripts/) | Publicación forms, **vault_ssh_ro.sh**, utilidades |

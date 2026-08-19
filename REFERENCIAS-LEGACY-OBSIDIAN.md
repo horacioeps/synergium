@@ -1,8 +1,10 @@
-# Punteros al repo Obsidian
+# Referencias legacy — repo Obsidian
 
-Repo maestro: **[github.com/horacioeps/Obsidian](https://github.com/horacioeps/Obsidian)**
+**No usar como fuente de trabajo.** Copias archivadas del material Synergium antes de migrar al repo canónico (**este repo**).
 
-Rutas relativas a la raíz del repo Obsidian (`cursor_obsidian`). Enlaces apuntan a `main`.
+Repo Obsidian (archivo): **[github.com/horacioeps/Obsidian](https://github.com/horacioeps/Obsidian)** <!-- pragma: allowlist secret -->
+
+Rutas relativas a la raíz del repo Obsidian. Enlaces apuntan a `main`. Para trabajo nuevo, editar la carpeta equivalente **aquí** (ver tabla al final).
 
 ---
 
@@ -113,3 +115,18 @@ Referencias en Obsidian repo:
 
 - [PROJECT_PLAN.md](https://github.com/horacioeps/Obsidian/blob/main/PROJECT_PLAN.md) — funcionalidades, reglas vault, workflow
 - [HISTORICO.md](https://github.com/horacioeps/Obsidian/blob/main/HISTORICO.md) — log compacto de sesiones
+
+---
+
+## Mapeo legacy Obsidian → repo canónico (synergium)
+
+| Legacy (Obsidian) | Canónico (este repo) |
+|-------------------|----------------------|
+| `generado/web-synergium/` | `web/` |
+| `generado/synergium-forms/` | `forms/` |
+| `generado/notas-derivadas/casos/analisis-ideas-negocio-synergium/` | `estrategia/` |
+| `generado/buscador-prospectos/` | `prospectos/` |
+| `generado/comunidad-whatsapp/` | `comunidad/` |
+| `scripts/synergium_forms_publish.py` | `scripts/synergium_forms_publish.py` |
+| `scripts/buscador_prospectos/` | `prospectos/scripts/buscador_prospectos/` |
+| Chats Synergium en Obsidian `chats/` | `chats/` (copia; nuevas sesiones solo aquí) |

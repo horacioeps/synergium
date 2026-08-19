@@ -48,4 +48,4 @@ Análisis interno (abril 2026): dispersión de ideas, pocos contratos cerrados, 
 
 La nota maestra y conversaciones comerciales viven en la vault personal (no en git). Copias derivadas en este repo: carpeta [estrategia/](../estrategia/).
 
-Punteros completos: [PUNTEROS-OBSIDIAN.md](../PUNTEROS-OBSIDIAN.md)
+Punteros completos: [REFERENCIAS-LEGACY-OBSIDIAN.md](../REFERENCIAS-LEGACY-OBSIDIAN.md) (copias antiguas en repo Obsidian)

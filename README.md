@@ -1,8 +1,8 @@
 # Synergium
 
-Repositorio dedicado al proyecto **Synergium**: broker de colaboraciones de investigación entre LATAM y Europa, con infraestructura web, formularios, prospección comercial y comunidad.
+**Repo canónico** del proyecto Synergium: broker de colaboraciones de investigación entre LATAM y Europa, con infraestructura web, formularios, prospección comercial y comunidad.
 
-Este repo concentra (aunque duplicado) todo el material operativo y estratégico. El repo maestro de trabajo del agente y la vault sigue siendo **[horacioeps/Obsidian](https://github.com/horacioeps/Obsidian)** — ver [PUNTEROS-OBSIDIAN.md](PUNTEROS-OBSIDIAN.md).
+A partir de **2026-08-19**, todo el trabajo Synergium se hace **aquí**. El repo Obsidian conserva copias antiguas solo como referencia — ver [REFERENCIAS-LEGACY-OBSIDIAN.md](REFERENCIAS-LEGACY-OBSIDIAN.md).
 
 ## Qué es Synergium
 
@@ -10,45 +10,45 @@ Este repo concentra (aunque duplicado) todo el material operativo y estratégico
 
 Clientes potenciales: IPs, OTRIs, vicerrectorados, agencias de ciencia. Foco geográfico: Chile, México, Colombia, Uruguay.
 
-Detalle ampliado: [docs/QUE-ES-SYNERGIUM.md](docs/QUE-ES-SYNERGIUM.md)
+Detalle: [docs/QUE-ES-SYNERGIUM.md](docs/QUE-ES-SYNERGIUM.md)
 
 ## Estructura del repo
 
 | Carpeta | Contenido |
 |---------|-----------|
-| [docs/](docs/) | Síntesis, historial, infraestructura, rol consultor |
-| [estrategia/](estrategia/) | Análisis de 13 ideas de negocio, plantillas email, búsqueda prospectos |
-| [web/](web/) | Cambios en synergium.net (WordPress REST), casos y backups |
-| [forms/](forms/) | forms.synergium.net — PocketBase, deploy, Community directory |
+| [docs/](docs/) | Síntesis, historial, infraestructura |
+| [estrategia/](estrategia/) | Ideas de negocio, plantillas email, búsqueda prospectos |
+| [web/](web/) | synergium.net — WordPress REST, casos, backups |
+| [forms/](forms/) | forms.synergium.net — PocketBase, deploy |
 | [prospectos/](prospectos/) | Buscador de prospectos v1 (web + NCPs) |
-| [comunidad/](comunidad/) | Directorio comunidad WhatsApp / matching (Google Forms + evolución) |
-| [web-direcciones/](web-direcciones/) | Mockups y propuestas de arquitectura web |
-| [outreach/](outreach/) | Outreach específico (p. ej. Tec Monterrey doctorandos) |
-| [scripts/](scripts/) | Scripts de publicación y prospección |
-| [chats/](chats/) | Volcados de sesiones Cursor relacionadas |
-| [sesiones/](sesiones/) | Volcados en bruto (formato sesiones) |
+| [comunidad/](comunidad/) | Directorio WhatsApp / matching |
+| [web-direcciones/](web-direcciones/) | Mockups y propuestas web |
+| [outreach/](outreach/) | Outreach (Tec Monterrey, etc.) |
+| [scripts/](scripts/) | Publicación forms, utilidades |
+| [chats/](chats/) | Volcados sesiones Cursor |
+| [sesiones/](sesiones/) | Volcados en bruto |
 
-## Infraestructura en producción
+## Infraestructura
 
 | Servicio | URL | Estado |
 |----------|-----|--------|
-| Web principal | [synergium.net](https://synergium.net) | WordPress en VPS Explore Labs |
-| Formularios | [forms.synergium.net](https://forms.synergium.net) | PocketBase — DNS A pendiente en IONOS |
+| Web | [synergium.net](https://synergium.net) | WordPress, VPS Explore Labs |
+| Forms | [forms.synergium.net](https://forms.synergium.net) | PocketBase — DNS A pendiente IONOS |
 
-Ver [docs/INFRAESTRUCTURA.md](docs/INFRAESTRUCTURA.md) y [forms/docs/ESTADO-DEPLOY.md](forms/docs/ESTADO-DEPLOY.md).
+[docs/INFRAESTRUCTURA.md](docs/INFRAESTRUCTURA.md) · [forms/docs/ESTADO-DEPLOY.md](forms/docs/ESTADO-DEPLOY.md)
 
-## Historial de trabajo
+## Para agentes
 
-Cronología resumida en [docs/HISTORIAL-TRABAJO.md](docs/HISTORIAL-TRABAJO.md).
+Leer **[AGENTS.md](AGENTS.md)** antes de cualquier tarea Synergium.
 
-## Repo Obsidian (fuente maestra)
+## Vault Obsidian (solo lectura)
 
-Todo el contexto de vault, scripts compartidos y sesiones completas vive en:
+Las notas fuente (ideas, conversaciones comerciales) siguen en la vault personal. Los agentes la leen por SSH según secrets del entorno; **no escribir en vault** salvo petición explícita.
 
-**https://github.com/horacioeps/Obsidian**
+## Referencias antiguas (Obsidian repo)
 
-Índice de rutas concretas: [PUNTEROS-OBSIDIAN.md](PUNTEROS-OBSIDIAN.md)
+Material duplicado previo al 2026-08-19 en el repo Obsidian: [REFERENCIAS-LEGACY-OBSIDIAN.md](REFERENCIAS-LEGACY-OBSIDIAN.md)
 
-## Licencia y uso
+## Licencia
 
-Material interno de Horacio Pérez Sánchez. No redistribuir sin permiso.
+Material interno de Horacio Pérez Sánchez.

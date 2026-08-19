@@ -1,0 +1,81 @@
+{
+  "id": 27,
+  "date": "2025-11-23T18:41:26",
+  "date_gmt": "2025-11-23T18:41:26",
+  "guid": {
+    "rendered": "https://synergium.net/uncategorized/navigation/",
+    "raw": "https://synergium.net/uncategorized/navigation/"
+  },
+  "modified": "2025-11-23T18:41:26",
+  "modified_gmt": "2025-11-23T18:41:26",
+  "password": "",
+  "slug": "navigation",
+  "status": "publish",
+  "type": "wp_navigation",
+  "link": "https://synergium.net/sin-categoria-es/navigation/",
+  "title": {
+    "raw": "Navigation",
+    "rendered": "Navigation"
+  },
+  "content": {
+    "raw": "<!-- wp:page-list /-->",
+    "rendered": "<ul class=\"wp-block-page-list\"><li class=\"wp-block-pages-list__item menu-item-home\"><a class=\"wp-block-pages-list__item__link\" href=\"https://synergium.net/\">Synergium</a></li></ul>",
+    "protected": false,
+    "block_version": 1
+  },
+  "template": "",
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/wp_navigation"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 0,
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27/revisions"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media?parent=27"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

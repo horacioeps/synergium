@@ -1,0 +1,127 @@
+{
+  "id": 53,
+  "date": "2026-08-16T21:42:09",
+  "date_gmt": "2026-08-16T21:42:09",
+  "guid": {
+    "rendered": "https://synergium.net/en/",
+    "raw": "https://synergium.net/en/"
+  },
+  "modified": "2026-08-16T21:55:04",
+  "modified_gmt": "2026-08-16T21:55:04",
+  "password": "",
+  "slug": "en",
+  "status": "publish",
+  "type": "page",
+  "link": "https://synergium.net/en/",
+  "title": {
+    "raw": "Synergium",
+    "rendered": "Synergium"
+  },
+  "content": {
+    "raw": "<!-- wp:html -->\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Synergium\" />\n<meta property=\"og:description\" content=\"We make it possible for your projects to move forward\" />\n<meta property=\"og:url\" content=\"https://synergium.net/en/\" />\n<meta property=\"og:site_name\" content=\"Synergium\" />\n<meta property=\"og:image\" content=\"https://synergium.net/wp-content/uploads/2026/08/synergium-og-1200x630-1.png\" />\n<meta property=\"og:image:width\" content=\"1200\" />\n<meta property=\"og:image:height\" content=\"630\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:title\" content=\"Synergium\" />\n<meta name=\"twitter:description\" content=\"We make it possible for your projects to move forward\" />\n<meta name=\"twitter:image\" content=\"https://synergium.net/wp-content/uploads/2026/08/synergium-og-1200x630-1.png\" />\n<!-- /wp:html -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>What we offer</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Synergium helps researchers, groups, institutions and companies find reliable partners, structure international collaborations and build solid consortia for competitive projects.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Our work includes:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Identifying academic and industrial collaborators that fit each project.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Direct introductions and first meetings.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Support in finding and choosing national and international calls.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Early-stage proposal support: structure, partner alignment and strategy.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Additional services such as project podcasts, scientific communication and tailored micro-consortia.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>The aim is to make partner search simpler, reduce uncertainty and raise the odds that each initiative succeeds.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Who we are</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Synergium is a team with international experience in research and collaboration. Part of the core team is based in Spain, and we work regularly with institutions and professionals in several regions.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>We are a multidisciplinary team used to connecting people from different fields, making collaboration workable and supporting complex projects. We do not present ourselves as individuals, but as a cohesive team with strategic view, practical experience and an established international network.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Track record</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>The Synergium team has:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Taken part in and led more than 30 competitive projects of different scales.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Attracted direct and indirect funding in demanding calls.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Developed tools, methods and resources used by other teams and institutions.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Ongoing collaboration with companies through transfer contracts and consulting.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Supervised several doctoral theses, including industry-linked projects.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Scientific output of more than 200 publications, plus patents and licences.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Public outreach, including a podcast with more than 330 episodes.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>These results show we can connect, structure and strengthen scientific and technological collaborations with real impact.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Shall we talk?</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>If you want to see how Synergium can help you find collaborators or strengthen a project, we can have a short 10-12 minute conversation to understand what you need.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong><a href=\"mailto:info@synergium.net\">Write to us</a> and book a meeting.</strong></p>\n<!-- /wp:paragraph -->\n",
+    "rendered": "\n<meta property=\"og:locale\" content=\"en_US\" />\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:title\" content=\"Synergium\" />\n<meta property=\"og:description\" content=\"We make it possible for your projects to move forward\" />\n<meta property=\"og:url\" content=\"https://synergium.net/en/\" />\n<meta property=\"og:site_name\" content=\"Synergium\" />\n<meta property=\"og:image\" content=\"https://synergium.net/wp-content/uploads/2026/08/synergium-og-1200x630-1.png\" />\n<meta property=\"og:image:width\" content=\"1200\" />\n<meta property=\"og:image:height\" content=\"630\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:title\" content=\"Synergium\" />\n<meta name=\"twitter:description\" content=\"We make it possible for your projects to move forward\" />\n<meta name=\"twitter:image\" content=\"https://synergium.net/wp-content/uploads/2026/08/synergium-og-1200x630-1.png\" />\n\n\n\n<h2 class=\"wp-block-heading\"><strong>What we offer</strong></h2>\n\n\n\n<p>Synergium helps researchers, groups, institutions and companies find reliable partners, structure international collaborations and build solid consortia for competitive projects.</p>\n\n\n\n<p>Our work includes:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Identifying academic and industrial collaborators that fit each project.</li>\n\n\n\n<li>Direct introductions and first meetings.</li>\n\n\n\n<li>Support in finding and choosing national and international calls.</li>\n\n\n\n<li>Early-stage proposal support: structure, partner alignment and strategy.</li>\n\n\n\n<li>Additional services such as project podcasts, scientific communication and tailored micro-consortia.</li>\n</ul>\n\n\n\n<p>The aim is to make partner search simpler, reduce uncertainty and raise the odds that each initiative succeeds.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Who we are</strong></h2>\n\n\n\n<p>Synergium is a team with international experience in research and collaboration. Part of the core team is based in Spain, and we work regularly with institutions and professionals in several regions.</p>\n\n\n\n<p>We are a multidisciplinary team used to connecting people from different fields, making collaboration workable and supporting complex projects. We do not present ourselves as individuals, but as a cohesive team with strategic view, practical experience and an established international network.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Track record</strong></h2>\n\n\n\n<p>The Synergium team has:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Taken part in and led more than 30 competitive projects of different scales.</li>\n\n\n\n<li>Attracted direct and indirect funding in demanding calls.</li>\n\n\n\n<li>Developed tools, methods and resources used by other teams and institutions.</li>\n\n\n\n<li>Ongoing collaboration with companies through transfer contracts and consulting.</li>\n\n\n\n<li>Supervised several doctoral theses, including industry-linked projects.</li>\n\n\n\n<li>Scientific output of more than 200 publications, plus patents and licences.</li>\n\n\n\n<li>Public outreach, including a podcast with more than 330 episodes.</li>\n</ul>\n\n\n\n<p>These results show we can connect, structure and strengthen scientific and technological collaborations with real impact.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Shall we talk?</strong></h2>\n\n\n\n<p>If you want to see how Synergium can help you find collaborators or strengthen a project, we can have a short 10-12 minute conversation to understand what you need.</p>\n\n\n\n<p><strong><a href=\"mailto:info@synergium.net\">Write to us</a> and book a meeting.</strong></p>\n\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>What we offer Synergium helps researchers, groups, institutions and companies find reliable partners, structure international collaborations and build solid consortia for competitive projects. Our work includes: The aim is to make partner search simpler, reduce uncertainty and raise the odds that each initiative succeeds. Who we are Synergium is a team with international experience in [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "page-no-title",
+  "meta": {
+    "footnotes": ""
+  },
+  "permalink_template": "https://synergium.net/%pagename%/",
+  "generated_slug": "synergium",
+  "class_list": [
+    "post-53",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/comments?post=53"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 62,
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53/revisions/62"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media?parent=53"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

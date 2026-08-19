@@ -1,0 +1,80 @@
+{
+  "id": "twentytwentyfive//header",
+  "theme": "twentytwentyfive",
+  "content": {
+    "raw": "<!-- wp:group {\"align\":\"full\",\"layout\":{\"type\":\"default\"}} -->\n<div class=\"wp-block-group alignfull\">\n\t<!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n\t<div class=\"wp-block-group\">\n\t\t<!-- wp:group {\"align\":\"wide\",\"style\":{\"spacing\":{\"padding\":{\"top\":\"var:preset|spacing|30\",\"bottom\":\"var:preset|spacing|30\"}}},\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\",\"justifyContent\":\"space-between\"}} -->\n\t\t<div class=\"wp-block-group alignwide\" style=\"padding-top:var(--wp--preset--spacing--30);padding-bottom:var(--wp--preset--spacing--30)\">\n\t\t\t<!-- wp:site-title {\"level\":0} /-->\n\t\t\t<!-- wp:html -->\n<script>\n(function(){\n  try{\n    var t=localStorage.getItem(\"syn-theme\");\n    if(!t)t=(window.matchMedia&&window.matchMedia(\"(prefers-color-scheme: dark)\").matches)?\"dark\":\"light\";\n    document.documentElement.setAttribute(\"data-theme\",t);\n  }catch(e){}\n  var p=location.pathname.replace(/\\/+$/,\"\")||\"/\";\n  if(p===\"/en\"||p.indexOf(\"/en/\")===0) document.documentElement.setAttribute(\"lang\",\"en\");\n})();\n</script>\n<link rel=\"alternate\" hreflang=\"es\" href=\"https://synergium.net/\" />\n<link rel=\"alternate\" hreflang=\"en\" href=\"https://synergium.net/en/\" />\n<link rel=\"alternate\" hreflang=\"x-default\" href=\"https://synergium.net/\" />\n<meta name=\"theme-color\" content=\"#111111\" />\n<div class=\"syn-toolbar\">\n  <nav class=\"syn-lang\" aria-label=\"Language / Idioma\">\n    <span class=\"syn-lang__flag\" aria-hidden=\"true\">\n      <svg class=\"syn-flag-es\" viewBox=\"0 0 21 15\" width=\"20\" height=\"14\"><rect width=\"21\" height=\"15\" fill=\"#c60b1e\"/><rect y=\"4\" width=\"21\" height=\"7\" fill=\"#ffc400\"/></svg>\n      <svg class=\"syn-flag-uk\" viewBox=\"0 0 60 30\" width=\"20\" height=\"10\"><clipPath id=\"syn-uk-t\"><path d=\"M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z\"/></clipPath><path d=\"M0,0 v30 h60 v-30 z\" fill=\"#012169\"/><path d=\"M0,0 L60,30 M60,0 L0,30\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M0,0 L60,30 M60,0 L0,30\" clip-path=\"url(#syn-uk-t)\" stroke=\"#C8102E\" stroke-width=\"4\"/><path d=\"M30,0 v30 M0,15 h60\" stroke=\"#fff\" stroke-width=\"10\"/><path d=\"M30,0 v30 M0,15 h60\" stroke=\"#C8102E\" stroke-width=\"6\"/></svg>\n    </span>\n    <a class=\"syn-lang__es\" href=\"https://synergium.net/\" hreflang=\"es\" lang=\"es\">ES</a>\n    <span class=\"syn-lang__sep\" aria-hidden=\"true\">|</span>\n    <a class=\"syn-lang__en\" href=\"https://synergium.net/en/\" hreflang=\"en\" lang=\"en\">EN</a>\n  </nav>\n  <button type=\"button\" class=\"syn-theme\" id=\"syn-theme-toggle\" aria-pressed=\"false\" aria-label=\"Switch to dark mode / Cambiar a modo oscuro\" title=\"Light / Dark\">\n    <svg class=\"syn-theme__sun\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4\"/></svg>\n    <svg class=\"syn-theme__moon\" width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" aria-hidden=\"true\"><path d=\"M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z\"/></svg>\n  </button>\n</div>\n<style>\n.syn-toolbar{display:flex;align-items:center;gap:1rem;flex-wrap:nowrap}\n.syn-lang{display:flex;align-items:center;gap:.45rem;font-size:.9rem;letter-spacing:.04em}\n.syn-lang__flag{display:inline-flex;align-items:center;justify-content:center;width:20px;height:14px;border-radius:2px;overflow:hidden;box-shadow:0 0 0 1px color-mix(in srgb,currentColor 22%,transparent);flex:0 0 auto}\n.syn-lang__flag svg{display:block}\n.syn-flag-uk{display:none}\nhtml[lang=\"en\"] .syn-flag-es{display:none}\nhtml[lang=\"en\"] .syn-flag-uk{display:block}\n.syn-lang a{color:inherit;text-decoration:none;opacity:.55}\n.syn-lang a.is-active,.syn-lang a:hover{opacity:1;text-decoration:underline;text-underline-offset:3px}\n.syn-theme{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;padding:0;border:1px solid color-mix(in srgb, currentColor 35%, transparent);border-radius:999px;background:transparent;color:inherit;cursor:pointer}\n.syn-theme:hover{border-color:currentColor}\n.syn-theme__moon{display:none}\nhtml[data-theme=\"dark\"] .syn-theme__sun{display:none}\nhtml[data-theme=\"dark\"] .syn-theme__moon{display:block}\nhtml[data-theme=\"dark\"]{\n  --wp--preset--color--base:#131313;\n  --wp--preset--color--contrast:#FFFFFF;\n  --wp--preset--color--accent-1:#4B52FF;\n  --wp--preset--color--accent-2:#FF7A5C;\n  --wp--preset--color--accent-3:#252525;\n  --wp--preset--color--accent-4:#FFFFFF;\n  --wp--preset--color--accent-5:#252525;\n  --wp--preset--color--accent-6:#FFFFFF33;\n  color-scheme:dark;\n  background:#131313;\n}\nhtml[data-theme=\"light\"]{color-scheme:light}\n</style>\n<script>\n(function(){\n  var root=document.documentElement;\n  var key=\"syn-theme\";\n  function pref(){\n    try{var s=localStorage.getItem(key);if(s===\"dark\"||s===\"light\")return s;}catch(e){}\n    return window.matchMedia&&window.matchMedia(\"(prefers-color-scheme: dark)\").matches?\"dark\":\"light\";\n  }\n  function apply(t){\n    root.setAttribute(\"data-theme\", t);\n    var b=document.getElementById(\"syn-theme-toggle\");\n    if(b){\n      var dark=t===\"dark\";\n      b.setAttribute(\"aria-pressed\", dark?\"true\":\"false\");\n      b.setAttribute(\"aria-label\", dark?\"Switch to light mode / Cambiar a modo claro\":\"Switch to dark mode / Cambiar a modo oscuro\");\n    }\n  }\n  apply(pref());\n  function path(){return (location.pathname.replace(/\\/+$/,\"\")||\"/\");}\n  var p=path();\n  var isEn=p===\"/en\"||p.indexOf(\"/en/\")===0;\n  if(isEn) document.documentElement.setAttribute(\"lang\",\"en\");\n  var es=document.querySelector(\".syn-lang__es\");\n  var en=document.querySelector(\".syn-lang__en\");\n  if(es&&en){\n    if(isEn){en.classList.add(\"is-active\");en.setAttribute(\"aria-current\",\"page\");}\n    else {es.classList.add(\"is-active\");es.setAttribute(\"aria-current\",\"page\");}\n  }\n  document.addEventListener(\"click\", function(ev){\n    var b=ev.target.closest&&ev.target.closest(\"#syn-theme-toggle\");\n    if(!b) return;\n    var next=root.getAttribute(\"data-theme\")===\"dark\"?\"light\":\"dark\";\n    try{localStorage.setItem(key,next);}catch(e){}\n    apply(next);\n  });\n})();\n</script>\n\t\t\t<!-- /wp:html -->\n\t\t</div>\n\t\t<!-- /wp:group -->\n\t</div>\n\t<!-- /wp:group -->\n</div>\n<!-- /wp:group -->\n",
+    "block_version": 1
+  },
+  "slug": "header",
+  "source": "custom",
+  "origin": "theme",
+  "type": "wp_template_part",
+  "description": "",
+  "title": {
+    "raw": "Cabecera",
+    "rendered": "Cabecera"
+  },
+  "status": "publish",
+  "wp_id": 55,
+  "has_theme_file": true,
+  "author": 1,
+  "area": "header",
+  "modified": "2026-08-16T21:51:53",
+  "author_text": "Twenty Twenty-Five",
+  "original_source": "theme",
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/template-parts/twentytwentyfive//header",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/template-parts"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/wp_template_part"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 2,
+        "href": "https://synergium.net/wp-json/wp/v2/template-parts/twentytwentyfive//header/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 60,
+        "href": "https://synergium.net/wp-json/wp/v2/template-parts/twentytwentyfive//header/revisions/60"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/template-parts/twentytwentyfive//header"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/template-parts/twentytwentyfive//header"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

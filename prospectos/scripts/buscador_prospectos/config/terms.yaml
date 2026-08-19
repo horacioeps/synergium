@@ -1,0 +1,115 @@
+paises: [ES, CL, MX, CO, UY]
+
+objetivos:
+  dolor_prospectos:
+    es:
+      - '"buscamos socios" Horizon'
+      - '"buscamos partners" Horizon'
+      - '"buscamos socios" "proyecto europeo"'
+      - '"nos falta un partner" Horizon'
+      - '"completar consorcio" Horizon'
+      - '"convocatoria conjunta" socios Europa'
+      - '"búsqueda de socios" "proyecto europeo"'
+      - '"interesados en colaborar" Horizon'
+      - '"oferta de colaboración" "proyecto europeo"'
+    en:
+      - '"looking for partners" Horizon'
+      - '"seeking partners" Horizon consortium'
+      - '"open call for partners" Horizon'
+      - '"expression of interest" Horizon proposal'
+      - '"partner wanted" Horizon'
+      - '"completing consortium" Horizon'
+      - '"join our consortium" Horizon'
+      - '"call for interest" consortium Horizon'
+      - '"looking for collaborators" Horizon EU'
+      - '"seeking European collaborator"'
+      - '"open to international collaboration" Horizon'
+
+  competidores_aprender:
+    es:
+      - '"búsqueda de socios" Horizon consultoría'
+      - '"conectar investigadores" Europa consultoría'
+      - '"internacionalización investigación" consultoría'
+      - '"cooperación científica internacional" servicio'
+    en:
+      - '"partner scouting" Horizon'
+      - '"consortium building" Horizon'
+      - '"matchmaking research" Europe'
+      - '"find partners" Horizon Europe consultant'
+      - '"I help researchers" Horizon'
+      - '"we connect research groups"'
+      - '"bridge LATAM Europe" research'
+      - '"research partnerships" consultant'
+
+  eventos:
+    es:
+      - '"jornada informativa" Horizon LATAM'
+      - '"brokerage event" Horizon'
+    en:
+      - '"brokerage event" Horizon'
+      - '"partnering event" Horizon Cluster'
+      - '"info day" Horizon LATAM'
+      - 'B2Match Horizon LATAM'
+      - '"EU-LAC" research event'
+      - '"BELLA II" matchmaking'
+      - '"EULAC ResInfra"'
+
+  # Brave restringido a B2Match: extrae paginas de ofertas concretas de partner
+  # con titulo y descripcion. Cada hit es un consorcio buscando algo concreto.
+  b2match_partners:
+    en:
+      - 'site:b2match.com "looking for partners" Horizon'
+      - 'site:b2match.com "looking for" Horizon Cluster'
+      - 'site:b2match.com "consortium" Horizon'
+      - 'site:b2match.com biotech OR "drug discovery" OR genomics'
+      - 'site:b2match.com "agriculture" OR "agri-food" OR "bioeconomy"'
+
+  # Brave restringido a EU Funding & Tenders + sitios institucionales que
+  # listan partner searches. F&T es SPA y su API esta blindada; mejor por
+  # snippets indexados de Google/Brave.
+  eu_ft_partners:
+    en:
+      - 'site:ec.europa.eu "funding-tenders" "partner search"'
+      - 'site:ec.europa.eu "funding-tenders" "expression of interest"'
+      - '"partner search" "Horizon Europe" "looking for"'
+      - '"partner search" "Horizon" biotech OR genomics OR "drug discovery"'
+      - '"partner search" "Horizon" agriculture OR "agri-food"'
+
+  # Brave restringido a EEN (Enterprise Europe Network) - portal oficial UE
+  # de partner-search. Cada hit es una pagina con perfil de oferta/demanda
+  # de partner concreto. Con freshness=pm (ultimo mes) salen solo recientes.
+  een_partners:
+    en:
+      # Genericos
+      - 'site:een.ec.europa.eu/partnering-opportunities Horizon'
+      - 'site:een.ec.europa.eu/partnering-opportunities "looking for" OR "seeking" OR "consortium"'
+      - 'site:een.ec.europa.eu/partnering-opportunities "research and development"'
+      # Dominio Synergium - bio/quimica/farma
+      - 'site:een.ec.europa.eu/partnering-opportunities biotech OR "drug discovery" OR genomics'
+      - 'site:een.ec.europa.eu/partnering-opportunities bioinformatics OR "structural biology" OR cheminformatics'
+      - 'site:een.ec.europa.eu/partnering-opportunities health OR pharma OR clinical'
+      - 'site:een.ec.europa.eu/partnering-opportunities biomarker OR "drug design" OR "virtual screening"'
+      # Dominio Synergium - agro-food y bioeconomia
+      - 'site:een.ec.europa.eu/partnering-opportunities "agri-food" OR agriculture OR bioeconomy'
+      - 'site:een.ec.europa.eu/partnering-opportunities "food safety" OR "food technology" OR fermentation'
+      - 'site:een.ec.europa.eu/partnering-opportunities agroecology OR "alternative proteins"'
+      # Dominio Synergium - materiales/energia/quimica
+      - 'site:een.ec.europa.eu/partnering-opportunities "green chemistry" OR nanomaterial OR catalysis'
+      - 'site:een.ec.europa.eu/partnering-opportunities "renewable energy" OR battery OR photovoltaic'
+      - 'site:een.ec.europa.eu/partnering-opportunities biorefinery OR biomass OR "CO2 conversion"'
+      # IA aplicada a ciencia
+      - 'site:een.ec.europa.eu/partnering-opportunities "machine learning" OR "deep learning" OR "AI-driven"'
+      - 'site:een.ec.europa.eu/partnering-opportunities "artificial intelligence" Horizon'
+
+# Sinonimos / ajustes locales por pais (a expandir con uso real)
+ajustes_pais:
+  CL:
+    agencia: ANID
+  MX:
+    agencia: CONAHCYT
+  CO:
+    agencia: MinCiencias
+  UY:
+    agencia: ANII
+  ES:
+    agencia: CDTI

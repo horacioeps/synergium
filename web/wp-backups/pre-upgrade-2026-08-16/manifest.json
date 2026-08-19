@@ -1,0 +1,50 @@
+{
+  "timestamp": "20260817-000656",
+  "items": [
+    {
+      "file": "page-35.json",
+      "path": "/wp/v2/pages/35?context=edit",
+      "id": 35
+    },
+    {
+      "file": "page-53.json",
+      "path": "/wp/v2/pages/53?context=edit",
+      "id": 53
+    },
+    {
+      "file": "settings.json",
+      "path": "/wp/v2/settings",
+      "id": "http://synergium.net"
+    },
+    {
+      "file": "header.json",
+      "path": "/wp/v2/template-parts/twentytwentyfive//header?context=edit",
+      "id": "twentytwentyfive//header"
+    },
+    {
+      "file": "footer.json",
+      "path": "/wp/v2/template-parts/twentytwentyfive//footer?context=edit",
+      "id": "twentytwentyfive//footer"
+    },
+    {
+      "file": "nav-27.json",
+      "path": "/wp/v2/navigation/27?context=edit",
+      "id": 27
+    },
+    {
+      "file": "plugins.json",
+      "path": "/wp/v2/plugins",
+      "id": "list:4"
+    },
+    {
+      "file": "media-63.json",
+      "path": "/wp/v2/media/63?context=edit",
+      "id": 63
+    },
+    {
+      "file": "media-59.json",
+      "path": "/wp/v2/media/59?context=edit",
+      "id": 59
+    }
+  ]
+}

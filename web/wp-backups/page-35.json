@@ -1,0 +1,127 @@
+{
+  "id": 35,
+  "date": "2025-11-23T19:17:45",
+  "date_gmt": "2025-11-23T19:17:45",
+  "guid": {
+    "rendered": "https://synergium.net/?page_id=35",
+    "raw": "https://synergium.net/?page_id=35"
+  },
+  "modified": "2025-11-25T20:57:15",
+  "modified_gmt": "2025-11-25T20:57:15",
+  "password": "",
+  "slug": "inicio",
+  "status": "publish",
+  "type": "page",
+  "link": "https://synergium.net/",
+  "title": {
+    "raw": "Synergium",
+    "rendered": "Synergium"
+  },
+  "content": {
+    "raw": "<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Lo que ofrecemos</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>En Synergium ayudamos a investigadores, grupos, instituciones y empresas a encontrar socios fiables, estructurar colaboraciones internacionales y formar consorcios sólidos para proyectos competitivos.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Nuestra propuesta incluye:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Identificación de colaboradores académicos e industriales adecuados para cada proyecto.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Conexión directa entre las partes y organización de reuniones iniciales.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Acompañamiento en la búsqueda y selección de convocatorias nacionales e internacionales.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Soporte en la fase inicial de propuestas: estructuración, alineación entre socios y preparación estratégica.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Servicios adicionales como creación de podcasts para proyectos, apoyo en comunicación científica y diseño de micro-consorcios a medida.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Nuestro objetivo es simplificar la búsqueda de partners, reducir la incertidumbre y aumentar las posibilidades de éxito de cada iniciativa.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Quiénes somos</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Synergium está formado por un equipo con experiencia internacional en distintos entornos de investigación y colaboración. Parte del equipo central se encuentra en España, y trabajamos de forma habitual con instituciones y profesionales de múltiples regiones.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>Somos un equipo multidisciplinar, acostumbrado a conectar actores de distintos ámbitos, facilitar procesos de colaboración y apoyar el desarrollo de proyectos complejos. No nos presentamos como individuos, sino como un equipo cohesionado que aporta visión estratégica, experiencia práctica y una red internacional consolidada.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>Nuestros logros</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>El equipo de Synergium ha acumulado una trayectoria sólida en:</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Participación y liderazgo en más de 30 proyectos competitivos de diferentes escalas.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Atracción de financiación directa e indirecta en convocatorias exigentes.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Desarrollo de herramientas, metodologías y recursos utilizados por otros equipos e instituciones.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Colaboración continuada con empresas mediante contratos de transferencia y consultoría.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Supervisión de múltiples tesis doctorales, incluyendo proyectos en colaboración con industria.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Producción científica con más de 200 publicaciones, registrando también patentes y licencias.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Impulso de iniciativas de divulgación científica, como un podcast con más de 330 episodios, que refleja nuestro compromiso con la comunicación accesible y rigurosa.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>Estos resultados demuestran nuestra capacidad para conectar, estructurar y fortalecer colaboraciones científicas y tecnológicas con impacto real.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\"><strong>¿Hablamos?</strong></h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Si quieres explorar cómo Synergium puede ayudarte a encontrar colaboradores o fortalecer tu proyecto, podemos tener una conversación breve de 10–12 minutos para entender tus necesidades.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><strong>👉 <a href=\"info@synergium.net\" data-type=\"link\" data-id=\"info@synergium.net\">Escríbenos</a> y agenda una reunión.</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p></p>\n<!-- /wp:paragraph -->",
+    "rendered": "\n<h2 class=\"wp-block-heading\"><strong>Lo que ofrecemos</strong></h2>\n\n\n\n<p>En Synergium ayudamos a investigadores, grupos, instituciones y empresas a encontrar socios fiables, estructurar colaboraciones internacionales y formar consorcios sólidos para proyectos competitivos.</p>\n\n\n\n<p>Nuestra propuesta incluye:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Identificación de colaboradores académicos e industriales adecuados para cada proyecto.</li>\n\n\n\n<li>Conexión directa entre las partes y organización de reuniones iniciales.</li>\n\n\n\n<li>Acompañamiento en la búsqueda y selección de convocatorias nacionales e internacionales.</li>\n\n\n\n<li>Soporte en la fase inicial de propuestas: estructuración, alineación entre socios y preparación estratégica.</li>\n\n\n\n<li>Servicios adicionales como creación de podcasts para proyectos, apoyo en comunicación científica y diseño de micro-consorcios a medida.</li>\n</ul>\n\n\n\n<p>Nuestro objetivo es simplificar la búsqueda de partners, reducir la incertidumbre y aumentar las posibilidades de éxito de cada iniciativa.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Quiénes somos</strong></h2>\n\n\n\n<p>Synergium está formado por un equipo con experiencia internacional en distintos entornos de investigación y colaboración. Parte del equipo central se encuentra en España, y trabajamos de forma habitual con instituciones y profesionales de múltiples regiones.</p>\n\n\n\n<p>Somos un equipo multidisciplinar, acostumbrado a conectar actores de distintos ámbitos, facilitar procesos de colaboración y apoyar el desarrollo de proyectos complejos. No nos presentamos como individuos, sino como un equipo cohesionado que aporta visión estratégica, experiencia práctica y una red internacional consolidada.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>Nuestros logros</strong></h2>\n\n\n\n<p>El equipo de Synergium ha acumulado una trayectoria sólida en:</p>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Participación y liderazgo en más de 30 proyectos competitivos de diferentes escalas.</li>\n\n\n\n<li>Atracción de financiación directa e indirecta en convocatorias exigentes.</li>\n\n\n\n<li>Desarrollo de herramientas, metodologías y recursos utilizados por otros equipos e instituciones.</li>\n\n\n\n<li>Colaboración continuada con empresas mediante contratos de transferencia y consultoría.</li>\n\n\n\n<li>Supervisión de múltiples tesis doctorales, incluyendo proyectos en colaboración con industria.</li>\n\n\n\n<li>Producción científica con más de 200 publicaciones, registrando también patentes y licencias.</li>\n\n\n\n<li>Impulso de iniciativas de divulgación científica, como un podcast con más de 330 episodios, que refleja nuestro compromiso con la comunicación accesible y rigurosa.</li>\n</ul>\n\n\n\n<p>Estos resultados demuestran nuestra capacidad para conectar, estructurar y fortalecer colaboraciones científicas y tecnológicas con impacto real.</p>\n\n\n\n<h2 class=\"wp-block-heading\"><strong>¿Hablamos?</strong></h2>\n\n\n\n<p>Si quieres explorar cómo Synergium puede ayudarte a encontrar colaboradores o fortalecer tu proyecto, podemos tener una conversación breve de 10–12 minutos para entender tus necesidades.</p>\n\n\n\n<p><strong>👉 <a href=\"info@synergium.net\" data-type=\"link\" data-id=\"info@synergium.net\">Escríbenos</a> y agenda una reunión.</strong></p>\n\n\n\n<p></p>\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "",
+    "rendered": "<p>Lo que ofrecemos En Synergium ayudamos a investigadores, grupos, instituciones y empresas a encontrar socios fiables, estructurar colaboraciones internacionales y formar consorcios sólidos para proyectos competitivos. Nuestra propuesta incluye: Nuestro objetivo es simplificar la búsqueda de partners, reducir la incertidumbre y aumentar las posibilidades de éxito de cada iniciativa. Quiénes somos Synergium está formado por [&hellip;]</p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "footnotes": ""
+  },
+  "permalink_template": "https://synergium.net/",
+  "generated_slug": "synergium",
+  "class_list": [
+    "post-35",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/35",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/comments?post=35"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 5,
+        "href": "https://synergium.net/wp-json/wp/v2/pages/35/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 50,
+        "href": "https://synergium.net/wp-json/wp/v2/pages/35/revisions/50"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media?parent=35"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/35"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/35"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/35"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

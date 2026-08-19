@@ -1,0 +1,127 @@
+{
+  "id": 53,
+  "date": "2026-08-16T21:42:09",
+  "date_gmt": "2026-08-16T21:42:09",
+  "guid": {
+    "rendered": "https://synergium.net/en/",
+    "raw": "https://synergium.net/en/"
+  },
+  "modified": "2026-08-16T22:08:51",
+  "modified_gmt": "2026-08-16T22:08:51",
+  "password": "",
+  "slug": "es",
+  "status": "publish",
+  "type": "page",
+  "link": "https://synergium.net/es/",
+  "title": {
+    "raw": "Synergium",
+    "rendered": "Synergium"
+  },
+  "content": {
+    "raw": "<!-- wp:paragraph -->\n<p>Identificamos colaboradores internacionales, los contactamos y organizamos las primeras reuniones. El proceso va desde entender al grupo hasta sentar a las dos partes.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Qué hacemos</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Ayudamos a grupos, departamentos e instituciones a encontrar socios que complementen su ciencia: para investigación conjunta o para una convocatoria concreta.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Cómo</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list {\"ordered\":true} -->\n<ol class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Perfil. Reunión inicial y definición del colaborador que hace falta.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Mapeo. Lista priorizada de grupos o entidades, con perfil y contactos.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Contacto. Presentación, seguimiento y primeras reuniones. Participamos en la primera reunión.</li>\n<!-- /wp:list-item --></ol>\n<!-- /wp:list -->\n\n<!-- wp:paragraph -->\n<p>El encargo suele ocupar unas doce semanas, con actualizaciones cada dos semanas. Se entrega el listado, un resumen del proceso y las reuniones que se hayan podido cerrar.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Para quién</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Grupos de investigación, departamentos y oficinas de proyectos. También consultoras europeas que necesitan socios fuera de su red habitual.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Quiénes somos</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Equipo con experiencia en articular colaboraciones científicas. Parte del equipo está en España; trabajamos con instituciones de varias regiones.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Nuestros logros</h2>\n<!-- /wp:heading -->\n\n<!-- wp:list -->\n<ul class=\"wp-block-list\"><!-- wp:list-item -->\n<li>Participación y liderazgo en más de 30 proyectos competitivos de diferentes escalas.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Atracción de financiación directa e indirecta en convocatorias exigentes.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Desarrollo de herramientas, metodologías y recursos utilizados por otros equipos e instituciones.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Colaboración continuada con empresas mediante contratos de transferencia y consultoría.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Supervisión de múltiples tesis doctorales, incluyendo proyectos en colaboración con industria.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Producción científica con más de 200 publicaciones, registrando también patentes y licencias.</li>\n<!-- /wp:list-item -->\n\n<!-- wp:list-item -->\n<li>Impulso de iniciativas de divulgación científica, como un podcast con más de 330 episodios.</li>\n<!-- /wp:list-item --></ul>\n<!-- /wp:list -->\n\n<!-- wp:heading -->\n<h2 class=\"wp-block-heading\">Contacto</h2>\n<!-- /wp:heading -->\n\n<!-- wp:paragraph -->\n<p>Si quieres ver si este proceso encaja, podemos hablar 10-12 minutos.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p><a href=\"mailto:info@synergium.net\">info@synergium.net</a></p>\n<!-- /wp:paragraph -->\n",
+    "rendered": "\n<p>Identificamos colaboradores internacionales, los contactamos y organizamos las primeras reuniones. El proceso va desde entender al grupo hasta sentar a las dos partes.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Qué hacemos</h2>\n\n\n\n<p>Ayudamos a grupos, departamentos e instituciones a encontrar socios que complementen su ciencia: para investigación conjunta o para una convocatoria concreta.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Cómo</h2>\n\n\n\n<ol class=\"wp-block-list\">\n<li>Perfil. Reunión inicial y definición del colaborador que hace falta.</li>\n\n\n\n<li>Mapeo. Lista priorizada de grupos o entidades, con perfil y contactos.</li>\n\n\n\n<li>Contacto. Presentación, seguimiento y primeras reuniones. Participamos en la primera reunión.</li>\n</ol>\n\n\n\n<p>El encargo suele ocupar unas doce semanas, con actualizaciones cada dos semanas. Se entrega el listado, un resumen del proceso y las reuniones que se hayan podido cerrar.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Para quién</h2>\n\n\n\n<p>Grupos de investigación, departamentos y oficinas de proyectos. También consultoras europeas que necesitan socios fuera de su red habitual.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Quiénes somos</h2>\n\n\n\n<p>Equipo con experiencia en articular colaboraciones científicas. Parte del equipo está en España; trabajamos con instituciones de varias regiones.</p>\n\n\n\n<h2 class=\"wp-block-heading\">Nuestros logros</h2>\n\n\n\n<ul class=\"wp-block-list\">\n<li>Participación y liderazgo en más de 30 proyectos competitivos de diferentes escalas.</li>\n\n\n\n<li>Atracción de financiación directa e indirecta en convocatorias exigentes.</li>\n\n\n\n<li>Desarrollo de herramientas, metodologías y recursos utilizados por otros equipos e instituciones.</li>\n\n\n\n<li>Colaboración continuada con empresas mediante contratos de transferencia y consultoría.</li>\n\n\n\n<li>Supervisión de múltiples tesis doctorales, incluyendo proyectos en colaboración con industria.</li>\n\n\n\n<li>Producción científica con más de 200 publicaciones, registrando también patentes y licencias.</li>\n\n\n\n<li>Impulso de iniciativas de divulgación científica, como un podcast con más de 330 episodios.</li>\n</ul>\n\n\n\n<h2 class=\"wp-block-heading\">Contacto</h2>\n\n\n\n<p>Si quieres ver si este proceso encaja, podemos hablar 10-12 minutos.</p>\n\n\n\n<p><a href=\"mailto:info@synergium.net\">info@synergium.net</a></p>\n\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "Identificamos colaboradores internacionales, los contactamos y organizamos las primeras reuniones.",
+    "rendered": "<p>Identificamos colaboradores internacionales, los contactamos y organizamos las primeras reuniones.</p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "page-no-title",
+  "meta": {
+    "footnotes": ""
+  },
+  "permalink_template": "https://synergium.net/%pagename%/",
+  "generated_slug": "synergium",
+  "class_list": [
+    "post-53",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/comments?post=53"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 2,
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 65,
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53/revisions/65"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media?parent=53"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/pages/53"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

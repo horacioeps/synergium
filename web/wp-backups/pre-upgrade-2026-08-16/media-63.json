@@ -1,0 +1,156 @@
+{
+  "id": 63,
+  "date": "2026-08-16T21:52:14",
+  "date_gmt": "2026-08-16T21:52:14",
+  "guid": {
+    "rendered": "http://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024.png",
+    "raw": "http://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024.png"
+  },
+  "modified": "2026-08-16T21:52:14",
+  "modified_gmt": "2026-08-16T21:52:14",
+  "slug": "synergium-icon-1024",
+  "status": "inherit",
+  "type": "attachment",
+  "link": "https://synergium.net/synergium-icon-1024/",
+  "title": {
+    "raw": "synergium-icon-1024",
+    "rendered": "synergium-icon-1024"
+  },
+  "author": 1,
+  "featured_media": 0,
+  "comment_status": "open",
+  "ping_status": "closed",
+  "template": "",
+  "meta": [],
+  "permalink_template": "https://synergium.net/?attachment_id=63",
+  "generated_slug": "synergium-icon-1024",
+  "class_list": [
+    "post-63",
+    "attachment",
+    "type-attachment",
+    "status-inherit",
+    "hentry"
+  ],
+  "description": {
+    "raw": "",
+    "rendered": "<p class=\"attachment\"><a href='https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024.png'><img loading=\"lazy\" decoding=\"async\" width=\"300\" height=\"300\" src=\"https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-300x300.png\" class=\"attachment-medium size-medium\" alt=\"\" srcset=\"https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-300x300.png 300w, https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-150x150.png 150w, https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-768x768.png 768w, https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024.png 1024w\" sizes=\"auto, (max-width: 300px) 100vw, 300px\" /></a></p>\n"
+  },
+  "caption": {
+    "raw": "",
+    "rendered": ""
+  },
+  "alt_text": "",
+  "media_type": "image",
+  "mime_type": "image/png",
+  "media_details": {
+    "width": 1024,
+    "height": 1024,
+    "file": "2026/08/synergium-icon-1024.png",
+    "filesize": 24310,
+    "sizes": {
+      "medium": {
+        "file": "synergium-icon-1024-300x300.png",
+        "width": 300,
+        "height": 300,
+        "filesize": 38268,
+        "mime_type": "image/png",
+        "source_url": "https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-300x300.png"
+      },
+      "thumbnail": {
+        "file": "synergium-icon-1024-150x150.png",
+        "width": 150,
+        "height": 150,
+        "filesize": 10393,
+        "mime_type": "image/png",
+        "source_url": "https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-150x150.png"
+      },
+      "medium_large": {
+        "file": "synergium-icon-1024-768x768.png",
+        "width": 768,
+        "height": 768,
+        "filesize": 44140,
+        "mime_type": "image/png",
+        "source_url": "https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-768x768.png"
+      },
+      "full": {
+        "file": "synergium-icon-1024.png",
+        "width": 1024,
+        "height": 1024,
+        "mime_type": "image/png",
+        "source_url": "https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024.png"
+      }
+    },
+    "image_meta": {
+      "aperture": "0",
+      "credit": "",
+      "camera": "",
+      "caption": "",
+      "created_timestamp": "0",
+      "copyright": "",
+      "focal_length": "0",
+      "iso": "0",
+      "shutter_speed": "0",
+      "title": "",
+      "orientation": "0",
+      "keywords": []
+    }
+  },
+  "post": null,
+  "source_url": "https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024.png",
+  "missing_image_sizes": [],
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media/63",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/attachment"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://synergium.net/wp-json/wp/v2/comments?post=63"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media/63"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media/63"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "plugin": "akismet/akismet",
+    "status": "inactive",
+    "name": "Akismet Anti-spam: Spam Protection",
+    "plugin_uri": "https://akismet.com/",
+    "author": "Automattic - Equipo Anti-spam",
+    "author_uri": "https://automattic.com/wordpress-plugins/",
+    "description": {
+      "raw": "Utilizado por millones, Akismet es, posiblemente, la mejor manera del mundo de <strong>proteger tu blog del spam</strong>. Mantiene tu blog protegido incluso cuando duermes. Para comenzar: activa el plugin Akismet y ve a la página de ajustes de Akismet para establecer tu clave de la API.",
+      "rendered": "Utilizado por millones, Akismet es, posiblemente, la mejor manera del mundo de <strong>proteger tu blog del spam</strong>. Mantiene tu blog protegido incluso cuando duermes. Para comenzar: activa el plugin Akismet y ve a la página de ajustes de Akismet para establecer tu clave de la API. <cite>By <a href=\"https://automattic.com/wordpress-plugins/\">Automattic - Equipo Anti-spam</a>.</cite>"
+    },
+    "version": "5.5",
+    "network_only": false,
+    "requires_wp": "5.8",
+    "requires_php": "7.2",
+    "textdomain": "akismet",
+    "_links": {
+      "self": [
+        {
+          "href": "https://synergium.net/wp-json/wp/v2/plugins/akismet/akismet",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "all-in-one-wp-migration/all-in-one-wp-migration",
+    "status": "inactive",
+    "name": "All-in-One WP Migration and Backup",
+    "plugin_uri": "https://servmask.com/",
+    "author": "ServMask",
+    "author_uri": "https://servmask.com/",
+    "description": {
+      "raw": "All-in-One WP Migration hace que trasladar todo tu sitio WordPress sea sencillo. Exporta o importa tu base de datos, archivos multimedia, plugins y temas con solo unos clics.",
+      "rendered": "All-in-One WP Migration hace que trasladar todo tu sitio WordPress sea sencillo. Exporta o importa tu base de datos, archivos multimedia, plugins y temas con solo unos clics. <cite>By <a href=\"https://servmask.com/\">ServMask</a>.</cite>"
+    },
+    "version": "7.101",
+    "network_only": true,
+    "requires_wp": "",
+    "requires_php": "",
+    "textdomain": "all-in-one-wp-migration",
+    "_links": {
+      "self": [
+        {
+          "href": "https://synergium.net/wp-json/wp/v2/plugins/all-in-one-wp-migration/all-in-one-wp-migration",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "hello",
+    "status": "inactive",
+    "name": "Hello Dolly",
+    "plugin_uri": "http://wordpress.org/plugins/hello-dolly/",
+    "author": "Matt Mullenweg",
+    "author_uri": "http://ma.tt/",
+    "description": {
+      "raw": "This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from Hello, Dolly in the upper right of your admin screen on every page.",
+      "rendered": "This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from Hello, Dolly in the upper right of your admin screen on every page. <cite>By <a href=\"http://ma.tt/\">Matt Mullenweg</a>.</cite>"
+    },
+    "version": "1.7.2",
+    "network_only": false,
+    "requires_wp": "",
+    "requires_php": "",
+    "textdomain": "",
+    "_links": {
+      "self": [
+        {
+          "href": "https://synergium.net/wp-json/wp/v2/plugins/hello",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "plugin": "polylang/polylang",
+    "status": "inactive",
+    "name": "Polylang",
+    "plugin_uri": "https://polylang.pro",
+    "author": "WP SYNTEX",
+    "author_uri": "https://polylang.pro",
+    "description": {
+      "raw": "Añade capacidad multilingüe a WordPress",
+      "rendered": "Añade capacidad multilingüe a WordPress <cite>By <a href=\"https://polylang.pro\">WP SYNTEX</a>.</cite>"
+    },
+    "version": "3.7.5",
+    "network_only": false,
+    "requires_wp": "6.2",
+    "requires_php": "7.2",
+    "textdomain": "polylang",
+    "_links": {
+      "self": [
+        {
+          "href": "https://synergium.net/wp-json/wp/v2/plugins/polylang/polylang",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ]
+    }
+  }
+]

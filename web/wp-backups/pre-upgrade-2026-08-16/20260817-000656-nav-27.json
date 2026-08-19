@@ -1,0 +1,87 @@
+{
+  "id": 27,
+  "date": "2025-11-23T18:41:26",
+  "date_gmt": "2025-11-23T18:41:26",
+  "guid": {
+    "rendered": "https://synergium.net/uncategorized/navigation/",
+    "raw": "https://synergium.net/uncategorized/navigation/"
+  },
+  "modified": "2026-08-16T21:42:10",
+  "modified_gmt": "2026-08-16T21:42:10",
+  "password": "",
+  "slug": "navigation",
+  "status": "publish",
+  "type": "wp_navigation",
+  "link": "https://synergium.net/sin-categoria-es/navigation/",
+  "title": {
+    "raw": "Navigation",
+    "rendered": "Navigation"
+  },
+  "content": {
+    "raw": "<!-- wp:paragraph --><p></p><!-- /wp:paragraph -->",
+    "rendered": "<p></p>",
+    "protected": false,
+    "block_version": 1
+  },
+  "template": "",
+  "_links": {
+    "self": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/types/wp_navigation"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 1,
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 56,
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27/revisions/56"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/media?parent=27"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://synergium.net/wp-json/wp/v2/navigation/27"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}

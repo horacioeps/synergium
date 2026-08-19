@@ -1,0 +1,148 @@
+# Fuentes activas para v1. Cada una declara tipo, ambito y parametros propios.
+# Tipos soportados v1: web_generica, ncp_horizon
+
+fuentes:
+
+  - id: web_brave_dolor_es
+    tipo: web_generica
+    activa: true
+    proveedor_busqueda: brave
+    idioma: es
+    objetivo: dolor_prospectos
+    max_resultados_por_termino: 10
+
+  - id: web_brave_dolor_en
+    tipo: web_generica
+    activa: true
+    proveedor_busqueda: brave
+    idioma: en
+    objetivo: dolor_prospectos
+    max_resultados_por_termino: 10
+
+  - id: web_brave_competidores_en
+    tipo: web_generica
+    activa: false   # encender cuando dolor_prospectos este saturado
+    proveedor_busqueda: brave
+    idioma: en
+    objetivo: competidores_aprender
+    max_resultados_por_termino: 5
+
+  # NCPs y portales oficiales. lista_url = pagina donde se publican
+  # convocatorias/anuncios; el crawler la lee y extrae enlaces internos
+  # con titulo + fecha aparente.
+
+  - id: ncp_funding_tenders
+    tipo: ncp_horizon
+    activa: true
+    pais: EU
+    nombre: 'EU Funding & Tenders Portal - Partner Search'
+    lista_url: 'https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/how-to-participate/partner-search'
+
+  - id: ncp_espana_horizonte
+    tipo: ncp_horizon
+    activa: true
+    pais: ES
+    nombre: 'Horizonte Europa España (CDTI)'
+    lista_url: 'https://www.horizonteeuropa.es/noticias'
+
+  - id: ncp_chile_anid
+    tipo: ncp_horizon
+    activa: false   # ANID bloquea con Cloudflare (403); Chile cubierto por Brave
+    pais: CL
+    nombre: 'ANID Chile - Cooperacion internacional'
+    lista_url: 'https://www.anid.cl/concursos/'
+
+  - id: ncp_mexico_conahcyt
+    tipo: ncp_horizon
+    activa: true
+    pais: MX
+    nombre: 'CONAHCYT - Convocatorias'
+    lista_url: 'https://conahcyt.mx/convocatorias/'
+
+  - id: ncp_colombia_minciencias
+    tipo: ncp_horizon
+    activa: true
+    pais: CO
+    nombre: 'MinCiencias Colombia - Convocatorias'
+    lista_url: 'https://minciencias.gov.co/convocatorias/todas'
+
+  - id: ncp_uruguay_anii
+    tipo: ncp_horizon
+    activa: true
+    pais: UY
+    nombre: 'ANII Uruguay'
+    lista_url: 'https://www.anii.org.uy/'   # subpaginas redirigen a error; usar home
+
+  # EURAXESS partner search: PIs europeos publicando hosting MSCA / ofertas
+  # de funding. Cada enlace interno es un grupo con presupuesto buscando
+  # postdoc/colaborador. Server-rendered, parser estatico funciona.
+  - id: euraxess_funding_offers
+    tipo: ncp_horizon
+    activa: true
+    pais: EU
+    nombre: 'EURAXESS - Funding offers'
+    lista_url: 'https://euraxess.ec.europa.eu/jobs/search?f%5B0%5D=offer_type%3Afunding'
+
+  - id: euraxess_hosting_offers
+    tipo: ncp_horizon
+    activa: true
+    pais: EU
+    nombre: 'EURAXESS - Hosting offers (MSCA / postdoc)'
+    lista_url: 'https://euraxess.ec.europa.eu/jobs/hosting/search'
+
+  # Brave site:-restringido para fuentes donde el HTML no es scrapeable directo.
+  - id: web_brave_b2match_partners
+    tipo: web_generica
+    activa: true
+    proveedor_busqueda: brave
+    idioma: en
+    objetivo: b2match_partners
+    max_resultados_por_termino: 20
+
+  - id: web_brave_eu_ft_partners
+    tipo: web_generica
+    activa: true
+    proveedor_busqueda: brave
+    idioma: en
+    objetivo: eu_ft_partners
+    max_resultados_por_termino: 20
+
+  # EEN - portal oficial UE de partner-search. Sus paginas se indexan en
+  # Brave con buen freshness. Doble pasada para no perder ni los hiper-frescos
+  # ni los acumulados del mes.
+  - id: web_brave_een_partners_semana
+    tipo: web_generica
+    activa: true
+    proveedor_busqueda: brave
+    idioma: en
+    objetivo: een_partners
+    max_resultados_por_termino: 20
+    freshness: pw   # ultima semana - hiper-frescos, ventana ideal
+
+  - id: web_brave_een_partners_mes
+    tipo: web_generica
+    activa: true
+    proveedor_busqueda: brave
+    idioma: en
+    objetivo: een_partners
+    max_resultados_por_termino: 20
+    freshness: pm   # ultimo mes - acumula los que no estaban en la semanal
+
+  # CORDIS - bulk CSV oficial UE. Outreach lateral a coordinadores recientes.
+  # Auto-descarga (~34 MB) y cachea 7 dias.
+  - id: cordis_recent_coordinators
+    tipo: cordis
+    activa: true
+    meses_atras: 6
+    max_resultados: 60
+
+# Limites globales
+limites:
+  rate_limit_por_dominio_seg: 2.0
+  timeout_http_seg: 20
+  user_agent: 'BuscadorProspectosSynergium/0.1 (+contacto: horacio)'
+
+# Modelos OpenAI a usar
+modelos:
+  clasificar: 'gpt-5-nano'    # clasifica dolor real vs ruido + puntua 1-5
+  redactar:   'gpt-5-mini'    # solo para casos relevancia >= 3: redacta mensaje

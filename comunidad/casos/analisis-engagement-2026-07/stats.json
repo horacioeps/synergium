@@ -1,0 +1,557 @@
+{
+  "total": 1095,
+  "rango": [
+    "2024-12-10T20:02:37",
+    "2026-07-13T22:38:07"
+  ],
+  "horacio": 451,
+  "otros": 644,
+  "por_persona": [
+    [
+      "Horacio Pérez Sánchez",
+      451
+    ],
+    [
+      "Nico UCAM",
+      128
+    ],
+    [
+      "Kevin Torgon Podcast",
+      48
+    ],
+    [
+      "Nacho Quí",
+      42
+    ],
+    [
+      "~ Gustavo Esparza",
+      34
+    ],
+    [
+      "Beatriz Gallo Poscast",
+      27
+    ],
+    [
+      "+34 607 45 85 39",
+      26
+    ],
+    [
+      "~ Rosario",
+      25
+    ],
+    [
+      "~ Juca🌻🦅",
+      20
+    ],
+    [
+      "~ JR",
+      19
+    ],
+    [
+      "Juanka Toledano Redondo Podcast",
+      18
+    ],
+    [
+      "~ MANUEL MEDINA CRUZ",
+      15
+    ],
+    [
+      "Podcast Fidel Vallejo",
+      14
+    ],
+    [
+      "~ Fran",
+      13
+    ],
+    [
+      "~ Peshoro",
+      11
+    ],
+    [
+      "~ Marco Almansa (Aquila)",
+      10
+    ],
+    [
+      "~ Aquí estoy",
+      9
+    ],
+    [
+      "~ Marisol",
+      9
+    ],
+    [
+      "+34 695 24 14 46",
+      8
+    ],
+    [
+      "~ Maikel Leyva",
+      8
+    ],
+    [
+      "~ movil fundacion",
+      8
+    ],
+    [
+      "~ Fernando González",
+      7
+    ],
+    [
+      "~ Mechilandia ♡",
+      6
+    ],
+    [
+      "Ikrame Podcast",
+      6
+    ],
+    [
+      "~ Johanna Flórez 🌸🌺🌻",
+      5
+    ]
+  ],
+  "mensual": {
+    "2024-12": {
+      "horacio": 41,
+      "otros": 72,
+      "personas_activas": 14
+    },
+    "2025-01": {
+      "horacio": 70,
+      "otros": 83,
+      "personas_activas": 13
+    },
+    "2025-02": {
+      "horacio": 35,
+      "otros": 28,
+      "personas_activas": 11
+    },
+    "2025-03": {
+      "horacio": 24,
+      "otros": 41,
+      "personas_activas": 14
+    },
+    "2025-04": {
+      "horacio": 18,
+      "otros": 64,
+      "personas_activas": 13
+    },
+    "2025-05": {
+      "horacio": 23,
+      "otros": 29,
+      "personas_activas": 6
+    },
+    "2025-06": {
+      "horacio": 21,
+      "otros": 14,
+      "personas_activas": 5
+    },
+    "2025-07": {
+      "horacio": 2,
+      "otros": 9,
+      "personas_activas": 2
+    },
+    "2025-08": {
+      "horacio": 0,
+      "otros": 2,
+      "personas_activas": 2
+    },
+    "2025-09": {
+      "horacio": 10,
+      "otros": 9,
+      "personas_activas": 5
+    },
+    "2025-10": {
+      "horacio": 10,
+      "otros": 12,
+      "personas_activas": 5
+    },
+    "2025-11": {
+      "horacio": 43,
+      "otros": 43,
+      "personas_activas": 9
+    },
+    "2025-12": {
+      "horacio": 50,
+      "otros": 88,
+      "personas_activas": 20
+    },
+    "2026-01": {
+      "horacio": 9,
+      "otros": 7,
+      "personas_activas": 6
+    },
+    "2026-02": {
+      "horacio": 37,
+      "otros": 29,
+      "personas_activas": 10
+    },
+    "2026-03": {
+      "horacio": 4,
+      "otros": 24,
+      "personas_activas": 13
+    },
+    "2026-04": {
+      "horacio": 18,
+      "otros": 29,
+      "personas_activas": 10
+    },
+    "2026-05": {
+      "horacio": 10,
+      "otros": 26,
+      "personas_activas": 14
+    },
+    "2026-06": {
+      "horacio": 9,
+      "otros": 11,
+      "personas_activas": 6
+    },
+    "2026-07": {
+      "horacio": 17,
+      "otros": 24,
+      "personas_activas": 11
+    }
+  },
+  "engagement_horacio": {
+    "documento": {
+      "mensajes": 3,
+      "respuestas_24h_media": 7.67,
+      "pct_con_respuesta": 100.0
+    },
+    "texto": {
+      "mensajes": 299,
+      "respuestas_24h_media": 7.31,
+      "pct_con_respuesta": 81.9
+    },
+    "pregunta": {
+      "mensajes": 94,
+      "respuestas_24h_media": 5.91,
+      "pct_con_respuesta": 78.7
+    },
+    "mencion": {
+      "mensajes": 22,
+      "respuestas_24h_media": 4.77,
+      "pct_con_respuesta": 81.8
+    },
+    "link_otro": {
+      "mensajes": 50,
+      "respuestas_24h_media": 2.1,
+      "pct_con_respuesta": 60.0
+    },
+    "encuesta": {
+      "mensajes": 4,
+      "respuestas_24h_media": 1.75,
+      "pct_con_respuesta": 75.0
+    },
+    "link_podcast": {
+      "mensajes": 7,
+      "respuestas_24h_media": 0.86,
+      "pct_con_respuesta": 42.9
+    }
+  },
+  "top_rachas": [
+    {
+      "inicio": "2025-12-02T20:23:39",
+      "mensajes": 63,
+      "participantes": 5,
+      "iniciador": "~ JR",
+      "primer_msg": "¿Se ha compartido por aquí ya la polémica con la revista Science of The Total Environment?. Si es así disculpar: https://elpais.com/ciencia/2025-11-28/la-caida-de-una-megarrevista-cientifica-expone-el"
+    },
+    {
+      "inicio": "2025-11-30T23:12:41",
+      "mensajes": 53,
+      "participantes": 5,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "sé que os pereza contestar, pero, ¿cómo lo veis? <This message was edited>"
+    },
+    {
+      "inicio": "2025-04-29T07:07:29",
+      "mensajes": 46,
+      "participantes": 8,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "@⁨Kevin Torgon Podcast como lo ves ? Es tal y como lo cuentan ?"
+    },
+    {
+      "inicio": "2025-01-04T12:15:08",
+      "mensajes": 33,
+      "participantes": 4,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "te lo paso"
+    },
+    {
+      "inicio": "2025-12-07T14:50:11",
+      "mensajes": 24,
+      "participantes": 6,
+      "iniciador": "~ Peshoro",
+      "primer_msg": "Entonces...proyecto revista adelante?"
+    },
+    {
+      "inicio": "2025-01-09T15:33:35",
+      "mensajes": 21,
+      "participantes": 4,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "Desde mi punto de vista, lo ideal en ciencia es que como tú bien comentas, que la validez de una teoría no se rija por consenso, pues obviamente puede suceder que todos los “jueces” estén equivocados "
+    },
+    {
+      "inicio": "2026-02-23T21:08:36",
+      "mensajes": 19,
+      "participantes": 3,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "https://www.biophysics.org/profiles-in-biophysics/sebastian-brauchi"
+    },
+    {
+      "inicio": "2024-12-15T14:09:10",
+      "mensajes": 18,
+      "participantes": 3,
+      "iniciador": "Nico UCAM",
+      "primer_msg": "Qué vergüenza:"
+    },
+    {
+      "inicio": "2024-12-22T22:05:53",
+      "mensajes": 18,
+      "participantes": 5,
+      "iniciador": "~ Juca🌻🦅",
+      "primer_msg": "Añado algo ahora:\n\nLa IA Generativa debe ser una *Herramienta* no como el *Centro de Conocimiento*\n\nCaso contrario sería como La Iglesia Católica y la Biblia en la Edad Media\n\nNosotros debemos descarg"
+    },
+    {
+      "inicio": "2025-06-30T20:28:58",
+      "mensajes": 18,
+      "participantes": 3,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "Unpopular opinion ; a veces el hacer un PhD puede hacer que evites ser ese independent thinker que comentas"
+    },
+    {
+      "inicio": "2025-01-05T13:32:12",
+      "mensajes": 17,
+      "participantes": 2,
+      "iniciador": "Horacio Pérez Sánchez",
+      "primer_msg": "SciSpace muy recomendable, nosotros estamos suscritos"
+    },
+    {
+      "inicio": "2025-01-14T14:03:33",
+      "mensajes": 16,
+      "participantes": 5,
+      "iniciador": "+34 695 24 14 46",
+      "primer_msg": "E🖖ste mensaje va dirigido al Sr Horacio, administrador del chat, y a todos los \" contertulios\" dicho con mi más sincero agradecimiento a su generosidad y erudición, de todos los participantes en este "
+    },
+    {
+      "inicio": "2025-03-14T17:50:57",
+      "mensajes": 16,
+      "participantes": 7,
+      "iniciador": "Juanka Toledano Redondo Podcast",
+      "primer_msg": "Hola Celia. Creo que me perdí tu primer intento. ¿Puedes explicar qué y por qué? Hay muchas versiones de ese texto y eso modifica lo que lees, y cuál es el fin, además de aprender y leer uno de los te"
+    },
+    {
+      "inicio": "2025-05-15T17:05:50",
+      "mensajes": 16,
+      "participantes": 3,
+      "iniciador": "Nico UCAM",
+      "primer_msg": "https://www.linkedin.com/feed/update/urn:li:activity:7328449283710410754"
+    },
+    {
+      "inicio": "2026-04-15T12:19:15",
+      "mensajes": 15,
+      "participantes": 2,
+      "iniciador": "Nico UCAM",
+      "primer_msg": "https://youtube.com/shorts/-oWI5swg6_U?is=LnnNY8Ae9WWH7nBk"
+    }
+  ],
+  "actividad_por_hora_otros": {
+    "0": 23,
+    "1": 12,
+    "2": 10,
+    "3": 2,
+    "4": 5,
+    "5": 2,
+    "6": 2,
+    "7": 3,
+    "8": 14,
+    "9": 33,
+    "10": 52,
+    "11": 7,
+    "12": 50,
+    "13": 21,
+    "14": 52,
+    "15": 26,
+    "16": 27,
+    "17": 35,
+    "18": 40,
+    "19": 33,
+    "20": 37,
+    "21": 31,
+    "22": 60,
+    "23": 67
+  },
+  "preguntas_horacio_sin_respuesta": [
+    {
+      "fecha": "2024-12-17T19:01:13",
+      "texto": "Por qué un panfleto ?"
+    },
+    {
+      "fecha": "2025-01-06T17:24:59",
+      "texto": "Alguien ha sacado el tema de retribuir a las pensiones por los años no cotizados en las etapas de becario ? De hace más de 20 años"
+    },
+    {
+      "fecha": "2025-02-01T17:29:36",
+      "texto": "https://x.com/gastongiribet/status/1885397132309373186?s=48"
+    },
+    {
+      "fecha": "2025-02-01T17:29:56",
+      "texto": "Realidad o clickbait ?"
+    },
+    {
+      "fecha": "2025-02-08T11:48:03",
+      "texto": "Ojo, análisis desde la Física de los “San Fermines” https://elpais.com/ciencia/2025-02-05/las-leyes-fisicas-que-rigen-a-la-muchedumbre-de-los-sanfermines-permitiran-evitar-tragedias-en-aglomeraciones."
+    },
+    {
+      "fecha": "2025-03-02T22:44:10",
+      "texto": "puedes comentar algún ejemplo donde la neutrosofía haya aportado algún conocimiento nuevo que el método científico clásico no haya podido aportar? (perdona si mi pregunta es demasiado ignorante, pero "
+    },
+    {
+      "fecha": "2025-03-06T09:30:45",
+      "texto": "de qué trata tu investigación ?"
+    },
+    {
+      "fecha": "2025-04-18T10:00:12",
+      "texto": "A veces, grupos científicos pasan de competir a colaborar abiertamente en un mismo problema. ¿Por qué ocurre en algunos casos y en otros no? ¿Podríamos impulsar algo así en nuevas áreas?"
+    },
+    {
+      "fecha": "2025-04-18T11:25:38",
+      "texto": "https://open.spotify.com/episode/1py3nXdbDu3SZxTP5MIIBF?si=9f29903d26be4269"
+    },
+    {
+      "fecha": "2025-05-20T18:37:40",
+      "texto": "Cuál es tu proyecto principal de investigación?"
+    },
+    {
+      "fecha": "2025-06-21T17:38:05",
+      "texto": "charla super super interesante sobre complex problem solving: https://www.youtube.com/watch?v=FsE2mWXcoBo&t=1058s"
+    },
+    {
+      "fecha": "2025-06-21T17:38:10",
+      "texto": "alguien está en estos temas ?"
+    },
+    {
+      "fecha": "2025-10-21T21:37:56",
+      "texto": "https://lemire.me/blog/2025/10/17/research-results-are-cultural-artifacts-not-public-goods/?utm_source=tldrnewsletter"
+    },
+    {
+      "fecha": "2025-10-21T21:37:59",
+      "texto": "a favor o en contra?"
+    },
+    {
+      "fecha": "2025-11-15T20:06:50",
+      "texto": "POLL:\nCuando buscas nuevos colaboradores académicos, ¿qué parte del proceso te resulta más complicada?\nOPTION: Localizar socios potenciales con líneas de investigación alineadas (20 votes)\nOPTION: Pre"
+    },
+    {
+      "fecha": "2026-01-02T17:33:54",
+      "texto": "https://www.ciencia.gob.es/Buscador-especifico.html?tipoDocumento=convocatoria&detalleConvocatoria=EOPI"
+    },
+    {
+      "fecha": "2026-01-15T09:22:04",
+      "texto": "https://www.linkedin.com/posts/james-evans-87785a55_thrilled-to-share-our-nature-paper-out-today-activity-7417273220548190208-luWg?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAC-N4QB46hYzJd-yB"
+    },
+    {
+      "fecha": "2026-01-17T11:15:10",
+      "texto": "Cómo lo veis? https://elpais.com/gastronomia/el-comidista/2026-01-17/la-nueva-cerveza-sin-alcohol-que-emborracha-descubrimiento-o-peligro.html"
+    },
+    {
+      "fecha": "2026-04-21T19:44:39",
+      "texto": "Esta semana en el poscad tendremos al colombiano Guillermo Restrepo y sus investigaciones sobre filosofía de la química (sí, habéis leído bien :-P) https://scholar.google.com/citations?user=b4CW5CEAAA"
+    },
+    {
+      "fecha": "2026-04-25T15:51:32",
+      "texto": "Qué opináis? https://paulgraham.com/hamming.html"
+    }
+  ],
+  "top_msgs_horacio": [
+    {
+      "fecha": "2025-04-29T07:07:29",
+      "respuestas_24h": 43,
+      "personas": 7,
+      "texto": "@⁨Kevin Torgon Podcast como lo ves ? Es tal y como lo cuentan ?"
+    },
+    {
+      "fecha": "2025-04-29T09:53:30",
+      "respuestas_24h": 34,
+      "personas": 7,
+      "texto": "Gracias por toda la info!"
+    },
+    {
+      "fecha": "2024-12-22T14:34:36",
+      "respuestas_24h": 21,
+      "personas": 6,
+      "texto": "Muy crack Javier Recuenco"
+    },
+    {
+      "fecha": "2024-12-22T18:11:54",
+      "respuestas_24h": 21,
+      "personas": 6,
+      "texto": "Las charlas suyas que he oído suelen ser todas no-cliché y siempre saca nuevos puntos de vista"
+    },
+    {
+      "fecha": "2024-12-22T18:13:48",
+      "respuestas_24h": 21,
+      "personas": 6,
+      "texto": "Eso si , todo adornado de 100 palabrotas por minuto 😅"
+    },
+    {
+      "fecha": "2024-12-22T18:37:21",
+      "respuestas_24h": 20,
+      "personas": 6,
+      "texto": "A que te refieres con afirmaciones?"
+    },
+    {
+      "fecha": "2024-12-22T22:14:12",
+      "respuestas_24h": 18,
+      "personas": 6,
+      "texto": "en qué distintas IA? GPT-4o, llama3.2, etc?"
+    },
+    {
+      "fecha": "2024-12-22T22:14:57",
+      "respuestas_24h": 18,
+      "personas": 6,
+      "texto": "quieres decir como una especie de RAG con contenido pre-seleccionado?"
+    },
+    {
+      "fecha": "2024-12-22T22:16:16",
+      "respuestas_24h": 17,
+      "personas": 6,
+      "texto": "en tal caso, ante cualquier pegunta que le hagas, lo que te está devolviendo es; 1) lo que encuentra en lo libros que le has pasado, + 2) los filtros que usa para encontrar esa info, que no siempre son perfectos, hay cierto sesgo"
+    },
+    {
+      "fecha": "2024-12-22T22:16:46",
+      "respuestas_24h": 17,
+      "personas": 6,
+      "texto": "también me parece interesante usar como un promedio de los diferentes modelos, tanto “online” como locales"
+    },
+    {
+      "fecha": "2025-01-14T16:56:01",
+      "respuestas_24h": 16,
+      "personas": 6,
+      "texto": "Gracias a ti Maria por las palabras! La verdad que el mérito es de todos los que contribuís aquí a todas las conversaciones, a aportar informaciones nuevas, puntos de vista, etc"
+    },
+    {
+      "fecha": "2025-01-14T16:57:06",
+      "respuestas_24h": 16,
+      "personas": 6,
+      "texto": "Y por cierto muy interesante también todo lo que comentas de la moda."
+    },
+    {
+      "fecha": "2025-01-14T16:57:55",
+      "respuestas_24h": 16,
+      "personas": 6,
+      "texto": "Mi insistencia o mejor dicho, opinión personal, que el tema central que tratamos aquí que es la investigación a sus diferentes niveles, no solo tiene por qué ser a nivel académico, si no que se puede dar en cualquier rincón de nuestra realidad y expe"
+    },
+    {
+      "fecha": "2025-02-13T20:53:13",
+      "respuestas_24h": 11,
+      "personas": 6,
+      "texto": "Varios me dicen por privado que les pilla un poco de golpe y que si puede ser otro día. Lo movemos al martes 18 a las 22:30 (hora de Murcia)"
+    },
+    {
+      "fecha": "2025-02-14T09:42:38",
+      "respuestas_24h": 10,
+      "personas": 6,
+      "texto": "correcto, ese es uno @⁨~Marisol @⁨Nico UCAM"
+    }
+  ]
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex,nofollow" />
+  <title>Synergium Forms</title>
+  <link rel="icon" href="https://synergium.net/wp-content/uploads/2026/08/synergium-icon-1024-150x150.png" />
+  <style>
+    :root {
+      --bg: #0f1419;
+      --bg2: #1a222c;
+      --fg: #e8eef4;
+      --muted: #9aabbc;
+      --accent: #3d8bfd;
+      --accent2: #6ee7b7;
+      --danger: #f87171;
+      --border: #2a3644;
+      --radius: 10px;
+      --font: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      --sans: "IBM Plex Sans", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: var(--sans);
+      color: var(--fg);
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #1e3a5f55, transparent 60%),
+        radial-gradient(900px 500px at 100% 0%, #0d948855, transparent 55%),
+        var(--bg);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    .brand {
+      font-family: var(--font);
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      color: var(--accent2);
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-family: var(--font);
+      font-weight: 600;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      line-height: 1.25;
+      margin: 0 0 0.75rem;
+    }
+    .desc {
+      color: var(--muted);
+      white-space: pre-wrap;
+      margin-bottom: 2rem;
+      font-size: 0.98rem;
+    }
+    .field {
+      margin-bottom: 1.35rem;
+      padding-bottom: 1.35rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .field:last-of-type { border-bottom: 0; }
+    label.main {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.45rem;
+      font-size: 0.95rem;
+    }
+    .req { color: var(--danger); margin-left: 0.2rem; }
+    input[type="text"], input[type="email"], input[type="tel"], textarea, select {
+      width: 100%;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      color: var(--fg);
+      border-radius: var(--radius);
+      padding: 0.7rem 0.85rem;
+      font: inherit;
+    }
+    textarea { min-height: 110px; resize: vertical; }
+    .opts { display: grid; gap: 0.45rem; }
+    .opt {
+      display: flex; align-items: flex-start; gap: 0.55rem;
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.55rem 0.7rem;
+    }
+    .opt input { margin-top: 0.2rem; }
+    .other-wrap { margin-top: 0.5rem; display: none; }
+    .other-wrap.show { display: block; }
+    button.submit {
+      appearance: none;
+      border: 0;
+      background: linear-gradient(135deg, #2563eb, #0d9488);
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.85rem 1.4rem;
+      border-radius: 999px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+    button.submit:disabled { opacity: 0.55; cursor: wait; }
+    .err { color: var(--danger); margin: 0.75rem 0; }
+    .ok {
+      background: #064e3b55;
+      border: 1px solid #10b98166;
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+    .foot {
+      margin-top: 3rem;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+    .loading, .missing { color: var(--muted); padding: 3rem 0; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">Synergium Forms</div>
+    <div id="app" class="loading">Loading…</div>
+  </div>
+  <script>
+  const PB = window.location.origin;
+  const app = document.getElementById("app");
+
+  function publicIdFromPath() {
+    const parts = location.pathname.replace(/\/+$/, "").split("/").filter(Boolean);
+    if (parts.length === 0 || parts[0] === "index.html") return null;
+    if (parts[0] === "f" && parts[1]) return parts[1];
+    return parts[0];
+  }
+
+  function el(tag, attrs = {}, kids = []) {
+    const n = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs)) {
+      if (k === "className") n.className = v;
+      else if (k === "text") n.textContent = v;
+      else if (k.startsWith("on") && typeof v === "function") n.addEventListener(k.slice(2).toLowerCase(), v);
+      else if (v !== undefined && v !== null) n.setAttribute(k, v);
+    }
+    for (const c of [].concat(kids)) if (c) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
+    return n;
+  }
+
+  async function fetchForm(publicId) {
+    const url = `${PB}/api/sf/form/${encodeURIComponent(publicId)}`;
+    const res = await fetch(url);
+    if (res.status === 404) return null;
+    if (!res.ok) throw new Error("Could not load form");
+    return await res.json();
+  }
+
+  function fieldNode(field) {
+    const wrap = el("div", { className: "field", "data-id": field.id });
+    const lab = el("label", { className: "main" }, [
+      field.label,
+      field.required ? el("span", { className: "req", text: "*" }) : null,
+    ]);
+    wrap.appendChild(lab);
+
+    const name = field.id;
+    if (["text", "email", "phone"].includes(field.type)) {
+      const type = field.type === "phone" ? "tel" : field.type;
+      wrap.appendChild(el("input", { type, name, required: field.required || null, autocomplete: field.type === "email" ? "email" : "off" }));
+    } else if (field.type === "textarea" || field.type === "url_list") {
+      wrap.appendChild(el("textarea", { name, required: field.required || null, placeholder: field.type === "url_list" ? "One URL per line" : "" }));
+    } else if (field.type === "single_select") {
+      const opts = el("div", { className: "opts" });
+      const other = el("div", { className: "other-wrap" }, [
+        el("input", { type: "text", name: name + "__other", placeholder: "Other…" }),
+      ]);
+      (field.options || []).forEach((o) => {
+        const id = `${name}_${o.value}`;
+        const input = el("input", { type: "radio", name, value: o.value, id, required: field.required || null });
+        input.addEventListener("change", () => {
+          other.classList.toggle("show", false);
+        });
+        opts.appendChild(el("label", { className: "opt", for: id }, [input, el("span", { text: o.label })]));
+      });
+      if (field.allow_other) {
+        const id = `${name}_other`;
+        const input = el("input", { type: "radio", name, value: "__other__", id });
+        input.addEventListener("change", () => other.classList.add("show"));
+        opts.appendChild(el("label", { className: "opt", for: id }, [input, el("span", { text: "Other" })]));
+        opts.appendChild(other);
+      }
+      wrap.appendChild(opts);
+    } else if (field.type === "multi_select") {
+      const opts = el("div", { className: "opts" });
+      const other = el("div", { className: "other-wrap" }, [
+        el("input", { type: "text", name: name + "__other", placeholder: "Other…" }),
+      ]);
+      (field.options || []).forEach((o) => {
+        const id = `${name}_${o.value}`;
+        opts.appendChild(el("label", { className: "opt", for: id }, [
+          el("input", { type: "checkbox", name, value: o.value, id }),
+          el("span", { text: o.label }),
+        ]));
+      });
+      if (field.allow_other) {
+        const id = `${name}_other`;
+        const cb = el("input", { type: "checkbox", name, value: "__other__", id });
+        cb.addEventListener("change", () => other.classList.toggle("show", cb.checked));
+        opts.appendChild(el("label", { className: "opt", for: id }, [cb, el("span", { text: "Other" })]));
+        opts.appendChild(other);
+      }
+      wrap.appendChild(opts);
+    } else if (field.type === "section") {
+      wrap.appendChild(el("p", { className: "desc", text: field.label || "" }));
+    }
+    if (field.visible_if) {
+      wrap.dataset.visibleIf = JSON.stringify(field.visible_if);
+      wrap.style.display = "none";
+    }
+    return wrap;
+  }
+
+  function collectAnswers(formEl, fields) {
+    const answers = {};
+    for (const field of fields) {
+      if (field.type === "section") continue;
+      const name = field.id;
+      if (field.type === "multi_select") {
+        const checked = [...formEl.querySelectorAll(`input[name="${name}"]:checked`)].map((i) => i.value);
+        const otherText = formEl.querySelector(`[name="${name}__other"]`)?.value?.trim();
+        const vals = checked.filter((v) => v !== "__other__");
+        if (checked.includes("__other__") && otherText) vals.push({ value: "other", other_text: otherText });
+        answers[name] = vals;
+      } else if (field.type === "single_select") {
+        const picked = formEl.querySelector(`input[name="${name}"]:checked`)?.value;
+        if (picked === "__other__") {
+          answers[name] = { value: "other", other_text: formEl.querySelector(`[name="${name}__other"]`)?.value?.trim() || "" };
+        } else {
+          answers[name] = picked || "";
+        }
+      } else if (field.type === "url_list") {
+        const raw = formEl.querySelector(`[name="${name}"]`)?.value || "";
+        answers[name] = raw.split(/\n+/).map((s) => s.trim()).filter(Boolean);
+      } else {
+        answers[name] = formEl.querySelector(`[name="${name}"]`)?.value?.trim() || "";
+      }
+    }
+    return answers;
+  }
+
+  function applyVisibility(root, fields) {
+    const answers = collectAnswers(root, fields);
+    for (const field of fields) {
+      if (!field.visible_if) continue;
+      const node = root.querySelector(`.field[data-id="${field.id}"]`);
+      if (!node) continue;
+      const { field: f, equals } = field.visible_if;
+      const ok = answers[f] === equals;
+      node.style.display = ok ? "" : "none";
+    }
+  }
+
+  function renderForm(rec) {
+    const schema = typeof rec.schema === "string" ? JSON.parse(rec.schema) : rec.schema;
+    const fields = schema.fields || [];
+    app.innerHTML = "";
+    app.appendChild(el("h1", { text: rec.title || schema.title || "Form" }));
+    app.appendChild(el("div", { className: "desc", text: rec.description || schema.description || "" }));
+
+    const form = el("form", { novalidate: "novalidate" });
+    const honeypot = el("input", { type: "text", name: "website", autocomplete: "off", tabindex: "-1", style: "position:absolute;left:-9999px;opacity:0", "aria-hidden": "true" });
+    form.appendChild(honeypot);
+
+    for (const f of fields) form.appendChild(fieldNode(f));
+    form.addEventListener("change", () => applyVisibility(form, fields));
+    applyVisibility(form, fields);
+
+    const err = el("div", { className: "err" });
+    const btn = el("button", { className: "submit", type: "submit", text: "Submit" });
+    form.appendChild(err);
+    form.appendChild(btn);
+    form.appendChild(el("div", { className: "foot", text: "Your answers are stored securely. Request deletion via WhatsApp." }));
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      err.textContent = "";
+      if (honeypot.value) return;
+      const answers = collectAnswers(form, fields);
+      for (const f of fields) {
+        if (f.visible_if) {
+          const show = answers[f.visible_if.field] === f.visible_if.equals;
+          if (!show) continue;
+        }
+        if (!f.required || f.type === "section") continue;
+        const v = answers[f.id];
+        const empty = v == null || v === "" || (Array.isArray(v) && v.length === 0);
+        if (empty) {
+          err.textContent = `Please complete: ${f.label}`;
+          return;
+        }
+      }
+      btn.disabled = true;
+      btn.textContent = "Sending…";
+      try {
+        const body = {
+          form: rec.id,
+          answers,
+          respondent_email: typeof answers.email === "string" ? answers.email : "",
+        };
+        const res = await fetch(`${PB}/api/collections/submissions/records`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
+        if (!res.ok) {
+          const t = await res.text();
+          throw new Error(t || "Submit failed");
+        }
+        app.innerHTML = "";
+        app.appendChild(el("div", { className: "ok" }, [
+          el("h1", { text: "Thank you" }),
+          el("p", { text: rec.success_message || schema.success_message || "Your answers were saved." }),
+        ]));
+      } catch (ex) {
+        err.textContent = "Could not submit. Please try again.";
+        console.error(ex);
+        btn.disabled = false;
+        btn.textContent = "Submit";
+      }
+    });
+
+    app.appendChild(form);
+    document.title = (rec.title || "Form") + " — Synergium Forms";
+  }
+
+  (async () => {
+    const id = publicIdFromPath();
+    if (!id) {
+      app.className = "missing";
+      app.textContent = "Open a form link you were given.";
+      return;
+    }
+    try {
+      const rec = await fetchForm(id);
+      if (!rec) {
+        app.className = "missing";
+        app.textContent = "This form is closed or the link is invalid.";
+        return;
+      }
+      renderForm(rec);
+    } catch (e) {
+      console.error(e);
+      app.className = "missing";
+      app.textContent = "Could not load the form.";
+    }
+  })();
+  </script>
+</body>
+</html>

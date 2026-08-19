@@ -1,0 +1,22 @@
+{
+  "title": "Synergium",
+  "description": "Hacemos posible que tus proyectos avancen",
+  "url": "http://synergium.net",
+  "email": "horacio.eps@gmail.com",
+  "timezone": "",
+  "date_format": "F j, Y",
+  "time_format": "g:i a",
+  "start_of_week": 1,
+  "language": "es_ES",
+  "use_smilies": true,
+  "default_category": 9,
+  "default_post_format": "0",
+  "posts_per_page": 10,
+  "show_on_front": "page",
+  "page_on_front": 35,
+  "page_for_posts": 0,
+  "default_ping_status": "open",
+  "default_comment_status": "open",
+  "site_logo": null,
+  "site_icon": 63
+}

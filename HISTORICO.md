@@ -10,9 +10,7 @@
 | 2026-08-19 15:23 UTC | Origen Matías: hilo email PDF VR/estigma + almacenar artículo | Historial contacto actualizado (email 6-ago); PDF en `clientes/matias-rodriguez-rivas/articulos/` | [sesiones/2026-08-19-matias-email-pdf-articulo.md](sesiones/2026-08-19-matias-email-pdf-articulo.md) |
 | 2026-08-19 15:27 UTC | Matías: embudo email campaña → WhatsApp; regla teléfono ≈ WhatsApp | Actualizado historial/ficha; regla en `clientes/README.md` y `00-resumen.md` | [sesiones/2026-08-19-matias-origen-whatsapp-regla.md](sesiones/2026-08-19-matias-origen-whatsapp-regla.md) |
 | 2026-08-19 15:32 UTC | Borrador intro Valentina para match Matías | WA preferido +34661347478; texto en `intro-valentina-borrador.md` | [sesiones/2026-08-19-intro-valentina-matias.md](sesiones/2026-08-19-intro-valentina-matias.md) |
-<<<<<<< HEAD
 | 2026-08-19 15:50 UTC | Copia local del repo + push siempre (también ediciones manuales) + dejarlo en rules | Clone en este workspace; regla `local-clone-siempre-push.mdc`; enlace HISTORICO en README | [sesiones/2026-08-19-copia-local-siempre-push.md](sesiones/2026-08-19-copia-local-siempre-push.md) |
-=======
 | 2026-08-19 18:40 UTC | Horacio envió intro Valentina; datos UCO | Institución UCO Córdoba; email ed1lujuv@uco.es; estado enviado en expediente | [sesiones/2026-08-19-match-valentina-envio-datos-uco.md](sesiones/2026-08-19-match-valentina-envio-datos-uco.md) |
 | 2026-08-19 18:45 UTC | Guardar sesión y subir repo | Volcado + HISTORICO + push main | [sesiones/2026-08-19-match-valentina-envio-datos-uco.md](sesiones/2026-08-19-match-valentina-envio-datos-uco.md) |
->>>>>>> 81ae6a6 (docs: sesión match Valentina enviada, email UCO, volcado e histórico)
+| 2026-08-19 18:50 UTC | Actualiza con GitHub | Pull `2d945d5` (match Valentina/UCO); arreglo conflict markers en HISTORICO | [sesiones/2026-08-19-copia-local-siempre-push.md](sesiones/2026-08-19-copia-local-siempre-push.md) |

@@ -31,3 +31,16 @@ Sí, queda claro:
 - Tras cada pedido hecho: commit + push a `main`.
 - Si Horacio edita ficheros a mano en esta copia, esos cambios también se suben (al cerrar la interacción o cuando haya cambios pendientes).
 - En las rules: parte ya estaba en `AGENTS.md`; ahora está explícito en `.cursor/rules/local-clone-siempre-push.mdc` (`alwaysApply: true`).
+
+---
+
+## Usuario (continuación)
+
+> actualiza con github
+
+## Agente
+
+1. `git fetch` + `git pull --ff-only origin main` (estábamos 1 commit detrás).
+2. Bajó `2d945d5` — match Valentina enviada, email UCO, expediente Matías, sesión `sesiones/2026-08-19-match-valentina-envio-datos-uco.md`.
+3. `HISTORICO.md` en ese commit traía marcadores de conflicto sin resolver (`<<<<<<< HEAD` / filas 15:50 vs 18:40–18:45). Se dejaron **todas** las filas y se quitaron los marcadores.
+4. Volcado de esta continuación + push.

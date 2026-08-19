@@ -1,0 +1,21 @@
+---
+description: Copia local de horacioeps/synergium; commit + push a main tras cada cambio
+alwaysApply: true
+---
+
+# Copia local + push siempre a GitHub
+
+Este workspace es la **copia local** de [horacioeps/synergium](https://github.com/horacioeps/synergium). El remoto canónico es `origin` → `main`.
+
+## Tras cada interacción
+
+1. Comprobar que estamos en **`main`**. Si no, cambiar a `main`.
+2. Incluir **todos** los cambios pendientes: los del agente **y** los que Horacio haya editado a mano en esta copia local.
+3. `git add` + commit + **`git push origin main`**. No dejar trabajo material solo en disco.
+4. Volcado en `sesiones/` (y `chats/` si aplica) + fila en `HISTORICO.md`.
+
+## No negociable
+
+- No crear ramas laterales salvo petición explícita.
+- No terminar un turno con cambios sin subir si hay algo commiteable (código, docs, sesiones).
+- Secrets (`.env`, credenciales) no van al repo.

@@ -42,6 +42,8 @@ Detalle: [docs/QUE-ES-SYNERGIUM.md](docs/QUE-ES-SYNERGIUM.md)
 
 Leer **[AGENTS.md](AGENTS.md)** antes de cualquier tarea Synergium.
 
+Cronología compacta de pedidos y trabajo: **[HISTORICO.md](HISTORICO.md)**.
+
 ## Vault en el VPS (solo lectura)
 
 Las notas fuente (ideas, conversaciones comerciales) están en la vault del VPS. Los agentes **leen por SSH** cuando hace falta:

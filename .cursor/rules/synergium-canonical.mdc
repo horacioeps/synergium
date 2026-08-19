@@ -10,3 +10,4 @@ alwaysApply: true
 - Índice legacy: [REFERENCIAS-LEGACY-OBSIDIAN.md](../REFERENCIAS-LEGACY-OBSIDIAN.md)
 - **Vault VPS:** solo lectura cuando haga falta — `scripts/vault_ssh_ro.sh` + `.cursor/rules/vault-cloud-ssh.mdc` + [docs/VAULT-ACCESO.md](../docs/VAULT-ACCESO.md)
 - Sesiones Synergium: `chats/` y `sesiones/` **en este repo**.
+- Esta carpeta de trabajo es la **copia local**; commit + push a `origin/main` tras cada cambio (agente o edición manual). Detalle: `.cursor/rules/local-clone-siempre-push.mdc`.

@@ -10,7 +10,8 @@
 | **Vault solo lectura** | Notas fuente en vault del VPS (SSH). Leer cuando haga falta; no escribir salvo petición explícita |
 | **No duplicar en Obsidian** | No añadir material nuevo Synergium en carpetas legacy del repo Obsidian |
 | **Rama main** | Trabajar en `main`; commit + push tras cada avance material |
-| **Sesiones** | Volcado completo en `chats/` y `sesiones/`; actualizar índices |
+| **Copia local** | Este workspace es el clone de `horacioeps/synergium`. Tras cada interacción, subir a `origin/main` **también** los ficheros que Horacio haya modificado a mano. Regla: `.cursor/rules/local-clone-siempre-push.mdc` |
+| **Sesiones** | Volcado completo en `chats/` y `sesiones/`; actualizar `HISTORICO.md` |
 
 ## Dónde escribir
 

@@ -86,6 +86,16 @@ Intervenciones vía WordPress REST API (patrón bio-hpc.eu):
 
 ---
 
+## 2026-08-19 — Copia local + push siempre
+
+- Workspace local = clone de `horacioeps/synergium`
+- Regla Cursor: `.cursor/rules/local-clone-siempre-push.mdc` (commit + push a `main` tras cada interacción, también si Horacio edita a mano)
+- `HISTORICO.md` enlazado desde README
+
+**Artefactos:** [AGENTS.md](../AGENTS.md), [HISTORICO.md](../HISTORICO.md)
+
+---
+
 ## Pendientes conocidos
 
 1. DNS `forms.synergium.net` en IONOS

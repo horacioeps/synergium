@@ -4,7 +4,7 @@ Cliente / candidato piloto Synergium. Primer expediente creado **2026-08-19**.
 
 ## Resumen en una línea
 
-PhD en Chile (salud mental, estigma, help-seeking). **Origen:** email podcast (PDF VR/estigma esquizofrenia, 6-ago-2026) → form EN (14-ago). Busca coautores **este mes**.
+PhD en Chile (salud mental, estigma, help-seeking). **Origen:** email campaña podcast (6-ago) → **WhatsApp** (campaña form) → form EN (14-ago). Busca coautores **este mes**.
 
 ## Documentos
 

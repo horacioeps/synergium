@@ -16,7 +16,7 @@ Fecha: 2026-08-14. Pedido: formulario Google Forms para las comunidades WhatsApp
 | Campo | Pregunta | Por qué |
 |-------|----------|---------|
 | Email | P2 | Canal estable; WhatsApp cambia de número. |
-| Teléfono WhatsApp (con código de país) | P3 | Es *esta* comunidad; sin número no hay intro por el canal donde ya están. |
+| Teléfono WhatsApp (con código de país) | P3 | Es *esta* comunidad; sin número no hay intro por el canal donde ya están. **Heurística expedientes:** teléfono relleno ≈ respuesta vía campaña WhatsApp (ver [clientes/README.md](../../../clientes/README.md)). |
 | País | P4 | Matching geográfico LATAM–Europa–resto; zona horaria aproximada. |
 
 ## Otros valores que sí merecen la pena (una sola pasada)

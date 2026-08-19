@@ -15,7 +15,13 @@
 | **Inglés colaboración** | Fluent |
 | **Comunidad ES** | Both (EN + ES) |
 
-## Perfil académico
+## Origen / canal
+
+| Campo | Valor |
+|-------|--------|
+| **Embudo** | Email campaña podcast → comunidad WhatsApp → form EN |
+| **Señal WhatsApp** | Teléfono +56930322072 en form (heurística: casi siempre = vía WhatsApp) |
+| **Comunidad form** | EN (campaña); también en ES según respuesta «Both» |
 
 | Campo | Valor |
 |-------|--------|

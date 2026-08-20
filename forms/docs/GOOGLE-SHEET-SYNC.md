@@ -1,17 +1,38 @@
 # Import Google Sheet → PocketBase
 
-Las respuestas del Google Form **no** entran solas en Synergium Forms hasta que corra el sync.
+## En castellano (qué pasa)
 
-## Objetivo
+Hay **dos sitios** donde caen respuestas hoy:
 
-Cada **15 minutos**: leer filas nuevas del spreadsheet de respuestas → `submissions` en PocketBase, con:
+1. **Google Form** → se guarda en un **Google Spreadsheet** (la hoja de respuestas).
+2. **forms.synergium.net/nexus-input** → se guarda en **nuestra base PocketBase**.
+
+No se mezclan solos. Para que lo nuevo del Sheet entre en nuestra BD cada 15 min, un script en el VPS tiene que **leer la hoja**.
+
+Sabemos **cuál** es la hoja (ID `19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w`).  
+Lo que no tenemos es **permiso técnico** para que el servidor la lea sin que tú estés logueado en Google:
+
+- Probamos el “exportar CSV por enlace” y Google pide login (no es público).
+- Por eso hace falta una de estas vías (elige tú en las dudas numeradas):
+
+| Opción | Qué es | Pros / contras |
+|--------|--------|----------------|
+| **Service account** | Usuario-robot de Google; compartes la hoja con su email; el VPS usa una clave JSON | Automático y seguro; un poco de setup una vez |
+| **Hoja “cualquiera con el enlace → Visor”** | El CSV se puede bajar sin login | Fácil; menos privado (quien tenga el enlace ve datos) |
+| **CSV a mano** | Tú exportas y lo pegas / subes de vez en cuando | Sin setup; no es cada 15 min |
+
+Hasta elegir eso, el cron de 15 min **no puede arrancar**.
+
+## Objetivo técnico
+
+Cada **15 minutos**: filas nuevas del Sheet → `submissions` en PocketBase.
 
 | Campo | Valor |
 |-------|--------|
-| `source` | `google` |
-| (web) | `source` = `web` |
+| `source` | `google` (vienen del Sheet) |
+| envíos web | `source` = `web` |
 
-Deduplicar por **email** (+ form id): si ya existe submission con ese `respondent_email` en ese form, skip.
+Deduplicar por **email** (+ form): si ya está, no duplicar.
 
 ## Sheet
 
@@ -20,29 +41,17 @@ Deduplicar por **email** (+ form id): si ya existe submission con ese `responden
 | Spreadsheet | [Community directory EN responses](https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit) |
 | Sheet ID | `19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w` |
 
-Hoy el export CSV público **no** funciona (403/login). Hace falta una de:
+## Flujo previsto (cuando haya acceso)
 
-1. **Service account** Google con la hoja compartida (lectura) + JSON key en el VPS (`chmod 600`), o
-2. Export CSV manual periódico, o
-3. Compartir la hoja como “cualquiera con el enlace → visor” y usar export URL (menos seguro).
-
-## Flujo previsto
-
-1. Cron cada 15 min en VPS (`*/15 * * * *`) o pm2-cron.
-2. Script `scripts/synergium_forms_sheet_sync.py` (pendiente de credenciales Sheets).
-3. Mapear columnas Google → `field_id` de `schema-en.json`.
-4. `POST` submissions con `source: "google"`.
+1. Cron VPS cada 15 min.
+2. Script `scripts/synergium_forms_sheet_sync.py`.
+3. Mapear columnas Google → `field_id` del schema.
+4. `POST` con `source: "google"`.
 5. Log: nuevas / skipped / errores.
 
-## Columna `source` en BD
+## Pendiente
 
-Valores: `web` \| `google`. Se añade con `setup_collections.py` (campo select en `submissions`).
-
-Envíos desde la web ya intentan mandar `source: "web"` (con fallback si el campo aún no existe).
-
-## Pendiente para activar el cron
-
-- [ ] Acceso lectura al Sheet (service account o CSV)
-- [ ] Mapeo columnas confirmado (cabeceras Google vs schema)
-- [ ] Campo `source` creado en PocketBase
-- [ ] Cron en VPS
+- [ ] Decidir cómo leer el Sheet (dudas **1–2** abajo / en sesión)
+- [ ] Mapeo columnas
+- [ ] Cron en VPS  
+  (campo `source` en PocketBase: ya creado)

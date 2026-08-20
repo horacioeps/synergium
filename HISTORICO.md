@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-20 21:45 UTC | Explicar Sheet sync + dudas/sugerencias numeradas | Doc GOOGLE-SHEET-SYNC aclarado; lista 1–8 para que Horacio responda | [sesiones/2026-08-20-explicar-sheet-dudas.md](sesiones/2026-08-20-explicar-sheet-dudas.md) |
 | 2026-08-20 21:35 UTC | Comprobar secrets.env local rellenado | Formato arreglado (quotes); SSH vault OK (8192 md); rotar tokens filtrados en primer source | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |
 | 2026-08-20 21:29 UTC | Secrets Cloud Agents → .env local para todos los proyectos Cursor IDE | `~/.cursor/secrets.env` + carga en zshrc + regla `local-secrets.mdc`; nota en VAULT-ACCESO | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |
 | 2026-08-20 21:40 UTC | Selector idioma = web (todos los forms); default EN; registrar regla | SPA + i18n ES nexus-input; rule forms-idioma-selector; deploy vivo | [sesiones/2026-08-20-forms-selector-idioma.md](sesiones/2026-08-20-forms-selector-idioma.md) |

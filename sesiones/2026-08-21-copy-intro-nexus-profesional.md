@@ -53,6 +53,16 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Mensajes en `comunidad/casos/2026-08-14-formulario-matching/mensaje-discord-es.md` y `mensaje-discord-en.md`; enlace al final; tono alineado al copy profesional.
 
+## Interacción 8
+
+**Usuario:** Añadir en el form (¿inicio o final?) cómo/dónde le llegó el formulario (WhatsApp, Discord, email, colega, universidad, other…). De paso: ¿lenguaje serio? ¿faltan / sobran preguntas?
+
+**Agente:**
+- Campo `how_found_form` al **final** (antes de anything_else), required + Other; desplegado vivo.
+- Auditoría en `forms/casos/community-directory-matching/AUDITORIA-CAMPOS-2026-08-21.md`.
+- Notify incluye How found form.
+- Pendiente: que Horacio elija si aplicamos pase de etiquetas + recorte del bloque mercado (23–27).
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

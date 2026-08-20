@@ -58,7 +58,10 @@ This is a one-time directory of this community. I will use the answers to introd
 | 32 | `english_for_collab` | single_select | sí | Fluent, Get by, Spanish only, English is working language |
 | 33 | `also_spanish_community` | single_select | sí | Both / Only this (EN) / Didn't know there was another |
 | 34 | `three_words` | text | sí | 3 words to be found by |
-| 35 | `anything_else` | textarea | no | Anything else to match you |
+| 35 | `how_found_form` | single_select | sí | WhatsApp, Discord, Email, colleague, university, LinkedIn, podcast, Synergium web (+ Other) |
+| 36 | `anything_else` | textarea | no | Anything else to match you |
+
+Auditoría tono/campos: [AUDITORIA-CAMPOS-2026-08-21.md](AUDITORIA-CAMPOS-2026-08-21.md).
 
 ## Condicionales
 

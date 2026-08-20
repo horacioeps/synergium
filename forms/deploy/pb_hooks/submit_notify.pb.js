@@ -40,6 +40,7 @@ onRecordAfterCreateSuccess((e) => {
     const need = JSON.stringify(answers.need_now || "");
     const offer = JSON.stringify(answers.offer_next_months || "");
     const seek = answers.what_you_seek || "";
+    const howFound = JSON.stringify(answers.how_found_form || "");
 
     const body =
       `New submission on Synergium Forms\n\n` +
@@ -51,6 +52,7 @@ onRecordAfterCreateSuccess((e) => {
       `Name: ${name}\n` +
       `Email: ${email}\n` +
       `WhatsApp: ${whatsapp}\n` +
+      `How found form: ${howFound}\n` +
       `Match me?: ${JSON.stringify(matchMe)}\n` +
       `Need NOW: ${need}\n` +
       `Offer: ${offer}\n` +

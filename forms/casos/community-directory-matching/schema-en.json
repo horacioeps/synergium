@@ -850,6 +850,47 @@
       "required": true
     },
     {
+      "id": "how_found_form",
+      "type": "single_select",
+      "label": "How did you get this form?",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        {
+          "value": "whatsapp",
+          "label": "WhatsApp"
+        },
+        {
+          "value": "discord",
+          "label": "Discord"
+        },
+        {
+          "value": "email",
+          "label": "Email"
+        },
+        {
+          "value": "colleague",
+          "label": "A colleague"
+        },
+        {
+          "value": "university",
+          "label": "My university / institution"
+        },
+        {
+          "value": "linkedin",
+          "label": "LinkedIn"
+        },
+        {
+          "value": "podcast",
+          "label": "Podcast"
+        },
+        {
+          "value": "synergium_web",
+          "label": "Synergium website"
+        }
+      ]
+    },
+    {
       "id": "anything_else",
       "type": "textarea",
       "label": "Anything else to match you",

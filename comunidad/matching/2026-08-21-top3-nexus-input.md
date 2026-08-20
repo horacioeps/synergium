@@ -19,7 +19,7 @@ Criterio: complemento need↔offer + solape de área/método/tema (texto) + geo 
 | Match | Yes · either | Yes · spanish |
 
 **Por qué #1:** mismo eje salud mental / bienestar; cuantitativo-psicometría (CL) + clínica (ES); puente LATAM–Europa.  
-**Estado:** intro a Valentina **ya enviada** (2026-08-19); esperar sí/no. Expediente: `clientes/matias-rodriguez-rivas/`.
+**Estado:** intro a Valentina **enviada y aceptada** («encantada»); fase 2 (canal + condiciones) abierta. Expediente: `clientes/matias-rodriguez-rivas/`.
 
 ---
 

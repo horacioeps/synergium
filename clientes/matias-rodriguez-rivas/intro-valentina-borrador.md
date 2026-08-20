@@ -1,8 +1,11 @@
 # Intro — Valentina Lucena Jurado (borrador para Horacio)
 
 **Match:** Matías Rodríguez-Rivas (Chile) ↔ Valentina  
-**Estado:** **Enviado por Horacio** (2026-08-19) — pendiente respuesta sí/no  
-**Fecha:** 2026-08-19
+**Estado:** **Valentina dijo sí** (WhatsApp +34 661 347 478) — «claro encantada !!!»  
+**Confirmado:** chat es Valentina Lucena (mismo WA del form).  
+**Pendiente fase 2:** Horacio preguntó canal email/WA para la intro conjunta + condiciones extra; esperar respuesta. Luego doble opt-in Matías + presentar.  
+**Fecha primer contacto:** 2026-08-19 · **Sí recibido:** ~2026-08-20 (mié. chat)  
+**Actualizado:** 2026-08-21
 
 ---
 
@@ -53,11 +56,13 @@ Idioma: **español** (match language = Spanish; también comunidad ES).
 
 ---
 
-## Después del «sí» de Valentina
+## Después del «sí» de Valentina — checklist
 
-1. Pedir permiso igualmente a Matías (doble opt-in) si aún no lo has hecho.  
-2. Intro en el canal que acordéis, con una frase concreta cada uno (ver [playbook-matching](../../comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md)).  
-3. Anotar en [historial-contacto.md](historial-contacto.md).
+1. ~~Sí de Valentina~~ → **hecho** («encantada»).  
+2. Ella elige canal intro (email vs WhatsApp) + condiciones fase 2 — **preguntado por Horacio, pendiente respuesta**.  
+3. Pedir permiso a Matías (doble opt-in) si aún no.  
+4. Intro conjunta en el canal acordado ([playbook-matching](../../comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md)).  
+5. Anotar en [historial-contacto.md](historial-contacto.md).
 
 ---
 

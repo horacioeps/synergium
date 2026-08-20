@@ -22,7 +22,7 @@ Análisis sobre las **20 respuestas** del [Google Sheets EN](https://docs.google
 
 **Intro sugerida (borrador):** coautoría empírica salud mental — dataset Chile + línea clínica España.
 
-**Estado:** Mensaje enviado a Valentina (2026-08-19) — esperando sí/no → [intro-valentina-borrador.md](intro-valentina-borrador.md)
+**Estado:** Valentina **aceptó** (WhatsApp) — fase 2 (canal + condiciones) en curso → [intro-valentina-borrador.md](intro-valentina-borrador.md)
 
 ---
 
@@ -54,6 +54,7 @@ No aplica — Matías pidió match activo.
 
 ## Próxima acción
 
-1. ~~Enviar mensaje a Valentina~~ → **hecho 2026-08-19**; esperar respuesta.  
-2. Si Valentina dice sí: doble opt-in con Matías + intro conjunta ([playbook-matching](../../comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md)).  
-3. Anotar respuesta en [historial-contacto.md](historial-contacto.md) e [intro-valentina-borrador.md](intro-valentina-borrador.md).
+1. ~~Enviar mensaje a Valentina~~ → hecho.  
+2. ~~Sí de Valentina~~ → **hecho** («encantada»).  
+3. Esperar su respuesta sobre canal (email/WA) y condiciones fase 2.  
+4. Doble opt-in Matías + intro conjunta ([playbook-matching](../../comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md)).

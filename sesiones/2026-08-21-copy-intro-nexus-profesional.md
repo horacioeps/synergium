@@ -75,6 +75,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Documentado (GOOGLE-SHEET-SYNC + auditoría). Sync apunta a `schema-en-google-sync.json` congelado para no romper el mapeo del Sheet; filas heterogéneas sin migración.
 
+## Interacción 11
+
+**Usuario:** En idioma preferido, los mismos del desplegable de idioma + Other.
+
+**Agente:** `match_language` = EN/ES/zh-CN/AR/JA/PT/IT/DE (mismas etiquetas que el selector) + Other; desplegado vivo.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

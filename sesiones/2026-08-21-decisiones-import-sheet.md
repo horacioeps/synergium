@@ -27,3 +27,11 @@
 ## ¿Ya se puede usar el form?
 
 **Sí.** https://forms.synergium.net/nexus-input está vivo (API/página 200), idiomas, y las 26 del Sheet ya están en la BD.
+
+## Continuación — emails de notificación
+
+Usuario envió captura: muchos mails Synergium Forms a las 00:01.
+
+**Explicación:** el import de las 26 filas del Sheet creó submissions; el hook `submit_notify.pb.js` manda email en **cada** alta. Es esperable con el código anterior, no ideal.
+
+**Fix:** no notificar si `source=google`. Solo avisos de envíos web. Hook desplegado + pm2 restart.

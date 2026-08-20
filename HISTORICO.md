@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:03 UTC | ¿Por qué llegan tantos correos Synergium Forms? | Import Sheet disparó notify ×26; fix: skip si source=google | [sesiones/2026-08-21-decisiones-import-sheet.md](sesiones/2026-08-21-decisiones-import-sheet.md) |
 | 2026-08-21 00:00 UTC | Decisiones 1/3/4/6/7/8 + ¿form usable? | Ambos canales; import 26; cron 15min; PB en secrets.env; form sí usable | [sesiones/2026-08-21-decisiones-import-sheet.md](sesiones/2026-08-21-decisiones-import-sheet.md) |
 | 2026-08-20 21:55 UTC | Repetir dudas y sugerencias numeradas | Lista 1–8; 2=resuelta (CSV público) | [sesiones/2026-08-20-explicar-sheet-dudas.md](sesiones/2026-08-20-explicar-sheet-dudas.md) |
 | 2026-08-20 21:53 UTC | Hoja Sheet compartida: ¿no puedes leerla? | Sí: fallo era gid=0; con gid=1537513728 CSV OK (26 filas); doc corregido | [sesiones/2026-08-20-explicar-sheet-dudas.md](sesiones/2026-08-20-explicar-sheet-dudas.md) |

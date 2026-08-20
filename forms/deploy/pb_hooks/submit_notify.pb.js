@@ -6,6 +6,13 @@
 onRecordAfterCreateSuccess((e) => {
   try {
     const submission = e.record;
+    // Bulk / Sheet sync: do not email per row (only real web submissions).
+    const source = (submission.getString("source") || "").trim();
+    if (source === "google") {
+      console.log("[synergium-forms] skip notify (source=google)");
+      return;
+    }
+
     const formId = submission.get("form");
     if (!formId) return;
 
@@ -16,7 +23,14 @@ onRecordAfterCreateSuccess((e) => {
       return;
     }
 
-    const answers = submission.get("answers") || {};
+    let answers = submission.get("answers") || {};
+    if (typeof answers === "string") {
+      try {
+        answers = JSON.parse(answers);
+      } catch (err) {
+        answers = {};
+      }
+    }
     const title = form.getString("title") || "Form";
     const publicId = form.getString("public_id") || "";
     const name = answers.full_name || answers.name || "(no name)";
@@ -31,6 +45,7 @@ onRecordAfterCreateSuccess((e) => {
       `New submission on Synergium Forms\n\n` +
       `Form: ${title}\n` +
       `public_id: ${publicId}\n` +
+      `source: ${source || "web"}\n` +
       `submission: ${submission.id}\n` +
       `when: ${new Date().toISOString()}\n\n` +
       `Name: ${name}\n` +

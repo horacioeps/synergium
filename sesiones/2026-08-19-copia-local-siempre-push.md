@@ -61,3 +61,25 @@ Empaquetado en skill personal + regla de usuario + doc en este repo:
 - Este repo: `.cursor/rules/horacio-sesiones-historico.mdc`, [docs/NUEVO-PROYECTO-LOCAL.md](../docs/NUEVO-PROYECTO-LOCAL.md)
 
 Frase de arranque: `Nuevo proyecto local: https://github.com/USUARIO/REPO`
+
+---
+
+## Usuario (2026-08-20 20:42)
+
+> haz sync
+
+## Agente
+
+`fetch` + comparación `HEAD...origin/main` = **0 / 0**. Local y GitHub en el mismo commit `9846a79`. Nada que bajar ni cambios locales de trabajo. Volcado + HISTORICO de este sync.
+
+El push de ese volcado falló por disco lleno.
+
+---
+
+## Usuario (2026-08-20 20:46)
+
+> vuelve a ver, he liberado disco
+
+## Agente
+
+~18 GB libres, git OK, sync sigue 0/0. Commit + push del volcado pendiente.

@@ -15,3 +15,5 @@
 | 2026-08-19 18:45 UTC | Guardar sesión y subir repo | Volcado + HISTORICO + push main | [sesiones/2026-08-19-match-valentina-envio-datos-uco.md](sesiones/2026-08-19-match-valentina-envio-datos-uco.md) |
 | 2026-08-19 18:50 UTC | Actualiza con GitHub | Pull `2d945d5` (match Valentina/UCO); arreglo conflict markers en HISTORICO | [sesiones/2026-08-19-copia-local-siempre-push.md](sesiones/2026-08-19-copia-local-siempre-push.md) |
 | 2026-08-20 10:03 UTC | Empaquetar instrucciones iniciales para el siguiente proyecto local | Skill `nuevo-proyecto-local`, regla de usuario, doc `docs/NUEVO-PROYECTO-LOCAL.md` | [sesiones/2026-08-19-copia-local-siempre-push.md](sesiones/2026-08-19-copia-local-siempre-push.md) |
+| 2026-08-20 18:42 UTC | haz sync | Ya al día con `origin/main` (`9846a79`); nada que bajar | [sesiones/2026-08-20-haz-sync.md](sesiones/2026-08-20-haz-sync.md) |
+| 2026-08-20 18:46 UTC | Vuelve a ver, he liberado disco | Git OK (~18 GB libres); sync sigue 0/0; push del volcado que falló | [sesiones/2026-08-20-haz-sync.md](sesiones/2026-08-20-haz-sync.md) |

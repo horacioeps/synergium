@@ -81,6 +81,18 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** `match_language` = EN/ES/zh-CN/AR/JA/PT/IT/DE (mismas etiquetas que el selector) + Other; desplegado vivo.
 
+## Interacción 12
+
+**Usuario:** Áreas: cubrir todos los campos de forma genérica, orden alfabético; detalle en keywords. Métodos: añadir más; siempre opciones en orden alfabético en todos los casos.
+
+**Agente:** Áreas genéricas (16) + métodos ampliados (14); resto de selects alfabetizados (salvo idioma UI, años, horizonte, consent). Deploy vivo.
+
+## Interacción 13
+
+**Usuario:** Geo preferences: faltan opciones, orden alfabético y Other.
+
+**Agente:** Añadidas África, Asia, Oriente Medio, Oceanía, etc.; alfa; allow_other. Deploy vivo junto con áreas/métodos.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

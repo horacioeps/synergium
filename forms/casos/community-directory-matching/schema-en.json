@@ -99,12 +99,20 @@
       "allow_other": true,
       "options": [
         {
-          "value": "undergrad_master",
-          "label": "Undergrad/master"
+          "value": "company",
+          "label": "Company/startup/industry"
+        },
+        {
+          "value": "independent",
+          "label": "Independent"
         },
         {
           "value": "phd",
           "label": "PhD"
+        },
+        {
+          "value": "pi",
+          "label": "PI/group leader"
         },
         {
           "value": "postdoc",
@@ -115,8 +123,8 @@
           "label": "Researcher (not PI)"
         },
         {
-          "value": "pi",
-          "label": "PI/group leader"
+          "value": "agency",
+          "label": "Science agency/funding"
         },
         {
           "value": "technician",
@@ -127,20 +135,12 @@
           "label": "TTO/innovation office"
         },
         {
+          "value": "undergrad_master",
+          "label": "Undergrad/master"
+        },
+        {
           "value": "vice_rectorate",
           "label": "Vice-rectorate/research mgmt"
-        },
-        {
-          "value": "agency",
-          "label": "Science agency/funding"
-        },
-        {
-          "value": "company",
-          "label": "Company/startup/industry"
-        },
-        {
-          "value": "independent",
-          "label": "Independent"
         }
       ]
     },
@@ -158,32 +158,32 @@
       "allow_other": true,
       "options": [
         {
-          "value": "public_uni",
-          "label": "Public uni"
-        },
-        {
-          "value": "private_uni",
-          "label": "Private uni"
-        },
-        {
-          "value": "research_centre",
-          "label": "Research centre"
+          "value": "company",
+          "label": "Company/startup"
         },
         {
           "value": "hospital",
           "label": "Hospital/clinic"
         },
         {
-          "value": "company",
-          "label": "Company/startup"
+          "value": "independent",
+          "label": "Independent"
         },
         {
           "value": "ngo",
           "label": "NGO/foundation"
         },
         {
-          "value": "independent",
-          "label": "Independent"
+          "value": "private_uni",
+          "label": "Private uni"
+        },
+        {
+          "value": "public_uni",
+          "label": "Public uni"
+        },
+        {
+          "value": "research_centre",
+          "label": "Research centre"
         }
       ]
     },
@@ -222,61 +222,73 @@
     {
       "id": "areas",
       "type": "multi_select",
-      "label": "Subject areas (select all that apply)",
+      "label": "Subject areas (select all that apply; use keywords for specifics)",
       "required": true,
       "allow_other": true,
       "options": [
         {
-          "value": "biomed",
-          "label": "Biomed/health/pharma"
+          "value": "agricultural",
+          "label": "Agricultural and veterinary sciences"
         },
         {
-          "value": "bioinformatics",
-          "label": "Bioinformatics"
+          "value": "arts_design",
+          "label": "Arts, design and architecture"
+        },
+        {
+          "value": "biological",
+          "label": "Biological sciences"
+        },
+        {
+          "value": "business_econ",
+          "label": "Business, management and economics"
         },
         {
           "value": "chemistry",
-          "label": "Chemistry/materials/nano"
+          "label": "Chemistry"
         },
         {
-          "value": "ai_data",
-          "label": "AI/data for science"
+          "value": "cs_ai_data",
+          "label": "Computer science, AI and data"
         },
         {
-          "value": "hpc",
-          "label": "HPC/simulation"
-        },
-        {
-          "value": "agrifood",
-          "label": "Agri-food/bioeconomy"
-        },
-        {
-          "value": "energy",
-          "label": "Energy/environment"
-        },
-        {
-          "value": "engineering",
-          "label": "Engineering/devices"
-        },
-        {
-          "value": "social",
-          "label": "Social sciences"
-        },
-        {
-          "value": "humanities",
-          "label": "Humanities/phil of science/history"
-        },
-        {
-          "value": "archaeology",
-          "label": "Archaeology/heritage"
+          "value": "earth_env",
+          "label": "Earth and environmental sciences"
         },
         {
           "value": "education",
           "label": "Education"
         },
         {
-          "value": "tech_transfer",
-          "label": "Tech transfer/spin-offs"
+          "value": "engineering",
+          "label": "Engineering and technology"
+        },
+        {
+          "value": "health_medicine",
+          "label": "Health, medicine and pharmacy"
+        },
+        {
+          "value": "humanities",
+          "label": "Humanities"
+        },
+        {
+          "value": "law",
+          "label": "Law and legal studies"
+        },
+        {
+          "value": "math_stats",
+          "label": "Mathematics and statistics"
+        },
+        {
+          "value": "physics",
+          "label": "Physics and astronomy"
+        },
+        {
+          "value": "psychology",
+          "label": "Psychology and cognitive sciences"
+        },
+        {
+          "value": "social",
+          "label": "Social sciences"
         }
       ]
     },
@@ -289,37 +301,65 @@
     {
       "id": "methods",
       "type": "multi_select",
-      "label": "Methods",
+      "label": "Methods (select all that apply; use keywords for specifics)",
       "required": true,
       "allow_other": true,
       "options": [
         {
-          "value": "experimental",
-          "label": "Experimental"
-        },
-        {
-          "value": "computational",
-          "label": "Computational/data"
-        },
-        {
-          "value": "theoretical",
-          "label": "Theoretical"
+          "value": "archive",
+          "label": "Archival / documentary"
         },
         {
           "value": "clinical",
           "label": "Clinical"
         },
         {
+          "value": "computational",
+          "label": "Computational / data"
+        },
+        {
+          "value": "design_practice",
+          "label": "Design / practice-based"
+        },
+        {
+          "value": "ethnographic",
+          "label": "Ethnographic / qualitative"
+        },
+        {
+          "value": "experimental",
+          "label": "Experimental"
+        },
+        {
           "value": "fieldwork",
           "label": "Fieldwork"
         },
         {
-          "value": "archive",
-          "label": "Archive/humanities"
+          "value": "mixed_methods",
+          "label": "Mixed methods"
+        },
+        {
+          "value": "modelling",
+          "label": "Modelling / simulation"
+        },
+        {
+          "value": "observational",
+          "label": "Observational"
+        },
+        {
+          "value": "policy_eval",
+          "label": "Policy / evaluation"
+        },
+        {
+          "value": "survey",
+          "label": "Survey / questionnaire"
+        },
+        {
+          "value": "theoretical",
+          "label": "Theoretical"
         },
         {
           "value": "transfer",
-          "label": "Transfer/project mgmt"
+          "label": "Transfer / project management"
         }
       ]
     },
@@ -349,44 +389,48 @@
       "allow_other": true,
       "options": [
         {
-          "value": "method",
-          "label": "Method/protocol"
-        },
-        {
-          "value": "data_samples",
-          "label": "Data/samples/field/archive"
+          "value": "clinical_access",
+          "label": "Clinical access"
         },
         {
           "value": "compute",
           "label": "Compute/HPC"
         },
         {
-          "value": "clinical_access",
-          "label": "Clinical access"
-        },
-        {
-          "value": "host_stay",
-          "label": "Host a stay"
-        },
-        {
-          "value": "students",
-          "label": "Students / lab support"
-        },
-        {
-          "value": "review",
-          "label": "Review or feedback"
-        },
-        {
-          "value": "industry_contacts",
-          "label": "Industry contacts"
+          "value": "data_samples",
+          "label": "Data/samples/field/archive"
         },
         {
           "value": "europe_horizon",
           "label": "Europe/Horizon network"
         },
         {
+          "value": "host_stay",
+          "label": "Host a stay"
+        },
+        {
+          "value": "industry_contacts",
+          "label": "Industry contacts"
+        },
+        {
           "value": "latam_network",
           "label": "LATAM/local network"
+        },
+        {
+          "value": "method",
+          "label": "Method/protocol"
+        },
+        {
+          "value": "not_sure",
+          "label": "Not sure yet"
+        },
+        {
+          "value": "review",
+          "label": "Review or feedback"
+        },
+        {
+          "value": "students",
+          "label": "Students / lab support"
         },
         {
           "value": "teaching",
@@ -395,10 +439,6 @@
         {
           "value": "thesis_co",
           "label": "Thesis co-supervision"
-        },
-        {
-          "value": "not_sure",
-          "label": "Not sure yet"
         }
       ]
     },
@@ -410,52 +450,52 @@
       "allow_other": true,
       "options": [
         {
-          "value": "joint_paper",
-          "label": "Joint paper"
-        },
-        {
-          "value": "grant_partner",
-          "label": "Grant/consortium partner"
-        },
-        {
           "value": "method_lack",
           "label": "A method I lack"
-        },
-        {
-          "value": "data_samples",
-          "label": "Data/samples/clinical/field"
-        },
-        {
-          "value": "stay",
-          "label": "Stay/mobility"
-        },
-        {
-          "value": "industry_partner",
-          "label": "Industry/transfer partner"
-        },
-        {
-          "value": "thesis_co",
-          "label": "Thesis co-supervision"
-        },
-        {
-          "value": "review",
-          "label": "Review or feedback"
         },
         {
           "value": "mentoring",
           "label": "Career mentoring"
         },
         {
-          "value": "outreach",
-          "label": "Outreach/podcast"
-        },
-        {
           "value": "compute",
           "label": "Compute/HPC"
         },
         {
+          "value": "data_samples",
+          "label": "Data/samples/clinical/field"
+        },
+        {
+          "value": "grant_partner",
+          "label": "Grant/consortium partner"
+        },
+        {
+          "value": "industry_partner",
+          "label": "Industry/transfer partner"
+        },
+        {
+          "value": "joint_paper",
+          "label": "Joint paper"
+        },
+        {
           "value": "directory_only",
           "label": "Not sure yet; I want to be in the directory"
+        },
+        {
+          "value": "outreach",
+          "label": "Outreach/podcast"
+        },
+        {
+          "value": "review",
+          "label": "Review or feedback"
+        },
+        {
+          "value": "stay",
+          "label": "Stay/mobility"
+        },
+        {
+          "value": "thesis_co",
+          "label": "Thesis co-supervision"
         }
       ]
     },
@@ -468,34 +508,51 @@
     {
       "id": "geo_preferences",
       "type": "multi_select",
-      "label": "Geographic preferences",
+      "label": "Geographic preferences (select all that apply)",
       "required": true,
       "options": [
         {
-          "value": "same_country",
-          "label": "Same country"
+          "value": "africa",
+          "label": "Africa"
         },
         {
-          "value": "latam",
-          "label": "Latin America"
+          "value": "asia",
+          "label": "Asia"
         },
         {
           "value": "europe",
           "label": "Europe"
         },
         {
-          "value": "north_america",
-          "label": "North America"
+          "value": "latam",
+          "label": "Latin America and the Caribbean"
+        },
+        {
+          "value": "middle_east",
+          "label": "Middle East"
         },
         {
           "value": "anywhere",
           "label": "No geographic restriction"
         },
         {
+          "value": "north_america",
+          "label": "North America"
+        },
+        {
+          "value": "oceania",
+          "label": "Oceania"
+        },
+        {
+          "value": "same_country",
+          "label": "Same country"
+        },
+        {
           "value": "specific_country",
           "label": "Specific country (state it in the search description)"
         }
-      ]
+      ],
+      "allow_other": true
     },
     {
       "id": "time_horizon",
@@ -528,16 +585,16 @@
       "required": true,
       "options": [
         {
-          "value": "remote",
-          "label": "Remote"
-        },
-        {
           "value": "hybrid",
           "label": "Hybrid"
         },
         {
           "value": "in_person",
           "label": "In person"
+        },
+        {
+          "value": "remote",
+          "label": "Remote"
         }
       ]
     },
@@ -555,28 +612,28 @@
       "allow_other": true,
       "options": [
         {
-          "value": "authors_no_reply",
-          "label": "Authors don't reply"
-        },
-        {
           "value": "same_coauthors",
           "label": "Always same coauthors"
         },
         {
-          "value": "dont_know_who",
-          "label": "I do not know whom to approach"
+          "value": "authors_no_reply",
+          "label": "Authors don't reply"
         },
         {
           "value": "ignored_junior",
           "label": "Difficulty due to junior profile or not being PI"
         },
         {
-          "value": "no_follow_up",
-          "label": "Lack of follow-up after first contact"
+          "value": "dont_know_who",
+          "label": "I do not know whom to approach"
         },
         {
-          "value": "trust_fit",
-          "label": "Trust or fit between parties"
+          "value": "havent_tried",
+          "label": "I have not tried yet"
+        },
+        {
+          "value": "no_follow_up",
+          "label": "Lack of follow-up after first contact"
         },
         {
           "value": "language",
@@ -587,20 +644,20 @@
           "label": "No institutional funds"
         },
         {
+          "value": "timezone",
+          "label": "Time zone"
+        },
+        {
+          "value": "trust_fit",
+          "label": "Trust or fit between parties"
+        },
+        {
           "value": "tto_slow",
           "label": "TTO slow"
         },
         {
           "value": "visa_admin",
           "label": "Visa/admin"
-        },
-        {
-          "value": "timezone",
-          "label": "Time zone"
-        },
-        {
-          "value": "havent_tried",
-          "label": "I have not tried yet"
         }
       ]
     },
@@ -612,8 +669,8 @@
       "allow_other": true,
       "options": [
         {
-          "value": "phd_diaspora",
-          "label": "PhD/diaspora/supervisor"
+          "value": "this_community",
+          "label": "Channel or podcast in this network"
         },
         {
           "value": "conference",
@@ -624,24 +681,24 @@
           "label": "Email paper author"
         },
         {
-          "value": "linkedin",
-          "label": "LinkedIn"
-        },
-        {
-          "value": "tto",
-          "label": "TTO"
-        },
-        {
           "value": "formal_network",
           "label": "Formal network (COST etc)"
         },
         {
-          "value": "this_community",
-          "label": "Channel or podcast in this network"
-        },
-        {
           "value": "almost_never",
           "label": "I have almost never collaborated this way"
+        },
+        {
+          "value": "linkedin",
+          "label": "LinkedIn"
+        },
+        {
+          "value": "phd_diaspora",
+          "label": "PhD/diaspora/supervisor"
+        },
+        {
+          "value": "tto",
+          "label": "TTO"
         }
       ]
     },
@@ -652,24 +709,24 @@
       "required": false,
       "options": [
         {
-          "value": "replied_led",
-          "label": "Replied and led somewhere"
-        },
-        {
-          "value": "replied_died",
-          "label": "Replied but did not progress"
-        },
-        {
-          "value": "no_reply",
-          "label": "No reply"
+          "value": "gt1y",
+          "label": "More than a year ago; I do not remember precisely"
         },
         {
           "value": "never",
           "label": "Never"
         },
         {
-          "value": "gt1y",
-          "label": "More than a year ago; I do not remember precisely"
+          "value": "no_reply",
+          "label": "No reply"
+        },
+        {
+          "value": "replied_led",
+          "label": "Replied and led somewhere"
+        },
+        {
+          "value": "replied_died",
+          "label": "Replied but did not progress"
         }
       ]
     },
@@ -680,20 +737,20 @@
       "required": false,
       "options": [
         {
-          "value": "yes_routinely",
-          "label": "Yes, routinely"
-        },
-        {
-          "value": "sometimes",
-          "label": "Sometimes"
-        },
-        {
           "value": "no",
           "label": "No"
         },
         {
           "value": "no_external_yet",
           "label": "No external collaborations yet"
+        },
+        {
+          "value": "sometimes",
+          "label": "Sometimes"
+        },
+        {
+          "value": "yes_routinely",
+          "label": "Yes, routinely"
         }
       ]
     },
@@ -704,12 +761,12 @@
       "required": false,
       "options": [
         {
-          "value": "almost_always",
-          "label": "Almost always"
-        },
-        {
           "value": "half",
           "label": "About half"
+        },
+        {
+          "value": "almost_always",
+          "label": "Almost always"
         },
         {
           "value": "different",
@@ -728,8 +785,8 @@
       "required": false,
       "options": [
         {
-          "value": "yes_know",
-          "label": "Yes, I know"
+          "value": "dont_know",
+          "label": "I do not know"
         },
         {
           "value": "think_so",
@@ -740,8 +797,8 @@
           "label": "No"
         },
         {
-          "value": "dont_know",
-          "label": "I do not know"
+          "value": "yes_know",
+          "label": "Yes, I know"
         }
       ]
     },
@@ -768,16 +825,16 @@
       "required": true,
       "options": [
         {
-          "value": "yes",
-          "label": "Yes"
+          "value": "directory_only",
+          "label": "Directory only; no introductions"
         },
         {
           "value": "you_only_no_intro",
           "label": "Only the team sees the data; no introduction yet"
         },
         {
-          "value": "directory_only",
-          "label": "Directory only; no introductions"
+          "value": "yes",
+          "label": "Yes"
         }
       ]
     },
@@ -792,28 +849,28 @@
       },
       "options": [
         {
-          "value": "name_area_country",
-          "label": "Name/area/country"
-        },
-        {
           "value": "email",
           "label": "Email"
-        },
-        {
-          "value": "whatsapp",
-          "label": "WhatsApp"
         },
         {
           "value": "linkedin_orcid",
           "label": "LinkedIn/ORCID"
         },
         {
-          "value": "need_described",
-          "label": "The need described"
+          "value": "name_area_country",
+          "label": "Name/area/country"
         },
         {
           "value": "nothing_only_you",
           "label": "Nothing; team only"
+        },
+        {
+          "value": "need_described",
+          "label": "The need described"
+        },
+        {
+          "value": "whatsapp",
+          "label": "WhatsApp"
         }
       ]
     },
@@ -823,10 +880,6 @@
       "label": "Preferred channel for an introduction",
       "required": true,
       "options": [
-        {
-          "value": "whatsapp",
-          "label": "WhatsApp"
-        },
         {
           "value": "email",
           "label": "Email"
@@ -838,6 +891,10 @@
         {
           "value": "whatever",
           "label": "No preference"
+        },
+        {
+          "value": "whatsapp",
+          "label": "WhatsApp"
         }
       ]
     },
@@ -848,16 +905,16 @@
       "required": true,
       "options": [
         {
-          "value": "yes",
-          "label": "Yes"
+          "value": "matching_only",
+          "label": "No; matching only"
         },
         {
           "value": "if_useful",
           "label": "Only if clearly useful"
         },
         {
-          "value": "matching_only",
-          "label": "No; matching only"
+          "value": "yes",
+          "label": "Yes"
         }
       ]
     },
@@ -868,20 +925,20 @@
       "required": true,
       "options": [
         {
-          "value": "fluent",
-          "label": "Fluent"
+          "value": "english_working",
+          "label": "English is my working language"
         },
         {
-          "value": "get_by",
-          "label": "Sufficient to work"
+          "value": "fluent",
+          "label": "Fluent"
         },
         {
           "value": "spanish_only",
           "label": "Spanish only"
         },
         {
-          "value": "english_working",
-          "label": "English is my working language"
+          "value": "get_by",
+          "label": "Sufficient to work"
         }
       ]
     },
@@ -893,8 +950,8 @@
       "allow_other": true,
       "options": [
         {
-          "value": "whatsapp",
-          "label": "WhatsApp"
+          "value": "colleague",
+          "label": "A colleague"
         },
         {
           "value": "discord",
@@ -905,16 +962,12 @@
           "label": "Email"
         },
         {
-          "value": "colleague",
-          "label": "A colleague"
+          "value": "linkedin",
+          "label": "LinkedIn"
         },
         {
           "value": "university",
           "label": "My university / institution"
-        },
-        {
-          "value": "linkedin",
-          "label": "LinkedIn"
         },
         {
           "value": "podcast",
@@ -923,6 +976,10 @@
         {
           "value": "synergium_web",
           "label": "Synergium website"
+        },
+        {
+          "value": "whatsapp",
+          "label": "WhatsApp"
         }
       ]
     },

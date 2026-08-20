@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:52 CEST | Áreas/métodos/geo genéricos + alfa + Other | 16 áreas, 14 métodos, 10 geos; selects alfabetizados; vivo | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:49 CEST | match_language = idiomas del selector + Other | 8 langs (EN…DE) + Other; deploy vivo | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:49 CEST | Clash Google vs schema nuevo en BD | Doc heterogeneidad; sync con schema-en-google-sync.json congelado | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:46 CEST | Pase completo form profesional (labels, corta, añade) | Vivo: 37 campos; orcid/modalidad/consent; mercado opcional | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |

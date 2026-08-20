@@ -4,7 +4,7 @@ Formularios públicos en `https://forms.synergium.net/<id>`.
 
 ## Vivo
 
-- Community directory EN: https://forms.synergium.net/0mn7nfs5kqsi8g
+- Community directory EN: https://forms.synergium.net/nexus-input
 - Deploy: VPS Explore Labs (PocketBase + Apache + SES)
 - Estilo: misma base que synergium.net (Manrope, paleta Crepúsculo)
 
@@ -13,8 +13,9 @@ Formularios públicos en `https://forms.synergium.net/<id>`.
 | Doc | Contenido |
 |-----|-----------|
 | [ESTADO-DEPLOY.md](ESTADO-DEPLOY.md) | Estado HTTPS/DNS/pendientes |
-| [URL-OPTIONS.md](URL-OPTIONS.md) | Opciones de slug legible (**sin aplicar**) |
-| [GOOGLE-SHEET-SYNC.md](GOOGLE-SHEET-SYNC.md) | Sheet Google ↔ BD |
+| [URL-OPTIONS.md](URL-OPTIONS.md) | Slug elegido: **nexus-input** |
+| [IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md) | Propuesta toggle EN/ES |
+| [GOOGLE-SHEET-SYNC.md](GOOGLE-SHEET-SYNC.md) | Sheet Google ↔ BD (cada 15 min) |
 | [COMO-HACERLO.md](COMO-HACERLO.md) | Flujo agente publica por API |
 | [PUENTE-DESDE-MAESTRO.md](PUENTE-DESDE-MAESTRO.md) | Enlace a sesión/HISTORICO del repo maestro |
 | [arquitectura.md](arquitectura.md) | Diseño |

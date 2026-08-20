@@ -190,11 +190,32 @@
   const PB = window.location.origin;
   const app = document.getElementById("app");
 
+  /** Canonical public_id for Community directory EN (chosen 2026-08-20). */
+  const CANONICAL_PUBLIC_ID = "nexus-input";
+  /** Until PocketBase public_id is renamed, resolve aliases → live record. */
+  const PUBLIC_ID_ALIASES = {
+    "nexus-input": "0mn7nfs5kqsi8g",
+    "nexus/input": "0mn7nfs5kqsi8g",
+  };
+  const LEGACY_PUBLIC_IDS = new Set(["0mn7nfs5kqsi8g"]);
+
   function publicIdFromPath() {
     const parts = location.pathname.replace(/\/+$/, "").split("/").filter(Boolean);
     if (parts.length === 0 || parts[0] === "index.html") return null;
-    if (parts[0] === "f" && parts[1]) return parts[1];
-    return parts[0];
+    if (parts[0] === "f" && parts[1]) return parts.slice(1).join("-");
+    // /nexus/input → nexus-input ; /nexus-input → nexus-input
+    return parts.length === 1 ? parts[0] : parts.join("-");
+  }
+
+  function resolvePublicId(pathId) {
+    if (!pathId) return null;
+    return PUBLIC_ID_ALIASES[pathId] || PUBLIC_ID_ALIASES[pathId.replace(/-/g, "/")] || pathId;
+  }
+
+  function preferCanonicalUrl(pathId) {
+    if (LEGACY_PUBLIC_IDS.has(pathId) || pathId === "nexus/input") {
+      history.replaceState(null, "", "/" + CANONICAL_PUBLIC_ID + location.search + location.hash);
+    }
   }
 
   function el(tag, attrs = {}, kids = []) {
@@ -365,12 +386,22 @@
           form: rec.id,
           answers,
           respondent_email: typeof answers.email === "string" ? answers.email : "",
+          source: "web",
         };
-        const res = await fetch(`${PB}/api/collections/submissions/records`, {
+        let res = await fetch(`${PB}/api/collections/submissions/records`, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         });
+        // Until `source` column exists on VPS, retry without it.
+        if (!res.ok && res.status === 400) {
+          delete body.source;
+          res = await fetch(`${PB}/api/collections/submissions/records`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(body),
+          });
+        }
         if (!res.ok) {
           const t = await res.text();
           throw new Error(t || "Submit failed");
@@ -393,14 +424,19 @@
   }
 
   (async () => {
-    const id = publicIdFromPath();
-    if (!id) {
+    const pathId = publicIdFromPath();
+    if (!pathId) {
       app.className = "missing";
       app.textContent = "Open a form link you were given.";
       return;
     }
+    preferCanonicalUrl(pathId);
+    const id = resolvePublicId(pathId);
     try {
-      const rec = await fetchForm(id);
+      let rec = await fetchForm(id);
+      // After rename in PocketBase, alias target may 404; try path id as-is.
+      if (!rec && id !== pathId) rec = await fetchForm(pathId);
+      if (!rec && pathId !== CANONICAL_PUBLIC_ID) rec = await fetchForm(CANONICAL_PUBLIC_ID);
       if (!rec) {
         app.className = "missing";
         app.textContent = "This form is closed or the link is invalid.";

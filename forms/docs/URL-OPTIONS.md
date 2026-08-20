@@ -1,43 +1,47 @@
-# Opciones de URL legible (sin aplicar aún)
+# Opciones de URL legible
 
-Hoy: `https://forms.synergium.net/0mn7nfs5kqsi8g` (id opaco).
+**Elegido (2026-08-20):** **P** → `nexus-input`
 
-Propuesta: `public_id` legible (slug) en lugar del nanoid. El id interno de PocketBase sigue siendo opaco.
+| | |
+|--|--|
+| **URL canónica** | https://forms.synergium.net/nexus-input |
+| **También aceptado** | `/nexus/input` (el front lo normaliza a `nexus-input`) |
+| **Id legacy** | `0mn7nfs5kqsi8g` (redirigir / alias hasta rename en PocketBase) |
 
-## Opciones para el Community directory EN
+`public_id` es un solo segmento (`nexus-input`) porque la API `/api/sf/form/{id}` no admite `/` en el path. El patrón top/sub queda como **hyphen**: `nexus` + `input`.
+
+## Aplicar en producción
+
+```bash
+# Con secrets SSH Horacio en el entorno:
+bash forms/deploy/scripts/apply_nexus_input.sh
+
+# O solo rename vía API admin:
+export SYNERGIUM_FORMS_PB_URL=https://forms.synergium.net
+export SYNERGIUM_FORMS_PB_ADMIN_EMAIL=…
+export SYNERGIUM_FORMS_PB_ADMIN_PASSWORD=…
+python3 scripts/synergium_forms_publish.py rename --from 0mn7nfs5kqsi8g --to nexus-input
+```
+
+---
+
+## Histórico de propuestas (no aplicadas)
+
+### Ronda 1 A–H
 
 | # | URL | Notas |
 |---|-----|--------|
-| A | `/community-directory` | Clara, larga, SEO-friendly |
-| B | `/researcher-match` | Enfoque matching |
-| C | `/collaboration-input` | Como pediste; un poco genérica |
-| D | `/match` | Corta; puede chocar con futuros forms |
-| E | `/directory` | Corta y clara |
-| F | `/c/directory` | Prefijo `c/` = campaign/community |
-| G | `/en/community-directory` | Deja hueco para `/es/directorio-comunidad` |
-| H | Híbrido: slug + corto opaco `/directory-x7k2` | Legible y difícil de adivinar listados |
+| A–H | ver commits previos | Descartadas |
 
-**Recomendación A–H (obsoleta para Horacio):** no le gustó ninguna.
+### Ronda 2 I–P
 
-## Ronda 2 — top / sub (I–P)
-
-Patrón: **`/palabra-top/sub`**. La top es el namespace de todos los forms (ganar, colaborar…); la sub es *este* form. Luego pueden existir `/win/snapshot`, `/collab/brief`, etc. Sesgo de la sub: **input**.
-
-| # | URL | Top | Por qué |
-|---|-----|-----|---------|
-| I | `/win/input` | win | Ganar; corta y potente |
-| J | `/gain/input` | gain | Ganar, tono más institucional |
-| K | `/collab/input` | collab | Colaboración explícita |
-| L | `/bridge/input` | bridge | Puente LATAM–Europa (on-brand) |
-| M | `/rise/input` | rise | Subir / crecer |
-| N | `/forge/input` | forge | Forjar alianzas |
-| O | `/leap/input` | leap | Salto; acción |
-| P | `/nexus/input` | nexus | Nodo de conexión (cerca de Synergium) |
-
-Ejemplos de hermanos futuros: `/win/snapshot`, `/bridge/match`, `/collab/brief`.
-
-**Recomendación ronda 2:** **I** (`/win/input`) si prima el golpe; **L** (`/bridge/input`) si prima el relato Synergium; **K** (`/collab/input`) si quieres que se lea solo.
-
-Forms internos/privados pueden seguir con id opaco.
-
-No se cambia nada en producción hasta que elijas.
+| # | URL | Top |
+|---|-----|-----|
+| I | `/win/input` | win |
+| J | `/gain/input` | gain |
+| K | `/collab/input` | collab |
+| L | `/bridge/input` | bridge |
+| M | `/rise/input` | rise |
+| N | `/forge/input` | forge |
+| O | `/leap/input` | leap |
+| **P** | **`/nexus/input` → `nexus-input`** | **nexus** ✓ |

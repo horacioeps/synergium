@@ -30,8 +30,8 @@ bash ~/synergium-forms/scripts/enable_ssl.sh
 
 ### Primer formulario publicado
 
-- **Public ID:** `0mn7nfs5kqsi8g`
-- **URL (cuando DNS+SSL):** `https://forms.synergium.net/0mn7nfs5kqsi8g`
+- **Public ID:** `nexus-input` (legacy: `0mn7nfs5kqsi8g`)
+- **URL:** `https://forms.synergium.net/nexus-input`
 
 Estado detallado: [forms/docs/ESTADO-DEPLOY.md](../forms/docs/ESTADO-DEPLOY.md)
 

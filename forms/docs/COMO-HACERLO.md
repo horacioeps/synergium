@@ -105,7 +105,7 @@ Reglas: público solo puede **crear** submissions si el form está `open`. Lista
 6. Primera encuesta: Community directory EN (schema ya listo).
 
 **Estado 2026-08-20:** DNS + HTTPS OK. Form EN vivo:
-`https://forms.synergium.net/0mn7nfs5kqsi8g`
+`https://forms.synergium.net/nexus-input`
 Google Sheet y PocketBase **aún no se fusionan solos** — ver [ESTADO-DEPLOY.md](ESTADO-DEPLOY.md) y [GOOGLE-SHEET-SYNC.md](GOOGLE-SHEET-SYNC.md).
 
 Después de eso, cada encuesta nueva = solo chat (“crea esta encuesta…”) → enlace.

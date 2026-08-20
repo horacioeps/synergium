@@ -107,6 +107,13 @@ def ensure_collections(token: str) -> None:
             },
             {"name": "answers", "type": "json", "required": True},
             {"name": "respondent_email", "type": "email", "required": False},
+            {
+                "name": "source",
+                "type": "select",
+                "required": False,
+                "maxSelect": 1,
+                "values": ["web", "google"],
+            },
             {"name": "ip_hash", "type": "text", "required": False},
             {"name": "user_agent", "type": "text", "required": False},
         ],
@@ -127,18 +134,29 @@ def ensure_collections(token: str) -> None:
         print("created submissions", sub["id"])
     else:
         sub = next(c for c in existing["items"] if c["name"] == "submissions")
-        req(
-            "PATCH",
-            f"/api/collections/{sub['id']}",
-            {
-                "createRule": "",
-                "listRule": None,
-                "viewRule": None,
-                "updateRule": None,
-                "deleteRule": None,
-            },
-            token=token,
-        )
+        field_names = {f.get("name") for f in (sub.get("fields") or [])}
+        patch = {
+            "createRule": "",
+            "listRule": None,
+            "viewRule": None,
+            "updateRule": None,
+            "deleteRule": None,
+        }
+        if "source" not in field_names:
+            # PocketBase expects full fields list when adding; merge existing + source.
+            fields = list(sub.get("fields") or [])
+            fields.append(
+                {
+                    "name": "source",
+                    "type": "select",
+                    "required": False,
+                    "maxSelect": 1,
+                    "values": ["web", "google"],
+                }
+            )
+            patch["fields"] = fields
+            print("adding source field to submissions")
+        req("PATCH", f"/api/collections/{sub['id']}", patch, token=token)
         print("submissions exists", sub["id"])
 
 

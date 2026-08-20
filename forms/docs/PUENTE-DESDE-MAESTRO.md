@@ -12,10 +12,11 @@
 
 ## Hitos vivos
 
-- URL EN: https://forms.synergium.net/0mn7nfs5kqsi8g
+- URL EN: https://forms.synergium.net/nexus-input
 - HTTPS + DNS OK (2026-08-20)
 - Estilo alineado a synergium.net (Manrope, Crepúsculo `#131313` / `#4B52FF`) — 2026-08-20
-- URL legible: opciones en `URL-OPTIONS.md` (sin aplicar hasta decisión)
-- Google Sheet ↔ BD: aún no automático (`GOOGLE-SHEET-SYNC.md`)
+- URL legible: **nexus-input** (elegida); apply con `forms/deploy/scripts/apply_nexus_input.sh`
+- Google Sheet ↔ BD: cron 15 min pendiente (`GOOGLE-SHEET-SYNC.md`); columna `source` web|google
+- Idioma: propuesta en `IDIOMA-SELECTOR.md`
 
 Trabajo futuro de Forms: **solo en este repo**.

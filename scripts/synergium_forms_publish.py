@@ -164,6 +164,37 @@ def cmd_export(args: argparse.Namespace) -> None:
     print(json.dumps({"exported": len(items), "out": str(path)}, indent=2))
 
 
+def cmd_rename(args: argparse.Namespace) -> None:
+    """Rename forms.public_id (URL slug). Keeps same record + submissions."""
+    token = auth()
+    rec = find_by_public_id(token, args.from_id)
+    if not rec:
+        raise SystemExit(f"form not found: {args.from_id}")
+    clash = find_by_public_id(token, args.to_id)
+    if clash and clash["id"] != rec["id"]:
+        raise SystemExit(f"target public_id already in use: {args.to_id}")
+    out = req(
+        "PATCH",
+        f"/api/collections/forms/records/{rec['id']}",
+        {"public_id": args.to_id},
+        token=token,
+    )
+    url = f"{BASE}/{out['public_id']}"
+    print(
+        json.dumps(
+            {
+                "action": "renamed",
+                "id": out["id"],
+                "from": args.from_id,
+                "public_id": out["public_id"],
+                "url": url,
+                "status": out["status"],
+            },
+            indent=2,
+        )
+    )
+
+
 def main() -> None:
     p = argparse.ArgumentParser(description="Synergium Forms agent CLI")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -190,6 +221,11 @@ def main() -> None:
     ex.add_argument("--public-id", required=True)
     ex.add_argument("--out", required=True)
     ex.set_defaults(func=cmd_export)
+
+    rn = sub.add_parser("rename", help="Change public_id (URL slug) of an existing form")
+    rn.add_argument("--from", dest="from_id", required=True)
+    rn.add_argument("--to", dest="to_id", required=True)
+    rn.set_defaults(func=cmd_rename)
 
     args = p.parse_args()
     args.func(args)

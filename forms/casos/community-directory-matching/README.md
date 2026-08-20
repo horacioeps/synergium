@@ -11,8 +11,8 @@ Origen: copy vivo del form EN (Google) + spec `generado/comunidad-whatsapp/casos
 | `locale` | `en` (ES = segundo form o `locale=es` con mismo schema ids) |
 | `status` | `open` |
 | `notify_email` | email que uses para intros (personal o info@) |
-| `public_id` | generado al publicar (nanoid) |
-| URL | `https://forms.synergium.net/{public_id}` |
+| `public_id` | `nexus-input` (antes nanoid `0mn7nfs5kqsi8g`) |
+| URL | `https://forms.synergium.net/nexus-input` |
 
 ## Descripción (intro)
 

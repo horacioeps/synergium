@@ -38,6 +38,7 @@ Para matching frecuente se pueden añadir columnas materializadas o vistas más 
 | `form_id` | uuid FK → forms | |
 | `answers` | jsonb | mapa `field_id → value` |
 | `respondent_email` | text NULL | denormalizado si existe campo email |
+| `source` | text | `web` \| `google` (origen del alta) |
 | `ip_hash` | text NULL | hash, no IP en claro |
 | `user_agent` | text NULL | |
 | `created_at` | timestamptz | |

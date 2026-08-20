@@ -99,6 +99,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** `allow_other` en intro_channel, collab_modality, share_with_match, english_for_collab. No en consent/escalas/sí-no. Deploy vivo.
 
+## Interacción 15
+
+**Usuario:** English level no sirve si es internacional; quitar o idiomas del menú × nivel (nativo/medio/poco), sencillo.
+
+**Agente:** Sustituido `english_for_collab` por `working_languages` (multi): 8 idiomas del selector × native/working/basic + Other. Sin matriz nueva. Vivo.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

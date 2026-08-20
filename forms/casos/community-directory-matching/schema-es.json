@@ -922,29 +922,109 @@
       ]
     },
     {
-      "id": "english_for_collab",
-      "type": "single_select",
-      "label": "Nivel de inglés para colaborar",
+      "id": "working_languages",
+      "type": "multi_select",
+      "label": "Idiomas para colaborar y su nivel en cada uno (seleccione todos los que correspondan)",
       "required": true,
+      "allow_other": true,
       "options": [
         {
-          "value": "english_working",
-          "label": "El inglés es mi lengua de trabajo"
+          "value": "de_native",
+          "label": "Alemán (nativo)"
         },
         {
-          "value": "fluent",
-          "label": "Fluido"
+          "value": "de_working",
+          "label": "Alemán (de trabajo)"
         },
         {
-          "value": "get_by",
-          "label": "Nivel suficiente para trabajar"
+          "value": "de_basic",
+          "label": "Alemán (básico)"
         },
         {
-          "value": "spanish_only",
-          "label": "Solo español"
+          "value": "zh-CN_native",
+          "label": "Chino (simplificado) (nativo)"
+        },
+        {
+          "value": "zh-CN_working",
+          "label": "Chino (simplificado) (de trabajo)"
+        },
+        {
+          "value": "zh-CN_basic",
+          "label": "Chino (simplificado) (básico)"
+        },
+        {
+          "value": "es_native",
+          "label": "Español (nativo)"
+        },
+        {
+          "value": "es_working",
+          "label": "Español (de trabajo)"
+        },
+        {
+          "value": "es_basic",
+          "label": "Español (básico)"
+        },
+        {
+          "value": "en_native",
+          "label": "Inglés (nativo)"
+        },
+        {
+          "value": "en_working",
+          "label": "Inglés (de trabajo)"
+        },
+        {
+          "value": "en_basic",
+          "label": "Inglés (básico)"
+        },
+        {
+          "value": "it_native",
+          "label": "Italiano (nativo)"
+        },
+        {
+          "value": "it_working",
+          "label": "Italiano (de trabajo)"
+        },
+        {
+          "value": "it_basic",
+          "label": "Italiano (básico)"
+        },
+        {
+          "value": "ja_native",
+          "label": "Japonés (nativo)"
+        },
+        {
+          "value": "ja_working",
+          "label": "Japonés (de trabajo)"
+        },
+        {
+          "value": "ja_basic",
+          "label": "Japonés (básico)"
+        },
+        {
+          "value": "pt_native",
+          "label": "Portugués (nativo)"
+        },
+        {
+          "value": "pt_working",
+          "label": "Portugués (de trabajo)"
+        },
+        {
+          "value": "pt_basic",
+          "label": "Portugués (básico)"
+        },
+        {
+          "value": "ar_native",
+          "label": "Árabe (nativo)"
+        },
+        {
+          "value": "ar_working",
+          "label": "Árabe (de trabajo)"
+        },
+        {
+          "value": "ar_basic",
+          "label": "Árabe (básico)"
         }
-      ],
-      "allow_other": true
+      ]
     },
     {
       "id": "how_found_form",

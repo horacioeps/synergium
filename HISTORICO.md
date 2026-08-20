@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-20 21:55 UTC | Repetir dudas y sugerencias numeradas | Lista 1–8; 2=resuelta (CSV público) | [sesiones/2026-08-20-explicar-sheet-dudas.md](sesiones/2026-08-20-explicar-sheet-dudas.md) |
 | 2026-08-20 21:53 UTC | Hoja Sheet compartida: ¿no puedes leerla? | Sí: fallo era gid=0; con gid=1537513728 CSV OK (26 filas); doc corregido | [sesiones/2026-08-20-explicar-sheet-dudas.md](sesiones/2026-08-20-explicar-sheet-dudas.md) |
 | 2026-08-20 21:45 UTC | Explicar Sheet sync + dudas/sugerencias numeradas | Doc GOOGLE-SHEET-SYNC aclarado; lista 1–8 para que Horacio responda | [sesiones/2026-08-20-explicar-sheet-dudas.md](sesiones/2026-08-20-explicar-sheet-dudas.md) |
 | 2026-08-20 21:35 UTC | Comprobar secrets.env local rellenado | Formato arreglado (quotes); SSH vault OK (8192 md); rotar tokens filtrados en primer source | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |

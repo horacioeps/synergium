@@ -6,7 +6,7 @@ set -euo pipefail
 
 FROM_ID="${FROM_PUBLIC_ID:-0mn7nfs5kqsi8g}"
 TO_ID="${TO_PUBLIC_ID:-nexus-input}"
-REPO_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+REPO_ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 
 if [[ -n "${SYNERGIUM_FORMS_PB_ADMIN_EMAIL:-}" && -n "${SYNERGIUM_FORMS_PB_ADMIN_PASSWORD:-}" ]]; then
   echo "== rename via public API =="

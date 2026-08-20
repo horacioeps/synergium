@@ -192,10 +192,10 @@
 
   /** Canonical public_id for Community directory EN (chosen 2026-08-20). */
   const CANONICAL_PUBLIC_ID = "nexus-input";
-  /** Until PocketBase public_id is renamed, resolve aliases → live record. */
+  /** Old / alternate path ids → live public_id. */
   const PUBLIC_ID_ALIASES = {
-    "nexus-input": "0mn7nfs5kqsi8g",
-    "nexus/input": "0mn7nfs5kqsi8g",
+    "0mn7nfs5kqsi8g": "nexus-input",
+    "nexus/input": "nexus-input",
   };
   const LEGACY_PUBLIC_IDS = new Set(["0mn7nfs5kqsi8g"]);
 
@@ -209,7 +209,7 @@
 
   function resolvePublicId(pathId) {
     if (!pathId) return null;
-    return PUBLIC_ID_ALIASES[pathId] || PUBLIC_ID_ALIASES[pathId.replace(/-/g, "/")] || pathId;
+    return PUBLIC_ID_ALIASES[pathId] || pathId;
   }
 
   function preferCanonicalUrl(pathId) {

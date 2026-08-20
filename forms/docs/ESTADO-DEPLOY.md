@@ -10,7 +10,14 @@
 
 **https://forms.synergium.net/nexus-input**
 
-(legacy temporal: `…/0mn7nfs5kqsi8g` — alias/redirect hasta rename en PocketBase)
+(legacy `…/0mn7nfs5kqsi8g` → el front redirige / resuelve a `nexus-input`)
+
+## Aplicado en vivo (2026-08-20)
+
+- Rename PocketBase `public_id` → `nexus-input`
+- Campo `source` (`web` \| `google`) en `submissions`
+- Front desplegado (alias legacy + submit `source=web`)
+- Secrets locales: `~/.cursor/secrets.env` (SSH Horacio)
 
 ## Google Forms / Spreadsheet vs Synergium Forms
 
@@ -33,13 +40,12 @@ Son dos tuberías independientes hasta que importemos / sincronicemos (objetivo:
 
 ## Pendiente (prioridad)
 
-1. **Deploy** rename `0mn7nfs5kqsi8g` → `nexus-input` + front/alias (`apply_nexus_input.sh`) — necesita secrets SSH/API.
-2. **Campo `source`** en PocketBase + marcar submissions previas.
-3. **Import / cron 15 min** Sheet → PocketBase (credenciales Sheets).
-4. Publicar **versión ES** + selector idioma ([IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md)).
-5. Cerrar/actualizar mensajes WhatsApp con la URL nueva.
-6. (Opcional) Secrets Cursor: `SYNERGIUM_FORMS_PB_*` / `EXPLORE_LABS_SSH_HORACIO_*`.
-7. (Opcional) Borrar submissions de prueba (`PublicTest*`) en PocketBase.
+1. **Import / cron 15 min** Sheet → PocketBase (credenciales Sheets).
+2. Marcar submissions previas con `source` si hace falta.
+3. Publicar **versión ES** + selector idioma ([IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md)).
+4. Cerrar/actualizar mensajes WhatsApp con la URL nueva.
+5. (Opcional) Añadir también `SYNERGIUM_FORMS_PB_*` a `~/.cursor/secrets.env` (hoy el rename usa el `.env` del VPS vía SSH).
+6. (Opcional) Borrar submissions de prueba (`PublicTest*`) en PocketBase.
 
 ## Publicar otra encuesta
 

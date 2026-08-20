@@ -1,49 +1,46 @@
-# Estado del despliegue — 2026-08-18
+# Estado del despliegue — actualizado 2026-08-20
 
-## Hecho
+## En vivo (OK)
 
-- PocketBase 0.39.11 en VPS Explore Labs (`217.154.191.98`), pm2 `synergium-forms`, `127.0.0.1:8090`
-- Apache vhost HTTP `forms.synergium.net` → static `/var/www/forms.synergium.net` + proxy `/api` y `/_/`
-- Colecciones `forms` / `submissions`
-- API pública `GET /api/sf/form/{publicId}`
-- Front SPA en `pb_public/index.html`
-- Email al enviar vía SES (EmailerX SMTP), notifica a `horacio@horacio-ps.com`
-- CLI agente: `scripts/synergium_forms_publish.py`
-- **Community directory EN publicado**
+- DNS: `forms.synergium.net` → `217.154.191.98`
+- HTTPS Let’s Encrypt (caduca 2026-11-18; renovación automática certbot)
+- HTTP → HTTPS (301 301)
+- PocketBase pm2 `synergium-forms` online
+- Community directory EN:
 
-## URL del primer form (cuando DNS+SSL estén)
+**https://forms.synergium.net/0mn7nfs5kqsi8g**
 
-`https://forms.synergium.net/0mn7nfs5kqsi8g`
+## Google Forms / Spreadsheet vs Synergium Forms
 
-Mientras DNS no exista, el stack responde por IP con cabecera Host:
+**Hoy NO conviven solos en la misma BD.**
 
-```bash
-curl -H 'Host: forms.synergium.net' http://217.154.191.98/0mn7nfs5kqsi8g
-```
+| Canal | Dónde caen las respuestas |
+|-------|---------------------------|
+| Enlace Google Forms (`forms.gle`) | Google Spreadsheet (filas nuevas; normalmente **al final**, no “arriba”) |
+| Enlace `forms.synergium.net/…` | PocketBase (`submissions`) + email |
 
-## Pendiente (1 paso manual)
+Son dos tuberías independientes hasta que importemos / sincronicemos.
 
-En el panel DNS de IONOS para **synergium.net**, crear:
+### Qué hacer con gente que aún tiene el enlace Google
 
-| Tipo | Nombre | Valor |
-|------|--------|-------|
-| **A** | `forms` | `217.154.191.98` |
+1. **Importar** lo ya recogido en el Sheet → PocketBase (script; una vez o bajo demanda).
+2. Elegir una de estas políticas:
+   - **A (recomendada):** cerrar o dejar de compartir el Google Form; en WhatsApp/comunidad publicar solo el enlace Synergium; si alguien envía al Sheet, no entra a la BD hasta un import manual.
+   - **B:** dejar Google abierto un tiempo y **sincronizar** Sheet → BD (cron o al pedir “importa el sheet”); hace falta el ID del spreadsheet + acceso (cuenta de servicio / export CSV).
+3. Marcar en cada submission un campo `source` = `synergium` | `google` para no mezclar ciegos.
 
-Luego, en el VPS (o pedir al agente):
+“Encima” en Google Sheets: las respuestas del Form se **añaden como filas nuevas** (casi siempre al final de la hoja de respuestas). No pisan filas viejas.
 
-```bash
-bash ~/synergium-forms/scripts/enable_ssl.sh
-```
+## Pendiente (prioridad)
 
-No hay API/token IONOS en secrets; por eso el registro DNS no se puede crear desde el agente.
+1. **Import CSV/Sheet → PocketBase** del Community directory (y deduplicar por email si hace falta).
+2. Decidir política A o B para el enlace Google; si B, montar sync.
+3. Publicar **versión ES** del mismo directorio (mismos `field id`).
+4. Cerrar/actualizar mensajes WhatsApp con la URL nueva.
+5. (Opcional) Secrets Cursor: `SYNERGIUM_FORMS_PB_*` para publicar desde el agente sin leer `.env` del VPS.
+6. (Opcional) Borrar submissions de prueba (`PublicTest*`) en PocketBase.
+7. Formulario ES Community directory + más forms Synergium (Snapshot, etc.) cuando los pidas.
 
-## Credenciales (VPS, no en git)
+## Publicar otra encuesta
 
-`~/synergium-forms/.env` (chmod 600) — admin PocketBase + SMTP.
-
-## Publicar otra encuesta (agente)
-
-```bash
-# con env cargado desde VPS .env o secrets Cursor
-python3 scripts/synergium_forms_publish.py publish --schema generado/synergium-forms/casos/.../schema.json
-```
+Tú das el texto en el chat → el agente corre `scripts/synergium_forms_publish.py` → te devuelve `https://forms.synergium.net/<codigo>`.

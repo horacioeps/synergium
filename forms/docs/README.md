@@ -1,25 +1,29 @@
-# Synergium Forms — `forms.synergium.net`
+# Synergium Forms (canónico)
 
-Sistema de formularios tipo Google Forms con URL opaca, acceso abierto por enlace, almacenamiento propio y email al completar.
+Formularios públicos en `https://forms.synergium.net/<id>`.
 
-## Objetivo
+## Vivo
 
-- URLs del estilo `https://forms.synergium.net/jha76sd8a78sda`
-- Cualquiera con el enlace puede responder (sin cuenta)
-- Respuestas en base de datos propia
-- Email a Horacio (y opcionalmente copia) en cada envío
-- Primer caso: **Community directory — matching researchers**
+- Community directory EN: https://forms.synergium.net/0mn7nfs5kqsi8g
+- Deploy: VPS Explore Labs (PocketBase + Apache + SES)
+- Estilo: misma base que synergium.net (Manrope, paleta Crepúsculo)
 
-## Documentos
+## Docs
 
 | Doc | Contenido |
 |-----|-----------|
-| **[COMO-HACERLO.md](COMO-HACERLO.md)** | Decisión única: tú das directrices → agente publica por API; VPS = Explore Labs |
-| **[ESTADO-DEPLOY.md](ESTADO-DEPLOY.md)** | **Estado real del deploy (URL, DNS pendiente, SSL)** |
-| [arquitectura.md](arquitectura.md) | Comparativas y por qué no WordPress |
-| [modelo-datos.md](modelo-datos.md) | Tablas y campos |
-| [../casos/community-directory-matching/](../casos/community-directory-matching/) | Spec del primer formulario |
+| [ESTADO-DEPLOY.md](ESTADO-DEPLOY.md) | Estado HTTPS/DNS/pendientes |
+| [URL-OPTIONS.md](URL-OPTIONS.md) | Opciones de slug legible (**sin aplicar**) |
+| [GOOGLE-SHEET-SYNC.md](GOOGLE-SHEET-SYNC.md) | Sheet Google ↔ BD |
+| [COMO-HACERLO.md](COMO-HACERLO.md) | Flujo agente publica por API |
+| [PUENTE-DESDE-MAESTRO.md](PUENTE-DESDE-MAESTRO.md) | Enlace a sesión/HISTORICO del repo maestro |
+| [arquitectura.md](arquitectura.md) | Diseño |
+| [modelo-datos.md](modelo-datos.md) | Colecciones |
 
-## Relación con trabajo previo
+## Publicar
 
-El 2026-08-14 se generó el mismo directorio para **Google Forms** en `generado/comunidad-whatsapp/casos/2026-08-14-formulario-matching/`. Este módulo es la evolución: dejar Google y hospedar bajo marca Synergium, con BD consultable para matching.
+```bash
+python3 scripts/synergium_forms_publish.py publish --schema forms/casos/.../schema.json
+```
+
+Credenciales: secrets / `~/synergium-forms/.env` en el VPS (no en git).

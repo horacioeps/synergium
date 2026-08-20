@@ -130,3 +130,5 @@ Referencias en Obsidian repo:
 | `scripts/synergium_forms_publish.py` | `scripts/synergium_forms_publish.py` |
 | `scripts/buscador_prospectos/` | `prospectos/scripts/buscador_prospectos/` |
 | Chats Synergium en Obsidian `chats/` | `chats/` (copia; nuevas sesiones solo aquí) |
+
+- 2026-08-20 Forms estilo+URL: `forms/docs/PUENTE-DESDE-MAESTRO.md`, `sesiones/2026-08-20-forms-estilo-url-puente.md`.

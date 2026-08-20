@@ -104,7 +104,9 @@ Reglas: público solo puede **crear** submissions si el form está `open`. Lista
 5. Script `publish` en el repo.  
 6. Primera encuesta: Community directory EN (schema ya listo).
 
-**Estado 2026-08-18:** pasos 2–6 hechos. Falta solo el registro DNS A `forms` → `217.154.191.98` en IONOS y luego `enable_ssl.sh`. Ver [ESTADO-DEPLOY.md](ESTADO-DEPLOY.md).
+**Estado 2026-08-20:** DNS + HTTPS OK. Form EN vivo:
+`https://forms.synergium.net/0mn7nfs5kqsi8g`
+Google Sheet y PocketBase **aún no se fusionan solos** — ver [ESTADO-DEPLOY.md](ESTADO-DEPLOY.md) y [GOOGLE-SHEET-SYNC.md](GOOGLE-SHEET-SYNC.md).
 
 Después de eso, cada encuesta nueva = solo chat (“crea esta encuesta…”) → enlace.
 

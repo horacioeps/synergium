@@ -23,6 +23,13 @@ Elige una:
 - **2b** Hoja “cualquiera con el enlace → Visor” (más fácil, menos privada).  
 - **2c** De momento CSV manual (sin cron 15 min).
 
+---
+
+## Continuación — Horacio (hoja compartida)
+
+> la hoja la tengo compartida… no puedes ????? + URL con gid=1537513728
+
+**Agente:** Sí se puede. Fallo mío: exporté con `gid=0` (incorrecto). Con `gid=1537513728` el CSV responde **200** (~26 respuestas). Actualizado `GOOGLE-SHEET-SYNC.md`. La duda **2** queda resuelta en la práctica como **2b** (enlace público de lectura).
 **3. Idioma en la URL**  
 El selector ya está. ¿Te basta **una sola URL** (`nexus-input`) con el globo EN/ES/…, o quieres también una URL ES aparte (p. ej. `nexus-input-es`)?
 

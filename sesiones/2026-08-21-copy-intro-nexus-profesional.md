@@ -23,3 +23,7 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 **Usuario:** No meter nada de comunidad; no em dashes; siempre unslop; objetivo más claro con intro más clara; partir de A; dar 3 variantes.
 
 **Agente:** Tres variantes A (ES), sin «comunidad», sin —/–, objetivo en la primera frase, unslop (crisp). Pendiente elegir A1/A2/A3.
+
+## Interacción 4 (cierre vía guarda-sesión en otro hilo)
+
+En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

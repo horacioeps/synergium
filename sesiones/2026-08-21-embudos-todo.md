@@ -11,3 +11,12 @@ Confirmó captura WA: Valentina Lucena. Pregunta fase 2 que le hizo Horacio. Ped
 - Creado [EMBUDOS.md](../EMBUDOS.md): A/A2/A3, B Partner Snapshot, C exp↔comp, D directorio, E institucional, F consorcio, G favor post-ayuda, H EmailerX; prioridad corto plazo.
 - Creado [TODO.md](../TODO.md): operativo abierto + producto/GTM + ideas derivadas aparcadas.
 - Enlaces en README.
+
+### Usuario
+`/guarda-sesion-y-demas`
+
+### Agente
+- Rama `main`. Sesión embudos ya existía → ampliada con este cierre.
+- README ya enlaza HISTORICO / EMBUDOS / TODO.
+- Incluidos en commit cambios locales pendientes del form (`nexus-input` i18n/schema + pie `info@synergium.net` en `index.html`); no `.vscode/`.
+- `git push origin main`.

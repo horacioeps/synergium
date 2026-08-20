@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:34 CEST | /guarda-sesion-y-demas | Volcado embudos+copy; commit copy intro nexus + pie email; push main | [sesiones/2026-08-21-embudos-todo.md](sesiones/2026-08-21-embudos-todo.md) |
 | 2026-08-21 00:28 CEST | 3 variantes de A: sin comunidad, sin em dash, unslop, objetivo claro | A1/A2/A3 propuestas; pendiente elegir | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:26 CEST | Copy intro form más profesional; 3 plantillas | Tres opciones A/B/C (institucional / directa / académica); WhatsApp fuera de la caja; pendiente elegir | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:23 UTC | Embudos desde form + vault → EMBUDOS.md / TODO.md | Opinión fase 2; embudos A–H; vault ideas en embudos o TODO; enlaces README | [sesiones/2026-08-21-embudos-todo.md](sesiones/2026-08-21-embudos-todo.md) |

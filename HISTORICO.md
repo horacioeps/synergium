@@ -3,6 +3,7 @@
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
 | 2026-08-20 22:09 UTC | /guarda-sesion-y-demas | Volcado + HISTORICO + push main (sesión secrets.env local) | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |
+| 2026-08-21 00:16 UTC | ¿Tenemos a Palencia (3 emails) en el directorio? | No: ni PocketBase ni Sheet; enviar nexus-input | [sesiones/2026-08-21-palencia-no-en-directorio.md](sesiones/2026-08-21-palencia-no-en-directorio.md) |
 | 2026-08-21 00:09 UTC | Top 3 matches con datos actuales | 1 Matías–Valentina; 2 Ferran–Elena; 3 Causa–Yen Na; doc matching | [sesiones/2026-08-21-top3-matches.md](sesiones/2026-08-21-top3-matches.md) |
 | 2026-08-21 00:03 UTC | ¿Por qué llegan tantos correos Synergium Forms? | Import Sheet disparó notify ×26; fix: skip si source=google | [sesiones/2026-08-21-decisiones-import-sheet.md](sesiones/2026-08-21-decisiones-import-sheet.md) |
 | 2026-08-21 00:00 UTC | Decisiones 1/3/4/6/7/8 + ¿form usable? | Ambos canales; import 26; cron 15min; PB en secrets.env; form sí usable | [sesiones/2026-08-21-decisiones-import-sheet.md](sesiones/2026-08-21-decisiones-import-sheet.md) |

@@ -111,6 +111,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Public/Private university (EN) / Universidad pública/privada (ES); resto de opciones sin abreviaturas informales. Vivo.
 
+## Interacción 17
+
+**Usuario:** `/guarda-sesion-y-demas`
+
+**Agente:** Comprobado: rama `main`; sesión `sesiones/2026-08-21-copy-intro-nexus-profesional.md` al día (interacciones 1–16); README enlaza HISTORICO; working tree limpio salvo `.vscode/` (no commiteable). Volcado de este cierre + fila HISTORICO + push.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

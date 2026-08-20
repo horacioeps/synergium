@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:58 CEST | /guarda-sesion-y-demas | Sesión copy intro nexus ampliada; HISTORICO; main limpio + push | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:56 CEST | Institution type: University (no uni) | Public/Private university; ES Universidad pública/privada; vivo | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:54 CEST | Idiomas colaboración × nivel (intl) | english_for_collab → working_languages (8×3 + Other); vivo | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:53 CEST | Other en intro_channel y selects con sentido | +collab_modality, share_with_match, english_for_collab; vivo | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |

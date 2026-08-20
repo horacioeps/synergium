@@ -51,3 +51,13 @@ Traer de una vez las ~20 (o las que haya) filas actuales del Sheet; después mon
 
 **8. ES nativo en más forms**  
 Cuando publiques otro form, conviene dejar `/i18n/{public_id}.es.json` (como nexus-input) para que ES no dependa de Google Translate.
+
+---
+
+## Usuario
+
+> dime otras vez dudas y sugerencias
+
+## Agente
+
+Lista actualizada: **2** ya resuelta (2b). El resto igual, para que Horacio responda por número.

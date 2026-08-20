@@ -163,11 +163,11 @@
         },
         {
           "value": "company",
-          "label": "Empresa/startup"
+          "label": "Empresa / startup"
         },
         {
           "value": "hospital",
-          "label": "Hospital/clínica"
+          "label": "Hospital / clínica"
         },
         {
           "value": "independent",
@@ -175,7 +175,7 @@
         },
         {
           "value": "ngo",
-          "label": "ONG/fundación"
+          "label": "ONG / fundación"
         },
         {
           "value": "private_uni",

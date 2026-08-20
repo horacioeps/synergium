@@ -159,11 +159,11 @@
       "options": [
         {
           "value": "company",
-          "label": "Company/startup"
+          "label": "Company / startup"
         },
         {
           "value": "hospital",
-          "label": "Hospital/clinic"
+          "label": "Hospital / clinic"
         },
         {
           "value": "independent",
@@ -171,15 +171,15 @@
         },
         {
           "value": "ngo",
-          "label": "NGO/foundation"
+          "label": "NGO / foundation"
         },
         {
           "value": "private_uni",
-          "label": "Private uni"
+          "label": "Private university"
         },
         {
           "value": "public_uni",
-          "label": "Public uni"
+          "label": "Public university"
         },
         {
           "value": "research_centre",

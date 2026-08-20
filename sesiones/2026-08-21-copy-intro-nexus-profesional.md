@@ -105,6 +105,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Sustituido `english_for_collab` por `working_languages` (multi): 8 idiomas del selector × native/working/basic + Other. Sin matriz nueva. Vivo.
 
+## Interacción 16
+
+**Usuario:** Institution type serio: no «uni», sino University.
+
+**Agente:** Public/Private university (EN) / Universidad pública/privada (ES); resto de opciones sin abreviaturas informales. Vivo.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

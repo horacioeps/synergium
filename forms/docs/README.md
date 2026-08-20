@@ -14,7 +14,7 @@ Formularios públicos en `https://forms.synergium.net/<id>`.
 |-----|-----------|
 | [ESTADO-DEPLOY.md](ESTADO-DEPLOY.md) | Estado HTTPS/DNS/pendientes |
 | [URL-OPTIONS.md](URL-OPTIONS.md) | Slug elegido: **nexus-input** |
-| [IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md) | Propuesta toggle EN/ES |
+| [IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md) | Selector = web (EN default + mismos idiomas); regla para todos los forms |
 | [GOOGLE-SHEET-SYNC.md](GOOGLE-SHEET-SYNC.md) | Sheet Google ↔ BD (cada 15 min) |
 | [COMO-HACERLO.md](COMO-HACERLO.md) | Flujo agente publica por API |
 | [PUENTE-DESDE-MAESTRO.md](PUENTE-DESDE-MAESTRO.md) | Enlace a sesión/HISTORICO del repo maestro |

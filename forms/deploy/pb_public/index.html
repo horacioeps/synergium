@@ -53,6 +53,12 @@
       margin: 0 auto;
       padding: 1.25rem 1.25rem 0;
     }
+    .top__tools {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: nowrap;
+    }
     .brand {
       font-size: 0.8rem;
       letter-spacing: 0.08em;
@@ -62,6 +68,51 @@
       color: inherit;
     }
     .brand:hover { text-decoration: underline; }
+    .syn-lang { position: relative; }
+    .syn-lang__btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.25rem 0.55rem;
+      border: 1px solid color-mix(in srgb, currentColor 35%, transparent);
+      border-radius: 999px;
+      background: transparent;
+      color: inherit;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+    .syn-lang__btn:hover,
+    .syn-lang__btn[aria-expanded="true"] { border-color: currentColor; }
+    .syn-lang__globe { display: block; flex: 0 0 auto; }
+    .syn-lang__code { line-height: 1; }
+    .syn-lang__list {
+      position: absolute;
+      top: calc(100% + 0.4rem);
+      right: 0;
+      margin: 0;
+      padding: 0.35rem 0;
+      list-style: none;
+      min-width: 10.5rem;
+      border: 1px solid color-mix(in srgb, currentColor 28%, transparent);
+      border-radius: 8px;
+      background: var(--base);
+      color: inherit;
+      box-shadow: 0 8px 24px color-mix(in srgb, #000 16%, transparent);
+      z-index: 20;
+    }
+    html[data-theme="dark"] .syn-lang__list { background: #1b1b1b; }
+    .syn-lang__list[hidden] { display: none; }
+    .syn-lang__list li {
+      padding: 0.4rem 0.85rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .syn-lang__list li:hover,
+    .syn-lang__list li[aria-selected="true"] {
+      background: color-mix(in srgb, currentColor 8%, transparent);
+    }
     .theme {
       display: inline-flex;
       align-items: center;
@@ -161,15 +212,41 @@
       font-size: 0.8rem;
     }
     .loading, .missing { color: var(--muted); padding: 2rem 0; }
+    #google_translate_element, .goog-te-banner-frame, .skiptranslate, iframe.skiptranslate, .goog-te-gadget { display: none !important; }
+    body { top: 0 !important; }
   </style>
 </head>
 <body>
-  <div class="top">
+  <div id="google_translate_element" hidden></div>
+  <div class="top" translate="no">
     <a class="brand" href="https://synergium.net/">Synergium</a>
-    <button type="button" class="theme" id="themeBtn" aria-label="Toggle light/dark">
-      <svg class="theme__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-      <svg class="theme__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
-    </button>
+    <div class="top__tools">
+      <div class="syn-lang" id="syn-lang">
+        <button type="button" class="syn-lang__btn" id="syn-lang-btn" aria-haspopup="listbox" aria-expanded="false" aria-controls="syn-lang-list" aria-label="Select language / Seleccionar idioma">
+          <svg class="syn-lang__globe" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M3 12h18"/>
+            <path d="M12 3a14 14 0 0 1 0 18"/>
+            <path d="M12 3a14 14 0 0 0 0 18"/>
+          </svg>
+          <span class="syn-lang__code" id="syn-lang-code">EN</span>
+        </button>
+        <ul class="syn-lang__list" id="syn-lang-list" role="listbox" hidden>
+          <li role="option" data-lang="en" aria-selected="true">English</li>
+          <li role="option" data-lang="es">Español</li>
+          <li role="option" data-lang="zh-CN">简体中文</li>
+          <li role="option" data-lang="ar">العربية</li>
+          <li role="option" data-lang="ja">日本語</li>
+          <li role="option" data-lang="pt">Português</li>
+          <li role="option" data-lang="it">Italiano</li>
+          <li role="option" data-lang="de">Deutsch</li>
+        </ul>
+      </div>
+      <button type="button" class="theme" id="themeBtn" aria-label="Toggle light/dark">
+        <svg class="theme__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="theme__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+      </button>
+    </div>
   </div>
   <div class="wrap">
     <div id="app" class="loading">Loading…</div>
@@ -187,37 +264,149 @@
     });
   })();
 
+  /** Same language set as synergium.net. Default EN for every form. */
+  const LANGS = {
+    en: { code: "EN", dir: "ltr", html: "en" },
+    es: { code: "ES", dir: "ltr", html: "es" },
+    "zh-CN": { code: "ZH", dir: "ltr", html: "zh-CN" },
+    ar: { code: "AR", dir: "rtl", html: "ar" },
+    ja: { code: "JA", dir: "ltr", html: "ja" },
+    pt: { code: "PT", dir: "ltr", html: "pt-BR" },
+    it: { code: "IT", dir: "ltr", html: "it" },
+    de: { code: "DE", dir: "ltr", html: "de" },
+  };
+  const UI_FALLBACK = {
+    submit: "Submit",
+    sending: "Sending…",
+    other: "Other",
+    other_placeholder: "Other…",
+    url_placeholder: "One URL per line",
+    thank_you: "Thank you",
+    foot: "Your answers are stored securely. Request deletion via WhatsApp.",
+    complete: "Please complete: ",
+    submit_error: "Could not submit. Please try again.",
+    loading: "Loading…",
+    missing_link: "Open a form link you were given.",
+    missing_form: "This form is closed or the link is invalid.",
+    load_error: "Could not load the form.",
+  };
+
   const PB = window.location.origin;
   const app = document.getElementById("app");
-
-  /** Canonical public_id for Community directory EN (chosen 2026-08-20). */
   const CANONICAL_PUBLIC_ID = "nexus-input";
-  /** Old / alternate path ids → live public_id. */
   const PUBLIC_ID_ALIASES = {
     "0mn7nfs5kqsi8g": "nexus-input",
     "nexus/input": "nexus-input",
   };
   const LEGACY_PUBLIC_IDS = new Set(["0mn7nfs5kqsi8g"]);
 
+  let formRec = null;
+  let formPublicId = null;
+  let ui = { ...UI_FALLBACK };
+
+  function readCookie(n) {
+    const m = document.cookie.match(new RegExp("(?:^|; )" + n + "=([^;]*)"));
+    return m ? decodeURIComponent(m[1]) : "";
+  }
+  function writeCookie(n, v) {
+    document.cookie = n + "=" + v + ";path=/;max-age=31536000";
+    document.cookie = n + "=" + v + ";path=/;domain=" + location.hostname + ";max-age=31536000";
+  }
+  function clearTrans() {
+    document.cookie = "googtrans=;path=/;max-age=0";
+    document.cookie = "googtrans=;path=/;domain=" + location.hostname + ";max-age=0";
+  }
+  function currentLang() {
+    try {
+      const s = localStorage.getItem("syn-lang");
+      if (s && LANGS[s]) return s;
+    } catch (e) {}
+    const c = readCookie("googtrans");
+    const m = c.match(/\/[a-zA-Z-]+\/([a-zA-Z-]+)/);
+    if (m && LANGS[m[1]]) return m[1];
+    return "en";
+  }
+  function paintLang(lang) {
+    const meta = LANGS[lang] || LANGS.en;
+    document.documentElement.setAttribute("lang", meta.html);
+    document.documentElement.setAttribute("dir", meta.dir);
+    const code = document.getElementById("syn-lang-code");
+    if (code) code.textContent = meta.code;
+    const list = document.getElementById("syn-lang-list");
+    if (list) {
+      list.querySelectorAll("[data-lang]").forEach((li) => {
+        li.setAttribute("aria-selected", li.getAttribute("data-lang") === lang ? "true" : "false");
+      });
+    }
+  }
+  function goLang(lang) {
+    if (!LANGS[lang]) lang = "en";
+    try { localStorage.setItem("syn-lang", lang); } catch (e) {}
+    if (lang === "en" || lang === "es") {
+      clearTrans();
+      location.reload();
+      return;
+    }
+    writeCookie("googtrans", "/en/" + lang);
+    location.reload();
+  }
+  function ensureGoogleTranslate(lang) {
+    if (lang === "en" || lang === "es") return;
+    window.googleTranslateElementInit = function () {
+      if (!window.google || !google.translate) return;
+      new google.translate.TranslateElement({
+        pageLanguage: "en",
+        includedLanguages: "zh-CN,ar,ja,pt,it,de,es",
+        autoDisplay: false,
+      }, "google_translate_element");
+    };
+    setTimeout(function () {
+      if (document.querySelector('script[src*="translate.google.com"]')) return;
+      const s = document.createElement("script");
+      s.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+      document.head.appendChild(s);
+    }, 200);
+  }
+  (function initLangUi() {
+    const lang = currentLang();
+    paintLang(lang);
+    const btn = document.getElementById("syn-lang-btn");
+    const list = document.getElementById("syn-lang-list");
+    if (btn && list) {
+      btn.addEventListener("click", (ev) => {
+        ev.stopPropagation();
+        const open = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", open ? "false" : "true");
+        list.hidden = open;
+      });
+      list.addEventListener("click", (ev) => {
+        const li = ev.target.closest("[data-lang]");
+        if (!li) return;
+        goLang(li.getAttribute("data-lang"));
+      });
+      document.addEventListener("click", () => {
+        btn.setAttribute("aria-expanded", "false");
+        list.hidden = true;
+      });
+    }
+    if (lang !== "en" && lang !== "es") ensureGoogleTranslate(lang);
+  })();
+
   function publicIdFromPath() {
     const parts = location.pathname.replace(/\/+$/, "").split("/").filter(Boolean);
     if (parts.length === 0 || parts[0] === "index.html") return null;
     if (parts[0] === "f" && parts[1]) return parts.slice(1).join("-");
-    // /nexus/input → nexus-input ; /nexus-input → nexus-input
     return parts.length === 1 ? parts[0] : parts.join("-");
   }
-
   function resolvePublicId(pathId) {
     if (!pathId) return null;
     return PUBLIC_ID_ALIASES[pathId] || pathId;
   }
-
   function preferCanonicalUrl(pathId) {
     if (LEGACY_PUBLIC_IDS.has(pathId) || pathId === "nexus/input") {
       history.replaceState(null, "", "/" + CANONICAL_PUBLIC_ID + location.search + location.hash);
     }
   }
-
   function el(tag, attrs = {}, kids = []) {
     const n = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
@@ -229,15 +418,38 @@
     for (const c of [].concat(kids)) if (c) n.appendChild(typeof c === "string" ? document.createTextNode(c) : c);
     return n;
   }
-
   async function fetchForm(publicId) {
-    const url = `${PB}/api/sf/form/${encodeURIComponent(publicId)}`;
-    const res = await fetch(url);
+    const res = await fetch(`${PB}/api/sf/form/${encodeURIComponent(publicId)}`);
     if (res.status === 404) return null;
     if (!res.ok) throw new Error("Could not load form");
     return await res.json();
   }
-
+  /** Optional native overlay: /i18n/{publicId}.{lang}.json — same field ids. Applies to every form. */
+  async function fetchLocaleSchema(publicId, lang) {
+    if (lang === "en") return null;
+    try {
+      const res = await fetch(`${PB}/i18n/${encodeURIComponent(publicId)}.${encodeURIComponent(lang)}.json`, { cache: "no-store" });
+      if (!res.ok) return null;
+      return await res.json();
+    } catch (e) {
+      return null;
+    }
+  }
+  function parseSchema(rec) {
+    const schema = typeof rec.schema === "string" ? JSON.parse(rec.schema) : (rec.schema || {});
+    return schema;
+  }
+  function displayBundle(rec, overlay) {
+    const base = parseSchema(rec);
+    const schema = overlay || base;
+    ui = { ...UI_FALLBACK, ...(base.ui || {}), ...(overlay && overlay.ui ? overlay.ui : {}) };
+    return {
+      title: (overlay && overlay.title) || rec.title || base.title || "Form",
+      description: (overlay && overlay.description) || rec.description || base.description || "",
+      success_message: (overlay && overlay.success_message) || rec.success_message || base.success_message || "Your answers were saved.",
+      fields: schema.fields || base.fields || [],
+    };
+  }
   function fieldNode(field) {
     const wrap = el("div", { className: "field", "data-id": field.id });
     const lab = el("label", { className: "main" }, [
@@ -245,17 +457,16 @@
       field.required ? el("span", { className: "req", text: "*" }) : null,
     ]);
     wrap.appendChild(lab);
-
     const name = field.id;
     if (["text", "email", "phone"].includes(field.type)) {
       const type = field.type === "phone" ? "tel" : field.type;
       wrap.appendChild(el("input", { type, name, required: field.required || null, autocomplete: field.type === "email" ? "email" : "off" }));
     } else if (field.type === "textarea" || field.type === "url_list") {
-      wrap.appendChild(el("textarea", { name, required: field.required || null, placeholder: field.type === "url_list" ? "One URL per line" : "" }));
+      wrap.appendChild(el("textarea", { name, required: field.required || null, placeholder: field.type === "url_list" ? ui.url_placeholder : "" }));
     } else if (field.type === "single_select") {
       const opts = el("div", { className: "opts" });
       const other = el("div", { className: "other-wrap" }, [
-        el("input", { type: "text", name: name + "__other", placeholder: "Other…" }),
+        el("input", { type: "text", name: name + "__other", placeholder: ui.other_placeholder }),
       ]);
       (field.options || []).forEach((o) => {
         const id = `${name}_${o.value}`;
@@ -267,14 +478,14 @@
         const id = `${name}_other`;
         const input = el("input", { type: "radio", name, value: "__other__", id });
         input.addEventListener("change", () => other.classList.add("show"));
-        opts.appendChild(el("label", { className: "opt", for: id }, [input, el("span", { text: "Other" })]));
+        opts.appendChild(el("label", { className: "opt", for: id }, [input, el("span", { text: ui.other })]));
         opts.appendChild(other);
       }
       wrap.appendChild(opts);
     } else if (field.type === "multi_select") {
       const opts = el("div", { className: "opts" });
       const other = el("div", { className: "other-wrap" }, [
-        el("input", { type: "text", name: name + "__other", placeholder: "Other…" }),
+        el("input", { type: "text", name: name + "__other", placeholder: ui.other_placeholder }),
       ]);
       (field.options || []).forEach((o) => {
         const id = `${name}_${o.value}`;
@@ -287,7 +498,7 @@
         const id = `${name}_other`;
         const cb = el("input", { type: "checkbox", name, value: "__other__", id });
         cb.addEventListener("change", () => other.classList.toggle("show", cb.checked));
-        opts.appendChild(el("label", { className: "opt", for: id }, [cb, el("span", { text: "Other" })]));
+        opts.appendChild(el("label", { className: "opt", for: id }, [cb, el("span", { text: ui.other })]));
         opts.appendChild(other);
       }
       wrap.appendChild(opts);
@@ -300,7 +511,6 @@
     }
     return wrap;
   }
-
   function collectAnswers(formEl, fields) {
     const answers = {};
     for (const field of fields) {
@@ -328,7 +538,6 @@
     }
     return answers;
   }
-
   function applyVisibility(root, fields) {
     const answers = collectAnswers(root, fields);
     for (const field of fields) {
@@ -339,28 +548,24 @@
       node.style.display = answers[f] === equals ? "" : "none";
     }
   }
-
-  function renderForm(rec) {
-    const schema = typeof rec.schema === "string" ? JSON.parse(rec.schema) : rec.schema;
-    const fields = schema.fields || [];
+  function renderForm(rec, overlay) {
+    const bundle = displayBundle(rec, overlay);
+    const fields = bundle.fields;
+    app.className = "";
     app.innerHTML = "";
-    app.appendChild(el("h1", { text: rec.title || schema.title || "Form" }));
-    app.appendChild(el("div", { className: "desc", text: rec.description || schema.description || "" }));
-
+    app.appendChild(el("h1", { text: bundle.title }));
+    app.appendChild(el("div", { className: "desc", text: bundle.description }));
     const form = el("form", { novalidate: "novalidate" });
     const honeypot = el("input", { type: "text", name: "website", autocomplete: "off", tabindex: "-1", style: "position:absolute;left:-9999px;opacity:0", "aria-hidden": "true" });
     form.appendChild(honeypot);
-
     for (const f of fields) form.appendChild(fieldNode(f));
     form.addEventListener("change", () => applyVisibility(form, fields));
     applyVisibility(form, fields);
-
     const err = el("div", { className: "err" });
-    const btn = el("button", { className: "submit", type: "submit", text: "Submit" });
+    const btn = el("button", { className: "submit", type: "submit", text: ui.submit });
     form.appendChild(err);
     form.appendChild(btn);
-    form.appendChild(el("div", { className: "foot", text: "Your answers are stored securely. Request deletion via WhatsApp." }));
-
+    form.appendChild(el("div", { className: "foot", text: ui.foot }));
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       err.textContent = "";
@@ -375,12 +580,12 @@
         const v = answers[f.id];
         const empty = v == null || v === "" || (Array.isArray(v) && v.length === 0);
         if (empty) {
-          err.textContent = `Please complete: ${f.label}`;
+          err.textContent = ui.complete + f.label;
           return;
         }
       }
       btn.disabled = true;
-      btn.textContent = "Sending…";
+      btn.textContent = ui.sending;
       try {
         const body = {
           form: rec.id,
@@ -393,7 +598,6 @@
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(body),
         });
-        // Until `source` column exists on VPS, retry without it.
         if (!res.ok && res.status === 400) {
           delete body.source;
           res = await fetch(`${PB}/api/collections/submissions/records`, {
@@ -402,53 +606,65 @@
             body: JSON.stringify(body),
           });
         }
-        if (!res.ok) {
-          const t = await res.text();
-          throw new Error(t || "Submit failed");
-        }
+        if (!res.ok) throw new Error(await res.text() || "Submit failed");
         app.innerHTML = "";
         app.appendChild(el("div", { className: "ok" }, [
-          el("h1", { text: "Thank you" }),
-          el("p", { text: rec.success_message || schema.success_message || "Your answers were saved." }),
+          el("h1", { text: ui.thank_you }),
+          el("p", { text: bundle.success_message }),
         ]));
       } catch (ex) {
-        err.textContent = "Could not submit. Please try again.";
+        err.textContent = ui.submit_error;
         console.error(ex);
         btn.disabled = false;
-        btn.textContent = "Submit";
+        btn.textContent = ui.submit;
       }
     });
-
     app.appendChild(form);
-    document.title = (rec.title || "Form") + " — Synergium";
+    document.title = bundle.title + " — Synergium";
   }
 
   (async () => {
+    const lang = currentLang();
+    app.textContent = UI_FALLBACK.loading;
     const pathId = publicIdFromPath();
     if (!pathId) {
       app.className = "missing";
-      app.textContent = "Open a form link you were given.";
+      app.textContent = UI_FALLBACK.missing_link;
       return;
     }
     preferCanonicalUrl(pathId);
     const id = resolvePublicId(pathId);
     try {
       let rec = await fetchForm(id);
-      // After rename in PocketBase, alias target may 404; try path id as-is.
       if (!rec && id !== pathId) rec = await fetchForm(pathId);
       if (!rec && pathId !== CANONICAL_PUBLIC_ID) rec = await fetchForm(CANONICAL_PUBLIC_ID);
       if (!rec) {
         app.className = "missing";
-        app.textContent = "This form is closed or the link is invalid.";
+        app.textContent = UI_FALLBACK.missing_form;
         return;
       }
-      renderForm(rec);
+      formRec = rec;
+      formPublicId = rec.public_id || id;
+      let overlay = null;
+      if (lang === "es") {
+        overlay = await fetchLocaleSchema(formPublicId, "es");
+        if (!overlay) {
+          writeCookie("googtrans", "/en/es");
+          ensureGoogleTranslate("es");
+        } else {
+          clearTrans();
+        }
+      } else if (lang !== "en") {
+        ensureGoogleTranslate(lang);
+      }
+      renderForm(rec, overlay);
     } catch (e) {
       console.error(e);
       app.className = "missing";
-      app.textContent = "Could not load the form.";
+      app.textContent = UI_FALLBACK.load_error;
     }
   })();
+  </script>
   </script>
 </body>
 </html>

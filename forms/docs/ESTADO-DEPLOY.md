@@ -42,7 +42,7 @@ Son dos tuberías independientes hasta que importemos / sincronicemos (objetivo:
 
 1. **Import / cron 15 min** Sheet → PocketBase (credenciales Sheets).
 2. Marcar submissions previas con `source` si hace falta.
-3. Publicar **versión ES** + selector idioma ([IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md)).
+3. Selector idioma = web (todos los forms; ES nativo en nexus-input). Ver [IDIOMA-SELECTOR.md](IDIOMA-SELECTOR.md).
 4. Cerrar/actualizar mensajes WhatsApp con la URL nueva.
 5. (Opcional) Añadir también `SYNERGIUM_FORMS_PB_*` a `~/.cursor/secrets.env` (hoy el rename usa el `.env` del VPS vía SSH).
 6. (Opcional) Borrar submissions de prueba (`PublicTest*`) en PocketBase.

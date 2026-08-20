@@ -1,21 +1,35 @@
-# Selector de idioma (EN / ES) — propuesta
+# Selector de idioma — todos los Synergium Forms
 
-Sí, tiene sentido: el mismo “input” Nexus para LATAM y Europa.
+Aplica a **cualquier** formulario en `forms.synergium.net/{public_id}` (SPA compartida).
 
-## Recomendación
+## UI
 
-| Opción | Cómo | Pros | Contras |
-|--------|------|------|---------|
-| **A (recomendada)** | Un `public_id` (`nexus-input`) + toggle EN/ES que carga `schema-en` / `schema-es` (mismo `field id`) | Un enlace; matching unificado | Hay que mantener dos schemas alineados |
-| B | Dos URLs: `nexus-input` y `nexus-input-es` | Simple | Dos enlaces en WhatsApp |
-| C | Query `?lang=es` | Fácil compartir | Menos “producto” |
+Mismo botón que synergium.net: globo + código (`EN`…) + lista desplegable, junto al claro/oscuro.
 
-UI: al lado del toggle claro/oscuro, **EN \| ES**. Preferencia en `localStorage`.
+## Idiomas (igual que la web)
 
-## Ahora
+English, Español, 简体中文, العربية, 日本語, Português, Italiano, Deutsch.
 
-Solo existe `schema-en.json`. El toggle se puede pintar ya, pero ES no hasta tener el schema traducido (mismos `id` de campo).
+**Por defecto: inglés.** Preferencia en `localStorage` clave `syn-lang` (compartida con la web).
 
-## Decisión pendiente
+## Cómo se traduce
 
-¿Misma URL con toggle (A) o URL ES separada (B)?
+| Lang | Mecanismo |
+|------|-----------|
+| `en` | Texto canónico del form en PocketBase |
+| `es` | Archivo nativo `/i18n/{public_id}.es.json` si existe; si no, Google Translate |
+| `zh-CN`, `ar`, `ja`, `pt`, `it`, `de` | Google Translate (como synergium.net) |
+
+Los `value` de opciones y los `field id` **no** cambian con el idioma (matching estable). Solo cambian labels/UI.
+
+## Añadir ES nativo a un form
+
+1. Copiar schema EN → ES (mismos `id` / `value`).
+2. Guardar en `forms/casos/.../schema-es.json` y desplegar a `forms/deploy/pb_public/i18n/{public_id}.es.json`.
+3. Redeploy `pb_public/` al VPS.
+
+Ejemplo vivo: `nexus-input` → `i18n/nexus-input.es.json`.
+
+## Regla Cursor
+
+`.cursor/rules/forms-idioma-selector.mdc` (`alwaysApply: true`).

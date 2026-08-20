@@ -12,7 +12,7 @@
 | **Rama main** | Trabajar en `main`; commit + push tras cada avance material |
 | **Copia local** | Este workspace es el clone de `horacioeps/synergium`. Tras cada interacción, subir a `origin/main` **también** los ficheros que Horacio haya modificado a mano. Regla: `.cursor/rules/local-clone-siempre-push.mdc` |
 | **Otro repo** | Frase de arranque (skill personal `nuevo-proyecto-local`): ver [docs/NUEVO-PROYECTO-LOCAL.md](docs/NUEVO-PROYECTO-LOCAL.md) |
-| **Sesiones** | Volcado completo en `chats/` y `sesiones/`; actualizar `HISTORICO.md` |
+| **Forms idiomas** | Selector = synergium.net en **todos** los forms; default EN. Regla: `.cursor/rules/forms-idioma-selector.mdc` |
 
 ## Dónde escribir
 

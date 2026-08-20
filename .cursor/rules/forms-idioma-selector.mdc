@@ -1,0 +1,27 @@
+---
+description: Synergium Forms — selector de idioma igual que synergium.net en todos los forms
+alwaysApply: true
+---
+
+# Forms: idiomas (todos los formularios)
+
+Todo form público en `forms.synergium.net` usa el **mismo selector** que synergium.net (globo + código + lista).
+
+## Idiomas
+
+`en` (default), `es`, `zh-CN`, `ar`, `ja`, `pt`, `it`, `de`.
+
+## Comportamiento
+
+| Idioma | Cómo |
+|--------|------|
+| **EN** | Schema canónico en PocketBase. Sin Google Translate. |
+| **ES** | Si existe `/i18n/{public_id}.es.json` (mismos `field id`) → nativo. Si no → Google Translate `en→es`. |
+| **Resto** | Google Translate (como la web), cookie `googtrans`, `localStorage syn-lang`. |
+
+## Obligatorio al publicar un form nuevo
+
+1. El SPA compartido (`forms/deploy/pb_public/index.html`) ya incluye el selector — no quitarlo.
+2. Preferible añadir `forms/deploy/pb_public/i18n/{public_id}.es.json` (y opcional `.en.json` de referencia).
+3. Preferencia de idioma: clave `syn-lang` (misma que la web).
+4. Documentar en `forms/docs/IDIOMA-SELECTOR.md`.

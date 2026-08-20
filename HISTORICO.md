@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-20 21:11 UTC | Sync + entender form nuevo y opciones A–H | Pull `826e393`; A–H = slugs URL Community directory (aún sin aplicar) | [sesiones/2026-08-20-sync-form-opciones-ah.md](sesiones/2026-08-20-sync-form-opciones-ah.md) |
 | 2026-08-20 21:02 UTC | Forms estilo=web + URL options + HTTPS | Manrope/Crepúsculo en vivo; URL-OPTIONS; GOOGLE-SHEET-SYNC; puente docs | [sesiones/2026-08-20-forms-estilo-url-puente.md](sesiones/2026-08-20-forms-estilo-url-puente.md) |
 | 2026-08-19 14:59 UTC | Acceso vault VPS desde repo synergium | `scripts/vault_ssh_ro.sh`, regla vault-cloud-ssh, docs/VAULT-ACCESO.md | [chats/2026-08-19-vault-vps-synergium.md](chats/2026-08-19-vault-vps-synergium.md) |
 | 2026-08-19 14:58 UTC | Explicar de qué va el proyecto y a qué otros repos apunta | Resumen: Synergium (broker académico LATAM-Europa), repo synergium, vault maestra en GitHub, servicios synergium.net / forms.synergium.net | [sesiones/2026-08-19-que-va-proyecto-repos.md](sesiones/2026-08-19-que-va-proyecto-repos.md) |

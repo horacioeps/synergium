@@ -24,6 +24,17 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Tres variantes A (ES), sin «comunidad», sin —/–, objetivo en la primera frase, unslop (crisp). Pendiente elegir A1/A2/A3.
 
+## Interacción 4
+
+**Usuario:** A1 + añadir que no solo son esos datos: equipo profesional Synergium cura/procesa para encajes fiables entre partners (~mil, nacionalidades diversas); acercamiento primero anónimo, luego paso a paso hasta encaje y conexión formal. Separar párrafos con línea en blanco. (Dice que eso ya está en la web, pero quiere aquí.)
+
+**Agente:** A1 ampliado aplicado en:
+- `forms/deploy/pb_public/i18n/nexus-input.{es,en}.json`
+- `forms/casos/community-directory-matching/schema-{es,en}.json`
+- título sin «comunidad»; pie borrado → `info@synergium.net`
+- PB `publish` + rsync `pb_public` vivo
+- URL: https://forms.synergium.net/nexus-input
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

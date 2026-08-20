@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:38 CEST | Textos Discord ES+EN para nexus-input | mensaje-discord-es/en.md + enlace en 00-resumen | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:37 CEST | TODO: FAQ en la web | Ítem abierto en TODO.md (FAQ synergium.net alineadas con nexus-input) | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:37 CEST | Línea final: dudas → info@synergium.net | Añadida ES/EN; deploy vivo nexus-input | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:35 CEST | A1 + cura Synergium, ~mil, anon→formal; párrafos | Copy ES/EN vivo nexus-input; título sin comunidad; pie email | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |

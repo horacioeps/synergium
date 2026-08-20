@@ -7,7 +7,7 @@ Fecha: 2026-08-14. Pedido: formulario Google Forms para las comunidades WhatsApp
 ## Qué tienes que hacer tú
 
 1. Crear **dos** Google Forms independientes (Gemini se lía con un solo form bilingüe y con saltos). Brief: `brief-google-forms.md`.
-2. Pegar el mensaje ES / EN en cada comunidad. **No sueltes el link a pelo** (en el chat ES eso es el peor formato: 0,9 respuestas de media). Textos: `mensaje-whatsapp-es.md`, `mensaje-whatsapp-en.md`.
+2. Pegar el mensaje ES / EN en cada comunidad. **No sueltes el link a pelo** (en el chat ES eso es el peor formato: 0,9 respuestas de media). Textos WhatsApp: `mensaje-whatsapp-es.md`, `mensaje-whatsapp-en.md`. Discord (nexus-input): `mensaje-discord-es.md`, `mensaje-discord-en.md`.
 3. Franja: 22:00–23:00 o 12:00–14:00 (hora España). A los 3 días, el follow-up del mismo archivo.
 4. Respuestas → hoja de cálculo → `playbook-matching.md`.
 

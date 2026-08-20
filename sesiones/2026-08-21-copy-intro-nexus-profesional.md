@@ -47,6 +47,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Ítem en `TODO.md` (Abierto ya): FAQ en synergium.net alineadas con copy nexus-input.
 
+## Interacción 7
+
+**Usuario:** Texto ES + EN para presentar el formulario en un grupo de Discord.
+
+**Agente:** Mensajes en `comunidad/casos/2026-08-14-formulario-matching/mensaje-discord-es.md` y `mensaje-discord-en.md`; enlace al final; tono alineado al copy profesional.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

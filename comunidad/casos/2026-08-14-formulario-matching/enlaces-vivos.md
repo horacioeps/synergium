@@ -13,9 +13,12 @@ Formularios publicados (no confundir con la spec en `formulario-es.md` / `formul
 | **Idioma** | Inglés |
 | **Guardado** | 2026-08-19 |
 | **Notas** | Investigadores candidatos Synergium (gratis a cambio de feedback profundo). Actualizar este archivo si cambia el enlace o se publica la versión ES. |
-| **Hoja respuestas** | https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit?usp=sharing |
+| **Hoja respuestas** | https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit?gid=1537513728#gid=1537513728 |
 | **Sheet ID** | `19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w` |
-| **Respuestas (2026-08-19)** | 20 filas (14–19 ago 2026) |
+| **gid** | `1537513728` |
+| **Respuestas (2026-08-20)** | 26 filas; importadas a PocketBase (`source=google`) |
+| **Synergium Forms (canónico compartir)** | https://forms.synergium.net/nexus-input |
+| **Política** | Ambos canales abiertos; sync Sheet → BD cada 15 min |
 
 ## ES
 

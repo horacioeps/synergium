@@ -35,6 +35,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 - PB `publish` + rsync `pb_public` vivo
 - URL: https://forms.synergium.net/nexus-input
 
+## Interacción 5
+
+**Usuario:** Una última línea al final: para más dudas, escriban a info@synergium.net.
+
+**Agente:** Añadida al description ES/EN («Para más dudas, escriba a info@synergium.net.» / EN equivalente). Publish PB + rsync vivo.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

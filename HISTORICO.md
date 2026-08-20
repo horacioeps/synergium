@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-20 21:29 UTC | Secrets Cloud Agents → .env local para todos los proyectos Cursor IDE | `~/.cursor/secrets.env` + carga en zshrc + regla `local-secrets.mdc`; nota en VAULT-ACCESO | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |
 | 2026-08-20 21:17 UTC | P=nexus-input; idioma; sync Sheet 15min; columna source | Código+docs; URL canónica lista; deploy vivo pendiente de secrets SSH/API | [sesiones/2026-08-20-nexus-input-idioma-sync.md](sesiones/2026-08-20-nexus-input-idioma-sync.md) |
 | 2026-08-20 21:14 UTC | Otra ronda slugs: potentes, top/sub, sesgo input | I–P: win/gain/collab/bridge/rise/forge/leap/nexus + `/input` | [sesiones/2026-08-20-url-opciones-ip.md](sesiones/2026-08-20-url-opciones-ip.md) |
 | 2026-08-20 21:11 UTC | Sync + entender form nuevo y opciones A–H | Pull `826e393`; A–H = slugs URL Community directory (aún sin aplicar) | [sesiones/2026-08-20-sync-form-opciones-ah.md](sesiones/2026-08-20-sync-form-opciones-ah.md) |

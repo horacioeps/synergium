@@ -36,6 +36,16 @@ Inyectados en el entorno del agente (mismos que repo Obsidian legacy):
 
 Regla Cursor: `.cursor/rules/vault-cloud-ssh.mdc`
 
+## Secrets en Cursor IDE local (todos los proyectos)
+
+Fuera del repo, compartido entre workspaces:
+
+- Fichero: **`~/.cursor/secrets.env`** (valores a mano; `chmod 600`; no va a git)
+- Carga: `~/.zshrc` hace `source` automático
+- Regla usuario: `~/.cursor/rules/local-secrets.mdc`
+
+Mismos nombres que en el dashboard de Cloud Agents (`API_KEY_OPEN_AI`, `EXPLORE_LABS_*`, token GitHub, etc.).
+
 ## Notas Synergium útiles en vault (ejemplos)
 
 | Tema | Buscar en vault |

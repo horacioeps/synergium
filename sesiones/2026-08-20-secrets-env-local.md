@@ -38,3 +38,10 @@ No se sube `secrets.env` a git (vive en home).
 - Prueba funcional: SSH OK; `vault_ssh_ro.sh root` → `/home/obsidian/Horacio`; `count-md` → 8192; `ls Inbox` OK.
 - Aviso: en el primer intento fallido salieron valores en stderr del shell → rotar OpenAI + GitHub token.
 
+
+## Turno 3 — /guarda-sesion-y-demas
+
+**Pedido:** ejecutar skill guarda-sesion-y-demas (cerrar sesión).
+
+**Hecho:** rama `main`; volcado ampliado; fila HISTORICO; README ya enlaza HISTORICO; commit + push. Sin secretos ni `.vscode/` en git. Estado previo del turno 2 ya estaba en repo (`a21233e` y posteriores de otras sesiones).
+

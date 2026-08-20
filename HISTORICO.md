@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:23 UTC | Embudos desde form + vault → EMBUDOS.md / TODO.md | Opinión fase 2; embudos A–H; vault ideas en embudos o TODO; enlaces README | [sesiones/2026-08-21-embudos-todo.md](sesiones/2026-08-21-embudos-todo.md) |
 | 2026-08-20 22:09 UTC | /guarda-sesion-y-demas | Volcado + HISTORICO + push main (sesión secrets.env local) | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |
 | 2026-08-21 00:19 UTC | Hecho + captura WA Valentina Lucena | Confirmado sí («encantada»); expediente Matías actualizado; fase 2 pendiente | [sesiones/2026-08-21-valentina-acepta-match.md](sesiones/2026-08-21-valentina-acepta-match.md) |
 | 2026-08-21 00:16 UTC | ¿Tenemos a Palencia (3 emails) en el directorio? | No: ni PocketBase ni Sheet; enviar nexus-input | [sesiones/2026-08-21-palencia-no-en-directorio.md](sesiones/2026-08-21-palencia-no-en-directorio.md) |

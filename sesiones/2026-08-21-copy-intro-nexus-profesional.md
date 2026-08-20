@@ -41,6 +41,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Añadida al description ES/EN («Para más dudas, escriba a info@synergium.net.» / EN equivalente). Publish PB + rsync vivo.
 
+## Interacción 6
+
+**Usuario:** Apuntar en TODO que hay que meter FAQ en la web.
+
+**Agente:** Ítem en `TODO.md` (Abierto ya): FAQ en synergium.net alineadas con copy nexus-input.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

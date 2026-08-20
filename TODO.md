@@ -11,6 +11,7 @@ Fecha: **2026-08-21**. Lo que **sí** es ruta post-formulario está en [EMBUDOS.
 - [ ] Limpiar submissions `PublicTest*` en PocketBase
 - [ ] Decisión #5 (`forms/docs/DECISIONES-2026-08-20.md`): actualizar enlace WhatsApp comunidad → `nexus-input`
 - [ ] Columna `fase2` / estado en tracking de matches (Sheet o PB)
+- [ ] Web synergium.net: meter unas FAQ (proceso anónimo → formal, cura de perfiles, ~mil partners, privacidad/borrado, contacto `info@synergium.net`; alinear con copy de `nexus-input`)
 
 ---
 

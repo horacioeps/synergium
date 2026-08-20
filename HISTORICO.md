@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:26 CEST | Copy intro form más profesional; 3 plantillas | Tres opciones A/B/C (institucional / directa / académica); WhatsApp fuera de la caja; pendiente elegir | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:23 UTC | Embudos desde form + vault → EMBUDOS.md / TODO.md | Opinión fase 2; embudos A–H; vault ideas en embudos o TODO; enlaces README | [sesiones/2026-08-21-embudos-todo.md](sesiones/2026-08-21-embudos-todo.md) |
 | 2026-08-20 22:09 UTC | /guarda-sesion-y-demas | Volcado + HISTORICO + push main (sesión secrets.env local) | [sesiones/2026-08-20-secrets-env-local.md](sesiones/2026-08-20-secrets-env-local.md) |
 | 2026-08-21 00:19 UTC | Hecho + captura WA Valentina Lucena | Confirmado sí («encantada»); expediente Matías actualizado; fase 2 pendiente | [sesiones/2026-08-21-valentina-acepta-match.md](sesiones/2026-08-21-valentina-acepta-match.md) |

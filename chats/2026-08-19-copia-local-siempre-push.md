@@ -15,3 +15,7 @@ Clone local de https://github.com/horacioeps/synergium. Tras cada tarea (y si Ho
 
 - Pull FF `290a956` → `2d945d5` (match Valentina / UCO).
 - Arreglo de conflict markers commiteados en `HISTORICO.md`.
+
+## Continuación — empaquetar instrucciones (2026-08-20)
+
+Skill personal `nuevo-proyecto-local` + regla de usuario + [docs/NUEVO-PROYECTO-LOCAL.md](../docs/NUEVO-PROYECTO-LOCAL.md). Frase: `Nuevo proyecto local: https://github.com/…`.

@@ -14,3 +14,4 @@
 | 2026-08-19 18:40 UTC | Horacio envió intro Valentina; datos UCO | Institución UCO Córdoba; email ed1lujuv@uco.es; estado enviado en expediente | [sesiones/2026-08-19-match-valentina-envio-datos-uco.md](sesiones/2026-08-19-match-valentina-envio-datos-uco.md) |
 | 2026-08-19 18:45 UTC | Guardar sesión y subir repo | Volcado + HISTORICO + push main | [sesiones/2026-08-19-match-valentina-envio-datos-uco.md](sesiones/2026-08-19-match-valentina-envio-datos-uco.md) |
 | 2026-08-19 18:50 UTC | Actualiza con GitHub | Pull `2d945d5` (match Valentina/UCO); arreglo conflict markers en HISTORICO | [sesiones/2026-08-19-copia-local-siempre-push.md](sesiones/2026-08-19-copia-local-siempre-push.md) |
+| 2026-08-20 10:03 UTC | Empaquetar instrucciones iniciales para el siguiente proyecto local | Skill `nuevo-proyecto-local`, regla de usuario, doc `docs/NUEVO-PROYECTO-LOCAL.md` | [sesiones/2026-08-19-copia-local-siempre-push.md](sesiones/2026-08-19-copia-local-siempre-push.md) |

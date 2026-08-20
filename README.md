@@ -44,6 +44,8 @@ Leer **[AGENTS.md](AGENTS.md)** antes de cualquier tarea Synergium.
 
 Cronología compacta de pedidos y trabajo: **[HISTORICO.md](HISTORICO.md)**.
 
+Otro repo desde cero (misma frase, sin repetir reglas): [docs/NUEVO-PROYECTO-LOCAL.md](docs/NUEVO-PROYECTO-LOCAL.md).
+
 ## Vault en el VPS (solo lectura)
 
 Las notas fuente (ideas, conversaciones comerciales) están en la vault del VPS. Los agentes **leen por SSH** cuando hace falta:

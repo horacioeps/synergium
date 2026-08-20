@@ -7,6 +7,19 @@
 - Cron VPS cada **15 min**: `~/synergium-forms/scripts/run_sheet_sync.sh`.
 - Decisiones: [DECISIONES-2026-08-20.md](DECISIONES-2026-08-20.md) — **ambos** canales (Google + web).
 
+## Heterogeneidad de `answers` (vivir con ello)
+
+Tras el pase 2026-08-21 del form Synergium, en PocketBase conviven filas con esquemas distintos en el JSON `answers`:
+
+| Origen | `source` | Qué esperar |
+|--------|----------|-------------|
+| Google Form (histórico / sync) | `google` | Columnas del Google Form; ids clásicos (`three_words`, `also_spanish_community`, …). Sin `orcid`, `data_consent`, `collab_modality`, `how_found_form` salvo que el Sheet los tenga. |
+| Web `nexus-input` (actual) | `web` | Schema nuevo (37 campos): labels profesionales; sin `three_words` / `also_spanish_community`; con consent, ORCID, modalidad, how_found. |
+
+No hay migración de filas antiguas. Matching y exports deben tratar campos como **opcionales** (`.get`, defaults). El sync Sheet mapea con un schema **congelado** (`schema-en-google-sync.json`), no con el schema vivo profesional (`schema-en.json`).
+
+Detalle de cambios de schema: [../casos/community-directory-matching/AUDITORIA-CAMPOS-2026-08-21.md](../casos/community-directory-matching/AUDITORIA-CAMPOS-2026-08-21.md).
+
 ## En castellano
 
 1. Google Form → Spreadsheet  

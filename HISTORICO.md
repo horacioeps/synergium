@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 00:49 CEST | Clash Google vs schema nuevo en BD | Doc heterogeneidad; sync con schema-en-google-sync.json congelado | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:46 CEST | Pase completo form profesional (labels, corta, añade) | Vivo: 37 campos; orcid/modalidad/consent; mercado opcional | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:44 CEST | how_found_form + auditoría serio/falta/sobra | Campo vivo al final; AUDITORIA-CAMPOS; notify actualizado | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |
 | 2026-08-21 00:38 CEST | Textos Discord ES+EN para nexus-input | mensaje-discord-es/en.md + enlace en 00-resumen | [sesiones/2026-08-21-copy-intro-nexus-profesional.md](sesiones/2026-08-21-copy-intro-nexus-profesional.md) |

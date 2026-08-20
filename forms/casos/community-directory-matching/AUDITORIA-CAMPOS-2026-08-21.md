@@ -11,4 +11,8 @@
 
 ## Orden actual (37 campos)
 
-Identidad → perfil → oferta/necesidad → geo/tiempo/modalidad → convocatoria → bloqueos → (opc.) mercado → consentimiento → match → atribución → texto libre.
+## Heterogeneidad BD (aceptada)
+
+Las submissions previas (sobre todo `source=google`) no se migran. Pueden tener claves que el form vivo ya no pide, y faltar las nuevas. Matching/exports: campos opcionales.
+
+El sync Google usa `schema-en-google-sync.json` (labels antiguas ≈ Sheet), no el schema profesional vivo. Ver [forms/docs/GOOGLE-SHEET-SYNC.md](../../docs/GOOGLE-SHEET-SYNC.md).

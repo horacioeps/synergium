@@ -26,7 +26,10 @@ PASSWORD = os.environ.get("SYNERGIUM_FORMS_PB_ADMIN_PASSWORD", "")
 DEFAULT_SHEET_ID = "19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w"
 DEFAULT_GID = "1537513728"
 REPO = Path(__file__).resolve().parents[1]
-SCHEMA_EN = REPO / "forms/casos/community-directory-matching/schema-en.json"
+SCHEMA_EN = REPO / "forms/casos/community-directory-matching/schema-en-google-sync.json"
+# Frozen labels/options matching the Google Form / Sheet headers.
+# Live web form schema (professional copy) is schema-en.json — do not point sync there
+# or column mapping breaks. Heterogeneous answers in PB are expected.
 
 # Google Form label variants → field_id
 HEADER_ALIASES = {

@@ -69,6 +69,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Aplicado en vivo: labels ES/EN; quitados `three_words` y `also_spanish_community`; bloque mercado + years opcionales; nuevos `orcid`, `collab_modality`, `data_consent`; success/notify actualizados.
 
+## Interacción 10
+
+**Usuario:** En la BD puede haber clash Google Form vs preguntas nuevas; habrá que vivir con ello.
+
+**Agente:** Documentado (GOOGLE-SHEET-SYNC + auditoría). Sync apunta a `schema-en-google-sync.json` congelado para no romper el mapeo del Sheet; filas heterogéneas sin migración.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

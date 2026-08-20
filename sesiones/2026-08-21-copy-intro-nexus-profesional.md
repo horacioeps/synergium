@@ -63,6 +63,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 - Notify incluye How found form.
 - Pendiente: que Horacio elija si aplicamos pase de etiquetas + recorte del bloque mercado (23–27).
 
+## Interacción 9
+
+**Usuario:** dale a todo (pase profesional + faltan/sobran).
+
+**Agente:** Aplicado en vivo: labels ES/EN; quitados `three_words` y `also_spanish_community`; bloque mercado + years opcionales; nuevos `orcid`, `collab_modality`, `data_consent`; success/notify actualizados.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

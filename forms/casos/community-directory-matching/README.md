@@ -22,55 +22,25 @@ This is a one-time directory of this community. I will use the answers to introd
 
 ## Campos (orden de UI)
 
-| # | id | type | required | label / opciones |
-|---|-----|------|----------|------------------|
-| 1 | `full_name` | text | sí | Full name |
-| 2 | `email` | email | sí | Email (one you actually check) |
-| 3 | `whatsapp` | phone | sí | WhatsApp with country code (e.g. +1 415 555 2671) |
-| 4 | `country` | text | sí | Country you live/work in |
-| 5 | `city` | text | no | City (optional; timezone/local) |
-| 6 | `match_language` | single_select + other | sí | Spanish / English / Either/both / Other |
-| 7 | `role` | single_select + other | sí | Undergrad/master, PhD, Postdoc, Researcher (not PI), PI/group leader, Technician/lab manager, TTO/innovation office, Vice-rectorate/research mgmt, Science agency/funding, Company/startup/industry, Independent, Other |
-| 8 | `institution` | text | sí | Institution (or independent) |
-| 9 | `institution_type` | single_select + other | sí | Public uni, Private uni, Research centre, Hospital/clinic, Company/startup, NGO/foundation, Independent, Other |
-| 10 | `years_in_research` | single_select | sí | \<2, 2–5, 6–10, 11–20, \>20, N/A |
-| 11 | `areas` | multi_select + other | sí | Biomed/health/pharma, Bioinformatics, Chemistry/materials/nano, AI/data for science, HPC/simulation, Agri-food/bioeconomy, Energy/environment, Engineering/devices, Social sciences, Humanities/phil of science/history, Archaeology/heritage, Education, Tech transfer/spin-offs, Other |
-| 12 | `what_you_do` | textarea | sí | In 3–5 sentences, what you do now… |
-| 13 | `methods` | multi_select + other | sí | Experimental, Computational/data, Theoretical, Clinical, Fieldwork, Archive/humanities, Transfer/project mgmt, Other |
-| 14 | `keywords` | textarea | sí | Keywords/techniques (5–12 terms) |
-| 15 | `profile_urls` | url_list | no | ORCID/Scholar/LinkedIn/web (one URL per line) |
-| 16 | `offer_next_months` | multi_select + other | sí | Method/protocol, Data/samples/field/archive, Compute/HPC, Clinical access, Host a stay, Students/lab hands, Review/feedback, Industry contacts, Europe/Horizon network, LATAM/local network, Teaching, Thesis co-supervision, Not sure, Other |
-| 17 | `need_now` | multi_select + other | sí | Joint paper, Grant/consortium partner, Method I lack, Data/samples/clinical/field, Stay/mobility, Industry/transfer partner, Thesis co-supervision, Review/feedback, Career mentoring, Outreach/podcast, Compute/HPC, Not sure want directory, Other |
-| 18 | `what_you_seek` | textarea | sí | In your words: what you seek… |
-| 19 | `geo_preferences` | multi_select | sí | Same country, Latin America, Europe, North America, Anywhere, Specific country (write it in “what you seek”) |
-| 20 | `time_horizon` | single_select | sí | This month, ~3 months, This year, No rush |
-| 21 | `specific_call` | textarea | no | Specific call now? Name, role needed, deadline. Else blank. |
-| 22 | `blockers` | multi_select + other | sí | Authors don't reply, Always same coauthors, Don't know who, Ignored as junior/not PI, No follow-up, Trust/fit, Language, No institutional funds, TTO slow, Visa/admin, Time zone, Haven't tried, Other |
-| 23 | `last_unknown_collab_via` | single_select + other | sí | PhD/diaspora/supervisor, Conference, Email paper author, LinkedIn, TTO, Formal network (COST etc), This community/podcast, Almost never, Other |
-| 24 | `last_email_paper_author` | single_select | sí | Replied+led somewhere, Replied+died, No reply, Never, \>1 year don't remember |
-| 25 | `follow_up_problem` | single_select | sí | Yes routinely, Sometimes, No, No external collabs yet |
-| 26 | `recent_pubs_same_circle` | single_select | sí | Almost always, Half, Different groups, Publish little/N/A |
-| 27 | `institution_funds_intl` | single_select | sí | Yes I know, Think so, No, Don't know |
-| 28 | `match_me` | single_select | sí | Yes / Only you see data, no intro yet / Directory only, no intros |
-| 29 | `share_with_match` | multi_select | cond. | Si match_me=Yes: Name/area/country, Email, WhatsApp, LinkedIn/ORCID, The need I described, Nothing only you |
-| 30 | `intro_channel` | single_select | sí | WhatsApp, Email, LinkedIn, Whatever |
-| 31 | `later_write` | single_select | sí | Yes / Only if clearly useful / No, matching only |
-| 32 | `english_for_collab` | single_select | sí | Fluent, Get by, Spanish only, English is working language |
-| 33 | `also_spanish_community` | single_select | sí | Both / Only this (EN) / Didn't know there was another |
-| 34 | `three_words` | text | sí | 3 words to be found by |
-| 35 | `how_found_form` | single_select | sí | WhatsApp, Discord, Email, colleague, university, LinkedIn, podcast, Synergium web (+ Other) |
-| 36 | `anything_else` | textarea | no | Anything else to match you |
+Fuente de verdad: `schema-en.json` / `schema-es.json` e i18n desplegado (`37` campos tras pase 2026-08-21).
 
-Auditoría tono/campos: [AUDITORIA-CAMPOS-2026-08-21.md](AUDITORIA-CAMPOS-2026-08-21.md).
+Cambios relevantes:
+
+- Tono profesional ES/EN; mensaje de éxito formal.
+- Eliminados: `three_words`, `also_spanish_community`.
+- Opcionales: `years_in_research` + bloque mercado (últimas vías de colaboración / email a autores / follow-up / círculo de pubs / fondos intl).
+- Nuevos: `orcid`, `collab_modality`, `data_consent`, `how_found_form`.
+
+Detalle: [AUDITORIA-CAMPOS-2026-08-21.md](AUDITORIA-CAMPOS-2026-08-21.md).
 
 ## Condicionales
 
-- `share_with_match` visible/required solo si `match_me === "yes"`.
-- Mensaje de confirmación (ajustes, no en descripción): “Thanks — saved. If you authorised intros, I may contact you on the channel you chose.”
+- `share_with_match` visible solo si `match_me === "yes"`.
+- Mensaje de confirmación: formal (equipo Synergium; canal indicado).
 
 ## Email de aviso (plantilla)
 
-**Asunto:** `[Synergium Forms] Community directory — {full_name}`
+**Asunto:** `[Synergium Forms] Community directory - {full_name}`
 
 **Cuerpo (resumen):**
 
@@ -82,10 +52,13 @@ URL admin: …
 Name: {full_name}
 Email: {email}
 WhatsApp: {whatsapp}
+ORCID: {orcid}
+Data consent: {data_consent}
+How found form: {how_found_form}
 Country / city: {country} / {city}
 Role: {role} @ {institution}
 Match me?: {match_me}
-Need NOW: {need_now}
+Need: {need_now}
 Offer: {offer_next_months}
 Seek: {what_you_seek}
 Intro channel: {intro_channel}

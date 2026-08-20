@@ -41,6 +41,8 @@ onRecordAfterCreateSuccess((e) => {
     const offer = JSON.stringify(answers.offer_next_months || "");
     const seek = answers.what_you_seek || "";
     const howFound = JSON.stringify(answers.how_found_form || "");
+    const consent = JSON.stringify(answers.data_consent || "");
+    const orcid = answers.orcid || "";
 
     const body =
       `New submission on Synergium Forms\n\n` +
@@ -52,6 +54,8 @@ onRecordAfterCreateSuccess((e) => {
       `Name: ${name}\n` +
       `Email: ${email}\n` +
       `WhatsApp: ${whatsapp}\n` +
+      `ORCID: ${orcid}\n` +
+      `Data consent: ${consent}\n` +
       `How found form: ${howFound}\n` +
       `Match me?: ${JSON.stringify(matchMe)}\n` +
       `Need NOW: ${need}\n` +

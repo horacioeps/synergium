@@ -3,7 +3,7 @@
   "title": "Researcher directory: matching for collaborations",
   "locale": "en",
   "description": "Goal: connect researchers who can collaborate in concrete ways, for example on a joint paper, a funding call, a method, a research stay, or peer review.\n\nThis form captures your academic profile for that matching. The data are not merely stored: Synergium's professional team curates and processes every profile to establish reliable fits among partners in the database, which already includes around one thousand profiles from a wide range of nationalities.\n\nContact begins anonymously. Then, step by step, understanding is mediated until a fit is confirmed. Only then are the parties connected formally.\n\nIt is free and takes about 8-10 minutes. Please be specific: vague answers are hard to match. Data are not sold or shared with third parties. If an introduction is made, only what you authorise at the end will be shared. To request deletion of your data, use the channel indicated in the footer.\n\nFor further questions, write to info@synergium.net.",
-  "success_message": "Thanks — your answers were saved. If you authorised introductions, I may contact you on the channel you chose.",
+  "success_message": "Thank you. Your answers have been saved. If you authorised introductions, we may contact you on the channel you chose.",
   "ui": {
     "submit": "Submit",
     "sending": "Sending…",
@@ -29,7 +29,7 @@
     {
       "id": "email",
       "type": "email",
-      "label": "Email (one you actually check)",
+      "label": "Email address (one you check regularly)",
       "required": true
     },
     {
@@ -41,19 +41,19 @@
     {
       "id": "country",
       "type": "text",
-      "label": "Country you live/work in",
+      "label": "Country of residence or work",
       "required": true
     },
     {
       "id": "city",
       "type": "text",
-      "label": "City (optional; timezone/local)",
+      "label": "City (optional; useful for timezone)",
       "required": false
     },
     {
       "id": "match_language",
       "type": "single_select",
-      "label": "Match language",
+      "label": "Preferred language for matching",
       "required": true,
       "allow_other": true,
       "options": [
@@ -74,7 +74,7 @@
     {
       "id": "role",
       "type": "single_select",
-      "label": "Role",
+      "label": "Professional role",
       "required": true,
       "allow_other": true,
       "options": [
@@ -127,7 +127,7 @@
     {
       "id": "institution",
       "type": "text",
-      "label": "Institution (or independent)",
+      "label": "Institution (or independent activity)",
       "required": true
     },
     {
@@ -170,8 +170,8 @@
     {
       "id": "years_in_research",
       "type": "single_select",
-      "label": "Years in research",
-      "required": true,
+      "label": "Years of research experience",
+      "required": false,
       "options": [
         {
           "value": "lt2",
@@ -179,15 +179,15 @@
         },
         {
           "value": "2_5",
-          "label": "2–5"
+          "label": "2-5"
         },
         {
           "value": "6_10",
-          "label": "6–10"
+          "label": "6-10"
         },
         {
           "value": "11_20",
-          "label": "11–20"
+          "label": "11-20"
         },
         {
           "value": "gt20",
@@ -202,7 +202,7 @@
     {
       "id": "areas",
       "type": "multi_select",
-      "label": "Areas (tick all that apply)",
+      "label": "Subject areas (select all that apply)",
       "required": true,
       "allow_other": true,
       "options": [
@@ -263,7 +263,7 @@
     {
       "id": "what_you_do",
       "type": "textarea",
-      "label": "In 3–5 sentences, what you do now (line, methods, who/what for. Specific beats impressive.)",
+      "label": "In 3-5 sentences, describe your current work (line, methods, for whom or what). Prefer concrete facts over generic claims.",
       "required": true
     },
     {
@@ -306,19 +306,25 @@
     {
       "id": "keywords",
       "type": "textarea",
-      "label": "Keywords/techniques to find you (5–12 terms)",
+      "label": "Keywords or techniques (5-12 terms)",
       "required": true
     },
     {
       "id": "profile_urls",
       "type": "url_list",
-      "label": "ORCID/Scholar/LinkedIn/web (one URL per line)",
+      "label": "Scholar, LinkedIn or other sites (one URL per line)",
+      "required": false
+    },
+    {
+      "id": "orcid",
+      "type": "text",
+      "label": "ORCID (if available; e.g. https://orcid.org/0000-…)",
       "required": false
     },
     {
       "id": "offer_next_months",
       "type": "multi_select",
-      "label": "Offer in next months",
+      "label": "What you can offer in the coming months",
       "required": true,
       "allow_other": true,
       "options": [
@@ -344,11 +350,11 @@
         },
         {
           "value": "students",
-          "label": "Students/lab hands"
+          "label": "Students / lab support"
         },
         {
           "value": "review",
-          "label": "Review/feedback"
+          "label": "Review or feedback"
         },
         {
           "value": "industry_contacts",
@@ -372,14 +378,14 @@
         },
         {
           "value": "not_sure",
-          "label": "Not sure"
+          "label": "Not sure yet"
         }
       ]
     },
     {
       "id": "need_now",
       "type": "multi_select",
-      "label": "Need NOW",
+      "label": "Current need",
       "required": true,
       "allow_other": true,
       "options": [
@@ -393,7 +399,7 @@
         },
         {
           "value": "method_lack",
-          "label": "Method I lack"
+          "label": "A method I lack"
         },
         {
           "value": "data_samples",
@@ -413,7 +419,7 @@
         },
         {
           "value": "review",
-          "label": "Review/feedback"
+          "label": "Review or feedback"
         },
         {
           "value": "mentoring",
@@ -429,20 +435,20 @@
         },
         {
           "value": "directory_only",
-          "label": "Not sure, want directory"
+          "label": "Not sure yet; I want to be in the directory"
         }
       ]
     },
     {
       "id": "what_you_seek",
       "type": "textarea",
-      "label": "In your words: what you seek (topic, kind of person, what for, when. Vague 'someone in Europe' is hard to match.)",
+      "label": "Describe what you seek: topic, type of profile, purpose and timing. Avoid generic descriptions (e.g. “someone in Europe”).",
       "required": true
     },
     {
       "id": "geo_preferences",
       "type": "multi_select",
-      "label": "Geo preferences",
+      "label": "Geographic preferences",
       "required": true,
       "options": [
         {
@@ -463,11 +469,11 @@
         },
         {
           "value": "anywhere",
-          "label": "Anywhere"
+          "label": "No geographic restriction"
         },
         {
           "value": "specific_country",
-          "label": "Specific country (write it in “what you seek”)"
+          "label": "Specific country (state it in the search description)"
         }
       ]
     },
@@ -483,7 +489,7 @@
         },
         {
           "value": "approx_3_months",
-          "label": "~3 months"
+          "label": "About 3 months"
         },
         {
           "value": "this_year",
@@ -491,20 +497,40 @@
         },
         {
           "value": "no_rush",
-          "label": "No rush"
+          "label": "No urgency"
+        }
+      ]
+    },
+    {
+      "id": "collab_modality",
+      "type": "multi_select",
+      "label": "Preferred collaboration modality",
+      "required": true,
+      "options": [
+        {
+          "value": "remote",
+          "label": "Remote"
+        },
+        {
+          "value": "hybrid",
+          "label": "Hybrid"
+        },
+        {
+          "value": "in_person",
+          "label": "In person"
         }
       ]
     },
     {
       "id": "specific_call",
       "type": "textarea",
-      "label": "Specific call now? Name, role needed, deadline. Else blank.",
+      "label": "Do you have a specific call now? Name, role needed and deadline. Otherwise leave blank.",
       "required": false
     },
     {
       "id": "blockers",
       "type": "multi_select",
-      "label": "Blockers",
+      "label": "Main obstacles to collaboration",
       "required": true,
       "allow_other": true,
       "options": [
@@ -518,19 +544,19 @@
         },
         {
           "value": "dont_know_who",
-          "label": "Don't know who"
+          "label": "I do not know whom to approach"
         },
         {
           "value": "ignored_junior",
-          "label": "Ignored as junior/not PI"
+          "label": "Difficulty due to junior profile or not being PI"
         },
         {
           "value": "no_follow_up",
-          "label": "No follow-up"
+          "label": "Lack of follow-up after first contact"
         },
         {
           "value": "trust_fit",
-          "label": "Trust/fit"
+          "label": "Trust or fit between parties"
         },
         {
           "value": "language",
@@ -554,15 +580,15 @@
         },
         {
           "value": "havent_tried",
-          "label": "Haven't tried"
+          "label": "I have not tried yet"
         }
       ]
     },
     {
       "id": "last_unknown_collab_via",
       "type": "single_select",
-      "label": "Last unknown collaborator via",
-      "required": true,
+      "label": "Last external collaborator (previously unknown): how you met",
+      "required": false,
       "allow_other": true,
       "options": [
         {
@@ -591,27 +617,27 @@
         },
         {
           "value": "this_community",
-          "label": "This community/podcast"
+          "label": "Channel or podcast in this network"
         },
         {
           "value": "almost_never",
-          "label": "Almost never"
+          "label": "I have almost never collaborated this way"
         }
       ]
     },
     {
       "id": "last_email_paper_author",
       "type": "single_select",
-      "label": "Last email to a paper author",
-      "required": true,
+      "label": "Outcome of your last email to a paper author",
+      "required": false,
       "options": [
         {
           "value": "replied_led",
-          "label": "Replied+led somewhere"
+          "label": "Replied and led somewhere"
         },
         {
           "value": "replied_died",
-          "label": "Replied+died"
+          "label": "Replied but did not progress"
         },
         {
           "value": "no_reply",
@@ -623,19 +649,19 @@
         },
         {
           "value": "gt1y",
-          "label": ">1 year, don't remember"
+          "label": "More than a year ago; I do not remember precisely"
         }
       ]
     },
     {
       "id": "follow_up_problem",
       "type": "single_select",
-      "label": "Follow-up a problem?",
-      "required": true,
+      "label": "Is follow-up after first contact usually a problem?",
+      "required": false,
       "options": [
         {
           "value": "yes_routinely",
-          "label": "Yes routinely"
+          "label": "Yes, routinely"
         },
         {
           "value": "sometimes",
@@ -647,15 +673,15 @@
         },
         {
           "value": "no_external_yet",
-          "label": "No external collabs yet"
+          "label": "No external collaborations yet"
         }
       ]
     },
     {
       "id": "recent_pubs_same_circle",
       "type": "single_select",
-      "label": "Recent pubs same circle?",
-      "required": true,
+      "label": "Do your recent publications concentrate in the same co-author circle?",
+      "required": false,
       "options": [
         {
           "value": "almost_always",
@@ -663,7 +689,7 @@
         },
         {
           "value": "half",
-          "label": "Half"
+          "label": "About half"
         },
         {
           "value": "different",
@@ -671,23 +697,23 @@
         },
         {
           "value": "little_na",
-          "label": "Publish little/N/A"
+          "label": "I publish little / not applicable"
         }
       ]
     },
     {
       "id": "institution_funds_intl",
       "type": "single_select",
-      "label": "Institution funds for international collab now?",
-      "required": true,
+      "label": "Does your institution currently have funds for international collaboration?",
+      "required": false,
       "options": [
         {
           "value": "yes_know",
-          "label": "Yes I know"
+          "label": "Yes, I know"
         },
         {
           "value": "think_so",
-          "label": "Think so"
+          "label": "I think so"
         },
         {
           "value": "no",
@@ -695,14 +721,30 @@
         },
         {
           "value": "dont_know",
-          "label": "Don't know"
+          "label": "I do not know"
+        }
+      ]
+    },
+    {
+      "id": "data_consent",
+      "type": "single_select",
+      "label": "Do you authorise processing of these data for matching, as described in the introduction?",
+      "required": true,
+      "options": [
+        {
+          "value": "yes",
+          "label": "Yes, I authorise"
+        },
+        {
+          "value": "no",
+          "label": "I do not authorise"
         }
       ]
     },
     {
       "id": "match_me",
       "type": "single_select",
-      "label": "Match me?",
+      "label": "Would you like us to propose matches?",
       "required": true,
       "options": [
         {
@@ -711,18 +753,18 @@
         },
         {
           "value": "you_only_no_intro",
-          "label": "Only you see data, no intro yet"
+          "label": "Only the team sees the data; no introduction yet"
         },
         {
           "value": "directory_only",
-          "label": "Directory only, no intros"
+          "label": "Directory only; no introductions"
         }
       ]
     },
     {
       "id": "share_with_match",
       "type": "multi_select",
-      "label": "Share with a match (if Match me = Yes)",
+      "label": "What may be shared with a potential match (if you accepted matching)",
       "required": false,
       "visible_if": {
         "field": "match_me",
@@ -747,18 +789,18 @@
         },
         {
           "value": "need_described",
-          "label": "The need I described"
+          "label": "The need described"
         },
         {
           "value": "nothing_only_you",
-          "label": "Nothing, only you"
+          "label": "Nothing; team only"
         }
       ]
     },
     {
       "id": "intro_channel",
       "type": "single_select",
-      "label": "Intro channel",
+      "label": "Preferred channel for an introduction",
       "required": true,
       "options": [
         {
@@ -775,14 +817,14 @@
         },
         {
           "value": "whatever",
-          "label": "Whatever"
+          "label": "No preference"
         }
       ]
     },
     {
       "id": "later_write",
       "type": "single_select",
-      "label": "Later, if I can help besides an in-community match (outside intro, episode), may I write?",
+      "label": "Later, if Synergium can help beyond a match, may we contact you?",
       "required": true,
       "options": [
         {
@@ -795,14 +837,14 @@
         },
         {
           "value": "matching_only",
-          "label": "No, matching only"
+          "label": "No; matching only"
         }
       ]
     },
     {
       "id": "english_for_collab",
       "type": "single_select",
-      "label": "English for collab",
+      "label": "English level for collaboration",
       "required": true,
       "options": [
         {
@@ -811,7 +853,7 @@
         },
         {
           "value": "get_by",
-          "label": "Get by"
+          "label": "Sufficient to work"
         },
         {
           "value": "spanish_only",
@@ -819,40 +861,14 @@
         },
         {
           "value": "english_working",
-          "label": "English is working language"
+          "label": "English is my working language"
         }
       ]
-    },
-    {
-      "id": "also_spanish_community",
-      "type": "single_select",
-      "label": "Also in Spanish community?",
-      "required": true,
-      "options": [
-        {
-          "value": "both",
-          "label": "Both"
-        },
-        {
-          "value": "only_this_en",
-          "label": "Only this (EN)"
-        },
-        {
-          "value": "didnt_know",
-          "label": "Didn't know there was another"
-        }
-      ]
-    },
-    {
-      "id": "three_words",
-      "type": "text",
-      "label": "3 words to be found by",
-      "required": true
     },
     {
       "id": "how_found_form",
       "type": "single_select",
-      "label": "How did you get this form?",
+      "label": "How did you obtain this form?",
       "required": true,
       "allow_other": true,
       "options": [
@@ -893,7 +909,7 @@
     {
       "id": "anything_else",
       "type": "textarea",
-      "label": "Anything else to match you",
+      "label": "Additional information useful for matching",
       "required": false
     }
   ]

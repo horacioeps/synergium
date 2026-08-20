@@ -3,7 +3,7 @@
   "title": "Directorio de investigadores: matching para colaboraciones",
   "locale": "es",
   "description": "Objetivo: conectar a investigadores que puedan colaborar de forma concreta, por ejemplo en un artículo conjunto, una convocatoria, un método, una estancia o una revisión entre pares.\n\nEste formulario recoge su perfil académico para ese emparejamiento. No solo se almacenan esos datos: el equipo profesional de Synergium los cura y procesa para establecer encajes fiables entre los partners de la base de datos, donde ya hay en torno a mil perfiles de nacionalidades muy diversas.\n\nEl acercamiento de contactos empieza de forma anónima. Después, paso a paso, se media el entendimiento hasta ver si hay encaje. Solo entonces se conecta formalmente.\n\nEs gratuito y lleva unos 8-10 minutos. Responda con precisión: las descripciones genéricas dificultan el emparejamiento. No se venden ni se ceden datos a terceros. Si hay una presentación, solo se compartirá lo que usted autorice al final. Para pedir la eliminación de sus datos, use el canal indicado al pie.\n\nPara más dudas, escriba a info@synergium.net.",
-  "success_message": "Gracias — tus respuestas se guardaron. Si autorizaste presentaciones, puede que te contacte por el canal que elegiste.",
+  "success_message": "Gracias. Sus respuestas se han guardado. Si autorizó presentaciones, es posible que le contactemos por el canal indicado.",
   "ui": {
     "submit": "Enviar",
     "sending": "Enviando…",
@@ -29,7 +29,7 @@
     {
       "id": "email",
       "type": "email",
-      "label": "Email (uno que revises de verdad)",
+      "label": "Correo electrónico (el que consulta con regularidad)",
       "required": true
     },
     {
@@ -41,19 +41,19 @@
     {
       "id": "country",
       "type": "text",
-      "label": "País donde vives/trabajas",
+      "label": "País de residencia o trabajo",
       "required": true
     },
     {
       "id": "city",
       "type": "text",
-      "label": "Ciudad (opcional; zona horaria/local)",
+      "label": "Ciudad (opcional; útil para zona horaria)",
       "required": false
     },
     {
       "id": "match_language",
       "type": "single_select",
-      "label": "Idioma para el match",
+      "label": "Idioma preferido para el emparejamiento",
       "required": true,
       "allow_other": true,
       "options": [
@@ -74,7 +74,7 @@
     {
       "id": "role",
       "type": "single_select",
-      "label": "Rol",
+      "label": "Rol profesional",
       "required": true,
       "allow_other": true,
       "options": [
@@ -127,7 +127,7 @@
     {
       "id": "institution",
       "type": "text",
-      "label": "Institución (o independiente)",
+      "label": "Institución (o actividad independiente)",
       "required": true
     },
     {
@@ -170,8 +170,8 @@
     {
       "id": "years_in_research",
       "type": "single_select",
-      "label": "Años en investigación",
-      "required": true,
+      "label": "Años de experiencia en investigación",
+      "required": false,
       "options": [
         {
           "value": "lt2",
@@ -179,15 +179,15 @@
         },
         {
           "value": "2_5",
-          "label": "2–5"
+          "label": "2-5"
         },
         {
           "value": "6_10",
-          "label": "6–10"
+          "label": "6-10"
         },
         {
           "value": "11_20",
-          "label": "11–20"
+          "label": "11-20"
         },
         {
           "value": "gt20",
@@ -202,7 +202,7 @@
     {
       "id": "areas",
       "type": "multi_select",
-      "label": "Áreas (marca todas las que apliquen)",
+      "label": "Áreas temáticas (seleccione todas las que correspondan)",
       "required": true,
       "allow_other": true,
       "options": [
@@ -263,7 +263,7 @@
     {
       "id": "what_you_do",
       "type": "textarea",
-      "label": "En 3–5 frases, qué haces ahora (línea, métodos, para quién/qué. Lo concreto gana a lo impresionante.)",
+      "label": "En 3-5 frases, describa su trabajo actual (línea, métodos, para quién o para qué). Priorice hechos concretos frente a formulaciones genéricas.",
       "required": true
     },
     {
@@ -306,19 +306,25 @@
     {
       "id": "keywords",
       "type": "textarea",
-      "label": "Palabras clave/técnicas para encontrarte (5–12 términos)",
+      "label": "Palabras clave o técnicas (5-12 términos)",
       "required": true
     },
     {
       "id": "profile_urls",
       "type": "url_list",
-      "label": "ORCID/Scholar/LinkedIn/web (una URL por línea)",
+      "label": "Scholar, LinkedIn u otras webs (una URL por línea)",
+      "required": false
+    },
+    {
+      "id": "orcid",
+      "type": "text",
+      "label": "ORCID (si dispone; p. ej. https://orcid.org/0000-…)",
       "required": false
     },
     {
       "id": "offer_next_months",
       "type": "multi_select",
-      "label": "Puedes ofrecer en los próximos meses",
+      "label": "Qué puede ofrecer en los próximos meses",
       "required": true,
       "allow_other": true,
       "options": [
@@ -344,11 +350,11 @@
         },
         {
           "value": "students",
-          "label": "Estudiantes/manos de lab"
+          "label": "Estudiantes / apoyo de laboratorio"
         },
         {
           "value": "review",
-          "label": "Revisión/feedback"
+          "label": "Revisión o feedback"
         },
         {
           "value": "industry_contacts",
@@ -372,14 +378,14 @@
         },
         {
           "value": "not_sure",
-          "label": "No estoy seguro"
+          "label": "Aún no estoy seguro"
         }
       ]
     },
     {
       "id": "need_now",
       "type": "multi_select",
-      "label": "Necesitas AHORA",
+      "label": "Necesidad actual",
       "required": true,
       "allow_other": true,
       "options": [
@@ -393,7 +399,7 @@
         },
         {
           "value": "method_lack",
-          "label": "Un método que me falta"
+          "label": "Un método del que carezco"
         },
         {
           "value": "data_samples",
@@ -413,7 +419,7 @@
         },
         {
           "value": "review",
-          "label": "Revisión/feedback"
+          "label": "Revisión o feedback"
         },
         {
           "value": "mentoring",
@@ -429,14 +435,14 @@
         },
         {
           "value": "directory_only",
-          "label": "No estoy seguro, quiero el directorio"
+          "label": "Aún no estoy seguro; deseo figurar en el directorio"
         }
       ]
     },
     {
       "id": "what_you_seek",
       "type": "textarea",
-      "label": "Con tus palabras: qué buscas (tema, tipo de persona, para qué, cuándo. Un vago «alguien en Europa» es difícil de emparejar.)",
+      "label": "Describa qué busca: tema, tipo de perfil, finalidad y plazo. Evite descripciones genéricas (p. ej. «alguien en Europa»).",
       "required": true
     },
     {
@@ -463,11 +469,11 @@
         },
         {
           "value": "anywhere",
-          "label": "Cualquier sitio"
+          "label": "Sin restricción geográfica"
         },
         {
           "value": "specific_country",
-          "label": "País concreto (escríbelo en «qué buscas»)"
+          "label": "País concreto (indíquelo en la descripción de búsqueda)"
         }
       ]
     },
@@ -483,7 +489,7 @@
         },
         {
           "value": "approx_3_months",
-          "label": "~3 meses"
+          "label": "Aprox. 3 meses"
         },
         {
           "value": "this_year",
@@ -491,20 +497,40 @@
         },
         {
           "value": "no_rush",
-          "label": "Sin prisa"
+          "label": "Sin urgencia"
+        }
+      ]
+    },
+    {
+      "id": "collab_modality",
+      "type": "multi_select",
+      "label": "Modalidad de colaboración preferida",
+      "required": true,
+      "options": [
+        {
+          "value": "remote",
+          "label": "Remoto"
+        },
+        {
+          "value": "hybrid",
+          "label": "Híbrido"
+        },
+        {
+          "value": "in_person",
+          "label": "Presencial"
         }
       ]
     },
     {
       "id": "specific_call",
       "type": "textarea",
-      "label": "¿Convocatoria concreta ahora? Nombre, rol necesario, plazo. Si no, déjalo en blanco.",
+      "label": "¿Tiene una convocatoria concreta ahora? Indique nombre, rol necesario y plazo. Si no, deje el campo en blanco.",
       "required": false
     },
     {
       "id": "blockers",
       "type": "multi_select",
-      "label": "Bloqueos",
+      "label": "Principales obstáculos para colaborar",
       "required": true,
       "allow_other": true,
       "options": [
@@ -518,19 +544,19 @@
         },
         {
           "value": "dont_know_who",
-          "label": "No sé a quién"
+          "label": "No sé a quién dirigirme"
         },
         {
           "value": "ignored_junior",
-          "label": "Me ignoran por junior/no IP"
+          "label": "Dificultad por perfil junior o por no ser IP"
         },
         {
           "value": "no_follow_up",
-          "label": "No hay seguimiento"
+          "label": "Falta de seguimiento tras el primer contacto"
         },
         {
           "value": "trust_fit",
-          "label": "Confianza/encaje"
+          "label": "Confianza o encaje entre partes"
         },
         {
           "value": "language",
@@ -554,15 +580,15 @@
         },
         {
           "value": "havent_tried",
-          "label": "No lo he intentado"
+          "label": "Aún no lo he intentado"
         }
       ]
     },
     {
       "id": "last_unknown_collab_via",
       "type": "single_select",
-      "label": "Último colaborador desconocido vía",
-      "required": true,
+      "label": "Último colaborador externo (antes desconocido): vía de contacto",
+      "required": false,
       "allow_other": true,
       "options": [
         {
@@ -591,27 +617,27 @@
         },
         {
           "value": "this_community",
-          "label": "Esta comunidad/podcast"
+          "label": "Canal o podcast de esta red"
         },
         {
           "value": "almost_never",
-          "label": "Casi nunca"
+          "label": "Casi nunca he colaborado así"
         }
       ]
     },
     {
       "id": "last_email_paper_author",
       "type": "single_select",
-      "label": "Último email a un autor de paper",
-      "required": true,
+      "label": "Resultado del último correo a un autor de un artículo",
+      "required": false,
       "options": [
         {
           "value": "replied_led",
-          "label": "Respondió y llegó a algo"
+          "label": "Respondió y prosperó"
         },
         {
           "value": "replied_died",
-          "label": "Respondió y murió"
+          "label": "Respondió, pero no prosperó"
         },
         {
           "value": "no_reply",
@@ -623,15 +649,15 @@
         },
         {
           "value": "gt1y",
-          "label": ">1 año, no recuerdo"
+          "label": "Hace más de un año; no lo recuerdo con precisión"
         }
       ]
     },
     {
       "id": "follow_up_problem",
       "type": "single_select",
-      "label": "¿El seguimiento es un problema?",
-      "required": true,
+      "label": "¿El seguimiento tras el primer contacto suele ser un problema?",
+      "required": false,
       "options": [
         {
           "value": "yes_routinely",
@@ -654,8 +680,8 @@
     {
       "id": "recent_pubs_same_circle",
       "type": "single_select",
-      "label": "¿Pubs recientes del mismo círculo?",
-      "required": true,
+      "label": "¿Sus publicaciones recientes se concentran en el mismo círculo de coautores?",
+      "required": false,
       "options": [
         {
           "value": "almost_always",
@@ -663,7 +689,7 @@
         },
         {
           "value": "half",
-          "label": "La mitad"
+          "label": "Aproximadamente la mitad"
         },
         {
           "value": "different",
@@ -671,19 +697,19 @@
         },
         {
           "value": "little_na",
-          "label": "Publico poco/N/A"
+          "label": "Publico poco / no aplica"
         }
       ]
     },
     {
       "id": "institution_funds_intl",
       "type": "single_select",
-      "label": "¿Tu institución tiene fondos ahora para colaboraciones internacionales?",
-      "required": true,
+      "label": "¿Su institución dispone ahora de fondos para colaboraciones internacionales?",
+      "required": false,
       "options": [
         {
           "value": "yes_know",
-          "label": "Sí, lo sé"
+          "label": "Sí, lo sé con certeza"
         },
         {
           "value": "think_so",
@@ -700,9 +726,25 @@
       ]
     },
     {
+      "id": "data_consent",
+      "type": "single_select",
+      "label": "¿Autoriza el tratamiento de estos datos para emparejamiento, según lo descrito en la introducción?",
+      "required": true,
+      "options": [
+        {
+          "value": "yes",
+          "label": "Sí, autorizo"
+        },
+        {
+          "value": "no",
+          "label": "No autorizo"
+        }
+      ]
+    },
+    {
       "id": "match_me",
       "type": "single_select",
-      "label": "¿Emparejarme?",
+      "label": "¿Desea que le propongamos emparejamientos?",
       "required": true,
       "options": [
         {
@@ -711,18 +753,18 @@
         },
         {
           "value": "you_only_no_intro",
-          "label": "Solo tú ves los datos, sin intro aún"
+          "label": "Solo el equipo ve los datos; sin introducción aún"
         },
         {
           "value": "directory_only",
-          "label": "Solo directorio, sin intros"
+          "label": "Solo directorio; sin introducciones"
         }
       ]
     },
     {
       "id": "share_with_match",
       "type": "multi_select",
-      "label": "Compartir con un match (si Emparejarme = Sí)",
+      "label": "Qué puede compartirse con un posible emparejamiento (si aceptó emparejamientos)",
       "required": false,
       "visible_if": {
         "field": "match_me",
@@ -747,18 +789,18 @@
         },
         {
           "value": "need_described",
-          "label": "La necesidad que describí"
+          "label": "La necesidad descrita"
         },
         {
           "value": "nothing_only_you",
-          "label": "Nada, solo tú"
+          "label": "Nada; solo el equipo"
         }
       ]
     },
     {
       "id": "intro_channel",
       "type": "single_select",
-      "label": "Canal para la intro",
+      "label": "Canal preferido para una introducción",
       "required": true,
       "options": [
         {
@@ -775,14 +817,14 @@
         },
         {
           "value": "whatever",
-          "label": "Cualquiera"
+          "label": "Indiferente"
         }
       ]
     },
     {
       "id": "later_write",
       "type": "single_select",
-      "label": "Más adelante, si puedo ayudar además de un match en la comunidad (fuera de intro, episodio), ¿puedo escribirte?",
+      "label": "Más adelante, si Synergium puede ayudarle más allá de un emparejamiento, ¿podemos contactarle?",
       "required": true,
       "options": [
         {
@@ -795,14 +837,14 @@
         },
         {
           "value": "matching_only",
-          "label": "No, solo matching"
+          "label": "No; solo emparejamiento"
         }
       ]
     },
     {
       "id": "english_for_collab",
       "type": "single_select",
-      "label": "Inglés para colaborar",
+      "label": "Nivel de inglés para colaborar",
       "required": true,
       "options": [
         {
@@ -811,7 +853,7 @@
         },
         {
           "value": "get_by",
-          "label": "Me apaño"
+          "label": "Nivel suficiente para trabajar"
         },
         {
           "value": "spanish_only",
@@ -824,35 +866,9 @@
       ]
     },
     {
-      "id": "also_spanish_community",
-      "type": "single_select",
-      "label": "¿También en la comunidad en español?",
-      "required": true,
-      "options": [
-        {
-          "value": "both",
-          "label": "En ambas"
-        },
-        {
-          "value": "only_this_en",
-          "label": "Solo esta (EN)"
-        },
-        {
-          "value": "didnt_know",
-          "label": "No sabía que había otra"
-        }
-      ]
-    },
-    {
-      "id": "three_words",
-      "type": "text",
-      "label": "3 palabras para que te encuentren",
-      "required": true
-    },
-    {
       "id": "how_found_form",
       "type": "single_select",
-      "label": "¿Cómo te llegó este formulario?",
+      "label": "¿Cómo obtuvo este formulario?",
       "required": true,
       "allow_other": true,
       "options": [
@@ -893,7 +909,7 @@
     {
       "id": "anything_else",
       "type": "textarea",
-      "label": "Algo más para emparejarte",
+      "label": "Información adicional útil para el emparejamiento",
       "required": false
     }
   ]

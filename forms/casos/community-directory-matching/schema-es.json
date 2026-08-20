@@ -596,7 +596,8 @@
           "value": "remote",
           "label": "Remoto"
         }
-      ]
+      ],
+      "allow_other": true
     },
     {
       "id": "specific_call",
@@ -872,7 +873,8 @@
           "value": "whatsapp",
           "label": "WhatsApp"
         }
-      ]
+      ],
+      "allow_other": true
     },
     {
       "id": "intro_channel",
@@ -896,7 +898,8 @@
           "value": "whatsapp",
           "label": "WhatsApp"
         }
-      ]
+      ],
+      "allow_other": true
     },
     {
       "id": "later_write",
@@ -940,7 +943,8 @@
           "value": "spanish_only",
           "label": "Solo español"
         }
-      ]
+      ],
+      "allow_other": true
     },
     {
       "id": "how_found_form",

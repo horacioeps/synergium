@@ -93,6 +93,12 @@ Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no What
 
 **Agente:** Añadidas África, Asia, Oriente Medio, Oceanía, etc.; alfa; allow_other. Deploy vivo junto con áreas/métodos.
 
+## Interacción 14
+
+**Usuario:** intro_channel + Other; y en todos los otros selects donde tenga sentido.
+
+**Agente:** `allow_other` en intro_channel, collab_modality, share_with_match, english_for_collab. No en consent/escalas/sí-no. Deploy vivo.
+
 ## Interacción 4 (cierre vía guarda-sesión en otro hilo)
 
 En disco quedaron aplicados title/description/foot profesionales en `nexus-input.es.json` / `.en.json`, schemas community-directory y pie del SPA (`info@synergium.net`). Commit + push con `/guarda-sesion-y-demas` (2026-08-21).

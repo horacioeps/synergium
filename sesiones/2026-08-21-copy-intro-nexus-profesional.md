@@ -17,3 +17,9 @@
 - **C** — Académica breve
 
 Pie sugerido: borrado vía email/`info@synergium.net` (o canal del pie), no WhatsApp en la caja. Pendiente: elegir A/B/C (+ EN) y opcionalmente suavizar labels coloquiales (p. ej. email).
+
+## Interacción 3
+
+**Usuario:** No meter nada de comunidad; no em dashes; siempre unslop; objetivo más claro con intro más clara; partir de A; dar 3 variantes.
+
+**Agente:** Tres variantes A (ES), sin «comunidad», sin —/–, objetivo en la primera frase, unslop (crisp). Pendiente elegir A1/A2/A3.

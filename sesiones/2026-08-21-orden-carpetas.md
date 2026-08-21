@@ -109,3 +109,13 @@ Plan acordado:
 4. Enlaces vivos, reglas Cursor, scripts (sheet-sync, apply_nexus_input, rollbacks WP).
 5. Skill `~/.cursor/skills/orden-jerarquico-repo/` + copia `ops/procedimientos/orden-jerarquico-repo.md`.
 
+---
+
+## Usuario
+
+y otra cosa, este procedimiento que lo guardes en algun sitio par aluego aplicar este tipo de clasifiacion a otros proyectos
+
+## Agente
+
+El skill personal ya existía; se reescribe como procedimiento **genérico** (cualquier repo, no copiar carpetas Synergium). Frase: `Aplica orden jerárquico a este repo`. Sitio canónico: `~/.cursor/skills/orden-jerarquico-repo/` (vale en todos los proyectos Cursor). Copia en este repo: `ops/procedimientos/orden-jerarquico-repo.md`. Ejemplo Synergium aparte: `ejemplo-synergium.md`. Puntero en `nuevo-proyecto-local` y en `MAPA.md`.
+

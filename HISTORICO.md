@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 22:10 CEST | Guardar el procedimiento para aplicarlo a otros proyectos | Skill personal `orden-jerarquico-repo` (frase de arranque); copia `ops/procedimientos/`; puntero en nuevo-proyecto-local | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 22:05 CEST | Reorganizar repo + guardar procedimiento para otros proyectos | Árbol área→categoría→ítem; MAPA; tag `pre-orden-arbol-2026-08-21` (SHA `2fe97c5`); [archivo/REORGANIZACION-2026-08-21.md](archivo/REORGANIZACION-2026-08-21.md); skill `orden-jerarquico-repo` | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 21:57 CEST | Snapshot main ANTES de reorganizar carpetas | Volcado sesión; árbol aún sin mover; SHA de este commit = punto de rollback | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:45 CEST | JD sin números: a ver cómo quedaría | Árbol área→categoría→ítem con nombres; mapeo del repo actual; sin mover | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |

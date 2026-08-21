@@ -38,7 +38,7 @@ archivo/
 sesiones/              (raíz; contrato de agentes)
 ```
 
-Procedimiento para repetir esto en otro repo: skill `orden-jerarquico-repo` y [ops/procedimientos/orden-jerarquico-repo.md](ops/procedimientos/orden-jerarquico-repo.md).
+Procedimiento para repetir esto en otro repo: en ese chat, `Aplica orden jerárquico a este repo`. Skill `orden-jerarquico-repo` (`~/.cursor/skills/orden-jerarquico-repo/`) y copia [ops/procedimientos/orden-jerarquico-repo.md](ops/procedimientos/orden-jerarquico-repo.md).
 
 ## Dónde va lo de esta semana
 

@@ -15,4 +15,10 @@ Nuevo proyecto local: https://github.com/USUARIO/REPO
 
 El agente clona `main`, escribe las rules del proyecto, crea `sesiones/` e `HISTORICO.md`, enlaza el README y hace push.
 
-Si más adelante el repo está desordenado: skill personal `orden-jerarquico-repo` (`~/.cursor/skills/orden-jerarquico-repo/`).
+Si más adelante el repo está desordenado, en ese chat:
+
+```
+Aplica orden jerárquico a este repo
+```
+
+Skill personal: `~/.cursor/skills/orden-jerarquico-repo/`.

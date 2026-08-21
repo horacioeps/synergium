@@ -70,7 +70,7 @@ Pasos actuales (piloto Matías–Valentina):
 7. Intro conjunta; tú sales del hilo salvo que pidan follow-up.
 8. Follow-up 10–14 días (playbook).
 
-Referencias: `comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md`, `comunidad/matching/2026-08-21-top3-nexus-input.md`.
+Referencias: `comunidad/casos/2026-08-14-formulario-matching/playbook-matching.md`, `comunidad/matching/2026-08-21-top4-nexus-input.md`.
 
 ---
 
@@ -178,5 +178,5 @@ Detalle de ideas no-embudo o aplazadas: [TODO.md](TODO.md).
 ## Fuentes
 
 - Vault RO: `@/Coding/Proyectos/Synergium/Synergium - mi servicio para conectar investigadores y empresas - e ideas derivadas.md`
-- Relacionadas: EmailerX+Synergium; conversaciones Alexander / Fabián; playbook matching; top3 `comunidad/matching/2026-08-21-top3-nexus-input.md`
+- Relacionadas: EmailerX+Synergium; conversaciones Alexander / Fabián; playbook matching; top4 `comunidad/matching/2026-08-21-top4-nexus-input.md`
 - Captura WA Valentina Lucena (+34 661 347 478), 2026-08 — sí al match + pregunta fase 2 pendiente

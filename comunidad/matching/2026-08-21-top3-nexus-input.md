@@ -1,5 +1,7 @@
 # Top 3 matches — Community directory (`nexus-input`)
 
+> **Actualizado:** ver [2026-08-21-top4-nexus-input.md](2026-08-21-top4-nexus-input.md) (top 4 + contactos últimas 24 h).
+
 Fecha: **2026-08-21**. Base: 28 submissions PocketBase (26 Sheet + tests/web); pool activo `match_me=yes` ≈ 21 (excl. directory-only / “only you” / PublicTest).
 
 Criterio: complemento need↔offer + solape de área/método/tema (texto) + geo LATAM–Europa/anywhere + ambos quieren intro. El score automático puro hincha pares genéricos (`review`/`thesis_co`); aquí van los **3 intros más defendibles**.

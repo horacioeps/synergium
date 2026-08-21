@@ -56,3 +56,23 @@ la idea es buena pero no quiero nuneros, a ver como qedaria
 ## Agente
 
 Redibujo JD con nombres (área → categoría → ítem). Mismas reglas: ≤10 áreas, ≤10 categorías, contenido solo en el tercer nivel. Árbol propuesto sobre el repo actual; sin mover ficheros hasta que Horacio elija.
+
+---
+
+## Usuario
+
+si, me parece muy buena idea, te pediria que lo hagas todo. y que por otra parte antes subas a main y demas y luego hagas todo esto y tambien que registres en un archvo todo lo que haces por si se rompe ealgo y luego hay que volver hacia atrás
+
+## Usuario (turno siguiente)
+
+y otra cosa, este procedimiento que lo guardes en algun sitio par aluego aplicar este tipo de clasifiacion a otros proyectos
+
+## Agente
+
+Plan acordado:
+
+1. Snapshot en `main` (sesión + HISTORICO + push) **antes** de mover nada. SHA de rollback = ese commit.
+2. Skill personal reutilizable `orden-jerarquico-repo` (otros proyectos) + copia en el repo.
+3. Archivo de registro/rollback con cada `git mv` y cómo volver atrás.
+4. Mover el árbol área → categoría → ítem (sin números). `sesiones/` e `HISTORICO.md` se quedan en la raíz (regla de agentes).
+5. Actualizar README, AGENTS, reglas Cursor, scripts, enlaces vivos. Push del reorg.

@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 21:57 CEST | Snapshot main ANTES de reorganizar carpetas | Volcado sesión; árbol aún sin mover; SHA de este commit = punto de rollback | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:45 CEST | JD sin números: a ver cómo quedaría | Árbol área→categoría→ítem con nombres; mapeo del repo actual; sin mover | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:44 CEST | ¿Los números de la opción 2 son Johnny Decimal de verdad? | No: eran áreas/categorías inspiradas; falta el `AC.ID` (p.ej. 12.04) | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:40 CEST | 3 maneras de ordenar docs/carpetas por área | Diagnóstico + 3 esquemas (cadena de valor, Johnny Decimal, capas vivo/archivo); sin mover ficheros | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |

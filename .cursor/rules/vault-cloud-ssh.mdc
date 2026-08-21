@@ -30,11 +30,11 @@ Preferir el usuario vault (`…_OBISIDIAN_USER`) y el helper de **este repo**. <
 ## Helper (este repo)
 
 ```bash
-scripts/vault_ssh_ro.sh count-md
-scripts/vault_ssh_ro.sh ls Inbox
-scripts/vault_ssh_ro.sh cat "ruta/relativa/nota.md"
-scripts/vault_ssh_ro.sh get "ruta/relativa/nota.md" /tmp/nota.md
-scripts/vault_ssh_ro.sh root
+ops/scripts/vault_ssh_ro.sh count-md
+ops/scripts/vault_ssh_ro.sh ls Inbox
+ops/scripts/vault_ssh_ro.sh cat "ruta/relativa/nota.md"
+ops/scripts/vault_ssh_ro.sh get "ruta/relativa/nota.md" /tmp/nota.md
+ops/scripts/vault_ssh_ro.sh root
 ```
 
 Requiere `sshpass` (Cloud Agents: suele estar disponible).
@@ -49,6 +49,6 @@ Requiere `sshpass` (Cloud Agents: suele estar disponible).
 
 - **Solo lectura** salvo petición explícita del usuario.
 - No dejar archivos de prueba en el remoto.
-- Todo lo **generado** va en **este repo** (`estrategia/`, `web/`, `docs/`, etc.) — no en la vault ni en el repo Obsidian legacy.
+- Todo lo **generado** va en **este repo** (ver [MAPA.md](../MAPA.md)) — no en la vault ni en el repo Obsidian legacy.
 
-Detalle ampliado: [docs/VAULT-ACCESO.md](../docs/VAULT-ACCESO.md)
+Detalle ampliado: [ops/infra/vault-acceso.md](../ops/infra/vault-acceso.md)

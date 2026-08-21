@@ -21,7 +21,7 @@ Todo form público en `forms.synergium.net` usa el **mismo selector** que synerg
 
 ## Obligatorio al publicar un form nuevo
 
-1. El SPA compartido (`forms/deploy/pb_public/index.html`) ya incluye el selector — no quitarlo.
-2. Preferible añadir `forms/deploy/pb_public/i18n/{public_id}.es.json` (y opcional `.en.json` de referencia).
+1. El SPA compartido (`producto/forms/deploy/pb_public/index.html`) ya incluye el selector — no quitarlo.
+2. Preferible añadir `producto/forms/deploy/pb_public/i18n/{public_id}.es.json` (y opcional `.en.json` de referencia).
 3. Preferencia de idioma: clave `syn-lang` (misma que la web).
-4. Documentar en `forms/docs/IDIOMA-SELECTOR.md`.
+4. Documentar en `producto/forms/docs/IDIOMA-SELECTOR.md`.

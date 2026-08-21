@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 22:05 CEST | Reorganizar repo + guardar procedimiento para otros proyectos | Árbol área→categoría→ítem; MAPA; tag `pre-orden-arbol-2026-08-21` (SHA `2fe97c5`); [archivo/REORGANIZACION-2026-08-21.md](archivo/REORGANIZACION-2026-08-21.md); skill `orden-jerarquico-repo` | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 21:57 CEST | Snapshot main ANTES de reorganizar carpetas | Volcado sesión; árbol aún sin mover; SHA de este commit = punto de rollback | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:45 CEST | JD sin números: a ver cómo quedaría | Árbol área→categoría→ítem con nombres; mapeo del repo actual; sin mover | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:44 CEST | ¿Los números de la opción 2 son Johnny Decimal de verdad? | No: eran áreas/categorías inspiradas; falta el `AC.ID` (p.ej. 12.04) | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
@@ -53,7 +54,7 @@
 | 2026-08-20 21:14 UTC | Otra ronda slugs: potentes, top/sub, sesgo input | I–P: win/gain/collab/bridge/rise/forge/leap/nexus + `/input` | [sesiones/2026-08-20-url-opciones-ip.md](sesiones/2026-08-20-url-opciones-ip.md) |
 | 2026-08-20 21:11 UTC | Sync + entender form nuevo y opciones A–H | Pull `826e393`; A–H = slugs URL Community directory (aún sin aplicar) | [sesiones/2026-08-20-sync-form-opciones-ah.md](sesiones/2026-08-20-sync-form-opciones-ah.md) |
 | 2026-08-20 21:02 UTC | Forms estilo=web + URL options + HTTPS | Manrope/Crepúsculo en vivo; URL-OPTIONS; GOOGLE-SHEET-SYNC; puente docs | [sesiones/2026-08-20-forms-estilo-url-puente.md](sesiones/2026-08-20-forms-estilo-url-puente.md) |
-| 2026-08-19 14:59 UTC | Acceso vault VPS desde repo synergium | `scripts/vault_ssh_ro.sh`, regla vault-cloud-ssh, docs/VAULT-ACCESO.md | [chats/2026-08-19-vault-vps-synergium.md](chats/2026-08-19-vault-vps-synergium.md) |
+| 2026-08-19 14:59 UTC | Acceso vault VPS desde repo synergium | `scripts/vault_ssh_ro.sh`, regla vault-cloud-ssh, docs/VAULT-ACCESO.md | [chats/2026-08-19-vault-vps-synergium.md](archivo/chats/2026-08-19-vault-vps-synergium.md) |
 | 2026-08-19 14:58 UTC | Explicar de qué va el proyecto y a qué otros repos apunta | Resumen: Synergium (broker académico LATAM-Europa), repo synergium, vault maestra en GitHub, servicios synergium.net / forms.synergium.net | [sesiones/2026-08-19-que-va-proyecto-repos.md](sesiones/2026-08-19-que-va-proyecto-repos.md) |
 | 2026-08-19 15:03 UTC | Leer Google Form EN de investigadores, guardar enlace, resumir contenido | Sí: estructura legible; no respuestas. Enlace en `enlaces-vivos.md`. Resumen 31 preguntas Community directory | [sesiones/2026-08-19-google-form-en-enlace-resumen.md](sesiones/2026-08-19-google-form-en-enlace-resumen.md) |
 | 2026-08-19 15:05 UTC | Leer hoja Google Sheets con respuestas del form EN | Sí: 20 respuestas visibles. Enlace hoja guardado en `enlaces-vivos.md` | [sesiones/2026-08-19-google-sheets-respuestas-form-en.md](sesiones/2026-08-19-google-sheets-respuestas-form-en.md) |

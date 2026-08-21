@@ -7,7 +7,8 @@ alwaysApply: true
 
 - **Todo** el trabajo Synergium va en **este repo** (`horacioeps/synergium`).
 - El repo Obsidian tiene **copias antiguas** (pre-2026-08-19) en `generado/web-synergium/`, `generado/synergium-forms/`, etc. — **no escribir ahí**.
-- Índice legacy: [REFERENCIAS-LEGACY-OBSIDIAN.md](../REFERENCIAS-LEGACY-OBSIDIAN.md)
-- **Vault VPS:** solo lectura cuando haga falta — `scripts/vault_ssh_ro.sh` + `.cursor/rules/vault-cloud-ssh.mdc` + [docs/VAULT-ACCESO.md](../docs/VAULT-ACCESO.md)
-- Sesiones Synergium: `chats/` y `sesiones/` **en este repo**.
+- Índice de carpetas: [MAPA.md](../MAPA.md)
+- Índice legacy: [archivo/legacy-obsidian.md](../archivo/legacy-obsidian.md)
+- **Vault VPS:** solo lectura cuando haga falta — `ops/scripts/vault_ssh_ro.sh` + `.cursor/rules/vault-cloud-ssh.mdc` + [ops/infra/vault-acceso.md](../ops/infra/vault-acceso.md)
+- Sesiones Synergium: `sesiones/` en la raíz; chats de archivo en `archivo/chats/`
 - Esta carpeta de trabajo es la **copia local**; commit + push a `origin/main` tras cada cambio (agente o edición manual). Detalle: `.cursor/rules/local-clone-siempre-push.mdc`.

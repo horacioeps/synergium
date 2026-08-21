@@ -63,6 +63,21 @@ Redibujo JD con nombres (área → categoría → ítem). Mismas reglas: ≤10 �
 
 si, me parece muy buena idea, te pediria que lo hagas todo. y que por otra parte antes subas a main y demas y luego hagas todo esto y tambien que registres en un archvo todo lo que haces por si se rompe ealgo y luego hay que volver hacia atrás
 
+## Agente
+
+Orden pedido: 1) volcado + commit + push + **tag** de restauración **antes** de mover nada. 2) Reorganizar al árbol área/categoría/ítem (sin números). 3) Archivo de registro de cada `git mv` y cómo volver atrás.
+
+Excepción: `sesiones/` y `HISTORICO.md` se quedan en la raíz (contrato del skill guarda-sesion-y-demas y reglas del repo).
+
+**Paso 1 (este commit):** punto de restauración. Tag `pre-orden-arbol-2026-08-21`.
+**Paso 2:** movimientos + `archivo/REORG-2026-08-21.md` + actualización de enlaces/reglas/scripts.
+
+---
+
+## Usuario
+
+si, me parece muy buena idea, te pediria que lo hagas todo. y que por otra parte antes subas a main y demas y luego hagas todo esto y tambien que registres en un archvo todo lo que haces por si se rompe ealgo y luego hay que volver hacia atrás
+
 ## Usuario (turno siguiente)
 
 y otra cosa, este procedimiento que lo guardes en algun sitio par aluego aplicar este tipo de clasifiacion a otros proyectos
@@ -76,3 +91,21 @@ Plan acordado:
 3. Archivo de registro/rollback con cada `git mv` y cómo volver atrás.
 4. Mover el árbol área → categoría → ítem (sin números). `sesiones/` e `HISTORICO.md` se quedan en la raíz (regla de agentes).
 5. Actualizar README, AGENTS, reglas Cursor, scripts, enlaces vivos. Push del reorg.
+
+### Hecho (2026-08-21 ~22:00 CEST)
+
+- Snapshot en `origin/main`: `2fe97c552ee69e5497352c0e7a8aae6613d35d79`. Tag `pre-orden-arbol-2026-08-21`.
+- Registro: [REORGANIZACION-2026-08-21.md](../REORGANIZACION-2026-08-21.md) (cada `git mv` + cómo volver).
+- Árbol aplicado (área → categoría → ítem). `sesiones/` e `HISTORICO.md` en la raíz.
+- Índice: [MAPA.md](../MAPA.md).
+- Skill personal `~/.cursor/skills/orden-jerarquico-repo/` + copia `ops/procedimientos/orden-jerarquico-repo.md`. Puntero en `nuevo-proyecto-local`.
+- Enlaces vivos, reglas Cursor y scripts de publish/sync/deploy actualizados.
+
+## Agente (ejecución)
+
+1. Snapshot ya en `origin/main`: `2fe97c5`. Tag `pre-orden-arbol-2026-08-21` empujado.
+2. `git mv` al árbol área → categoría → ítem (sin números). `sesiones/` + `HISTORICO.md` en la raíz.
+3. Registro: [archivo/REORGANIZACION-2026-08-21.md](../archivo/REORGANIZACION-2026-08-21.md). Índice: [MAPA.md](../MAPA.md).
+4. Enlaces vivos, reglas Cursor, scripts (sheet-sync, apply_nexus_input, rollbacks WP).
+5. Skill `~/.cursor/skills/orden-jerarquico-repo/` + copia `ops/procedimientos/orden-jerarquico-repo.md`.
+

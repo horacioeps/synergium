@@ -46,3 +46,13 @@ No del todo. Lo de la opción 2 era JD *inspirado*: usé 10/20/30 como si fueran
 - El número de verdad es `AC.ID`, p.ej. `12.04`. Ahí vive el contenido; no se guarda en el área ni en la categoría.
 
 Corrección: lo propuesto era numeración jerárquica al estilo JD, no un sistema Johnny Decimal completo. Sin mover ficheros.
+
+---
+
+## Usuario
+
+la idea es buena pero no quiero nuneros, a ver como qedaria
+
+## Agente
+
+Redibujo JD con nombres (área → categoría → ítem). Mismas reglas: ≤10 áreas, ≤10 categorías, contenido solo en el tercer nivel. Árbol propuesto sobre el repo actual; sin mover ficheros hasta que Horacio elija.

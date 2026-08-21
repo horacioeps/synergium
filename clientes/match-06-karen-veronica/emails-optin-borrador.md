@@ -1,4 +1,4 @@
-# Emails opt-in — Match #6 (borrador)
+# Emails opt-in - Match #6 (borrador)
 
 **De:** `horacio@horacio-ps.com`  
 **Estado:** Borrador (mostrar; no enviar hasta OK)  

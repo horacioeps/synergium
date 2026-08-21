@@ -94,3 +94,14 @@ Búsqueda local de `config.test.ini` (find en $HOME) abortada; no afectó el env
 - Expedientes #2 y #3 creados con plantillas.
 - **#2 Ferran–Elena: NO enviar** (descartado por Horacio).
 - #3 Causa–Yen Na: plantillas listas, a la espera de OK (Matías ES, Yen Na EN).
+
+
+---
+
+## Usuario
+
+> muestra
+
+## Agente
+
+Mostradas plantillas opt-in #3 (Matías ES / Yen Na EN). Sin enviar.

@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 12:25 CEST | Mostrar plantillas #3 Causa–Yen Na | Textos ES/EN mostrados; sin enviar | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:22 CEST | Opt-in #2 y #3; luego cancelar Ferran–Elena | Expedientes creados; #2 no enviar; #3 pendiente OK | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:17 CEST | (notif) find SMTP local abortado | Irrelevante: envío #4 ya OK por VPS | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:16 CEST | Enviar opt-in #4 Driselda + Tatiana | EmailerX VPS OK ambos; historial actualizado | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |

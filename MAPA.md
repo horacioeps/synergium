@@ -4,7 +4,7 @@
 
 Raíz: `README.md`, `AGENTS.md`, `MAPA.md`, `HISTORICO.md`, `sesiones/` (volcado de agentes; no se mueve).
 
-Rollback de esta pasada: [REORGANIZACION-2026-08-21.md](REORGANIZACION-2026-08-21.md) · tag git `pre-orden-arbol-2026-08-21` (SHA `2fe97c5`).
+Rollback de esta pasada: [archivo/REORGANIZACION-2026-08-21.md](archivo/REORGANIZACION-2026-08-21.md) · tag git `pre-orden-arbol-2026-08-21` (SHA `2fe97c5`).
 
 ```text
 hoy/tableros/          EMBUDOS, MATCHES, TODO
@@ -34,6 +34,7 @@ archivo/
   chats/
   historial-trabajo.md
   legacy-obsidian.md
+  REORGANIZACION-2026-08-21.md
 sesiones/              (raíz; contrato de agentes)
 ```
 

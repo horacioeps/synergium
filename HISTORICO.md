@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 16:10 CEST | 3 top matches siguientes (#5–#7) | Erdoğan–Antonio; Karen–Verónica; Michelle–Kinndle; MATCHES | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:24 CEST | Enviar opt-in #3 Causa + Yen Na | EmailerX VPS OK ambos (ES/EN); historial | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:25 CEST | Mostrar plantillas #3 Causa–Yen Na | Textos ES/EN mostrados; sin enviar | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:22 CEST | Opt-in #2 y #3; luego cancelar Ferran–Elena | Expedientes creados; #2 no enviar; #3 pendiente OK | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |

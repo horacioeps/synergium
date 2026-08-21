@@ -118,3 +118,18 @@ Mostradas plantillas opt-in #3 (Matías ES / Yen Na EN). Sin enviar.
 Enviados opt-in #3 vía EmailerX VPS:
 1. causamd@gmail.com (ES) — OK
 2. yyum2024@gmail.com (EN) — OK
+
+
+---
+
+## Usuario
+
+> cuales son los 3 top siguientes?
+
+## Agente
+
+Tras excluir top 4 (8 personas), curados #5–#7:
+1. Erdoğan Aldemir ↔ Antonio Fernández (medical imaging / DL) EN
+2. Karen Villalba ↔ Verónica Romo (educación / inclusión) ES
+3. Michelle Viera ↔ Kinndle Blanco (sostenibilidad / One Health) either
+Actualizado MATCHES.md.

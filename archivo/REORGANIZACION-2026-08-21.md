@@ -3,6 +3,7 @@
 Registro de **todo** lo movido, para poder volver atrás.
 
 - **Repo:** `horacioeps/synergium`
+- **Commit del reorg:** `e4cbf95` (`repo: árbol área-categoría-ítem (sin números)`)
 - **Tag de rollback:** `pre-orden-arbol-2026-08-21`
 - **Snapshot (SHA):** `2fe97c552ee69e5497352c0e7a8aae6613d35d79`  
   Commit: `docs: snapshot antes de reorganizar carpetas (punto de rollback)`  

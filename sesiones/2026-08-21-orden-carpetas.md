@@ -95,7 +95,7 @@ Plan acordado:
 ### Hecho (2026-08-21 ~22:00 CEST)
 
 - Snapshot en `origin/main`: `2fe97c552ee69e5497352c0e7a8aae6613d35d79`. Tag `pre-orden-arbol-2026-08-21`.
-- Registro: [REORGANIZACION-2026-08-21.md](../REORGANIZACION-2026-08-21.md) (cada `git mv` + cómo volver).
+- Registro: [archivo/REORGANIZACION-2026-08-21.md](../archivo/REORGANIZACION-2026-08-21.md) (cada `git mv` + cómo volver).
 - Árbol aplicado (área → categoría → ítem). `sesiones/` e `HISTORICO.md` en la raíz.
 - Índice: [MAPA.md](../MAPA.md).
 - Skill personal `~/.cursor/skills/orden-jerarquico-repo/` + copia `ops/procedimientos/orden-jerarquico-repo.md`. Puntero en `nuevo-proyecto-local`.

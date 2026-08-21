@@ -7,7 +7,7 @@ Cada subcarpeta = un cliente. El `README.md` interno enlaza a todos sus document
 | Cliente / match | Estado | Carpeta |
 |-----------------|--------|---------|
 | Matías E. Rodríguez-Rivas | Email campaña → WhatsApp → form EN 2026-08-14; intro Valentina en curso | [matias-rodriguez-rivas/](matias-rodriguez-rivas/) |
-| Match #4 Driselda ↔ Tatiana | Opt-in email pendiente (plantillas listas) | [match-04-driselda-tatiana/](match-04-driselda-tatiana/) |
+| Match #4 Driselda ↔ Tatiana | Opt-in email **enviado** 2026-08-21; esperar sí/no | [match-04-driselda-tatiana/](match-04-driselda-tatiana/) |
 
 ## Reglas operativas (origen / canal)
 

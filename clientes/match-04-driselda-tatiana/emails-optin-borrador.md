@@ -2,7 +2,7 @@
 
 **De:** Horacio Pérez-Sánchez `<horacio@horacio-ps.com>`  
 **Vía:** Emailer_X (`scripts/main/send_test_email.py --account 1`)  
-**Estado:** **Borrador — no enviar hasta que Horacio confirme el texto.**  
+**Estado:** **Enviado** 2026-08-21 ~12:16 CEST desde `horacio@horacio-ps.com` (EmailerX en VPS, cuenta 1).  
 **Fecha:** 2026-08-21 (rev. unslop, sin em dashes, firma visible)
 
 Reglas de texto:

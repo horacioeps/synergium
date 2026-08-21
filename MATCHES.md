@@ -13,7 +13,7 @@ Criterio: complemento need↔offer + solape temático + geo + ambos con `match_m
 | **1** | Matías E. Rodríguez-Rivas (CL) ↔ Valentina Lucena (ES) | Salud mental / bienestar | Intro aceptada; fase 2 abierta | [clientes/matias-rodriguez-rivas/](clientes/matias-rodriguez-rivas/) |
 | **2** | Ferran Acuña (ES) ↔ Elena Murcia (ES) | CADD / drug discovery obesidad | Borrador intro pendiente | — |
 | **3** | Matías Causa (AR) ↔ Yen Na Yum (HK) | Educación superior / jóvenes | Borrador intro pendiente | — |
-| **4** | Driselda Patricia Sánchez Aguirre (MX) ↔ Tatiana González L (CO) | Patrimonio / territorio / humanidades | Opt-in email (plantillas listas) | [clientes/match-04-driselda-tatiana/](clientes/match-04-driselda-tatiana/) |
+| **4** | Driselda Patricia Sánchez Aguirre (MX) ↔ Tatiana González L (CO) | Patrimonio / territorio / humanidades | Opt-in **enviado** 2026-08-21; esperar sí/no | [clientes/match-04-driselda-tatiana/](clientes/match-04-driselda-tatiana/) |
 
 ---
 

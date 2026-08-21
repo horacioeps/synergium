@@ -56,3 +56,19 @@
 
 - Plantillas A/B reescritas (unslop warm, sin em dashes); firma completa mostrada.
 - Docs emails-optin actualizados; aún sin enviar.
+
+
+---
+
+## Usuario (turno 5)
+
+> vale asi, envia
+
+## Agente
+
+Enviados vía EmailerX en VPS (`/home/horacio/EmailerX`, cuenta 1 = horacio@horacio-ps.com, SES eu-west-3):
+
+1. dsanchez@encit.unam.mx — OK 2026-08-21 10:16:13 UTC
+2. tatiana.gonzalezl@udea.edu.co — OK 2026-08-21 10:16:14 UTC
+
+Historial + MATCHES actualizados.

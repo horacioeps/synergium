@@ -20,7 +20,7 @@ Patrimonio / territorio / humanidades: investigadora UNAM (turismo, patrimonio, 
 | Campo | Valor |
 |-------|--------|
 | **Match #** | 4 (ver [MATCHES.md](../../MATCHES.md)) |
-| **Paso actual** | Plantillas opt-in listas; **pendiente confirmación Horacio → envío** |
+| **Paso actual** | Opt-in **enviado** 2026-08-21 ~12:16 CEST; esperar sí/no |
 | **Canal propuesto** | Email desde `horacio@horacio-ps.com` (Emailer_X) |
 | **Tras doble sí** | Intro conjunta + anotar aquí |
 

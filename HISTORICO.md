@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 17:44 CEST | ¿Los números de la opción 2 son Johnny Decimal de verdad? | No: eran áreas/categorías inspiradas; falta el `AC.ID` (p.ej. 12.04) | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:40 CEST | 3 maneras de ordenar docs/carpetas por área | Diagnóstico + 3 esquemas (cadena de valor, Johnny Decimal, capas vivo/archivo); sin mover ficheros | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 17:15 CEST | /guarda-sesion-y-demas | Sesión contactos/matches/opt-ins ampliada; main limpio + push | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 17:11 CEST | Enviar opt-in #5 y #6 | 4 emails EmailerX OK; historiales | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |

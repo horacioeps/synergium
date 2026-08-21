@@ -30,3 +30,19 @@ Tres esquemas propuestos (solo sugerencia, sin reorganizar):
 Recomendación: empezar por 3 (índice + raíz limpia) si no se quiere romper rutas de agentes; pasar a 1 si se acepta un movimiento grande.
 
 No se movió ninguna carpeta en este turno.
+
+---
+
+## Usuario
+
+en la 2, los nuneros que hay, son realmente de johny decimal?
+
+## Agente
+
+No del todo. Lo de la opción 2 era JD *inspirado*: usé 10/20/30 como si fueran áreas y 11/12/21 como categorías, pero Johnny Decimal real es de tres niveles.
+
+- Área = rango `10-19`, no carpeta `10`.
+- Categoría = `11`, `12`… (esto sí coincidía).
+- El número de verdad es `AC.ID`, p.ej. `12.04`. Ahí vive el contenido; no se guarda en el área ni en la categoría.
+
+Corrección: lo propuesto era numeración jerárquica al estilo JD, no un sistema Johnny Decimal completo. Sin mover ficheros.

@@ -8,7 +8,7 @@ Cada subcarpeta = un cliente. El `README.md` interno enlaza a todos sus document
 |-----------------|--------|---------|
 | Matías E. Rodríguez-Rivas | Intro Valentina en curso | [matias-rodriguez-rivas/](matias-rodriguez-rivas/) |
 | Match #2 Ferran ↔ Elena | Opt-in **descartado** (no enviar) | [match-02-ferran-elena/](match-02-ferran-elena/) |
-| Match #3 Causa ↔ Yen Na | Plantillas listas; pendiente OK | [match-03-causa-yen-na/](match-03-causa-yen-na/) |
+| Match #3 Causa ↔ Yen Na | Opt-in email **enviado** 2026-08-21; esperar sí/no | [match-03-causa-yen-na/](match-03-causa-yen-na/) |
 | Match #4 Driselda ↔ Tatiana | Opt-in email **enviado** 2026-08-21; esperar sí/no | [match-04-driselda-tatiana/](match-04-driselda-tatiana/) |
 
 ## Reglas operativas (origen / canal)

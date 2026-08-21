@@ -3,19 +3,23 @@
 **De:** Horacio Pérez-Sánchez `<horacio@horacio-ps.com>`  
 **Vía:** Emailer_X (`scripts/main/send_test_email.py --account 1`)  
 **Estado:** **Borrador — no enviar hasta que Horacio confirme el texto.**  
-**Fecha:** 2026-08-21
+**Fecha:** 2026-08-21 (rev. nombre completo + sin presentación + enlace form)
 
 Principios del primer mensaje:
 
-- Viene de **Synergium** y de lo que cada una puso en el **formulario** de matching.
-- Habla de la otra persona en **términos generales** (país + eje amplio).
+- Ya te conocen → **sin presentarte**.
+- Viene de **Synergium** y del **formulario** (enlace `nexus-input`).
+- Habla de la otra persona en **términos generales**.
 - **Sin nombre, sin institución concreta, sin métodos detallados.**
 - Primer paso: solo sí/no a una posible presentación.
-- Español (ambas LATAM; Tatiana match language = Spanish).
+- Línea en blanco entre párrafos.
+- Nombre real Driselda: **Driselda Patricia Sánchez Aguirre** (UNAM / ORCID).
+
+Formulario: https://forms.synergium.net/nexus-input
 
 ---
 
-## A → Driselda Sánchez-Aguirre
+## A → Driselda Patricia Sánchez Aguirre
 
 **Para:** dsanchez@encit.unam.mx  
 **Asunto:** Synergium — posible colaboración (patrimonio / territorio)
@@ -23,16 +27,14 @@ Principios del primer mensaje:
 ```
 Hola Driselda,
 
-Soy Horacio Pérez-Sánchez, de Synergium. Te escribo a partir de las respuestas que dejaste en el formulario de matching.
+Te escribo desde Synergium a partir de lo que dejaste en el formulario de matching (https://forms.synergium.net/nexus-input).
 
 Hay alguien en el directorio — investigadora en Colombia, en ciencias sociales y humanidades, con trabajo en torno a patrimonio, territorio e historia — con quien veo un encaje razonable a nivel general con lo que comentaste (patrimonio y temas afines, interés en paper / colaboración).
 
 Esto es solo un primer paso: ¿te parecería bien que, si ella también quiere, os presente por email? Sin compromiso; si no encaja, lo dices y no paso ningún dato.
 
 Un saludo,
-Horacio Pérez-Sánchez
-Synergium · synergium.net
-horacio@horacio-ps.com
+Horacio
 ```
 
 ---
@@ -45,16 +47,14 @@ horacio@horacio-ps.com
 ```
 Hola Tatiana,
 
-Soy Horacio Pérez-Sánchez, de Synergium. Te escribo a partir de las respuestas que dejaste en el formulario de matching.
+Te escribo desde Synergium a partir de lo que dejaste en el formulario de matching (https://forms.synergium.net/nexus-input).
 
 Hay alguien en el directorio — investigadora en México, también en el eje patrimonio / humanidades (turismo, patrimonio y temas cercanos) — con quien veo un encaje razonable a nivel general con lo que comentaste (territorio, patrimonio, historia; interés en movilidad y colaboración).
 
 Esto es solo un primer paso: ¿te parecería bien que, si ella también quiere, os presente por email? Sin compromiso; si no encaja, lo dices y no paso ningún dato.
 
 Un saludo,
-Horacio Pérez-Sánchez
-Synergium · synergium.net
-horacio@horacio-ps.com
+Horacio
 ```
 
 ---
@@ -76,8 +76,6 @@ EOF
 ```
 
 Repetir para Tatiana con el cuerpo B. Cuenta `1` = `horacio@horacio-ps.com` (Ionos) vía `config/config.test.ini`.
-
-Requiere que exista el INI local con SMTP (no está en git).
 
 ---
 

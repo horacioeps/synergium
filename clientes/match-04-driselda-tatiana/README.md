@@ -28,6 +28,7 @@ Patrimonio / territorio / humanidades: investigadora UNAM (turismo, patrimonio, 
 
 | | Driselda | Tatiana |
 |--|----------|---------|
+| Nombre | Driselda Patricia Sánchez Aguirre | Tatiana González L |
 | Email | dsanchez@encit.unam.mx | tatiana.gonzalezl@udea.edu.co |
 | WhatsApp | +52 777129 46 57 | +573002469789 |
 | País | México | Colombia |

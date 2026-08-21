@@ -4,14 +4,15 @@
 
 | Campo | Valor |
 |-------|--------|
-| **Nombre** | Driselda Sánchez-Aguirre |
+| **Nombre** | Driselda Patricia Sánchez Aguirre |
 | **Email** | dsanchez@encit.unam.mx |
 | **WhatsApp** | +52 777129 46 57 |
 | **País** | México |
-| **Institución** | UNAM |
+| **Institución** | UNAM (Escuela Nacional de Ciencias de la Tierra / ENES Juriquilla según SIIA) |
 | **Rol** | PhD |
 | **Idioma match** | Either/both |
 | **Origen form** | Google → PocketBase `source=google` |
+| **ORCID** | https://orcid.org/0000-0002-0728-7273 |
 
 ## Línea / métodos
 

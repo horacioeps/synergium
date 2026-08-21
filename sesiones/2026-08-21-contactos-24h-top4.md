@@ -31,3 +31,16 @@
 - Expediente `clientes/match-04-driselda-tatiana/` (README, fichas, historial, emails-optin-borrador).
 - Plantillas A/B mostradas a Horacio; **no enviadas** hasta confirmación.
 - Envío previsto: Emailer_X `send_test_email.py --account 1` (`horacio@horacio-ps.com`). Nota: en la copia local falta `config/config.test.ini` (gitignored).
+
+
+---
+
+## Usuario (turno 3)
+
+> vale pero en caso driselda, encuentra su nombre real. por otra parte como ya me conocen, no hace falta que me presente. pero eso si, añade el enlace del formulario por si acaso, (el forms.sunergiu nexus ...)  y incluyue una lineao espacio en blanco  entre parrafos
+
+## Agente
+
+- Nombre real: **Driselda Patricia Sánchez Aguirre** (UNAM SIIA / ORCID 0000-0002-0728-7273).
+- Plantillas A/B: sin presentación; enlace https://forms.synergium.net/nexus-input; línea en blanco entre párrafos.
+- Docs actualizados; aún sin enviar.

@@ -13,7 +13,7 @@ Criterio: complemento need↔offer + solape temático + geo + ambos con `match_m
 | **1** | Matías E. Rodríguez-Rivas (CL) ↔ Valentina Lucena (ES) | Salud mental / bienestar | Intro aceptada; fase 2 abierta | [clientes/matias-rodriguez-rivas/](clientes/matias-rodriguez-rivas/) |
 | **2** | Ferran Acuña (ES) ↔ Elena Murcia (ES) | CADD / drug discovery obesidad | Borrador intro pendiente | — |
 | **3** | Matías Causa (AR) ↔ Yen Na Yum (HK) | Educación superior / jóvenes | Borrador intro pendiente | — |
-| **4** | Driselda Sánchez-Aguirre (MX) ↔ Tatiana González L (CO) | Patrimonio / territorio / humanidades | Opt-in email (plantillas listas) | [clientes/match-04-driselda-tatiana/](clientes/match-04-driselda-tatiana/) |
+| **4** | Driselda Patricia Sánchez Aguirre (MX) ↔ Tatiana González L (CO) | Patrimonio / territorio / humanidades | Opt-in email (plantillas listas) | [clientes/match-04-driselda-tatiana/](clientes/match-04-driselda-tatiana/) |
 
 ---
 
@@ -33,9 +33,10 @@ Criterio: complemento need↔offer + solape temático + geo + ambos con `match_m
 - **Origen:** Google Form (ambos).
 - **Por qué:** educación / jóvenes / universidad; ella PI con host stay.
 
-### 4. Driselda ↔ Tatiana
+### 4. Driselda Patricia Sánchez Aguirre ↔ Tatiana
 
 - **Origen:** Google Form (ambos). Tatiana entró ~2026-08-20.
+- **Nombre completo Driselda:** confirmado vía UNAM SIIA / ORCID `0000-0002-0728-7273` (form: «Driselda Sánchez-Aguirre»).
 - **Por qué:** patrimonio / territorio / humanidades; ambas LATAM; ella busca movilidad, Driselda paper/grant.
 - **Emails opt-in:** [emails-optin-borrador.md](clientes/match-04-driselda-tatiana/emails-optin-borrador.md) — envío vía Emailer_X (`horacio@horacio-ps.com`) cuando Horacio confirme plantilla.
 

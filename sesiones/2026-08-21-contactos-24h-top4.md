@@ -18,3 +18,16 @@
    2. Ferran ↔ Elena
    3. Causa ↔ Yen Na
    4. Driselda ↔ Tatiana (nueva)
+
+---
+
+## Usuario (turno 2)
+
+> vamos a crear un doc MATCHES.md en el mail con esta info. luego para el caso 4, crea lo necesario en la carpet aclientes, y dame texto en email para contactar a cada una de las partes hablando de la otra pero en terminos generales, sin dar detalles, y comp orimer paso y recordando que todo esto viene de synergium y de la info que pusieraon en el formulario. me muestras la plantilla de correo y cuando la tenga clara los envias tu los correos de horacio@horacio-ps.com y para saber como, miras el repo de https://github.com/horacioeps/Emailer_X
+
+## Agente
+
+- Creado `MATCHES.md` (raíz) + enlace desde README.
+- Expediente `clientes/match-04-driselda-tatiana/` (README, fichas, historial, emails-optin-borrador).
+- Plantillas A/B mostradas a Horacio; **no enviadas** hasta confirmación.
+- Envío previsto: Emailer_X `send_test_email.py --account 1` (`horacio@horacio-ps.com`). Nota: en la copia local falta `config/config.test.ini` (gitignored).

@@ -4,9 +4,10 @@ Expedientes de investigadores con los que trabajamos (piloto gratis a cambio de 
 
 Cada subcarpeta = un cliente. El `README.md` interno enlaza a todos sus documentos.
 
-| Cliente | Estado | Carpeta |
-|---------|--------|---------|
-| Matías E. Rodríguez-Rivas | Email campaña → WhatsApp → form EN 2026-08-14; match urgente pendiente | [matias-rodriguez-rivas/](matias-rodriguez-rivas/) |
+| Cliente / match | Estado | Carpeta |
+|-----------------|--------|---------|
+| Matías E. Rodríguez-Rivas | Email campaña → WhatsApp → form EN 2026-08-14; intro Valentina en curso | [matias-rodriguez-rivas/](matias-rodriguez-rivas/) |
+| Match #4 Driselda ↔ Tatiana | Opt-in email pendiente (plantillas listas) | [match-04-driselda-tatiana/](match-04-driselda-tatiana/) |
 
 ## Reglas operativas (origen / canal)
 

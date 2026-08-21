@@ -44,7 +44,7 @@ Leer **[AGENTS.md](AGENTS.md)** antes de cualquier tarea Synergium.
 
 Cronología compacta de pedidos y trabajo: **[HISTORICO.md](HISTORICO.md)**.
 
-Embudos post-formulario: **[EMBUDOS.md](EMBUDOS.md)** · Ideas/tareas abiertas: **[TODO.md](TODO.md)**.
+Embudos post-formulario: **[EMBUDOS.md](EMBUDOS.md)** · Matches curados: **[MATCHES.md](MATCHES.md)** · Ideas/tareas abiertas: **[TODO.md](TODO.md)**.
 
 Otro repo desde cero (misma frase, sin repetir reglas): [docs/NUEVO-PROYECTO-LOCAL.md](docs/NUEVO-PROYECTO-LOCAL.md).
 

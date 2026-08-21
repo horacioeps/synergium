@@ -21,9 +21,9 @@ Excluye a las 8 personas del top 4. Pool restante `match_me=yes` ≈ 14. Curado 
 
 | # | Par | Eje | Idioma contacto | Estado |
 |---|-----|-----|-----------------|--------|
-| **5** | Erdoğan Aldemir (TR) ↔ Antonio Jesús Fernández García (ES) | Medical imaging / deep learning | EN (él english; Antonio either) | Pendiente |
-| **6** | Karen Villalba (CO) ↔ E. Verónica Romo López (CL) | Educación / inclusión / arte-educación | ES (ambas spanish) | Pendiente |
-| **7** | Michelle Viera Romero (EC) ↔ Kinndle Blanco Peña (CR) | Sostenibilidad / ambiente / One Health | ES o EN (ambas either) | Pendiente |
+| **5** | Erdoğan Aldemir (TR) ↔ Antonio Jesús Fernández García (ES) | Medical imaging / deep learning | EN + ES | Plantillas listas; pendiente OK | [clientes/match-05-erdogan-antonio/](clientes/match-05-erdogan-antonio/) |
+| **6** | Karen Villalba (CO) ↔ E. Verónica Romo López (CL) | Educación / inclusión / arte-educación | ES | Plantillas listas; pendiente OK | [clientes/match-06-karen-veronica/](clientes/match-06-karen-veronica/) |
+| **7** | Michelle Viera Romero (EC) ↔ Kinndle Blanco Peña (CR) | Sostenibilidad / ambiente / One Health | ES o EN (ambas either) | Pendiente | — |
 
 ---
 

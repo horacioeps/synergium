@@ -133,3 +133,14 @@ Tras excluir top 4 (8 personas), curados #5–#7:
 2. Karen Villalba ↔ Verónica Romo (educación / inclusión) ES
 3. Michelle Viera ↔ Kinndle Blanco (sostenibilidad / One Health) either
 Actualizado MATCHES.md.
+
+
+---
+
+## Usuario
+
+> ok preparar correos para los casos 5 y 6 y me los muestras
+
+## Agente
+
+Expedientes match-05 y match-06; plantillas mostradas (Erdoğan EN / Antonio ES; Karen+Verónica ES). Sin enviar.

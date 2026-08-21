@@ -139,3 +139,13 @@ va todo bien ???
 
 Sí. main = origin/main (`7b85866`); árbol y MAPA OK; tag rollback `pre-orden-arbol-2026-08-21` → `2fe97c5`; skill OK. Solo `.vscode/` sin trackear.
 
+---
+
+## Usuario
+
+per o.... has terminado ???
+
+## Agente
+
+Sí, terminado. Pedidos de esta conversación cerrados (reorg + skill + registro). Nada pendiente salvo `.vscode/` local.
+

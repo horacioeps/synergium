@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 23:12 CEST | ¿Has terminado? | Sí: reorg + skill + registro en main; nada pendiente | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 22:52 CEST | ¿Va todo bien? | Health check OK: main sync, árbol, tag rollback, skill | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 22:32 CEST | ¿Estás en ello? | Confirmado: reorg + skill ya en `main`; nada pendiente salvo `.vscode/` | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 22:10 CEST | Guardar el procedimiento para aplicarlo a otros proyectos | Skill personal `orden-jerarquico-repo` (frase de arranque); copia `ops/procedimientos/`; puntero en nuevo-proyecto-local | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |

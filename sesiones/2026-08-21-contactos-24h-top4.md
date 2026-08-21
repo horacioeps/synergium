@@ -144,3 +144,18 @@ Actualizado MATCHES.md.
 ## Agente
 
 Expedientes match-05 y match-06; plantillas mostradas (Erdoğan EN / Antonio ES; Karen+Verónica ES). Sin enviar.
+
+
+---
+
+## Usuario
+
+> dale
+
+## Agente
+
+Enviados opt-in #5 y #6 (4 emails) vía EmailerX VPS, todos OK:
+- erdogan.aldemir@batman.edu.tr
+- ajfernandez@ual.es
+- karen.villalba.ramos@gmail.com
+- everonicaromo@gmail.com

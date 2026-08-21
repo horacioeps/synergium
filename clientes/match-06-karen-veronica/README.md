@@ -26,4 +26,4 @@ Ambas `match_language=spanish` → **ES**.
 
 ## Estado
 
-Plantillas listas; **pendiente OK Horacio → envío**.
+Opt-in **enviado** 2026-08-21 ~17:11 CEST; esperar sí/no.

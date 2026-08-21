@@ -44,3 +44,15 @@
 - Nombre real: **Driselda Patricia Sánchez Aguirre** (UNAM SIIA / ORCID 0000-0002-0728-7273).
 - Plantillas A/B: sin presentación; enlace https://forms.synergium.net/nexus-input; línea en blanco entre párrafos.
 - Docs actualizados; aún sin enviar.
+
+
+---
+
+## Usuario (turno 4)
+
+> hard rule, no uses em dashes y usa unslop-ai para los textos generados, vuelve a darme las plantilla y muestra la firma tambien para ver como queda
+
+## Agente
+
+- Plantillas A/B reescritas (unslop warm, sin em dashes); firma completa mostrada.
+- Docs emails-optin actualizados; aún sin enviar.

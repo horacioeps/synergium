@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 12:20 CEST | Unslop + sin em dashes; mostrar firma | Plantillas opt-in #4 revisadas; firma Synergium | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:15 CEST | Nombre real Driselda + plantillas sin presentación + link form | Driselda Patricia Sánchez Aguirre; emails-optin rev.; push | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:10 CEST | MATCHES.md + expediente #4 + plantillas email opt-in | Raíz MATCHES; clientes/match-04; borradores A/B; Emailer_X listo al confirmar | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 12:00 CEST | Actualizar + contactos 24h + top 4 matches | Sync Sheet 0 nuevos; 5 contactos (4 Google + 1 web); top4 + doc matching | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |

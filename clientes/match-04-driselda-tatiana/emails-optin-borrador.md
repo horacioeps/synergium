@@ -3,38 +3,48 @@
 **De:** Horacio Pérez-Sánchez `<horacio@horacio-ps.com>`  
 **Vía:** Emailer_X (`scripts/main/send_test_email.py --account 1`)  
 **Estado:** **Borrador — no enviar hasta que Horacio confirme el texto.**  
-**Fecha:** 2026-08-21 (rev. nombre completo + sin presentación + enlace form)
+**Fecha:** 2026-08-21 (rev. unslop, sin em dashes, firma visible)
 
-Principios del primer mensaje:
+Reglas de texto:
 
-- Ya te conocen → **sin presentarte**.
-- Viene de **Synergium** y del **formulario** (enlace `nexus-input`).
-- Habla de la otra persona en **términos generales**.
-- **Sin nombre, sin institución concreta, sin métodos detallados.**
-- Primer paso: solo sí/no a una posible presentación.
+- Sin em dashes (`—`).
+- Sin presentación (ya te conocen).
+- Enlace form: https://forms.synergium.net/nexus-input
 - Línea en blanco entre párrafos.
-- Nombre real Driselda: **Driselda Patricia Sánchez Aguirre** (UNAM / ORCID).
+- Nombre Driselda: **Driselda Patricia Sánchez Aguirre**.
 
-Formulario: https://forms.synergium.net/nexus-input
+Firma (igual en ambos):
+
+```
+Un saludo,
+Horacio
+Synergium
+https://synergium.net
+horacio@horacio-ps.com
+```
 
 ---
 
 ## A → Driselda Patricia Sánchez Aguirre
 
 **Para:** dsanchez@encit.unam.mx  
-**Asunto:** Synergium — posible colaboración (patrimonio / territorio)
+**Asunto:** Synergium: posible colaboración (patrimonio / territorio)
 
 ```
 Hola Driselda,
 
-Te escribo desde Synergium a partir de lo que dejaste en el formulario de matching (https://forms.synergium.net/nexus-input).
+Te escribo desde Synergium por lo que dejaste en el formulario de matching:
+https://forms.synergium.net/nexus-input
 
-Hay alguien en el directorio — investigadora en Colombia, en ciencias sociales y humanidades, con trabajo en torno a patrimonio, territorio e historia — con quien veo un encaje razonable a nivel general con lo que comentaste (patrimonio y temas afines, interés en paper / colaboración).
+En el directorio hay una investigadora en Colombia, en ciencias sociales y humanidades, con trabajo sobre patrimonio, territorio e historia. Por lo que contaste (patrimonio y temas cercanos, interés en paper o colaboración), me parece que puede haber encaje.
 
-Esto es solo un primer paso: ¿te parecería bien que, si ella también quiere, os presente por email? Sin compromiso; si no encaja, lo dices y no paso ningún dato.
+¿Te parece bien que, si ella también quiere, os presente por email? Sin compromiso: si no encaja, lo dices y no paso ningún dato.
 
 Un saludo,
 Horacio
+Synergium
+https://synergium.net
+horacio@horacio-ps.com
 ```
 
 ---
@@ -42,45 +52,39 @@ Horacio
 ## B → Tatiana González L
 
 **Para:** tatiana.gonzalezl@udea.edu.co  
-**Asunto:** Synergium — posible colaboración (patrimonio / territorio)
+**Asunto:** Synergium: posible colaboración (patrimonio / territorio)
 
 ```
 Hola Tatiana,
 
-Te escribo desde Synergium a partir de lo que dejaste en el formulario de matching (https://forms.synergium.net/nexus-input).
+Te escribo desde Synergium por lo que dejaste en el formulario de matching:
+https://forms.synergium.net/nexus-input
 
-Hay alguien en el directorio — investigadora en México, también en el eje patrimonio / humanidades (turismo, patrimonio y temas cercanos) — con quien veo un encaje razonable a nivel general con lo que comentaste (territorio, patrimonio, historia; interés en movilidad y colaboración).
+En el directorio hay una investigadora en México, también en patrimonio y humanidades (turismo, patrimonio y temas cercanos). Por lo que contaste (territorio, patrimonio, historia, e interés en movilidad y colaboración), me parece que puede haber encaje.
 
-Esto es solo un primer paso: ¿te parecería bien que, si ella también quiere, os presente por email? Sin compromiso; si no encaja, lo dices y no paso ningún dato.
+¿Te parece bien que, si ella también quiere, os presente por email? Sin compromiso: si no encaja, lo dices y no paso ningún dato.
 
 Un saludo,
 Horacio
+Synergium
+https://synergium.net
+horacio@horacio-ps.com
 ```
 
 ---
 
 ## Cómo enviar (cuando confirmes)
 
-Desde el clone local de Emailer_X:
-
 ```bash
 cd "/Users/horacio/Documents/Documents - horacio/Personal/Coding/Emailer X local"
 ./venv/bin/python scripts/main/send_test_email.py \
   --account 1 \
-  --to "dsanchez@encit.unam.mx" \
-  --subject "Synergium — posible colaboración (patrimonio / territorio)" \
+  --to "EMAIL" \
+  --subject "Synergium: posible colaboración (patrimonio / territorio)" \
   --body "$(cat <<'EOF'
-…cuerpo A…
+…cuerpo…
 EOF
 )"
 ```
 
-Repetir para Tatiana con el cuerpo B. Cuenta `1` = `horacio@horacio-ps.com` (Ionos) vía `config/config.test.ini`.
-
----
-
-## Tras el envío
-
-1. Marcar enviados en [historial-contacto.md](historial-contacto.md).
-2. Esperar sí/no de ambas.
-3. Si doble sí → intro conjunta (nombres + emails; playbook matching).
+Cuenta `1` = `horacio@horacio-ps.com` (Ionos). Hace falta `config/config.test.ini` local.

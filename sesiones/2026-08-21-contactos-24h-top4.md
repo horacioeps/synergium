@@ -159,3 +159,14 @@ Enviados opt-in #5 y #6 (4 emails) vía EmailerX VPS, todos OK:
 - ajfernandez@ual.es
 - karen.villalba.ramos@gmail.com
 - everonicaromo@gmail.com
+
+
+---
+
+## Usuario
+
+> /guarda-sesion-y-demas
+
+## Agente
+
+Cierre skill: rama `main`; sesión ampliada; HISTORICO; README ya enlaza HISTORICO; working tree limpio (solo `.vscode/` sin trackear); commit + push.

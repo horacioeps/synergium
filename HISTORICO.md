@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 17:15 CEST | /guarda-sesion-y-demas | Sesión contactos/matches/opt-ins ampliada; main limpio + push | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 17:11 CEST | Enviar opt-in #5 y #6 | 4 emails EmailerX OK; historiales | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 17:10 CEST | Preparar correos opt-in #5 y #6 | Plantillas + expedientes; mostrar; sin enviar | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |
 | 2026-08-21 16:10 CEST | 3 top matches siguientes (#5–#7) | Erdoğan–Antonio; Karen–Verónica; Michelle–Kinndle; MATCHES | [sesiones/2026-08-21-contactos-24h-top4.md](sesiones/2026-08-21-contactos-24h-top4.md) |

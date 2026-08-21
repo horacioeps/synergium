@@ -98,3 +98,14 @@ Recheck:
 | 26 snapshots TM | **16** TM locales (julio); ya no aparecen los de 2026-08-21 |
 
 Mejora real ~+8–9 GB. Sigue lejos de los ~132 GB de Finder: quedan 16 snapshots de julio + snapshots `os.update`.
+
+
+---
+
+## Usuario
+
+> /guarda-sesion-y-demas
+
+## Agente
+
+Cierre skill: rama `main`; sesión ampliada; HISTORICO; README ya enlaza HISTORICO; working tree limpio (solo `.vscode/` sin trackear); commit + push.

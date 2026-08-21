@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 23:22 CEST | /guarda-sesion-y-demas | Sesión disco/orden-no-responde ampliada; main limpio + push | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |
 | 2026-08-21 23:21 CEST | Mira el disco ahora | Libre real ~22–24 GB (antes ~14–15); 16 snapshots TM | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |
 | 2026-08-21 23:20 CEST | Cómo forzar limpieza purgeable | Guía: snapshots TM, Almacenamiento, Papelera, reinicio | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |
 | 2026-08-21 23:19 CEST | Finder dice 132G libres | APFS: Finder=libre+purgeable; df≈14–15G reales (99%) | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |

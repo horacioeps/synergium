@@ -52,9 +52,9 @@ Criterio: complemento need↔offer + solape temático (texto) + geo + ambos quie
 
 ---
 
-## 4. Driselda Sánchez-Aguirre (México) ↔ Tatiana González L (Colombia) ← *Tatiana = contacto últimas 24 h*
+## 4. Driselda Patricia Sánchez Aguirre (México) ↔ Tatiana González L (Colombia) ← *Tatiana = contacto últimas 24 h*
 
-| | Driselda | Tatiana |
+| | Driselda Patricia Sánchez Aguirre | Tatiana |
 |---|--------|--------|
 | Institución | UNAM | U. de Antioquia |
 | Email | dsanchez@encit.unam.mx | tatiana.gonzalezl@udea.edu.co |
@@ -63,6 +63,8 @@ Criterio: complemento need↔offer + solape temático (texto) + geo + ambos quie
 | Need / offer | Need: joint paper, grant, co-tesis. Offer: docencia | Need: movilidad, mentoring. Offer: método, datos, red LATAM, co-tesis |
 | Match lang | Either | Spanish |
 | Origen | Google | Google (2026-08-20 ~17:41) |
+
+**Nombre completo:** form «Driselda Sánchez-Aguirre»; UNAM/ORCID → **Driselda Patricia Sánchez Aguirre**.
 
 **Por qué #4:** eje **patrimonio / territorio / humanidades**; ambas LATAM; Tatiana busca movilidad y puede aportar campo+archivo; Driselda busca paper/grant.  
 **Acción:** sondar interés (empezar por Tatiana o Driselda) antes de intro.

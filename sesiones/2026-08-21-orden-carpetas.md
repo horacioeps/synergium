@@ -119,3 +119,13 @@ y otra cosa, este procedimiento que lo guardes en algun sitio par aluego aplicar
 
 El skill personal ya existía; se reescribe como procedimiento **genérico** (cualquier repo, no copiar carpetas Synergium). Frase: `Aplica orden jerárquico a este repo`. Sitio canónico: `~/.cursor/skills/orden-jerarquico-repo/` (vale en todos los proyectos Cursor). Copia en este repo: `ops/procedimientos/orden-jerarquico-repo.md`. Ejemplo Synergium aparte: `ejemplo-synergium.md`. Puntero en `nuevo-proyecto-local` y en `MAPA.md`.
 
+---
+
+## Usuario
+
+estas en ello ?????
+
+## Agente
+
+No: ya estaba terminado. Árbol en `main`, skill reutilizable listo. Solo quedó `.vscode/` sin trackear (a propósito).
+

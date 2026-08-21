@@ -129,3 +129,13 @@ estas en ello ?????
 
 No: ya estaba terminado. Árbol en `main`, skill reutilizable listo. Solo quedó `.vscode/` sin trackear (a propósito).
 
+---
+
+## Usuario
+
+va todo bien ???
+
+## Agente
+
+Sí. main = origin/main (`7b85866`); árbol y MAPA OK; tag rollback `pre-orden-arbol-2026-08-21` → `2fe97c5`; skill OK. Solo `.vscode/` sin trackear.
+

@@ -79,3 +79,22 @@ Cómo recuperar el espacio purgeable (26 snapshots TM locales detectados; libre 
 5. Verificar con `df -h /System/Volumes/Data` (libre real).
 
 No borré nada en este turno; si Horacio dice adelante, se pueden borrar los snapshots.
+
+
+---
+
+## Usuario
+
+> mira ver ahora
+
+## Agente
+
+Recheck:
+
+| Antes | Ahora |
+|-------|--------|
+| ~14–15 GB libres reales | **~22 GiB** (`df`) / **24.1 GB** (diskutil) |
+| Data 99% | Data **98%** |
+| 26 snapshots TM | **16** TM locales (julio); ya no aparecen los de 2026-08-21 |
+
+Mejora real ~+8–9 GB. Sigue lejos de los ~132 GB de Finder: quedan 16 snapshots de julio + snapshots `os.update`.

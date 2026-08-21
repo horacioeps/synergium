@@ -105,3 +105,16 @@ Búsqueda local de `config.test.ini` (find en $HOME) abortada; no afectó el env
 ## Agente
 
 Mostradas plantillas opt-in #3 (Matías ES / Yen Na EN). Sin enviar.
+
+
+---
+
+## Usuario
+
+> dale
+
+## Agente
+
+Enviados opt-in #3 vía EmailerX VPS:
+1. causamd@gmail.com (ES) — OK
+2. yyum2024@gmail.com (EN) — OK

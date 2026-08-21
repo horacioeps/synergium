@@ -1,7 +1,7 @@
 # Emails opt-in — Match #3 (borrador)
 
 **De:** `horacio@horacio-ps.com` · EmailerX cuenta 1  
-**Estado:** Borrador (mostrar a Horacio; no enviar hasta OK)  
+**Estado:** **Enviado** 2026-08-21 ~12:24 CEST desde `horacio@horacio-ps.com` (EmailerX VPS).  
 **Fecha:** 2026-08-21
 
 Sin presentación, sin em dashes, enlace form, línea en blanco entre párrafos.

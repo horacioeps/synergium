@@ -32,4 +32,4 @@ Educación superior / egreso / transiciones (Matías, UNLP, AR) ↔ lectura mult
 
 ## Estado
 
-Plantillas listas; **pendiente confirmación Horacio → envío**.
+Opt-in **enviado** 2026-08-21 ~12:24 CEST; esperar sí/no.

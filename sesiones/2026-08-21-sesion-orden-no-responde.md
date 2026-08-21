@@ -55,3 +55,27 @@ No hay contradicción: en APFS Finder y `df` miden cosas distintas.
 Comprobado ahora: Data `870Gi` usados / `14Gi` libres; Container Free ~15 GB. Snapshots Time Machine locales (p.ej. 2026-07-24…) ocupan espacio que macOS puede liberar bajo demanda — por eso Finder infla el “available”.
 
 Para git/Cursor importa el libre real (~14–15 GB): justo, no vacío; los 132 G son “si el sistema limpia purgeable”.
+
+
+---
+
+## Usuario
+
+> como hago lo de «si el sistema limpia»
+
+## Agente
+
+Cómo recuperar el espacio purgeable (26 snapshots TM locales detectados; libre real ~14–15 GB):
+
+1. **Snapshots Time Machine locales** (lo más rentable aquí):
+   ```bash
+   tmutil listlocalsnapshots /
+   sudo tmutil deletelocalsnapshots 2026-07-24-183833
+   ```
+   Repetir por cada fecha, o borrar todas con un bucle. No borra el backup externo; solo copias locales.
+2. **Ajustes → General → Almacenamiento**: recomendaciones de Apple (papelera, archivos grandes, iCloud).
+3. **Vaciar Papelera**.
+4. **Reiniciar** (a veces libera purgeable).
+5. Verificar con `df -h /System/Volumes/Data` (libre real).
+
+No borré nada en este turno; si Horacio dice adelante, se pueden borrar los snapshots.

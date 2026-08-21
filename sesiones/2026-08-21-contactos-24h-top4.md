@@ -72,3 +72,10 @@ Enviados vía EmailerX en VPS (`/home/horacio/EmailerX`, cuenta 1 = horacio@hora
 2. tatiana.gonzalezl@udea.edu.co — OK 2026-08-21 10:16:14 UTC
 
 Historial + MATCHES actualizados.
+
+
+---
+
+## Sistema (notificación)
+
+Búsqueda local de `config.test.ini` (find en $HOME) abortada; no afectó el envío (se usó EmailerX en VPS).

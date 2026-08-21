@@ -11,8 +11,8 @@ Criterio: complemento need↔offer + solape temático + geo + ambos con `match_m
 | # | Par | Eje | Estado | Expediente |
 |---|-----|-----|--------|------------|
 | **1** | Matías E. Rodríguez-Rivas (CL) ↔ Valentina Lucena (ES) | Salud mental / bienestar | Intro aceptada; fase 2 abierta | [clientes/matias-rodriguez-rivas/](clientes/matias-rodriguez-rivas/) |
-| **2** | Ferran Acuña (ES) ↔ Elena Murcia (ES) | CADD / drug discovery obesidad | Borrador intro pendiente | — |
-| **3** | Matías Causa (AR) ↔ Yen Na Yum (HK) | Educación superior / jóvenes | Borrador intro pendiente | — |
+| **2** | Ferran Acuña (ES) ↔ Elena Murcia (ES) | CADD / drug discovery obesidad | Opt-in **descartado** (no enviar) | [clientes/match-02-ferran-elena/](clientes/match-02-ferran-elena/) |
+| **3** | Matías Causa (AR) ↔ Yen Na Yum (HK) | Educación superior / jóvenes | Plantillas opt-in listas (ES/EN); pendiente OK | [clientes/match-03-causa-yen-na/](clientes/match-03-causa-yen-na/) |
 | **4** | Driselda Patricia Sánchez Aguirre (MX) ↔ Tatiana González L (CO) | Patrimonio / territorio / humanidades | Opt-in **enviado** 2026-08-21; esperar sí/no | [clientes/match-04-driselda-tatiana/](clientes/match-04-driselda-tatiana/) |
 
 ---
@@ -27,11 +27,14 @@ Criterio: complemento need↔offer + solape temático + geo + ambos con `match_m
 
 - **Origen:** Google Form (ambos).
 - **Por qué:** cheminformática / CADD ↔ discovery de moléculas (obesidad, docking).
+- **Estado:** Horacio pidió **no** enviar opt-in (2026-08-21).
 
 ### 3. Causa ↔ Yen Na
 
 - **Origen:** Google Form (ambos).
 - **Por qué:** educación / jóvenes / universidad; ella PI con host stay.
+- **Idioma:** Matías ES · Yen Na **EN** (`match_language=english`).
+- **Emails:** [emails-optin-borrador.md](clientes/match-03-causa-yen-na/emails-optin-borrador.md) — pendiente confirmación.
 
 ### 4. Driselda Patricia Sánchez Aguirre ↔ Tatiana
 

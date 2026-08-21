@@ -79,3 +79,18 @@ Historial + MATCHES actualizados.
 ## Sistema (notificación)
 
 Búsqueda local de `config.test.ini` (find en $HOME) abortada; no afectó el envío (se usó EmailerX en VPS).
+
+
+---
+
+## Usuario
+
+> puedes hacer lo mismo para los dos siguientes top matches? ... muestrame antes los textos
+> el de feerran y elana no
+> no mandes esos
+
+## Agente
+
+- Expedientes #2 y #3 creados con plantillas.
+- **#2 Ferran–Elena: NO enviar** (descartado por Horacio).
+- #3 Causa–Yen Na: plantillas listas, a la espera de OK (Matías ES, Yen Na EN).

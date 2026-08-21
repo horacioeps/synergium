@@ -34,3 +34,24 @@ Diagnóstico de la sesión colgada aparente: transcript `5a94c96f-ed47-4fda-a34f
 2. Puede cerrar esa pestaña / Agents Window y seguir en un chat nuevo (o esta sesión).
 3. Si quiere re-leer el cierre: abrir el chat o el md de sesión de orden.
 
+
+
+---
+
+## Usuario
+
+> pero aqui pone tengo 132G
+> (Finder: «132,15 GB available» en Macintosh HD → Downloads → LIBROS)
+
+## Agente
+
+No hay contradicción: en APFS Finder y `df` miden cosas distintas.
+
+| Fuente | Qué dice | Qué cuenta |
+|--------|----------|------------|
+| Finder | ~132 GB available | Libre **+** purgeable (snapshots TM locales, cachés, optimizable) |
+| `df` / `diskutil` | ~14–15 GB free, Data al **99%** | Solo espacio **ya libre** ahora mismo |
+
+Comprobado ahora: Data `870Gi` usados / `14Gi` libres; Container Free ~15 GB. Snapshots Time Machine locales (p.ej. 2026-07-24…) ocupan espacio que macOS puede liberar bajo demanda — por eso Finder infla el “available”.
+
+Para git/Cursor importa el libre real (~14–15 GB): justo, no vacío; los 132 G son “si el sistema limpia purgeable”.

@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-21 23:19 CEST | Finder dice 132G libres | APFS: Finder=libre+purgeable; df≈14–15G reales (99%) | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |
 | 2026-08-21 23:17 CEST | Sesión orden parece no responder | No colgada: turnos OK en transcript; UI Agents Window; disco 99% | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |
 | 2026-08-21 23:12 CEST | ¿Has terminado? | Sí: reorg + skill + registro en main; nada pendiente | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |
 | 2026-08-21 22:52 CEST | ¿Va todo bien? | Health check OK: main sync, árbol, tag rollback, skill | [sesiones/2026-08-21-orden-carpetas.md](sesiones/2026-08-21-orden-carpetas.md) |

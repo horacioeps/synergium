@@ -31,3 +31,9 @@ Matías Causa, Driselda, Tatiana, Antonio (fga870@ual.es), Karen, Verónica. Val
 ## Usuario (implícito)
 
 Commit + push main.
+
+## Re-verificación urgente ~17:17 CEST
+
+- VPS EmailerX: `imap_box.Buzon` + `config/config.test.ini`, INBOX últimos 7 días — **confirma** respuestas ya en auditoría (Driselda, Tatiana, Verónica, Causa, Karen, Antonio `fga870@ual.es`; sin mail de Yen Na, Erdoğan, Matías Rivas).
+- `read_recent_emails.py` devolvió `authentication failed` en esta pasada; `check_replies.py` parcial por EOF en carpetas; **fuente fiable:** `imap_box` INBOX.
+- Repo ya en `d8cc72e` (FLUJO-v0 + AUDITORIA); sin cambios de tabla.

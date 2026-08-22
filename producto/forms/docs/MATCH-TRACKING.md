@@ -14,10 +14,39 @@ Evitar «ERP» en UI y comunicación con la comunidad: sugiere contabilidad/empr
 | Datos | `deploy/pb_public/match-dashboard/data.json` (generado) |
 | Export | `python3 producto/forms/deploy/scripts/export_match_dashboard.py` |
 | Producción | `https://forms.synergium.net/match-dashboard/` (tras rsync `pb_public/`) |
-| Auth | HTTP Basic (`horacio`); htpasswd en VPS `~/synergium-forms/.htpasswd-match-dashboard` (no en git) |
+| Auth | HTTP Basic (usuario en VPS htpasswd); ver sección Seguridad abajo |
 | Local | Abrir el HTML en navegador o servir la carpeta con `python3 -m http.server` |
 
+### Pestañas
+
+| Pestaña | Contenido |
+|---------|-----------|
+| **Por match** | Pares curados (`matches`) |
+| **Por participante** | Pipeline por persona (`match_participants`) |
+| **Directorio** | Submissions nexus-input con `match_me` ∈ `yes`, `directory_only`, `you_only_no_intro` (sin pruebas), con emparejamiento si existe |
+
 Regenerar JSON tras cambios en PB o en el seed del backfill. Con credenciales admin usa PocketBase; si falla, cae al seed (`--seed-only` fuerza seed).
+
+### Seguridad
+
+`data.json` contiene **PII** (emails, WhatsApp). En producción el path `/match-dashboard/` exige **HTTP Basic Auth** (Apache `<Location>`). El formulario público y la API PB no se tocan.
+
+**Configuración (VPS):**
+
+```bash
+# En ~/.cursor/secrets.env (local) o export en el VPS:
+SYNERGIUM_MATCH_DASHBOARD_USER=synergium          # o horacio
+SYNERGIUM_MATCH_DASHBOARD_PASSWORD='…'            # pragma: allowlist secret — no commitear
+
+bash producto/forms/deploy/scripts/setup_match_dashboard_auth.sh
+sudo a2enmod auth_basic authn_file
+# Vhost: deploy/apache/forms.synergium.net.conf (+ bloque en :443 si certbot)
+sudo apache2ctl configtest && sudo systemctl reload apache2
+```
+
+Sin contraseña configurada, Apache devuelve **401** hasta crear `~/synergium-forms/.htpasswd-match-dashboard` en el VPS.
+
+**Histórico:** antes de 2026-08-22 el dashboard era estático público; cualquiera con la URL podía leer PII.
 
 Roadmap de campos futuros: [MATCH-ERP-ROADMAP.md](MATCH-ERP-ROADMAP.md).
 

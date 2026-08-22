@@ -101,12 +101,32 @@ python3 "$HOME/synergium-forms/scripts/setup_collections.py"
 REMOTE
 
 echo "== apache vhost =="
+DASH_USER="${SYNERGIUM_MATCH_DASHBOARD_USER:-synergium}"
+DASH_PASS="${SYNERGIUM_MATCH_DASHBOARD_PASSWORD:-}"
 "${SCP[@]}" "${DEPLOY_SRC}/apache/forms.synergium.net.conf" "${USER}@${HOST}:/tmp/forms.synergium.net.conf"
+"${SCP[@]}" "${DEPLOY_SRC}/scripts/setup_match_dashboard_auth.sh" "${USER}@${HOST}:/tmp/setup_match_dashboard_auth.sh"
 "${SSH[@]}" "${USER}@${HOST}" bash -s <<REMOTE
 set -euo pipefail
 printf '%s\n' "$PASS" | sudo -S cp /tmp/forms.synergium.net.conf /etc/apache2/sites-available/forms.synergium.net.conf
-printf '%s\n' "$PASS" | sudo -S a2enmod proxy proxy_http rewrite headers ssl >/dev/null
+SSL_CONF=/etc/apache2/sites-available/forms.synergium.net-le-ssl.conf
+if [[ -f "\$SSL_CONF" ]] && ! grep -q 'Location /match-dashboard' "\$SSL_CONF"; then
+  printf '%s\n' "$PASS" | sudo -S sed -i '/ProxyPassReverse \/_\//a\\
+\\
+    <Location /match-dashboard>\\
+        AuthType Basic\\
+        AuthName "Synergium Match Pipeline"\\
+        AuthUserFile /home/horacio/synergium-forms/.htpasswd-match-dashboard\\
+        Require valid-user\\
+    </Location>' "\$SSL_CONF"
+fi
+printf '%s\n' "$PASS" | sudo -S a2enmod proxy proxy_http rewrite headers ssl auth_basic authn_file >/dev/null
 printf '%s\n' "$PASS" | sudo -S a2ensite forms.synergium.net.conf >/dev/null
+chmod +x /tmp/setup_match_dashboard_auth.sh
+if [[ -n "${DASH_PASS}" ]]; then
+  printf '%s\n' "$PASS" | sudo -S env SYNERGIUM_MATCH_DASHBOARD_USER="${DASH_USER}" SYNERGIUM_MATCH_DASHBOARD_PASSWORD="${DASH_PASS}" bash /tmp/setup_match_dashboard_auth.sh
+else
+  echo "SYNERGIUM_MATCH_DASHBOARD_PASSWORD not set — configure htpasswd manually (MATCH-TRACKING.md)"
+fi
 printf '%s\n' "$PASS" | sudo -S apache2ctl configtest
 printf '%s\n' "$PASS" | sudo -S systemctl reload apache2
 REMOTE

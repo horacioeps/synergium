@@ -147,12 +147,13 @@
 <body>
   <header>
     <h1>Pipeline de matching</h1>
-    <p>Vista operativa de pares curados, pasos y contactos (Match Pipeline)</p>
+    <p>Vista operativa: pares curados, participantes del pipeline y directorio nexus-input</p>
   </header>
   <div class="toolbar">
     <div class="tabs" role="tablist">
       <button type="button" class="active" data-view="matches" role="tab">Por match</button>
       <button type="button" data-view="participants" role="tab">Por participante</button>
+      <button type="button" data-view="directory" role="tab">Directorio</button>
     </div>
     <div class="search-wrap">
       <input type="search" id="search" placeholder="Buscar nombre, email, eje, ref…" autocomplete="off">
@@ -200,6 +201,21 @@
       { key: "pairing_proposed_at", label: "Propuesto", fmt: (r) => r.pairing_proposed_at || "—" },
       { key: "opt_in_sent", label: "Opt-in enviado", fmt: (r) => badgeYN(r.opt_in_sent) },
       { key: "last_contact_at", label: "Último contacto", fmt: (r) => r.last_contact_at || "—" },
+    ];
+
+    const DIR_COLS = [
+      { key: "person_name", label: "Nombre", fmt: (r) => esc(r.person_name) },
+      { key: "person_email", label: "Email", fmt: (r) => `<a href="mailto:${esc(r.person_email)}">${esc(r.person_email)}</a>` },
+      { key: "country", label: "País", fmt: (r) => esc(r.country) || "—" },
+      { key: "whatsapp", label: "WhatsApp", fmt: (r) => r.whatsapp || "—" },
+      { key: "match_me_label", label: "Match me", fmt: (r) => esc(r.match_me_label || r.match_me) },
+      { key: "is_paired", label: "Emparejado", fmt: (r) => badgeYN(r.is_paired) },
+      { key: "match_reference", label: "Match", fmt: (r) => r.match_reference ? esc(r.match_reference) : "—" },
+      { key: "paired_with_email", label: "Con", fmt: (r) => r.paired_with_email || "—" },
+      { key: "current_step", label: "Paso", fmt: (r) => badgeStep(r.current_step) },
+      { key: "last_contact_at", label: "Último contacto", fmt: (r) => r.last_contact_at || "—" },
+      { key: "submitted_at", label: "Alta", fmt: (r) => r.submitted_at || "—" },
+      { key: "source", label: "Origen", fmt: (r) => r.source || "—" },
     ];
 
     let data = null;
@@ -256,10 +272,15 @@
       }).join(" ").toLowerCase();
     }
 
+    function viewConfig() {
+      if (view === "matches") return { cols: MATCH_COLS, rows: data.matches || [] };
+      if (view === "directory") return { cols: DIR_COLS, rows: data.directory || [] };
+      return { cols: PART_COLS, rows: data.participants || [] };
+    }
+
     function render() {
       if (!data) return;
-      const cols = view === "matches" ? MATCH_COLS : PART_COLS;
-      const rows = (view === "matches" ? data.matches : data.participants) || [];
+      const { cols, rows } = viewConfig();
       const filtered = query
         ? rows.filter((r) => rowText(r, cols).includes(query.toLowerCase()))
         : rows;
@@ -282,8 +303,12 @@
         grid.hidden = true;
       }
 
+      const stats = data.stats || {};
+      const dirNote = stats.submissions_total != null
+        ? ` · PB: ${stats.directory}/${stats.submissions_total} en directorio`
+        : "";
       document.getElementById("meta").textContent =
-        `${filtered.length}/${rows.length} filas · ${data.source} · ${data.exported_at || ""}`;
+        `${filtered.length}/${rows.length} filas · ${data.source} · ${data.exported_at || ""}${dirNote}`;
     }
 
     async function load() {

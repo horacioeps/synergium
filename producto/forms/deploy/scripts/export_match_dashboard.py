@@ -110,18 +110,166 @@ def build_from_seed() -> dict:
                 }
             )
 
+    participant_rows.sort(key=lambda x: (x.get("match_number") or 0, x.get("side") or ""))
+
+    # Seed directory: participants only (no PB submissions in --seed-only).
+    directory_rows = []
+    seen: set[str] = set()
+    for p in participant_rows:
+        email = (p.get("person_email") or "").lower()
+        if not email or email in seen:
+            continue
+        seen.add(email)
+        directory_rows.append(
+            {
+                "person_name": p.get("person_name", ""),
+                "person_email": p.get("person_email", ""),
+                "country": "",
+                "whatsapp": p.get("whatsapp", ""),
+                "match_me": "yes",
+                "match_me_label": match_me_label("yes"),
+                "source": "seed",
+                "submitted_at": None,
+                "is_paired": bool(p.get("is_paired")),
+                "match_number": p.get("match_number"),
+                "match_reference": p.get("match_reference", ""),
+                "slug": p.get("slug", ""),
+                "paired_with_email": p.get("paired_with_email", ""),
+                "current_step": p.get("current_step") or "directory",
+                "last_contact_at": p.get("last_contact_at"),
+            }
+        )
+
     return {
         "exported_at": iso_now(),
         "source": "seed",
         "pb_url": BASE,
         "matches": match_rows,
         "participants": participant_rows,
+        "directory": directory_rows,
         "stats": {
             "matches": len(match_rows),
             "participants": len(participant_rows),
+            "directory": len(directory_rows),
+            "submissions_total": len(directory_rows),
             "events": sum(m["event_count"] for m in match_rows),
         },
     }
+
+
+NEXUS_INPUT_PUBLIC_ID = "nexus-input"
+DIRECTORY_MATCH_ME = frozenset({"yes", "directory_only", "you_only_no_intro"})
+
+
+def parse_answers(raw: dict | str | None) -> dict:
+    if not raw:
+        return {}
+    if isinstance(raw, dict):
+        return raw
+    try:
+        return json.loads(raw)
+    except (json.JSONDecodeError, TypeError):
+        return {}
+
+
+def submission_email(sub: dict, answers: dict) -> str:
+    return (sub.get("respondent_email") or answers.get("email") or "").strip()
+
+
+def is_test_submission(email: str, answers: dict) -> bool:
+    name = (answers.get("full_name") or "").lower()
+    return email.lower().startswith("publictest") or name.startswith("publictest")
+
+
+def match_me_label(value: str | None) -> str:
+    labels = {
+        "yes": "Sí (matching)",
+        "directory_only": "Solo directorio",
+        "you_only_no_intro": "Equipo ve datos; sin intro",
+        "no": "No",
+    }
+    return labels.get(value or "", value or "—")
+
+
+def fetch_nexus_submissions(token: str) -> list[dict]:
+    forms = req(
+        "GET",
+        f"/api/collections/forms/records?filter=public_id='{NEXUS_INPUT_PUBLIC_ID}'",
+        token=token,
+    ).get("items") or []
+    if not forms:
+        return []
+    form_id = forms[0]["id"]
+    items: list[dict] = []
+    page = 1
+    while True:
+        params: dict[str, str | int] = {"page": page, "perPage": 200, "filter": f"form='{form_id}'"}
+        q = urllib.parse.urlencode(params)
+        out = req("GET", f"/api/collections/submissions/records?{q}", token=token)
+        batch = out.get("items") or []
+        items.extend(batch)
+        if page >= out.get("totalPages", 1):
+            break
+        page += 1
+    return items
+
+
+def build_directory_rows(
+    submissions: list[dict],
+    participant_by_email: dict[str, dict],
+    match_by_id: dict[str, dict],
+    events_by_person: dict[str, list],
+) -> list[dict]:
+    rows: list[dict] = []
+    seen_emails: set[str] = set()
+
+    for sub in submissions:
+        answers = parse_answers(sub.get("answers"))
+        email = submission_email(sub, answers)
+        if not email or is_test_submission(email, answers):
+            continue
+
+        match_me = answers.get("match_me") or ""
+        if match_me not in DIRECTORY_MATCH_ME:
+            continue
+
+        key = email.lower()
+        if key in seen_emails:
+            continue
+        seen_emails.add(key)
+
+        part = participant_by_email.get(key, {})
+        mid = part.get("match")
+        match = match_by_id.get(mid, {}) if mid else {}
+        pe_events = events_by_person.get(key, [])
+
+        rows.append(
+            {
+                "person_name": answers.get("full_name") or part.get("person_name") or "",
+                "person_email": email,
+                "country": answers.get("country") or "",
+                "whatsapp": answers.get("whatsapp") or part.get("whatsapp") or "",
+                "match_me": match_me,
+                "match_me_label": match_me_label(match_me),
+                "source": sub.get("source") or "",
+                "submitted_at": parse_date(sub.get("created")),
+                "is_paired": bool(part.get("is_paired")),
+                "match_number": match.get("match_number"),
+                "match_reference": match.get("match_reference", ""),
+                "slug": match.get("slug", ""),
+                "paired_with_email": part.get("paired_with_email", ""),
+                "current_step": part.get("current_step") or "directory",
+                "last_contact_at": parse_date(last_sent_at(pe_events)),
+            }
+        )
+
+    rows.sort(
+        key=lambda r: (
+            0 if r.get("is_paired") else 1,
+            r.get("person_name") or r.get("person_email") or "",
+        )
+    )
+    return rows
 
 
 def fetch_all(token: str, collection: str, sort: str | None = None) -> list[dict]:
@@ -145,6 +293,7 @@ def build_from_pb(token: str) -> dict:
     matches = fetch_all(token, "matches", sort="match_number")
     participants = fetch_all(token, "match_participants", sort="person_email")
     events = fetch_all(token, "contact_events", sort="-sent_at")
+    submissions = fetch_nexus_submissions(token)
 
     events_by_match: dict[str, list] = {}
     events_by_person: dict[str, list] = {}
@@ -218,15 +367,35 @@ def build_from_pb(token: str) -> dict:
 
     participant_rows.sort(key=lambda x: (x.get("match_number") or 0, x.get("side") or ""))
 
+    participant_by_email = {
+        (p.get("person_email") or "").lower(): p for p in participants if p.get("person_email")
+    }
+    match_by_id = {m["id"]: m for m in matches}
+    directory_rows = build_directory_rows(
+        submissions, participant_by_email, match_by_id, events_by_person
+    )
+
+    nexus_non_test = [
+        s
+        for s in submissions
+        if not is_test_submission(
+            submission_email(s, parse_answers(s.get("answers"))),
+            parse_answers(s.get("answers")),
+        )
+    ]
+
     return {
         "exported_at": iso_now(),
         "source": "pocketbase",
         "pb_url": BASE,
         "matches": match_rows,
         "participants": participant_rows,
+        "directory": directory_rows,
         "stats": {
             "matches": len(match_rows),
             "participants": len(participant_rows),
+            "directory": len(directory_rows),
+            "submissions_total": len(nexus_non_test),
             "events": len(events),
         },
     }
@@ -254,6 +423,7 @@ def main() -> None:
     print(
         f"  {data['stats']['matches']} matches, "
         f"{data['stats']['participants']} participants, "
+        f"{data['stats']['directory']} directory, "
         f"{data['stats']['events']} events ({data['source']})"
     )
 

@@ -1,7 +1,7 @@
 # Emails opt-in — Match #1 Matías Rodríguez-Rivas ↔ Valentina Lucena (borrador)
 
-**De:** `horacio@horacio-ps.com`  
-**Estado:** **En bandeja de salida Outlook** (2026-08-22 ~16:55 CEST) — revisar y enviar desde Outlook  
+**De:** `horacio@horacio-ps.com` · EmailerX cuenta 1  
+**Estado:** **Enviado** 2026-08-22 ~17:00 CEST (EmailerX VPS + copia IMAP → Elementos enviados)  
 **Match ref:** `matias-valentina`
 
 Sin presentación, sin em dashes, enlace form directorio, línea en blanco entre párrafos.
@@ -18,7 +18,7 @@ Form fase 2 (tras opt-in de ambos): https://forms.synergium.net/match-align
 | 2026-08-06 | Email `mrodriguezri@udla.cl` | Solicitud PDF artículo VR/esquizofrenia (podcast) |
 | 2026-08-06 | Email respuesta | PDF enviado |
 | 2026-08-14 | Google Form EN | Community directory (`match_me=yes`) |
-| **Opt-in match Valentina** | Email Outlook (bandeja salida) | **Pendiente envío manual** (2026-08-22) |
+| **Opt-in match Valentina** | Email EmailerX | **Enviado** 2026-08-22 ~17:00 CEST |
 
 Valentina: sí por WhatsApp (2026-08-20). Falta opt-in de Matías antes de intro conjunta.
 
@@ -75,4 +75,19 @@ Cuando Matías también lo haya hecho, os presento con un resumen en una página
 
 ## Nota idioma
 
-Matías: opt-in en **ES** (2026-08-22, Outlook bandeja salida). Valentina: ES → mensajes WA en español.
+Matías: opt-in en **ES** (2026-08-22). Valentina: ES → mensajes WA en español.
+
+---
+
+## Envío (EmailerX + copia Outlook)
+
+Los envíos anteriores vía SES no aparecían en Outlook porque `send_test_email.py` no copiaba a IMAP. Usar `sent_copy` → carpeta **Elementos enviados** (Ionos):
+
+```bash
+# En VPS ~/EmailerX — patrón send_manual_replies.py
+sent_copy={
+  "host": imap["host"], "port": imap["port"],
+  "login": imap["login"], "password": imap["password"],
+  "folder": "Elementos enviados",
+}
+```

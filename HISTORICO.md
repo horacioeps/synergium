@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-22 ~17:10 CEST | Flujo v0 2 pasos + auditoría opt-in/match-align inbox | FLUJO-v0.md + auditoría; 6 listos paso 2; historiales | [sesiones/2026-08-22-flujo-v0-auditoria-match-align.md](sesiones/2026-08-22-flujo-v0-auditoria-match-align.md) |
 | 2026-08-22 ~17:01 CEST | /guarda-sesion-y-demas | README match-align v2 + volcado sesión; push main | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
 | 2026-08-22 ~17:00 CEST | Mejoras match-align v2 (ref abstracta, NDA, patentes, idioma, Otro) | Schema v2 publicado + i18n ES en vivo | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
 | 2026-08-22 ~17:06 CEST | Enviar match-align a Valentina (Gmail + UCO) | Email ES fase 2 OK; copia Elementos enviados | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |

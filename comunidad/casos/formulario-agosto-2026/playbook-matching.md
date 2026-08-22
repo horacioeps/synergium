@@ -2,6 +2,16 @@
 
 Objetivo público: cuadrar miembros entre sí. Uso interno: mapa de dolores para Synergium **después**, solo con quien dijo sí o «solo si es útil» en P31.
 
+## Flujo v0 (lineal, 2 pasos)
+
+Documento canónico: [comunidad/formulario/match-align/FLUJO-v0.md](../../formulario/match-align/FLUJO-v0.md)
+
+1. **Opt-in bilateral** — email a cada parte (sin nombre del otro) pidiendo permiso para presentar; contexto `nexus-input`.
+2. **Brief `match-align`** — tras sí (email o WA), enlace al form fase 2 con `match_reference` abstracta.
+3. **Intro conjunta** — cuando ambos completan el brief (y ambos dijeron sí al opt-in); luego follow-up §3.
+
+Tablero y auditoría: [hoy/tableros/MATCHES.md](../../../hoy/tableros/MATCHES.md), [AUDITORIA-match-align-2026-08-22.md](../../../hoy/tableros/AUDITORIA-match-align-2026-08-22.md).
+
 ## 0. Higiene de la hoja
 
 1. Exporta ES y EN (o enlaza las dos Sheets).

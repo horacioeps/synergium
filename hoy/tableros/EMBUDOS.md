@@ -59,18 +59,20 @@ Texto enviado (aprox.):
 
 ## Embudo A — Intro peer-to-peer (activo)
 
-Pasos actuales (piloto Matías–Valentina):
+**Flujo v0 lineal (2 pasos, mejorable):** [comunidad/formulario/match-align/FLUJO-v0.md](../../comunidad/formulario/match-align/FLUJO-v0.md)
 
-1. Form `nexus-input` (web o Google → sync).
-2. Curación match (need↔offer + tema + geo).
-3. Mensaje a B: resumen + sí/no sin compromiso.
-4. Si sí → **canal** (email vs WhatsApp).
-5. Si sí → **pregunta fase 2** (condiciones / orientación) ← *esta captura*.
-6. Opt-in a A (Matías) si aún no.
-7. Intro conjunta; tú sales del hilo salvo que pidan follow-up.
-8. Follow-up 10–14 días (playbook).
+| Paso | Qué | Herramienta |
+|------|-----|-------------|
+| 0 | Form + curación | `nexus-input` |
+| **1** | Opt-in bilateral (sin nombre del otro) | Email EmailerX / WA |
+| **2** | Brief condiciones y alineación | Form `match-align` |
+| 3 | Intro conjunta + follow-up 10–14 d | Playbook |
 
-Referencias: `comunidad/casos/formulario-agosto-2026/playbook-matching.md`, `comunidad/matching/top4.md`.
+Piloto #1 (Matías–Valentina): Valentina sí WA + brief `match-align` enviado 2026-08-22; opt-in email a Matías enviado; intro bloqueada hasta doble sí + ambos briefs.
+
+Auditoría paso 1/2 (matches #1–#6): [AUDITORIA-match-align-2026-08-22.md](AUDITORIA-match-align-2026-08-22.md).
+
+Referencias: `comunidad/casos/formulario-agosto-2026/playbook-matching.md`, `comunidad/matching/top4.md`, `hoy/tableros/MATCHES.md`.
 
 ---
 

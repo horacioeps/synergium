@@ -110,5 +110,5 @@ Según formulario (2026-08-14), Horacio **puede compartir** con un match: nombre
 | ~2026-08-20 | WhatsApp | Valentina → H | «Hola Horacio, claro encantada !!! Muchas gracias» | **Sí / acepta match** |
 | ~2026-08-20 | WhatsApp | H → Valentina | ¿Preferís email o WhatsApp para la puesta en contacto? + condiciones fase 2 / guía | Preguntado — pendiente respuesta |
 | 2026-08-22 | — | — | Form v0 `match-align` + borrador email opt-in a Matías | [emails-optin-borrador.md](emails-optin-borrador.md) |
+| 2026-08-22 ~17:00 CEST | Email EmailerX (`horacio@horacio-ps.com` VPS) | H → Matías | Opt-in ES match Valentina; copia IMAP Elementos enviados | **Enviado** — **sin respuesta** email 22/08 |
 | 2026-08-22 ~17:06 CEST | Email EmailerX (`horacio@horacio-ps.com` VPS) | H → Valentina | Brief `match-align` ES; To Gmail + CC UCO; copia IMAP | **Enviado** |
-| 2026-08-22 ~17:00 CEST | Email EmailerX (`horacio@horacio-ps.com` VPS) | H → Matías | Opt-in ES match Valentina; copia IMAP Elementos enviados | **Enviado** |

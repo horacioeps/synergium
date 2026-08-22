@@ -13,9 +13,13 @@ Brief corto **después** del sí al match en `nexus-input` y **antes** de la int
 
 ## Flujo
 
+**Canónico (v0 lineal, mejorable):** [FLUJO-v0.md](FLUJO-v0.md)
+
 1. Opt-in bilateral (email/WhatsApp) sin nombre del otro hasta que ambos digan sí.
-2. Enlace `match-align` a cada uno con referencia `matias-valentina` (campo `match_reference`).
+2. Enlace `match-align` a cada uno con referencia abstracta (`match_reference`, ej. `match-2026-004`).
 3. Cuando **ambos** envían → resumen 1 página → intro conjunta (playbook).
+
+Auditoría opt-in / paso 2: [hoy/tableros/AUDITORIA-match-align-2026-08-22.md](../../../hoy/tableros/AUDITORIA-match-align-2026-08-22.md).
 
 ## Campos (v2)
 

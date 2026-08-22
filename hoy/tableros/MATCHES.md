@@ -105,8 +105,21 @@ Excluye a las 8 personas del top 4. Pool restante `match_me=yes` ≈ 14. Curado 
 | Pritam ↔ Rajarshi | Clínica + multiomics (alternativa al #7) |
 | Fabián López | CADD sin pareja experimental fuerte ya |
 
-## Flujo opt-in (embudo A)
+## Flujo v0 (lineal, 2 pasos)
 
-1. Email genérico a cada parte (sin nombre de la otra).
-2. Si ambos sí → intro conjunta.
-3. Opcional fase 2 (condiciones / orientación) — ver [EMBUDOS.md](EMBUDOS.md).
+Canónico: [comunidad/formulario/match-align/FLUJO-v0.md](../../comunidad/formulario/match-align/FLUJO-v0.md)
+
+1. Opt-in bilateral (email/WA, sin nombre del otro).
+2. Brief `match-align` tras sí al paso 1.
+3. Intro conjunta tras ambos briefs (+ doble sí opt-in).
+
+**Auditoría 2026-08-22:** [AUDITORIA-match-align-2026-08-22.md](AUDITORIA-match-align-2026-08-22.md) — quién puede recibir paso 2 ahora.
+
+| # | Paso 1 | Respuestas (22/08) | Paso 2 |
+|---|--------|---------------------|--------|
+| 1 | Matías enviado 22/08; Valentina sí WA | Matías pendiente | Valentina **enviado** 22/08 |
+| 2 | Descartado | — | No |
+| 3 | Enviado 21/08 | Causa sí; Yen Na pendiente | Listo: Causa |
+| 4 | Enviado 21/08 | Ambos sí | Listo: ambos |
+| 5 | Enviado 21/08 | Antonio sí; Erdoğan pendiente | Listo: Antonio |
+| 6 | Enviado 21/08 | Ambos sí | Listo: ambos |

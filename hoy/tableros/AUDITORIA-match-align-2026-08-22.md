@@ -32,6 +32,8 @@ Flujo documentado: [comunidad/formulario/match-align/FLUJO-v0.md](../../comunida
 
 **Ya recibió paso 2:** Valentina Lucena (Gmail + CC UCO, 22/08).
 
+**Paso 2 enviado 22/08 ~17:22 CEST** a los 6 de la tabla (EmailerX `send_manual_replies`).
+
 **Pendiente paso 1 (no paso 2):** Matías Rodríguez-Rivas, Yen Na Yum, Erdoğan Aldemir.
 
 ---

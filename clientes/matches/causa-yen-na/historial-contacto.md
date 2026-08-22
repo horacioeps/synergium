@@ -8,4 +8,4 @@
 | **2026-08-21 ~12:24 CEST** | **Yen Na** | **Email** (`horacio@horacio-ps.com` vía EmailerX VPS) | Opt-in EN a `yyum2024@gmail.com`. OK SMTP. |
 | **2026-08-21 ~17:32 UTC-3** | **Matías Causa** | **Email** | Respuesta sí: «Absolutamente de acuerdo. Adelante.» |
 | — | Yen Na | — | **Sin respuesta** opt-in (auditoría 22/08) |
-| — | Matías Causa | — | **Listo paso 2** `match-align` (`match-2026-003`) — ver [AUDITORIA-match-align-2026-08-22.md](../../../hoy/tableros/AUDITORIA-match-align-2026-08-22.md) |
+| **2026-08-22 ~17:22 CEST** | **Matías Causa** | **Email** (reply hilo opt-in, EmailerX `send_manual_replies` + `sent_copy` → Elementos enviados) | Paso 2 `match-align` ES; ref `match-2026-003`. INBOX marcado respondido. |

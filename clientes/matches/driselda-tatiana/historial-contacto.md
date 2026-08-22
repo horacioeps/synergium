@@ -9,4 +9,5 @@
 | **2026-08-21 ~12:16 CEST** | **Tatiana** | **Email** (`horacio@horacio-ps.com` vía EmailerX VPS) | Opt-in enviado a `tatiana.gonzalezl@udea.edu.co`. Mismo asunto. OK SMTP. |
 | **2026-08-21 ~08:44 UTC-3** | **Driselda** | **Email** | Respuesta sí: «si por favor comparte mis datos» |
 | **2026-08-21 ~09:57 UTC-5** | **Tatiana** | **Email** | Respuesta sí: «podes proceder con el contacto» |
-| — | Ambos | — | **Listo paso 2** `match-align` (`match-2026-004`) — ver [AUDITORIA-match-align-2026-08-22.md](../../../hoy/tableros/AUDITORIA-match-align-2026-08-22.md) |
+| **2026-08-22 ~17:22–17:24 CEST** | **Driselda** | **Email** (reply, EmailerX) | Paso 2 `match-align` ES; ref `match-2026-004`. |
+| **2026-08-22 ~17:22–17:24 CEST** | **Tatiana** | **Email** (reply, EmailerX) | Paso 2 `match-align` ES; ref `match-2026-004`. |

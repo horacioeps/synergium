@@ -39,3 +39,24 @@
 - Ninguno crítico: colecciones ya en VPS
 - Opcional: enlazar `match_participants.submission` por email con nexus-input
 - Al enviar opt-in #7: crear `contact_events` + actualizar steps en PB y historial.md
+
+---
+
+## Ampliación — campos emparejamiento (v2)
+
+### Usuario
+- Columna ERP: ¿emparejado ya? + cómo/when propuesto
+- Campos en `matches` y `match_participants`; backfill #1–#7; doc; commit+push
+
+### Agente
+- Schema v2: `pairing_status`, `pairing_method`, `proposed_at`, `paired_at` en `matches`
+- `is_paired`, `paired_with_email`, `pairing_proposed_at` en `match_participants`
+- `setup_collections.py`: merge de campos faltantes en colecciones existentes
+- `backfill_match_tracking.py`: seed pairing para #1–#7 (`curated_manual`, proposed_at 2026-08-21)
+- MATCH-ERP-TRACKING.md: sección Emparejamiento + ejemplo #7
+- No conflicto con opt-in #7 (borrador, no enviado): solo campos ERP
+
+### Match #7 ejemplo
+- `pairing_status=proposed`, `pairing_method=curated_manual`, `proposed_at=2026-08-21`
+- Michelle `is_paired=true`, `paired_with_email=kblanco@una.cr`
+- Kinndle `paired_with_email=michelle.vierarom@ug.edu.ec`

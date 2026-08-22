@@ -72,9 +72,13 @@ def patch_collection_fields(
     merged = merge_missing_fields(coll.get("fields") or [], field_defs)
     if merged:
         patch["fields"] = merged
-        print(f"adding fields to {name}: {[f['name'] for f in merged if f['name'] not in {x.get('name') for x in (coll.get('fields') or [])}]}")
+        added = [f["name"] for f in field_defs if f["name"] not in {x.get("name") for x in (coll.get("fields") or [])}]
+        print(f"adding fields to {name}: {added}")
     req("PATCH", f"/api/collections/{coll_id}", patch, token=token)
     print(f"{name} exists", coll_id)
+
+
+def ensure_match_tracking(token: str, submissions_id: str) -> dict[str, str]:
     """Create ERP-like match pipeline collections. Returns name -> collection id."""
     existing = req("GET", "/api/collections?perPage=200", token=token)
     names = {c["name"] for c in existing.get("items", [])}
@@ -116,6 +120,22 @@ def patch_collection_fields(
             {"name": "person_b_name", "type": "text", "required": False},
             {"name": "person_b_email", "type": "email", "required": False},
             {"name": "expediente_path", "type": "text", "required": False},
+            {
+                "name": "pairing_status",
+                "type": "select",
+                "required": False,
+                "maxSelect": 1,
+                "values": ["proposed", "active", "rejected", "completed", "discarded"],
+            },
+            {
+                "name": "pairing_method",
+                "type": "select",
+                "required": False,
+                "maxSelect": 1,
+                "values": ["curated_manual", "auto_score", "plan_b", "user_requested"],
+            },
+            {"name": "proposed_at", "type": "date", "required": False},
+            {"name": "paired_at", "type": "date", "required": False},
             {"name": "notes", "type": "text", "required": False},
             {"name": "discarded_reason", "type": "text", "required": False},
         ],
@@ -131,10 +151,8 @@ def patch_collection_fields(
         print("created matches", out["id"])
         ids["matches"] = out["id"]
     else:
-        mid = _collection_id(existing, "matches")
-        req("PATCH", f"/api/collections/{mid}", {**ADMIN_ONLY}, token=token)
-        print("matches exists", mid)
-        ids["matches"] = mid
+        patch_collection_fields(token, existing, "matches", matches_schema["fields"])
+        ids["matches"] = _collection_id(existing, "matches")
 
     participants_schema = {
         "name": "match_participants",
@@ -181,6 +199,9 @@ def patch_collection_fields(
                     "intro_done",
                 ],
             },
+            {"name": "is_paired", "type": "bool", "required": False},
+            {"name": "paired_with_email", "type": "email", "required": False},
+            {"name": "pairing_proposed_at", "type": "date", "required": False},
         ],
         "indexes": [
             "CREATE UNIQUE INDEX idx_match_participants_email ON match_participants (match, person_email)",
@@ -193,10 +214,8 @@ def patch_collection_fields(
         print("created match_participants", out["id"])
         ids["match_participants"] = out["id"]
     else:
-        pid = _collection_id(existing, "match_participants")
-        req("PATCH", f"/api/collections/{pid}", {**ADMIN_ONLY}, token=token)
-        print("match_participants exists", pid)
-        ids["match_participants"] = pid
+        patch_collection_fields(token, existing, "match_participants", participants_schema["fields"])
+        ids["match_participants"] = _collection_id(existing, "match_participants")
 
     events_schema = {
         "name": "contact_events",

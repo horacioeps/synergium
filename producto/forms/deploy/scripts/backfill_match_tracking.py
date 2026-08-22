@@ -14,6 +14,11 @@ EMAIL = os.environ["SYNERGIUM_FORMS_PB_ADMIN_EMAIL"]
 PASSWORD = os.environ["SYNERGIUM_FORMS_PB_ADMIN_PASSWORD"]
 FROM_EMAIL = "horacio@horacio-ps.com"
 
+# Pairing metadata shared by curated matches #1–#7 (hoy/tableros/MATCHES.md).
+PAIRING_METHOD_CURATED = "curated_manual"
+PROPOSED_AT_TOP4 = "2026-08-21 00:00:00Z"
+PROPOSED_AT_BATCH5_7 = "2026-08-21 12:00:00Z"  # curado temático tarde 2026-08-21
+
 # Canonical seed from clientes/matches/* and clientes/piloto/* (2026-08-22).
 MATCHES = [
     {
@@ -23,6 +28,9 @@ MATCHES = [
         "axis": "Salud mental / bienestar",
         "status": "active",
         "current_step": "match_align_partial",
+        "pairing_status": "active",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_TOP4,
         "expediente_path": "clientes/piloto/matias-rodriguez-rivas/",
         "participants": [
             {
@@ -83,6 +91,9 @@ MATCHES = [
         "axis": "CADD / drug discovery obesidad",
         "status": "discarded",
         "current_step": "curated",
+        "pairing_status": "discarded",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_TOP4,
         "discarded_reason": "Horacio pidió no enviar opt-in (2026-08-21)",
         "expediente_path": "clientes/matches/ferran-elena/",
         "participants": [
@@ -117,6 +128,9 @@ MATCHES = [
         "axis": "Educación superior / jóvenes",
         "status": "active",
         "current_step": "match_align_partial",
+        "pairing_status": "active",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_TOP4,
         "expediente_path": "clientes/matches/causa-yen-na/",
         "participants": [
             {
@@ -186,6 +200,9 @@ MATCHES = [
         "axis": "Patrimonio / territorio / humanidades",
         "status": "active",
         "current_step": "match_align_complete",
+        "pairing_status": "active",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_TOP4,
         "expediente_path": "clientes/matches/driselda-tatiana/",
         "participants": [
             {
@@ -269,6 +286,9 @@ MATCHES = [
         "axis": "Medical imaging / deep learning",
         "status": "active",
         "current_step": "match_align_partial",
+        "pairing_status": "active",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_BATCH5_7,
         "expediente_path": "clientes/matches/erdogan-antonio/",
         "participants": [
             {
@@ -336,6 +356,9 @@ MATCHES = [
         "axis": "Educación / inclusión / arte-educación",
         "status": "active",
         "current_step": "match_align_complete",
+        "pairing_status": "active",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_BATCH5_7,
         "expediente_path": "clientes/matches/karen-veronica/",
         "participants": [
             {
@@ -419,6 +442,9 @@ MATCHES = [
         "axis": "Sostenibilidad / ambiente / One Health",
         "status": "active",
         "current_step": "curated",
+        "pairing_status": "proposed",
+        "pairing_method": PAIRING_METHOD_CURATED,
+        "proposed_at": PROPOSED_AT_BATCH5_7,
         "expediente_path": "clientes/matches/michelle-kinndle/",
         "participants": [
             {
@@ -489,6 +515,10 @@ def upsert_match(token: str, seed: dict) -> str:
         "person_b_name": pb["person_name"],
         "person_b_email": pb["person_email"],
         "expediente_path": seed.get("expediente_path", ""),
+        "pairing_status": seed.get("pairing_status", "proposed"),
+        "pairing_method": seed.get("pairing_method", ""),
+        "proposed_at": seed.get("proposed_at"),
+        "paired_at": seed.get("paired_at"),
         "notes": seed.get("notes", ""),
         "discarded_reason": seed.get("discarded_reason", ""),
     }
@@ -501,7 +531,9 @@ def upsert_match(token: str, seed: dict) -> str:
     return out["id"]
 
 
-def upsert_participant(token: str, match_id: str, seed: dict) -> str:
+def upsert_participant(
+    token: str, match_id: str, seed: dict, partner_email: str, proposed_at: str | None
+) -> str:
     email = seed["person_email"]
     existing = find_one(
         token,
@@ -516,6 +548,9 @@ def upsert_participant(token: str, match_id: str, seed: dict) -> str:
         "whatsapp": seed.get("whatsapp", ""),
         "match_language": seed.get("match_language", ""),
         "current_step": seed.get("current_step", "directory"),
+        "is_paired": seed.get("is_paired", True),
+        "paired_with_email": seed.get("paired_with_email", partner_email),
+        "pairing_proposed_at": seed.get("pairing_proposed_at", proposed_at),
     }
     if existing:
         req(
@@ -577,8 +612,11 @@ def main() -> None:
     for seed in MATCHES:
         match_id = upsert_match(token, seed)
         part_ids: dict[str, str] = {}
-        for p in seed["participants"]:
-            pid = upsert_participant(token, match_id, p)
+        participants = seed["participants"]
+        proposed_at = seed.get("proposed_at")
+        for i, p in enumerate(participants):
+            partner = participants[1 if i == 0 else 0]
+            pid = upsert_participant(token, match_id, p, partner["person_email"], proposed_at)
             part_ids[p["person_email"]] = pid
         for ev in seed.get("events", []):
             pe = ev.get("person_email", "")

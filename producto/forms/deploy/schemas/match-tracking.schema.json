@@ -1,0 +1,121 @@
+{
+  "version": 2,
+  "description": "ERP-like match pipeline tracking for Synergium Forms (PocketBase). Applied by setup_collections.py.",
+  "collections": {
+    "matches": {
+      "type": "base",
+      "admin_only": true,
+      "fields": {
+        "match_number": { "type": "number", "required": true },
+        "match_reference": { "type": "text", "required": true, "unique": true },
+        "slug": { "type": "text", "required": true },
+        "axis": { "type": "text" },
+        "status": {
+          "type": "select",
+          "values": ["active", "discarded", "completed"],
+          "default": "active"
+        },
+        "current_step": {
+          "type": "select",
+          "values": [
+            "curated",
+            "opt_in_sent",
+            "opt_in_partial",
+            "opt_in_complete",
+            "match_align_partial",
+            "match_align_complete",
+            "intro_done",
+            "closed"
+          ],
+          "default": "curated"
+        },
+        "person_a_name": { "type": "text" },
+        "person_a_email": { "type": "email" },
+        "person_b_name": { "type": "text" },
+        "person_b_email": { "type": "email" },
+        "expediente_path": { "type": "text" },
+        "pairing_status": {
+          "type": "select",
+          "values": ["proposed", "active", "rejected", "completed", "discarded"],
+          "default": "proposed"
+        },
+        "pairing_method": {
+          "type": "select",
+          "values": ["curated_manual", "auto_score", "plan_b", "user_requested"]
+        },
+        "proposed_at": { "type": "date" },
+        "paired_at": { "type": "date" },
+        "notes": { "type": "text" },
+        "discarded_reason": { "type": "text" }
+      },
+      "indexes": [
+        "CREATE UNIQUE INDEX idx_matches_reference ON matches (match_reference)",
+        "CREATE UNIQUE INDEX idx_matches_number ON matches (match_number)"
+      ]
+    },
+    "match_participants": {
+      "type": "base",
+      "admin_only": true,
+      "fields": {
+        "match": { "type": "relation", "collection": "matches", "maxSelect": 1, "required": true },
+        "submission": { "type": "relation", "collection": "submissions", "maxSelect": 1 },
+        "person_name": { "type": "text" },
+        "person_email": { "type": "email", "required": true },
+        "side": { "type": "select", "values": ["a", "b"], "required": true },
+        "whatsapp": { "type": "text" },
+        "match_language": { "type": "text" },
+        "current_step": {
+          "type": "select",
+          "values": [
+            "directory",
+            "opt_in_pending",
+            "opt_in_yes",
+            "opt_in_no",
+            "match_align_pending",
+            "match_align_done",
+            "intro_done"
+          ],
+          "default": "directory"
+        },
+        "is_paired": { "type": "bool", "default": false },
+        "paired_with_email": { "type": "email" },
+        "pairing_proposed_at": { "type": "date" }
+      },
+      "indexes": [
+        "CREATE UNIQUE INDEX idx_match_participants_email ON match_participants (match, person_email)"
+      ]
+    },
+    "contact_events": {
+      "type": "base",
+      "admin_only": true,
+      "fields": {
+        "match": { "type": "relation", "collection": "matches", "maxSelect": 1 },
+        "participant": { "type": "relation", "collection": "match_participants", "maxSelect": 1 },
+        "event_type": {
+          "type": "select",
+          "values": ["opt_in", "match_align", "intro", "follow_up", "inbound_reply", "note"],
+          "required": true
+        },
+        "channel": { "type": "select", "values": ["email", "whatsapp", "other"], "required": true },
+        "direction": { "type": "select", "values": ["outbound", "inbound"], "required": true },
+        "status": {
+          "type": "select",
+          "values": ["draft", "sent", "failed", "received"],
+          "default": "sent"
+        },
+        "sent_at": { "type": "date" },
+        "from_email": { "type": "email" },
+        "to_email": { "type": "email" },
+        "person_email": { "type": "email" },
+        "match_reference": { "type": "text" },
+        "subject": { "type": "text" },
+        "body": { "type": "text" },
+        "notes": { "type": "text" }
+      },
+      "indexes": [
+        "CREATE INDEX idx_contact_events_match_ref ON contact_events (match_reference)",
+        "CREATE INDEX idx_contact_events_person ON contact_events (person_email)"
+      ]
+    }
+  }
+}

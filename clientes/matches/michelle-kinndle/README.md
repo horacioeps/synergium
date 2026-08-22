@@ -8,15 +8,31 @@ Sostenibilidad / ambiente / One Health: política ambiental y transiciones (Mich
 
 ## Idioma
 
-Ambas `match_language=either` y comunidad ES → **ES**.
+| Persona | match_language | english_for_collab | Opt-in |
+|---------|----------------|--------------------|--------|
+| Michelle | either | working language | **EN** |
+| Kinndle | either | get by | **ES** |
 
 ## Documentos
 
 | Doc | |
 |-----|--|
+| [ficha-michelle.md](ficha-michelle.md) | Perfil Michelle |
+| [ficha-kinndle.md](ficha-kinndle.md) | Perfil Kinndle |
 | [emails-optin-borrador.md](emails-optin-borrador.md) | Plantillas opt-in paso 1 |
 | [historial-contacto.md](historial-contacto.md) | Log |
 
+## Contactos
+
+| | Michelle Viera Romero | Kinndle Blanco Peña |
+|--|----------------------|---------------------|
+| Email | michelle.vierarom@ug.edu.ec | kblanco@una.cr |
+| WhatsApp | +593 986 815 603 | +506 8397 0508 |
+| País | Ecuador | Costa Rica |
+| Institución | Universidad de Guayaquil | Universidad Nacional, Costa Rica |
+
 ## Estado
 
-Opt-in **borrador** (no enviado).
+**Pendiente** — plantillas opt-in listas; no enviado.
+
+`match_reference`: `match-2026-007`

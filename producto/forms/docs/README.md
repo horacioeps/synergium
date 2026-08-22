@@ -21,6 +21,7 @@ Formularios públicos en `https://forms.synergium.net/<id>`.
 | [PUENTE-DESDE-MAESTRO.md](PUENTE-DESDE-MAESTRO.md) | Enlace a sesión/HISTORICO del repo maestro |
 | [arquitectura.md](arquitectura.md) | Diseño |
 | [modelo-datos.md](modelo-datos.md) | Colecciones |
+| [MATCH-ERP-TRACKING.md](MATCH-ERP-TRACKING.md) | Pipeline matches (pasos, emails, conversación en PB) |
 
 ## Publicar
 

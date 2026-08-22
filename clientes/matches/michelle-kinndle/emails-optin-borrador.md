@@ -1,7 +1,7 @@
-# Emails opt-in — Match #7 (borrador)
+# Emails opt-in - Match #7 (borrador)
 
 **De:** `horacio@horacio-ps.com`  
-**Estado:** **Borrador — no enviado**  
+**Estado:** **Pendiente** (no enviado).  
 **Fecha:** 2026-08-22
 
 Sin presentación, sin em dashes, enlace form, línea en blanco entre párrafos.  
@@ -9,22 +9,22 @@ Form: https://forms.synergium.net/nexus-input
 
 ---
 
-## A → Michelle Viera Romero (ES)
+## A → Michelle Viera Romero (EN)
 
 **Para:** michelle.vierarom@ug.edu.ec  
-**Asunto:** Synergium: posible colaboración (sostenibilidad / ambiente / One Health)
+**Asunto:** Synergium: possible collaboration (sustainability / One Health)
 
 ```
-Hola Michelle,
+Hi Michelle,
 
-Te escribo desde Synergium por lo que dejaste en el formulario de matching:
+I'm writing from Synergium based on what you shared in the matching form:
 https://forms.synergium.net/nexus-input
 
-En el directorio hay una investigadora en Costa Rica, en resistencia antimicrobiana en ecosistemas, One Health y salud de vida silvestre (ecotoxicología y contaminantes ambientales). Por lo que contaste (transiciones de sostenibilidad, política ambiental, interés en grants y estancias), me parece que puede haber encaje.
+There is someone in the directory in Costa Rica working on antimicrobial resistance in ecosystems, One Health, and wildlife health in relation to environmental contaminants. Given what you described (sustainability transitions and environmental policy, interest in international grants and research stays), there may be a fit.
 
-¿Te parece bien que, si ella también quiere, os presente por email? Sin compromiso: si no encaja, lo dices y no paso ningún dato.
+Would you be open to an email introduction if they agree too? No commitment: if it does not fit, just say so and I will not share any details.
 
-Un saludo,
+Best regards,
 Horacio
 Synergium
 https://synergium.net
@@ -36,7 +36,7 @@ horacio@horacio-ps.com
 ## B → Kinndle Blanco Peña (ES)
 
 **Para:** kblanco@una.cr  
-**Asunto:** Synergium: posible colaboración (sostenibilidad / ambiente / One Health)
+**Asunto:** Synergium: posible colaboración (sostenibilidad / One Health)
 
 ```
 Hola Kinndle,
@@ -44,7 +44,7 @@ Hola Kinndle,
 Te escribo desde Synergium por lo que dejaste en el formulario de matching:
 https://forms.synergium.net/nexus-input
 
-En el directorio hay una investigadora en Ecuador, en transiciones de sostenibilidad y política ambiental (minería, energía y otros sectores clave). Por lo que contaste (AMR en ecosistemas, One Health, salud de vida silvestre, interés en proyectos multidisciplinares y grants), me parece que puede haber encaje.
+En el directorio hay una investigadora en Ecuador, en transiciones de sostenibilidad y política ambiental (minería, acuicultura, energía, cacao), abierta a colaboración internacional y estancias. Por lo que contaste (AMR, One Health, ecotoxicología y salud de vida silvestre), me parece que puede haber encaje.
 
 ¿Te parece bien que, si ella también quiere, os presente por email? Sin compromiso: si no encaja, lo dices y no paso ningún dato.
 
@@ -57,11 +57,6 @@ horacio@horacio-ps.com
 
 ---
 
-## Contactos (referencia)
+## Nota idioma
 
-| | Michelle Viera Romero | Kinndle Blanco Peña |
-|--|----------------------|---------------------|
-| Email | michelle.vierarom@ug.edu.ec | kblanco@una.cr |
-| WhatsApp | +593986815603 | +50683970508 |
-| Institución | U. de Guayaquil (EC) | UNA (CR) |
-| `match_language` | Either/both | Either/both |
+Michelle: `either` + inglés como working language → EN. Kinndle: `either` + «get by» → ES.

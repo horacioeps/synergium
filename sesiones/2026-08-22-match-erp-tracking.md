@@ -60,3 +60,39 @@
 - `pairing_status=proposed`, `pairing_method=curated_manual`, `proposed_at=2026-08-21`
 - Michelle `is_paired=true`, `paired_with_email=kblanco@una.cr`
 - Kinndle `paired_with_email=michelle.vierarom@ug.edu.ec`
+
+---
+
+## Ampliación — naming, roadmap, dashboard HTML
+
+### Usuario
+1. Sugerir campos futuros al tracking PB
+2. Recomendar naming (ERP vs otro término, contexto ES Synergium)
+3. Vista tabular HTML (estilo hoja de cálculo) + export JSON
+4. Sesión + commit + push
+
+### Agente
+
+**Naming canónico:** **Pipeline de matching** (ES) · **Match Pipeline** (EN). Evitar «ERP» en UI; colecciones PB sin renombrar.
+
+**Roadmap:** `producto/forms/docs/MATCH-ERP-ROADMAP.md` — must-have (`intro_at`, `follow_up_due`, `opt_in_deadline`, `submission` link, `urgency`) + nice-to-have.
+
+**Dashboard:**
+- `producto/forms/deploy/scripts/export_match_dashboard.py` → `pb_public/match-dashboard/data.json`
+- `producto/forms/deploy/pb_public/match-dashboard/index.html` — tabs por match / participante, búsqueda, badges, cabecera fija
+- Doc principal: `MATCH-TRACKING.md` (alias `MATCH-ERP-TRACKING.md`)
+- Enlace en `hoy/tableros/MATCHES.md`
+- URL prod tras deploy: `https://forms.synergium.net/match-dashboard/`
+
+**Código:**
+- `setup_collections.py`: merge pairing fields en colecciones existentes (`patch_collection_fields`)
+- `backfill_match_tracking.py`: corregido syntax error match #7; seed vuelve a `curated` sin opt-in enviado
+- `MATCHES.md`: match #7 opt-in **pendiente** (no enviado)
+
+**Export ejecutado:** 7 matches, 14 participants, 24 events desde PocketBase prod.
+
+### Manual pendiente
+- `setup_collections.py` + `backfill_match_tracking.py` en VPS (pairing fields aún vacíos en prod para #7)
+- Rsync `pb_public/match-dashboard/` a forms.synergium.net
+- Enviar opt-in #7 (ambos borradores ES) + actualizar PB/historial
+- Unificar borrador Michelle a ES en expediente (antes EN en sesión anterior)

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pipeline de matching — Synergium</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --surface: #fff;
+      --text: #1a1d21;
+      --muted: #5c6570;
+      --border: #d8dde3;
+      --accent: #0f4c81;
+      --row-alt: #f0f2f5;
+      --sticky-shadow: 0 1px 0 var(--border);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 14px;
+      line-height: 1.45;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 20px 12px;
+    }
+    header h1 {
+      margin: 0 0 4px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    header p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      padding: 12px 20px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .tabs {
+      display: flex;
+      gap: 4px;
+    }
+    .tabs button {
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 4px;
+      cursor: pointer;
+      font: inherit;
+    }
+    .tabs button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .search-wrap { flex: 1; min-width: 200px; }
+    .search-wrap input {
+      width: 100%;
+      max-width: 360px;
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font: inherit;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+    .table-wrap {
+      overflow: auto;
+      max-height: calc(100vh - 160px);
+      margin: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+    }
+    thead th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: #eef1f4;
+      text-align: left;
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      color: var(--muted);
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      box-shadow: var(--sticky-shadow);
+      white-space: nowrap;
+    }
+    tbody td {
+      padding: 9px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody tr:nth-child(even) { background: var(--row-alt); }
+    tbody tr:hover { background: #e8edf2; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 1.5;
+      white-space: nowrap;
+    }
+    .badge-step { background: #e3ecf4; color: #0f4c81; }
+    .badge-pair-proposed { background: #fff3cd; color: #856404; }
+    .badge-pair-active { background: #d4edda; color: #155724; }
+    .badge-pair-discarded { background: #f8d7da; color: #721c24; }
+    .badge-pair-completed { background: #cce5ff; color: #004085; }
+    .badge-yes { background: #d4edda; color: #155724; }
+    .badge-no { background: #f1f3f5; color: #6c757d; }
+    .badge-status-active { background: #d4edda; color: #155724; }
+    .badge-status-discarded { background: #f8d7da; color: #721c24; }
+    .empty, .error {
+      padding: 40px 20px;
+      text-align: center;
+      color: var(--muted);
+    }
+    .error { color: #a71d2a; }
+    @media (max-width: 640px) {
+      .meta { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pipeline de matching</h1>
+    <p>Vista operativa de pares curados, pasos y contactos (Match Pipeline)</p>
+  </header>
+  <div class="toolbar">
+    <div class="tabs" role="tablist">
+      <button type="button" class="active" data-view="matches" role="tab">Por match</button>
+      <button type="button" data-view="participants" role="tab">Por participante</button>
+    </div>
+    <div class="search-wrap">
+      <input type="search" id="search" placeholder="Buscar nombre, email, eje, ref…" autocomplete="off">
+    </div>
+    <div class="meta" id="meta">Cargando…</div>
+  </div>
+  <div class="table-wrap">
+    <table id="grid" hidden>
+      <thead id="head"></thead>
+      <tbody id="body"></tbody>
+    </table>
+    <div class="empty" id="placeholder">Cargando datos…</div>
+  </div>
+
+  <script>
+    const MATCH_COLS = [
+      { key: "match_number", label: "#", fmt: (r) => r.match_number },
+      { key: "match_reference", label: "Ref", fmt: (r) => r.match_reference },
+      { key: "slug", label: "Slug", fmt: (r) => r.slug },
+      { key: "axis", label: "Eje", fmt: (r) => r.axis },
+      { key: "pairing_status", label: "Emparejamiento", fmt: (r) => badgePairing(r.pairing_status) },
+      { key: "pairing_method", label: "Método", fmt: (r) => r.pairing_method || "—" },
+      { key: "proposed_at", label: "Propuesto", fmt: (r) => r.proposed_at || "—" },
+      { key: "current_step", label: "Paso pipeline", fmt: (r) => badgeStep(r.current_step) },
+      { key: "status", label: "Estado", fmt: (r) => badgeStatus(r.status) },
+      { key: "person_a_name", label: "Persona A", fmt: (r) => personCell(r.person_a_name, r.person_a_email) },
+      { key: "person_b_name", label: "Persona B", fmt: (r) => personCell(r.person_b_name, r.person_b_email) },
+      { key: "opt_in_a_sent", label: "Opt-in A", fmt: (r) => badgeYN(r.opt_in_a_sent) },
+      { key: "opt_in_b_sent", label: "Opt-in B", fmt: (r) => badgeYN(r.opt_in_b_sent) },
+      { key: "last_contact_at", label: "Último contacto", fmt: (r) => r.last_contact_at || "—" },
+      { key: "event_count", label: "Eventos", fmt: (r) => r.event_count ?? 0 },
+      { key: "expediente_path", label: "Expediente", fmt: (r) => r.expediente_path ? `<a href="https://github.com/horacioeps/synergium/tree/main/${esc(r.expediente_path)}" target="_blank" rel="noopener">repo</a>` : "—" },
+    ];
+
+    const PART_COLS = [
+      { key: "match_number", label: "#", fmt: (r) => r.match_number },
+      { key: "match_reference", label: "Ref", fmt: (r) => r.match_reference },
+      { key: "side", label: "Lado", fmt: (r) => (r.side || "").toUpperCase() },
+      { key: "person_name", label: "Nombre", fmt: (r) => esc(r.person_name) },
+      { key: "person_email", label: "Email", fmt: (r) => `<a href="mailto:${esc(r.person_email)}">${esc(r.person_email)}</a>` },
+      { key: "whatsapp", label: "WhatsApp", fmt: (r) => r.whatsapp || "—" },
+      { key: "current_step", label: "Paso", fmt: (r) => badgeStep(r.current_step) },
+      { key: "is_paired", label: "Emparejado", fmt: (r) => badgeYN(r.is_paired) },
+      { key: "paired_with_email", label: "Con", fmt: (r) => r.paired_with_email || "—" },
+      { key: "pairing_proposed_at", label: "Propuesto", fmt: (r) => r.pairing_proposed_at || "—" },
+      { key: "opt_in_sent", label: "Opt-in enviado", fmt: (r) => badgeYN(r.opt_in_sent) },
+      { key: "last_contact_at", label: "Último contacto", fmt: (r) => r.last_contact_at || "—" },
+    ];
+
+    let data = null;
+    let view = "matches";
+    let query = "";
+
+    function esc(s) {
+      return String(s ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function badgeStep(step) {
+      if (!step) return "—";
+      return `<span class="badge badge-step">${esc(step)}</span>`;
+    }
+
+    function badgePairing(status) {
+      if (!status) return "—";
+      const cls = {
+        proposed: "badge-pair-proposed",
+        active: "badge-pair-active",
+        discarded: "badge-pair-discarded",
+        completed: "badge-pair-completed",
+        rejected: "badge-pair-discarded",
+      }[status] || "badge-step";
+      return `<span class="badge ${cls}">${esc(status)}</span>`;
+    }
+
+    function badgeStatus(status) {
+      if (!status) return "—";
+      const cls = status === "discarded" ? "badge-status-discarded" : "badge-status-active";
+      return `<span class="badge ${cls}">${esc(status)}</span>`;
+    }
+
+    function badgeYN(val) {
+      const yes = val === true || val === "true" || val === "Y" || val === "yes";
+      return `<span class="badge ${yes ? "badge-yes" : "badge-no"}">${yes ? "Sí" : "No"}</span>`;
+    }
+
+    function personCell(name, email) {
+      if (!name && !email) return "—";
+      const n = esc(name || email);
+      if (email) return `${n}<br><a href="mailto:${esc(email)}">${esc(email)}</a>`;
+      return n;
+    }
+
+    function rowText(row, cols) {
+      return cols.map((c) => {
+        const v = row[c.key];
+        return v == null ? "" : String(v);
+      }).join(" ").toLowerCase();
+    }
+
+    function render() {
+      if (!data) return;
+      const cols = view === "matches" ? MATCH_COLS : PART_COLS;
+      const rows = (view === "matches" ? data.matches : data.participants) || [];
+      const filtered = query
+        ? rows.filter((r) => rowText(r, cols).includes(query.toLowerCase()))
+        : rows;
+
+      const head = document.getElementById("head");
+      const body = document.getElementById("body");
+      const grid = document.getElementById("grid");
+      const placeholder = document.getElementById("placeholder");
+
+      head.innerHTML = "<tr>" + cols.map((c) => `<th>${esc(c.label)}</th>`).join("") + "</tr>";
+      body.innerHTML = filtered.map((r) =>
+        "<tr>" + cols.map((c) => `<td>${c.fmt(r)}</td>`).join("") + "</tr>"
+      ).join("");
+
+      grid.hidden = false;
+      placeholder.hidden = true;
+      if (!filtered.length) {
+        placeholder.hidden = false;
+        placeholder.textContent = "Sin resultados para la búsqueda.";
+        grid.hidden = true;
+      }
+
+      document.getElementById("meta").textContent =
+        `${filtered.length}/${rows.length} filas · ${data.source} · ${data.exported_at || ""}`;
+    }
+
+    async function load() {
+      try {
+        const res = await fetch("data.json", { cache: "no-store" });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        data = await res.json();
+        render();
+      } catch (err) {
+        document.getElementById("placeholder").className = "error";
+        document.getElementById("placeholder").textContent =
+          "No se pudo cargar data.json. Ejecuta export_match_dashboard.py.";
+        document.getElementById("meta").textContent = String(err.message || err);
+      }
+    }
+
+    document.querySelectorAll(".tabs button").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tabs button").forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        view = btn.dataset.view;
+        render();
+      });
+    });
+
+    document.getElementById("search").addEventListener("input", (e) => {
+      query = e.target.value.trim();
+      render();
+    });
+
+    load();
+  </script>
+</body>
+</html>

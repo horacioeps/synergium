@@ -140,3 +140,8 @@ CREATE INDEX submissions_form_created_idx
 
 - CSV: aplanar `answers` por `field_id`
 - Matching: filtrar por JSON (`answers->>'country'`, `answers->'need_now'`, etc.) o materializar columnas en una vista `v_community_directory`
+
+
+## Match pipeline (ERP)
+
+Colecciones `matches`, `match_participants`, `contact_events`: ver [MATCH-TRACKING.md](MATCH-TRACKING.md).

@@ -73,6 +73,33 @@ Cuando Matías también lo haya hecho, os presento con un resumen en una página
 
 ---
 
+## B → Valentina Lucena Jurado (ES) — match-align
+
+**Para:** valentina.lucena@gmail.com  
+**CC:** ed1lujuv@uco.es  
+**Asunto:** Synergium: brief corto antes de la intro (match salud mental)  
+**Estado:** **Enviado** 2026-08-22 ~17:06 CEST (EmailerX + copia IMAP Elementos enviados)
+
+```
+Hola Valentina,
+
+Gracias por el sí al match. El siguiente paso del directorio es un brief corto (5-8 min) para dejar claras expectativas de autoría, tiempos, datos y condiciones. No es orientación: es el paso estándar antes de la intro conjunta.
+
+https://forms.synergium.net/match-align
+
+En «referencia del match» pon: matias-valentina
+
+Cuando el otro investigador también lo haya completado, os presento con un resumen en una página.
+
+Un saludo,
+Horacio
+Synergium
+https://synergium.net
+horacio@horacio-ps.com
+```
+
+---
+
 ## Nota idioma
 
 Matías: opt-in en **ES** (2026-08-22). Valentina: ES → mensajes WA en español.

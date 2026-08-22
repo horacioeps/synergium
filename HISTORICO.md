@@ -4,7 +4,7 @@
 |-------|--------|-------|--------|
 | 2026-08-22 ~17:01 CEST | /guarda-sesion-y-demas | README match-align v2 + volcado sesión; push main | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
 | 2026-08-22 ~17:00 CEST | Mejoras match-align v2 (ref abstracta, NDA, patentes, idioma, Otro) | Schema v2 publicado + i18n ES en vivo | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
-| 2026-08-22 ~17:00 CEST | Enviar opt-in Matías (EmailerX + IMAP sent) | Email ES a matiaserodriguezrivas@gmail.com OK; copia Elementos enviados | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |
+| 2026-08-22 ~17:06 CEST | Enviar match-align a Valentina (Gmail + UCO) | Email ES fase 2 OK; copia Elementos enviados | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |
 | 2026-08-22 ~16:55 CEST | Email opt-in Matías ES en Outlook salida | Malentendido: borrador Outlook; corregido con envío EmailerX | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |
 | 2026-08-22 16:26 CEST | haz sync | Ya al día con `origin/main` (`e01265e`); nada que bajar | [sesiones/2026-08-22-haz-sync.md](sesiones/2026-08-22-haz-sync.md) |
 | 2026-08-21 23:25 CEST | ¿Nuevos registros últimas 24h? | 1 web (Rajarshi 02:21 UTC) + 26 import Sheet anoche; 0 desde entonces | [sesiones/2026-08-21-registros-24h.md](sesiones/2026-08-21-registros-24h.md) |

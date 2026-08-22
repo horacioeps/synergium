@@ -31,3 +31,21 @@ Preguntó por match Valentina Lucena: sí, el otro era Matías Rodríguez-Rivas 
 - Causa IMAP: `send_test_email.py` no usaba `sent_copy`; SES envía pero no deja copia en Ionos.
 - Enviado 2026-08-22 ~17:00 CEST a `matiaserodriguezrivas@gmail.com` con `sent_copy` → carpeta IMAP **Elementos enviados** (patrón `send_manual_replies.py`).
 - Borrador erróneo eliminado de Outlook Outbox.
+
+---
+
+## Usuario (turno 3)
+
+Preguntó si Valentina respondió por email (no; solo WhatsApp). Mostrada plantilla match-align (email + WA).
+
+## Usuario (turno 4)
+
+> enviale entonces el segundo correo con el segundo formulario, la variante A. tanto el gmail como al uco y que salga en mi bandeja salida
+
+## Agente
+
+- Enviado 2026-08-22 ~17:06 CEST vía EmailerX cuenta 1.
+- **Para:** valentina.lucena@gmail.com · **CC:** ed1lujuv@uco.es
+- **Asunto:** Synergium: brief corto antes de la intro (match salud mental)
+- Form: https://forms.synergium.net/match-align · ref `matias-valentina`
+- Copia IMAP → Elementos enviados (Outlook).

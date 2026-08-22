@@ -1,7 +1,7 @@
 # Emails opt-in — Match #1 Matías Rodríguez-Rivas ↔ Valentina Lucena (borrador)
 
-**De:** `horacio@horacio-ps.com` · EmailerX cuenta 1  
-**Estado:** **Pendiente de envío** (2026-08-22)  
+**De:** `horacio@horacio-ps.com`  
+**Estado:** **En bandeja de salida Outlook** (2026-08-22 ~16:55 CEST) — revisar y enviar desde Outlook  
 **Match ref:** `matias-valentina`
 
 Sin presentación, sin em dashes, enlace form directorio, línea en blanco entre párrafos.
@@ -18,31 +18,31 @@ Form fase 2 (tras opt-in de ambos): https://forms.synergium.net/match-align
 | 2026-08-06 | Email `mrodriguezri@udla.cl` | Solicitud PDF artículo VR/esquizofrenia (podcast) |
 | 2026-08-06 | Email respuesta | PDF enviado |
 | 2026-08-14 | Google Form EN | Community directory (`match_me=yes`) |
-| **Opt-in match Valentina** | — | **No enviado aún** |
+| **Opt-in match Valentina** | Email Outlook (bandeja salida) | **Pendiente envío manual** (2026-08-22) |
 
 Valentina: sí por WhatsApp (2026-08-20). Falta opt-in de Matías antes de intro conjunta.
 
 ---
 
-## A → Matías Rodríguez-Rivas (EN)
+## A → Matías Rodríguez-Rivas (ES)
 
 **Para:** matiaserodriguezrivas@gmail.com  
 **CC opcional:** mrodriguezri@udla.cl (donde respondió el PDF)  
-**Asunto:** Synergium: possible co-author match (mental health / empirical papers)
+**Asunto:** Synergium: posible coautoría (salud mental / artículos empíricos)
 
 ```
-Hi Matías,
+Hola Matías,
 
-I'm writing from Synergium based on what you shared in the community matching form:
+Te escribo desde Synergium por lo que dejaste en el formulario de matching de la comunidad:
 https://forms.synergium.net/nexus-input
 
-There is a researcher in Spain in the directory working on mental health and psychological well-being, with a clinical or applied angle. You mentioned looking for co-authors for empirical papers and bringing quantitative design, advanced analysis, and methodology. There may be a fit on complementary roles rather than the exact same sub-topic.
+En el directorio hay una investigadora en España en salud mental y bienestar psicológico, con un enfoque clínico o aplicado. Por lo que contaste (buscas coautores para artículos empíricos y aportas diseño cuantitativo, análisis avanzado y metodología), puede haber encaje por roles complementarios más que por el mismo subtema.
 
-She is open to moving on something in the next few weeks, not an open-ended horizon.
+Ella estaría dispuesta a avanzar en algo en las próximas semanas, no en un horizonte abierto.
 
-Would you be open to an email introduction if she agrees too? No commitment: if it does not fit, just say so and I will not share any details.
+¿Te parece bien que, si ella también quiere, os presente por email? Sin compromiso: si no encaja, lo dices y no paso ningún dato.
 
-Best regards,
+Un saludo,
 Horacio
 Synergium
 https://synergium.net
@@ -75,4 +75,4 @@ Cuando Matías también lo haya hecho, os presento con un resumen en una página
 
 ## Nota idioma
 
-Matías: form EN, `match_language=either` → **EN**. Valentina: ES → mensajes WA en español.
+Matías: opt-in en **ES** (2026-08-22, Outlook bandeja salida). Valentina: ES → mensajes WA en español.

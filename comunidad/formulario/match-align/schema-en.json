@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "title": "Match alignment brief (phase 2)",
   "locale": "en",
   "description": "You were matched through the Synergium community directory. Before a joint introduction, each person fills this short brief (about 8 minutes) so expectations on goals, roles, authorship, and data are clearer from the start.\n\nYour answers are shared with Synergium only until both sides complete the form. Then we send your match a one-page summary of non-confidential points before the introduction.\n\nThis is not a contract and Synergium is not a party to the collaboration. It is a facilitation step to reduce misunderstandings later (papers, data, IP).\n\nFor questions: info@synergium.net.",
@@ -35,7 +35,7 @@
     {
       "id": "match_reference",
       "type": "text",
-      "label": "Match reference (if Synergium gave you one, e.g. matias-valentina)",
+      "label": "Match reference (if Synergium gave you one, e.g. match-2026-042)",
       "required": false
     },
     {
@@ -45,11 +45,11 @@
       "required": true,
       "allow_other": true,
       "options": [
-        { "value": "4_weeks", "label": "Something concrete within ~4 weeks" },
         { "value": "8_weeks", "label": "A clear milestone within ~8 weeks" },
-        { "value": "12_weeks", "label": "Progress within ~12 weeks" },
         { "value": "longer", "label": "Longer horizon; this is exploratory" },
-        { "value": "unsure", "label": "Not sure yet" }
+        { "value": "unsure", "label": "Not sure yet" },
+        { "value": "12_weeks", "label": "Progress within ~12 weeks" },
+        { "value": "4_weeks", "label": "Something concrete within ~4 weeks" }
       ]
     },
     {
@@ -65,11 +65,11 @@
       "required": true,
       "allow_other": true,
       "options": [
-        { "value": "joint_paper", "label": "Joint empirical paper" },
-        { "value": "protocol", "label": "Study protocol / pre-registration" },
+        { "value": "exploratory", "label": "Exploratory call only for now" },
         { "value": "grant", "label": "Grant or funding application" },
+        { "value": "joint_paper", "label": "Joint empirical paper" },
         { "value": "dataset", "label": "Shared dataset or methods piece" },
-        { "value": "exploratory", "label": "Exploratory call only for now" }
+        { "value": "protocol", "label": "Study protocol / pre-registration" }
       ]
     },
     {
@@ -77,11 +77,12 @@
       "type": "single_select",
       "label": "Where are you starting from?",
       "required": true,
+      "allow_other": true,
       "options": [
-        { "value": "idea", "label": "Idea / topic only" },
-        { "value": "protocol_draft", "label": "Protocol or design draft" },
         { "value": "data_exists", "label": "Data already exist (mine or accessible)" },
-        { "value": "manuscript_draft", "label": "Manuscript draft in progress" }
+        { "value": "idea", "label": "Idea / topic only" },
+        { "value": "manuscript_draft", "label": "Manuscript draft in progress" },
+        { "value": "protocol_draft", "label": "Protocol or design draft" }
       ]
     },
     {
@@ -91,12 +92,12 @@
       "required": true,
       "allow_other": true,
       "options": [
-        { "value": "design", "label": "Study design" },
-        { "value": "analysis", "label": "Data analysis / statistics" },
         { "value": "clinical", "label": "Clinical or applied perspective" },
-        { "value": "writing", "label": "Writing / drafting" },
+        { "value": "coordination", "label": "Coordination / project management" },
+        { "value": "analysis", "label": "Data analysis / statistics" },
         { "value": "ethics", "label": "Ethics / IRB / consent" },
-        { "value": "coordination", "label": "Coordination / project management" }
+        { "value": "design", "label": "Study design" },
+        { "value": "writing", "label": "Writing / drafting" }
       ]
     },
     {
@@ -104,23 +105,29 @@
       "type": "single_select",
       "label": "Realistic hours per week you can dedicate in the next 2 months",
       "required": true,
+      "allow_other": true,
       "options": [
         { "value": "0_2", "label": "0–2 hours" },
+        { "value": "10_plus", "label": "10+ hours" },
         { "value": "2_5", "label": "2–5 hours" },
-        { "value": "5_10", "label": "5–10 hours" },
-        { "value": "10_plus", "label": "10+ hours" }
+        { "value": "5_10", "label": "5–10 hours" }
       ]
     },
     {
-      "id": "work_language",
+      "id": "match_language",
       "type": "single_select",
-      "label": "Working language with your match",
+      "label": "Preferred language for working with your match",
       "required": true,
       "allow_other": true,
       "options": [
-        { "value": "es", "label": "Spanish" },
+        { "value": "ar", "label": "العربية" },
+        { "value": "de", "label": "Deutsch" },
         { "value": "en", "label": "English" },
-        { "value": "mixed", "label": "Mixed / either works" }
+        { "value": "es", "label": "Español" },
+        { "value": "it", "label": "Italiano" },
+        { "value": "ja", "label": "日本語" },
+        { "value": "pt", "label": "Português" },
+        { "value": "zh-CN", "label": "简体中文" }
       ]
     },
     {
@@ -131,9 +138,9 @@
       "allow_other": true,
       "options": [
         { "value": "email", "label": "Email" },
-        { "value": "whatsapp", "label": "WhatsApp" },
+        { "value": "mixed", "label": "Mix of email and calls" },
         { "value": "video", "label": "Video call first, then async" },
-        { "value": "mixed", "label": "Mix of email and calls" }
+        { "value": "whatsapp", "label": "WhatsApp" }
       ]
     },
     {
@@ -141,10 +148,11 @@
       "type": "single_select",
       "label": "Expected contact frequency at the start",
       "required": true,
+      "allow_other": true,
       "options": [
-        { "value": "once_async", "label": "One meeting, then mostly async" },
-        { "value": "weekly", "label": "About weekly" },
         { "value": "biweekly", "label": "About every two weeks" },
+        { "value": "weekly", "label": "About weekly" },
+        { "value": "once_async", "label": "One meeting, then mostly async" },
         { "value": "as_needed", "label": "Only when something is blocked" }
       ]
     },
@@ -155,10 +163,10 @@
       "required": true,
       "allow_other": true,
       "options": [
-        { "value": "contribution", "label": "By contribution" },
         { "value": "alternating", "label": "Alternating across papers" },
-        { "value": "senior_first", "label": "Senior author first or last by field norm" },
-        { "value": "discuss_first", "label": "Must discuss in first meeting" }
+        { "value": "contribution", "label": "By contribution" },
+        { "value": "discuss_first", "label": "Must discuss in first meeting" },
+        { "value": "senior_first", "label": "Senior author first or last by field norm" }
       ]
     },
     {
@@ -166,9 +174,10 @@
       "type": "single_select",
       "label": "Corresponding author (preliminary)",
       "required": true,
+      "allow_other": true,
       "options": [
-        { "value": "me", "label": "I would be corresponding author" },
         { "value": "them", "label": "I expect my match to be corresponding author" },
+        { "value": "me", "label": "I would be corresponding author" },
         { "value": "shared", "label": "Shared / co-corresponding" },
         { "value": "discuss", "label": "To be agreed in first meeting" }
       ]
@@ -184,10 +193,11 @@
       "type": "single_select",
       "label": "Will this collaboration involve personal or clinical data?",
       "required": true,
+      "allow_other": true,
       "options": [
-        { "value": "yes", "label": "Yes" },
         { "value": "no", "label": "No" },
-        { "value": "unsure", "label": "Not sure yet" }
+        { "value": "unsure", "label": "Not sure yet" },
+        { "value": "yes", "label": "Yes" }
       ]
     },
     {
@@ -195,10 +205,11 @@
       "type": "single_select",
       "label": "Who should lead ethics / consent (if applicable)?",
       "required": true,
+      "allow_other": true,
       "options": [
+        { "value": "institution", "label": "Institution / joint submission" },
         { "value": "me", "label": "Me" },
         { "value": "them", "label": "My match" },
-        { "value": "institution", "label": "Institution / joint submission" },
         { "value": "na", "label": "Not applicable / not sure yet" }
       ]
     },
@@ -207,20 +218,49 @@
       "type": "single_select",
       "label": "Data reuse after this project",
       "required": true,
+      "allow_other": true,
       "options": [
+        { "value": "open", "label": "Open / shared by default" },
         { "value": "this_only", "label": "Only for this study unless we agree otherwise" },
         { "value": "reuse_agreement", "label": "Reusable with written agreement" },
-        { "value": "open", "label": "Open / shared by default" },
         { "value": "tbd", "label": "To be decided" }
+      ]
+    },
+    {
+      "id": "nda_required",
+      "type": "single_select",
+      "label": "Is an NDA (non-disclosure agreement) needed before sharing project details?",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "no", "label": "No" },
+        { "value": "unsure", "label": "Not sure yet" },
+        { "value": "yes_before", "label": "Yes, before sharing details" },
+        { "value": "yes_institution", "label": "Yes, if my institution requires it" }
+      ]
+    },
+    {
+      "id": "patent_intention",
+      "type": "single_select",
+      "label": "Do you intend to pursue patent protection from this collaboration?",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "no", "label": "No / academic publication only" },
+        { "value": "unsure", "label": "Not sure yet" },
+        { "value": "maybe", "label": "Maybe; must discuss before starting" },
+        { "value": "yes", "label": "Yes; I want to agree rules early" }
       ]
     },
     {
       "id": "possible_ip",
       "type": "single_select",
-      "label": "Possible patent, software, or commercial product?",
+      "label": "Other possible IP (software, spin-off, commercial product)?",
       "required": true,
+      "allow_other": true,
       "options": [
         { "value": "no", "label": "No / academic only" },
+        { "value": "unsure", "label": "Not sure yet" },
         { "value": "maybe", "label": "Maybe; must discuss before starting" },
         { "value": "yes", "label": "Yes; I want to agree rules early" }
       ]
@@ -230,11 +270,12 @@
       "type": "multi_select",
       "label": "This collaboration is NOT (unless we explicitly agree otherwise)",
       "required": true,
+      "allow_other": true,
       "options": [
-        { "value": "paid_consulting", "label": "Paid consulting" },
-        { "value": "ghostwriting", "label": "Ghostwriting or symbolic authorship" },
-        { "value": "auto_grant", "label": "Automatic commitment to fund each other" },
         { "value": "auto_data", "label": "Automatic access to each other's data without agreement" },
+        { "value": "auto_grant", "label": "Automatic commitment to fund each other" },
+        { "value": "ghostwriting", "label": "Ghostwriting or symbolic authorship" },
+        { "value": "paid_consulting", "label": "Paid consulting" },
         { "value": "hierarchy", "label": "Supervisor–student relationship without agreeing it" },
         { "value": "synergium_party", "label": "Synergium mediating disputes indefinitely" }
       ]
@@ -250,10 +291,11 @@
       "type": "single_select",
       "label": "Your conditions for this match",
       "required": true,
+      "allow_other": true,
       "options": [
         { "value": "clear", "label": "I have them clear (this form is enough)" },
         { "value": "guidance", "label": "I need guidance before talking to my match" },
-        { "value": "facilitated", "label": "I want a facilitated first meeting with Synergium" }
+        { "value": "clarification", "label": "I want a clarification by email or WhatsApp with Synergium to be sure I understood everything" }
       ]
     },
     {
@@ -261,10 +303,11 @@
       "type": "single_select",
       "label": "Synergium check-in about 2 weeks after the introduction?",
       "required": true,
+      "allow_other": true,
       "options": [
-        { "value": "yes", "label": "Yes, a short check-in is welcome" },
+        { "value": "no", "label": "No; we will manage on our own" },
         { "value": "if_stuck", "label": "Only if we get stuck" },
-        { "value": "no", "label": "No; we will manage on our own" }
+        { "value": "yes", "label": "Yes, a short check-in is welcome" }
       ]
     },
     {
@@ -273,8 +316,8 @@
       "label": "I agree that Synergium may share a short summary of my answers with my match before the joint introduction",
       "required": true,
       "options": [
-        { "value": "yes", "label": "Yes, I agree" },
-        { "value": "no", "label": "No" }
+        { "value": "no", "label": "No" },
+        { "value": "yes", "label": "Yes, I agree" }
       ]
     }
   ]

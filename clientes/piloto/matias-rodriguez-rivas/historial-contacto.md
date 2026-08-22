@@ -109,4 +109,5 @@ Según formulario (2026-08-14), Horacio **puede compartir** con un match: nombre
 | 2026-08-19 | WhatsApp +34 661 347 478 | H → Valentina | Propuesta intro coautoría salud mental (Chile, cuantitativo ↔ clínica) | Enviado |
 | ~2026-08-20 | WhatsApp | Valentina → H | «Hola Horacio, claro encantada !!! Muchas gracias» | **Sí / acepta match** |
 | ~2026-08-20 | WhatsApp | H → Valentina | ¿Preferís email o WhatsApp para la puesta en contacto? + condiciones fase 2 / guía | Preguntado — pendiente respuesta |
-| 2026-08-22 | — | — | Form v0 `match-align` + borrador email opt-in a Matías (no enviado) | [emails-optin-borrador.md](emails-optin-borrador.md) |
+| 2026-08-22 | — | — | Form v0 `match-align` + borrador email opt-in a Matías | [emails-optin-borrador.md](emails-optin-borrador.md) |
+| 2026-08-22 ~16:55 CEST | Email Outlook (bandeja salida) | H → Matías | Opt-in ES match Valentina; asunto coautoría salud mental | **Pendiente envío manual** |

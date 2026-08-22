@@ -127,4 +127,3 @@ Canónico: [comunidad/formulario/match-align/FLUJO-v0.md](../../comunidad/formul
 | 5 | Enviado 21/08 | Antonio sí; Erdoğan pendiente | Listo: Antonio |
 | 6 | Enviado 21/08 | Ambos sí | Listo: ambos |
 | 7 | Enviado 22/08 | Pendiente | No |
-| 7 | Pendiente | — | No |

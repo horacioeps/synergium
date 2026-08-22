@@ -1,8 +1,8 @@
 # Emails opt-in - Match #7 (borrador)
 
 **De:** `horacio@horacio-ps.com`  
-**Vía:** EmailerX cuenta 1 (VPS `~/EmailerX`)
-**Estado:** **Enviado** 2026-08-22 ~17:44–17:45 CEST (`horacio@horacio-ps.com`, copia IMAP → Elementos enviados).
+**Vía:** EmailerX cuenta 1 (VPS `~/EmailerX`)  
+**Estado:** **Enviado** 2026-08-22 ~17:44–17:45 CEST (`horacio@horacio-ps.com`, copia IMAP → Elementos enviados).  
 **Fecha:** 2026-08-22
 
 Sin presentación, sin em dashes, enlace form, línea en blanco entre párrafos.  

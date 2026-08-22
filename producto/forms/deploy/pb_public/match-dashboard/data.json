@@ -1,5 +1,5 @@
 {
-  "exported_at": "2026-08-22T15:48:57Z",
+  "exported_at": "2026-08-22T15:50:35Z",
   "source": "pocketbase",
   "pb_url": "https://forms.synergium.net",
   "matches": [
@@ -10,9 +10,9 @@
       "axis": "Salud mental / bienestar",
       "status": "active",
       "current_step": "match_align_partial",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "pairing_status": "active",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Matías E. Rodríguez-Rivas",
       "person_a_email": "matiaserodriguezrivas@gmail.com",
@@ -22,7 +22,7 @@
       "opt_in_a_sent": true,
       "opt_in_b_sent": false,
       "last_contact_at": "2026-08-22",
-      "event_count": 3
+      "event_count": 12
     },
     {
       "match_number": 2,
@@ -31,9 +31,9 @@
       "axis": "CADD / drug discovery obesidad",
       "status": "discarded",
       "current_step": "curated",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "pairing_status": "discarded",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Ferran Acuña Parés",
       "person_a_email": "ferran.acuna@unir.net",
@@ -43,7 +43,7 @@
       "opt_in_a_sent": false,
       "opt_in_b_sent": false,
       "last_contact_at": "2026-08-21",
-      "event_count": 1
+      "event_count": 4
     },
     {
       "match_number": 3,
@@ -52,9 +52,9 @@
       "axis": "Educación superior / jóvenes",
       "status": "active",
       "current_step": "match_align_partial",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "pairing_status": "active",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Matías Causa",
       "person_a_email": "causamd@gmail.com",
@@ -64,7 +64,7 @@
       "opt_in_a_sent": true,
       "opt_in_b_sent": true,
       "last_contact_at": "2026-08-22",
-      "event_count": 4
+      "event_count": 10
     },
     {
       "match_number": 4,
@@ -73,9 +73,9 @@
       "axis": "Patrimonio / territorio / humanidades",
       "status": "active",
       "current_step": "match_align_complete",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "pairing_status": "active",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Driselda Patricia Sánchez Aguirre",
       "person_a_email": "dsanchez@encit.unam.mx",
@@ -85,7 +85,7 @@
       "opt_in_a_sent": true,
       "opt_in_b_sent": true,
       "last_contact_at": "2026-08-22",
-      "event_count": 6
+      "event_count": 18
     },
     {
       "match_number": 5,
@@ -94,9 +94,9 @@
       "axis": "Medical imaging / deep learning",
       "status": "active",
       "current_step": "match_align_partial",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "pairing_status": "active",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Erdoğan Aldemir",
       "person_a_email": "erdogan.aldemir@batman.edu.tr",
@@ -106,7 +106,7 @@
       "opt_in_a_sent": true,
       "opt_in_b_sent": true,
       "last_contact_at": "2026-08-22",
-      "event_count": 4
+      "event_count": 10
     },
     {
       "match_number": 6,
@@ -115,9 +115,9 @@
       "axis": "Educación / inclusión / arte-educación",
       "status": "active",
       "current_step": "match_align_complete",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "pairing_status": "active",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Karen Villalba",
       "person_a_email": "karen.villalba.ramos@gmail.com",
@@ -127,7 +127,7 @@
       "opt_in_a_sent": true,
       "opt_in_b_sent": true,
       "last_contact_at": "2026-08-22",
-      "event_count": 6
+      "event_count": 12
     },
     {
       "match_number": 7,
@@ -135,20 +135,20 @@
       "slug": "michelle-kinndle",
       "axis": "Sostenibilidad / ambiente / One Health",
       "status": "active",
-      "current_step": "curated",
-      "pairing_status": "",
-      "pairing_method": "",
-      "proposed_at": null,
+      "current_step": "opt_in_sent",
+      "pairing_status": "proposed",
+      "pairing_method": "curated_manual",
+      "proposed_at": "2026-08-21",
       "paired_at": null,
       "person_a_name": "Michelle Viera Romero",
       "person_a_email": "michelle.vierarom@ug.edu.ec",
       "person_b_name": "Kinndle Blanco Peña",
       "person_b_email": "kblanco@una.cr",
       "expediente_path": "clientes/matches/michelle-kinndle/",
-      "opt_in_a_sent": false,
-      "opt_in_b_sent": false,
-      "last_contact_at": null,
-      "event_count": 0
+      "opt_in_a_sent": true,
+      "opt_in_b_sent": true,
+      "last_contact_at": "2026-08-22",
+      "event_count": 2
     }
   ],
   "participants": [
@@ -161,9 +161,9 @@
       "person_email": "matiaserodriguezrivas@gmail.com",
       "whatsapp": "+56930322072",
       "current_step": "opt_in_pending",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "valentina.lucena@gmail.com",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -176,9 +176,9 @@
       "person_email": "valentina.lucena@gmail.com",
       "whatsapp": "+34661347478",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "matiaserodriguezrivas@gmail.com",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": false,
       "last_contact_at": "2026-08-22"
     },
@@ -191,9 +191,9 @@
       "person_email": "ferran.acuna@unir.net",
       "whatsapp": "",
       "current_step": "directory",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "emurcia@ucam.edu",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": false,
       "last_contact_at": null
     },
@@ -206,9 +206,9 @@
       "person_email": "emurcia@ucam.edu",
       "whatsapp": "",
       "current_step": "directory",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "ferran.acuna@unir.net",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": false,
       "last_contact_at": null
     },
@@ -221,9 +221,9 @@
       "person_email": "causamd@gmail.com",
       "whatsapp": "+542213541572",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "yyum2024@gmail.com",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -236,9 +236,9 @@
       "person_email": "yyum2024@gmail.com",
       "whatsapp": "+85266091707",
       "current_step": "opt_in_pending",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "causamd@gmail.com",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-21"
     },
@@ -251,9 +251,9 @@
       "person_email": "dsanchez@encit.unam.mx",
       "whatsapp": "+527771294657",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "tatiana.gonzalezl@udea.edu.co",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -266,9 +266,9 @@
       "person_email": "tatiana.gonzalezl@udea.edu.co",
       "whatsapp": "+573002469789",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "dsanchez@encit.unam.mx",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -281,9 +281,9 @@
       "person_email": "erdogan.aldemir@batman.edu.tr",
       "whatsapp": "+905379397879",
       "current_step": "opt_in_pending",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "ajfernandez@ual.es",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-21"
     },
@@ -296,9 +296,9 @@
       "person_email": "ajfernandez@ual.es",
       "whatsapp": "+34622217502",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "erdogan.aldemir@batman.edu.tr",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -311,9 +311,9 @@
       "person_email": "karen.villalba.ramos@gmail.com",
       "whatsapp": "+573152033635",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "everonicaromo@gmail.com",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -326,9 +326,9 @@
       "person_email": "everonicaromo@gmail.com",
       "whatsapp": "+5695397675",
       "current_step": "match_align_done",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
+      "is_paired": true,
+      "paired_with_email": "karen.villalba.ramos@gmail.com",
+      "pairing_proposed_at": "2026-08-21",
       "opt_in_sent": true,
       "last_contact_at": "2026-08-22"
     },
@@ -340,12 +340,12 @@
       "person_name": "Michelle Viera Romero",
       "person_email": "michelle.vierarom@ug.edu.ec",
       "whatsapp": "+593986815603",
-      "current_step": "directory",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
-      "opt_in_sent": false,
-      "last_contact_at": null
+      "current_step": "opt_in_pending",
+      "is_paired": true,
+      "paired_with_email": "kblanco@una.cr",
+      "pairing_proposed_at": "2026-08-21",
+      "opt_in_sent": true,
+      "last_contact_at": "2026-08-22"
     },
     {
       "match_number": 7,
@@ -355,17 +355,17 @@
       "person_name": "Kinndle Blanco Peña",
       "person_email": "kblanco@una.cr",
       "whatsapp": "+50683970508",
-      "current_step": "directory",
-      "is_paired": false,
-      "paired_with_email": "",
-      "pairing_proposed_at": null,
-      "opt_in_sent": false,
-      "last_contact_at": null
+      "current_step": "opt_in_pending",
+      "is_paired": true,
+      "paired_with_email": "michelle.vierarom@ug.edu.ec",
+      "pairing_proposed_at": "2026-08-21",
+      "opt_in_sent": true,
+      "last_contact_at": "2026-08-22"
     }
   ],
   "stats": {
     "matches": 7,
     "participants": 14,
-    "events": 24
+    "events": 68
   }
 }

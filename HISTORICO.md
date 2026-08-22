@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-22 ~17:45 CEST | Enviar opt-in match #7 Michelle ↔ Kinndle + ERP | 2 emails EmailerX OK; PB contact_events; setup_collections fix | [sesiones/2026-08-22-optin-match-7-michelle-kinndle.md](sesiones/2026-08-22-optin-match-7-michelle-kinndle.md) |
 | 2026-08-22 ~18:15 CEST | Naming pipeline + roadmap campos + dashboard HTML matches | Pipeline de matching; MATCH-ERP-ROADMAP; export+HTML; setup pairing merge; MATCH-TRACKING | [sesiones/2026-08-22-match-erp-tracking.md](sesiones/2026-08-22-match-erp-tracking.md) |
 | 2026-08-22 ~18:00 CEST | ERP campos emparejamiento (paired, method, proposed_at) | Schema v2 + setup merge fields + backfill #1–#7; doc MATCH-ERP-TRACKING | [sesiones/2026-08-22-match-erp-tracking.md](sesiones/2026-08-22-match-erp-tracking.md) |
 | 2026-08-22 ~17:45 CEST | Match #7 expediente + ERP tracking PB | `michelle-kinndle/`; colecciones matches/participants/events; backfill #1–#7 en producción | [sesiones/2026-08-22-match-erp-tracking.md](sesiones/2026-08-22-match-erp-tracking.md) |

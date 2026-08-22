@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-22 16:35 CEST | Form v0 match-align + email opt-in Rivas | Schema 24 campos; publicado `forms.synergium.net/match-align`; borrador EN pendiente envío | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
 | 2026-08-22 16:26 CEST | haz sync | Ya al día con `origin/main` (`e01265e`); nada que bajar | [sesiones/2026-08-22-haz-sync.md](sesiones/2026-08-22-haz-sync.md) |
 | 2026-08-21 23:25 CEST | ¿Nuevos registros últimas 24h? | 1 web (Rajarshi 02:21 UTC) + 26 import Sheet anoche; 0 desde entonces | [sesiones/2026-08-21-registros-24h.md](sesiones/2026-08-21-registros-24h.md) |
 | 2026-08-21 23:22 CEST | /guarda-sesion-y-demas | Sesión disco/orden-no-responde ampliada; main limpio + push | [sesiones/2026-08-21-sesion-orden-no-responde.md](sesiones/2026-08-21-sesion-orden-no-responde.md) |

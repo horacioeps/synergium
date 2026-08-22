@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "title": "Brief de alineación de match (fase 2)",
+  "locale": "es",
+  "description": "Has sido emparejado/a a través del directorio de la comunidad Synergium. Antes de la introducción conjunta, cada persona rellena este brief corto (unos 8 minutos) para dejar más claras las expectativas sobre objetivos, roles, autoría y datos desde el principio.\n\nTus respuestas las ve Synergium hasta que ambas partes completen el formulario. Entonces enviamos a tu match un resumen de una página con los puntos no confidenciales antes de la introducción.\n\nNo es un contrato y Synergium no es parte de la colaboración. Es un paso de facilitación para reducir malentendidos después (papers, datos, PI).\n\nDudas: info@synergium.net.",
+  "success_message": "Gracias. Tu brief de alineación está guardado. Cuando tu match también lo haya completado, seguiremos con la introducción y un resumen breve.",
+  "ui": {
+    "submit": "Enviar",
+    "sending": "Enviando…",
+    "other": "Otro",
+    "other_placeholder": "Otro…",
+    "url_placeholder": "Una URL por línea",
+    "thank_you": "Gracias",
+    "foot": "Tus respuestas se almacenan de forma segura. Para solicitar el borrado, escribe a info@synergium.net.",
+    "complete": "Completa: ",
+    "submit_error": "No se pudo enviar. Inténtalo de nuevo.",
+    "loading": "Cargando…",
+    "missing_link": "Abre el enlace del formulario que te dieron.",
+    "missing_form": "Este formulario está cerrado o el enlace no es válido.",
+    "load_error": "No se pudo cargar el formulario."
+  },
+  "fields": [
+    {
+      "id": "full_name",
+      "type": "text",
+      "label": "Nombre completo",
+      "required": true
+    },
+    {
+      "id": "email",
+      "type": "email",
+      "label": "Correo (el que usarás para este match)",
+      "required": true
+    },
+    {
+      "id": "match_reference",
+      "type": "text",
+      "label": "Referencia del match (si Synergium te la dio, p. ej. matias-valentina)",
+      "required": false
+    },
+    {
+      "id": "goal_horizon",
+      "type": "single_select",
+      "label": "En las próximas 4–12 semanas, ¿qué quieres tener avanzado?",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "4_weeks", "label": "Algo concreto en ~4 semanas" },
+        { "value": "8_weeks", "label": "Un hito claro en ~8 semanas" },
+        { "value": "12_weeks", "label": "Avance en ~12 semanas" },
+        { "value": "longer", "label": "Horizonte más largo; es exploratorio" },
+        { "value": "unsure", "label": "Aún no lo tengo claro" }
+      ]
+    },
+    {
+      "id": "goal_detail",
+      "type": "textarea",
+      "label": "En una o dos frases: ¿cómo sería el \"éxito\" en ese horizonte?",
+      "required": true
+    },
+    {
+      "id": "deliverable_type",
+      "type": "single_select",
+      "label": "Entregable principal que tienes en mente",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "joint_paper", "label": "Artículo empírico conjunto" },
+        { "value": "protocol", "label": "Protocolo / pre-registro" },
+        { "value": "grant", "label": "Grant o solicitud de financiación" },
+        { "value": "dataset", "label": "Dataset compartido o pieza metodológica" },
+        { "value": "exploratory", "label": "Solo llamada exploratoria por ahora" }
+      ]
+    },
+    {
+      "id": "starting_point",
+      "type": "single_select",
+      "label": "¿Desde dónde partís?",
+      "required": true,
+      "options": [
+        { "value": "idea", "label": "Solo idea / tema" },
+        { "value": "protocol_draft", "label": "Borrador de protocolo o diseño" },
+        { "value": "data_exists", "label": "Ya hay datos (propios o accesibles)" },
+        { "value": "manuscript_draft", "label": "Borrador de manuscrito en curso" }
+      ]
+    },
+    {
+      "id": "my_primary_role",
+      "type": "multi_select",
+      "label": "Mi aporte principal en esta colaboración sería",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "design", "label": "Diseño del estudio" },
+        { "value": "analysis", "label": "Análisis de datos / estadística" },
+        { "value": "clinical", "label": "Mirada clínica o aplicada" },
+        { "value": "writing", "label": "Redacción" },
+        { "value": "ethics", "label": "Ética / CEI / consentimiento" },
+        { "value": "coordination", "label": "Coordinación / gestión del proyecto" }
+      ]
+    },
+    {
+      "id": "hours_per_week",
+      "type": "single_select",
+      "label": "Horas realistas por semana en los próximos 2 meses",
+      "required": true,
+      "options": [
+        { "value": "0_2", "label": "0–2 horas" },
+        { "value": "2_5", "label": "2–5 horas" },
+        { "value": "5_10", "label": "5–10 horas" },
+        { "value": "10_plus", "label": "Más de 10 horas" }
+      ]
+    },
+    {
+      "id": "work_language",
+      "type": "single_select",
+      "label": "Idioma de trabajo con tu match",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "es", "label": "Español" },
+        { "value": "en", "label": "Inglés" },
+        { "value": "mixed", "label": "Mixto / cualquiera vale" }
+      ]
+    },
+    {
+      "id": "contact_channel_peer",
+      "type": "single_select",
+      "label": "Canal preferido con tu match (no con Synergium)",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "email", "label": "Email" },
+        { "value": "whatsapp", "label": "WhatsApp" },
+        { "value": "video", "label": "Videollamada primero, luego async" },
+        { "value": "mixed", "label": "Mezcla de email y llamadas" }
+      ]
+    },
+    {
+      "id": "contact_frequency",
+      "type": "single_select",
+      "label": "Frecuencia de contacto esperada al inicio",
+      "required": true,
+      "options": [
+        { "value": "once_async", "label": "Una reunión y luego sobre todo async" },
+        { "value": "weekly", "label": "Aproximadamente semanal" },
+        { "value": "biweekly", "label": "Aproximadamente quincenal" },
+        { "value": "as_needed", "label": "Solo si algo se bloquea" }
+      ]
+    },
+    {
+      "id": "authorship_order_default",
+      "type": "single_select",
+      "label": "Regla por defecto que asumes para el orden de autores (si no se habla)",
+      "required": true,
+      "allow_other": true,
+      "options": [
+        { "value": "contribution", "label": "Por contribución" },
+        { "value": "alternating", "label": "Alternando entre papers" },
+        { "value": "senior_first", "label": "Senior primero o último según norma del campo" },
+        { "value": "discuss_first", "label": "Hay que hablarlo en la primera reunión" }
+      ]
+    },
+    {
+      "id": "corresponding_author",
+      "type": "single_select",
+      "label": "Autor de correspondencia (preliminar)",
+      "required": true,
+      "options": [
+        { "value": "me", "label": "Yo sería autor de correspondencia" },
+        { "value": "them", "label": "Espero que mi match sea autor de correspondencia" },
+        { "value": "shared", "label": "Compartido / co-correspondencia" },
+        { "value": "discuss", "label": "A acordar en la primera reunión" }
+      ]
+    },
+    {
+      "id": "authorship_non_negotiable",
+      "type": "textarea",
+      "label": "Una condición de autoría no negociable para ti (o escribe \"ninguna\")",
+      "required": true
+    },
+    {
+      "id": "personal_health_data",
+      "type": "single_select",
+      "label": "¿Esta colaboración implicará datos personales o clínicos?",
+      "required": true,
+      "options": [
+        { "value": "yes", "label": "Sí" },
+        { "value": "no", "label": "No" },
+        { "value": "unsure", "label": "Aún no lo sé" }
+      ]
+    },
+    {
+      "id": "ethics_lead",
+      "type": "single_select",
+      "label": "¿Quién debería liderar ética / consentimiento (si aplica)?",
+      "required": true,
+      "options": [
+        { "value": "me", "label": "Yo" },
+        { "value": "them", "label": "Mi match" },
+        { "value": "institution", "label": "Institución / envío conjunto" },
+        { "value": "na", "label": "No aplica / aún no lo sé" }
+      ]
+    },
+    {
+      "id": "data_reuse",
+      "type": "single_select",
+      "label": "Reutilización de datos después de este proyecto",
+      "required": true,
+      "options": [
+        { "value": "this_only", "label": "Solo para este estudio salvo acuerdo" },
+        { "value": "reuse_agreement", "label": "Reutilizable con acuerdo escrito" },
+        { "value": "open", "label": "Abierto / compartido por defecto" },
+        { "value": "tbd", "label": "Por decidir" }
+      ]
+    },
+    {
+      "id": "possible_ip",
+      "type": "single_select",
+      "label": "¿Posible patente, software o producto comercial?",
+      "required": true,
+      "options": [
+        { "value": "no", "label": "No / solo académico" },
+        { "value": "maybe", "label": "Quizá; hay que hablarlo antes de empezar" },
+        { "value": "yes", "label": "Sí; quiero acordar reglas pronto" }
+      ]
+    },
+    {
+      "id": "not_this_collab",
+      "type": "multi_select",
+      "label": "Esta colaboración NO es (salvo que acordemos lo contrario)",
+      "required": true,
+      "options": [
+        { "value": "paid_consulting", "label": "Consultoría remunerada" },
+        { "value": "ghostwriting", "label": "Ghostwriting o autoría simbólica" },
+        { "value": "auto_grant", "label": "Compromiso automático de financiarnos" },
+        { "value": "auto_data", "label": "Acceso automático a datos del otro sin acuerdo" },
+        { "value": "hierarchy", "label": "Relación director–alumno sin pactarlo" },
+        { "value": "synergium_party", "label": "Que Synergium medie disputas indefinidamente" }
+      ]
+    },
+    {
+      "id": "wont_do",
+      "type": "textarea",
+      "label": "Qué no estarías dispuesto/a a hacer en esta colaboración (opcional, 1–3 bullets)",
+      "required": false
+    },
+    {
+      "id": "conditions_clarity",
+      "type": "single_select",
+      "label": "Tus condiciones para este match",
+      "required": true,
+      "options": [
+        { "value": "clear", "label": "Las tengo claras (este formulario basta)" },
+        { "value": "guidance", "label": "Necesito orientación antes de hablar con mi match" },
+        { "value": "facilitated", "label": "Quiero una primera reunión facilitada con Synergium" }
+      ]
+    },
+    {
+      "id": "synergium_checkin",
+      "type": "single_select",
+      "label": "¿Check-in de Synergium unas 2 semanas después de la introducción?",
+      "required": true,
+      "options": [
+        { "value": "yes", "label": "Sí, un check-in breve me viene bien" },
+        { "value": "if_stuck", "label": "Solo si nos atascamos" },
+        { "value": "no", "label": "No; lo gestionamos entre nosotros" }
+      ]
+    },
+    {
+      "id": "share_summary_consent",
+      "type": "single_select",
+      "label": "Acepto que Synergium comparta un resumen breve de mis respuestas con mi match antes de la introducción conjunta",
+      "required": true,
+      "options": [
+        { "value": "yes", "label": "Sí, acepto" },
+        { "value": "no", "label": "No" }
+      ]
+    }
+  ]
+}

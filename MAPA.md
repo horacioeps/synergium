@@ -10,6 +10,7 @@ Rollback de esta pasada: [archivo/REORGANIZACION-2026-08-21.md](archivo/REORGANI
 hoy/tableros/          EMBUDOS, MATCHES, TODO
 comunidad/
   formulario/nexus-input
+  formulario/match-align   fase 2 alineación (post-match)
   matching/            top3, top4
   casos/               formulario-agosto-2026, engagement-julio-2026
 clientes/

@@ -24,7 +24,7 @@ Matías respondió al email con el PDF del artículo **VR y estigma en esquizofr
 | **~2026-08-06–14** | **Comunidad WhatsApp** | Campaña form EN | Entrada vía campaña email → comunidad; teléfono en form = señal WhatsApp | Horacio (2026-08-19) |
 | **2026-08-14** ~21:31 | **Google Form EN** | Matías → Horacio | Community directory. Match Yes. Urgencia «This month». WhatsApp +56930322072 | [Hoja respuestas](https://docs.google.com/spreadsheets/d/19XjibPTR6LFRLM3fJXffLbFDebOT1kXWMhKvh7-nJ5w/edit?usp=sharing) fila 6 |
 | — | **WhatsApp 1:1** | — | No consta chat privado previo al form | — |
-| — | **Intro a tercero** | — | **Valentina aceptó** — falta canal/condiciones + intro a Matías | [intro-valentina-borrador.md](intro-valentina-borrador.md) |
+| — | **Intro a tercero** | — | **Valentina aceptó** — falta opt-in Matías + `match-align` + intro | [intro-valentina-borrador.md](intro-valentina-borrador.md) · [emails-optin-borrador.md](emails-optin-borrador.md) |
 
 ---
 
@@ -109,3 +109,4 @@ Según formulario (2026-08-14), Horacio **puede compartir** con un match: nombre
 | 2026-08-19 | WhatsApp +34 661 347 478 | H → Valentina | Propuesta intro coautoría salud mental (Chile, cuantitativo ↔ clínica) | Enviado |
 | ~2026-08-20 | WhatsApp | Valentina → H | «Hola Horacio, claro encantada !!! Muchas gracias» | **Sí / acepta match** |
 | ~2026-08-20 | WhatsApp | H → Valentina | ¿Preferís email o WhatsApp para la puesta en contacto? + condiciones fase 2 / guía | Preguntado — pendiente respuesta |
+| 2026-08-22 | — | — | Form v0 `match-align` + borrador email opt-in a Matías (no enviado) | [emails-optin-borrador.md](emails-optin-borrador.md) |

@@ -25,6 +25,8 @@ Evitar «ERP» en UI y comunicación con la comunidad: sugiere contabilidad/empr
 | **Por participante** | Pipeline por persona (`match_participants`) |
 | **Directorio** | Submissions nexus-input con `match_me` ∈ `yes`, `directory_only`, `you_only_no_intro` (sin pruebas), con emparejamiento si existe |
 
+Cabeceras de columna ordenables (asc/desc por clic); compatible con búsqueda.
+
 Regenerar JSON tras cambios en PB o en el seed del backfill. Con credenciales admin usa PocketBase; si falla, cae al seed (`--seed-only` fuerza seed).
 
 ### Seguridad

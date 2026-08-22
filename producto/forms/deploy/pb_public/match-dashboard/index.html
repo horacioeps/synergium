@@ -106,6 +106,17 @@
       box-shadow: var(--sticky-shadow);
       white-space: nowrap;
     }
+    thead th.th-sort {
+      cursor: pointer;
+      user-select: none;
+    }
+    thead th.th-sort:hover { background: #e4e8ec; }
+    thead th.th-sort-active { color: var(--accent); }
+    .sort-ind {
+      margin-left: 4px;
+      font-size: 11px;
+      font-weight: 700;
+    }
     tbody td {
       padding: 9px 12px;
       border-bottom: 1px solid var(--border);
@@ -221,6 +232,11 @@
     let data = null;
     let view = "matches";
     let query = "";
+    const sortState = {
+      matches: { key: null, dir: "asc" },
+      participants: { key: null, dir: "asc" },
+      directory: { key: null, dir: "asc" },
+    };
 
     function esc(s) {
       return String(s ?? "")
@@ -278,20 +294,58 @@
       return { cols: PART_COLS, rows: data.participants || [] };
     }
 
+    function sortValue(val, key) {
+      if (val == null || val === "") return "";
+      if (key === "match_number" || key === "event_count") return Number(val) || 0;
+      if (typeof val === "boolean") return val ? 1 : 0;
+      if (val === true || val === "true" || val === "Y" || val === "yes") return 1;
+      if (val === false || val === "false" || val === "N" || val === "no") return 0;
+      return String(val).toLowerCase();
+    }
+
+    function sortRows(rows, key, dir) {
+      if (!key) return rows;
+      const mult = dir === "asc" ? 1 : -1;
+      return [...rows].sort((a, b) => {
+        const va = sortValue(a[key], key);
+        const vb = sortValue(b[key], key);
+        if (va < vb) return -1 * mult;
+        if (va > vb) return 1 * mult;
+        return 0;
+      });
+    }
+
+    function toggleSort(key) {
+      const s = sortState[view];
+      if (s.key === key) s.dir = s.dir === "asc" ? "desc" : "asc";
+      else {
+        s.key = key;
+        s.dir = "asc";
+      }
+      render();
+    }
+
     function render() {
       if (!data) return;
       const { cols, rows } = viewConfig();
+      const sort = sortState[view];
       const filtered = query
         ? rows.filter((r) => rowText(r, cols).includes(query.toLowerCase()))
         : rows;
+      const sorted = sortRows(filtered, sort.key, sort.dir);
 
       const head = document.getElementById("head");
       const body = document.getElementById("body");
       const grid = document.getElementById("grid");
       const placeholder = document.getElementById("placeholder");
 
-      head.innerHTML = "<tr>" + cols.map((c) => `<th>${esc(c.label)}</th>`).join("") + "</tr>";
-      body.innerHTML = filtered.map((r) =>
+      head.innerHTML = "<tr>" + cols.map((c) => {
+        const active = sort.key === c.key;
+        const aria = active ? (sort.dir === "asc" ? "ascending" : "descending") : "none";
+        const ind = active ? `<span class="sort-ind">${sort.dir === "asc" ? "↑" : "↓"}</span>` : "";
+        return `<th class="th-sort${active ? " th-sort-active" : ""}" data-key="${esc(c.key)}" role="columnheader" aria-sort="${aria}">${esc(c.label)}${ind}</th>`;
+      }).join("") + "</tr>";
+      body.innerHTML = sorted.map((r) =>
         "<tr>" + cols.map((c) => `<td>${c.fmt(r)}</td>`).join("") + "</tr>"
       ).join("");
 
@@ -308,7 +362,7 @@
         ? ` · PB: ${stats.directory}/${stats.submissions_total} en directorio`
         : "";
       document.getElementById("meta").textContent =
-        `${filtered.length}/${rows.length} filas · ${data.source} · ${data.exported_at || ""}${dirNote}`;
+        `${sorted.length}/${rows.length} filas · ${data.source} · ${data.exported_at || ""}${dirNote}`;
     }
 
     async function load() {
@@ -337,6 +391,11 @@
     document.getElementById("search").addEventListener("input", (e) => {
       query = e.target.value.trim();
       render();
+    });
+
+    document.getElementById("head").addEventListener("click", (e) => {
+      const th = e.target.closest("th[data-key]");
+      if (th) toggleSort(th.dataset.key);
     });
 
     load();

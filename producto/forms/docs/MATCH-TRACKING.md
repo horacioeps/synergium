@@ -14,6 +14,7 @@ Evitar «ERP» en UI y comunicación con la comunidad: sugiere contabilidad/empr
 | Datos | `deploy/pb_public/match-dashboard/data.json` (generado) |
 | Export | `python3 producto/forms/deploy/scripts/export_match_dashboard.py` |
 | Producción | `https://forms.synergium.net/match-dashboard/` (tras rsync `pb_public/`) |
+| Auth | HTTP Basic (`horacio`); htpasswd en VPS `~/synergium-forms/.htpasswd-match-dashboard` (no en git) |
 | Local | Abrir el HTML en navegador o servir la carpeta con `python3 -m http.server` |
 
 Regenerar JSON tras cambios en PB o en el seed del backfill. Con credenciales admin usa PocketBase; si falla, cae al seed (`--seed-only` fuerza seed).

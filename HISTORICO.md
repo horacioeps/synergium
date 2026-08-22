@@ -1,6 +1,7 @@
 # Histórico de sesiones — Synergium
 
 | Fecha | Pedido | Hecho | Sesión |
+| 2026-08-22 ~18:05 CEST | Basic Auth dashboard match pipeline | Apache Directory + htpasswd VPS; templates + MATCH-TRACKING; curl 401/200 OK | [sesiones/2026-08-22-match-dashboard-basic-auth.md](sesiones/2026-08-22-match-dashboard-basic-auth.md) |
 |-------|--------|-------|--------|
 | 2026-08-22 ~17:53 CEST | /guarda-sesion match #7 + pipeline ERP consolidado | Volcado consolidado sesión; main push | [sesiones/2026-08-22-match7-pipeline-erp.md](sesiones/2026-08-22-match7-pipeline-erp.md) |
 | 2026-08-22 ~17:45 CEST | Enviar opt-in match #7 Michelle ↔ Kinndle + ERP | 2 emails EmailerX OK; PB contact_events; setup_collections fix | [sesiones/2026-08-22-optin-match-7-michelle-kinndle.md](sesiones/2026-08-22-optin-match-7-michelle-kinndle.md) |

@@ -12,6 +12,15 @@
         FallbackResource /index.html
     </Directory>
 
+    <Directory /var/www/forms.synergium.net/match-dashboard>
+        Options -Indexes +FollowSymLinks
+        AllowOverride None
+        AuthType Basic
+        AuthName "Synergium Match Pipeline"
+        AuthUserFile /home/horacio/synergium-forms/.htpasswd-match-dashboard
+        Require valid-user
+    </Directory>
+
     ProxyPreserveHost On
     ProxyPass /api/ http://127.0.0.1:8090/api/
     ProxyPassReverse /api/ http://127.0.0.1:8090/api/

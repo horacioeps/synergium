@@ -12,6 +12,7 @@ Cada subcarpeta = un cliente. El `README.md` interno enlaza a todos sus document
 | Match #5 Erdoğan ↔ Antonio | Opt-in **enviado** 2026-08-21; esperar sí/no | [matches/erdogan-antonio/](matches/erdogan-antonio/) |
 | Match #6 Karen ↔ Verónica | Opt-in **enviado** 2026-08-21; esperar sí/no | [matches/karen-veronica/](matches/karen-veronica/) |
 | Match #4 Driselda ↔ Tatiana | Opt-in email **enviado** 2026-08-21; esperar sí/no | [matches/driselda-tatiana/](matches/driselda-tatiana/) |
+| Match #7 Michelle ↔ Kinndle | **Borrador** opt-in ES listo (no enviado) | [matches/michelle-kinndle/](matches/michelle-kinndle/) |
 
 ## Reglas operativas (origen / canal)
 

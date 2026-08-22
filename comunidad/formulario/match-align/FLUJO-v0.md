@@ -61,6 +61,7 @@ Este documento es la fuente canónica del flujo operativo actual. Los embudos am
 | 4 | Driselda ↔ Tatiana | `match-2026-004` |
 | 5 | Erdoğan ↔ Antonio | `match-2026-005` |
 | 6 | Karen ↔ Verónica | `match-2026-006` |
+| 7 | Michelle ↔ Kinndle | `match-2026-007` |
 
 Tablero vivo + auditoría: [hoy/tableros/MATCHES.md](../../../hoy/tableros/MATCHES.md), [AUDITORIA-match-align-2026-08-22.md](../../../hoy/tableros/AUDITORIA-match-align-2026-08-22.md).
 

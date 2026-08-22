@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-22 ~17:40 CEST | Opt-in paso 1 ES match #7 Michelle ↔ Kinndle | Expediente `michelle-kinndle/`; 2 borradores ES (Sheet); no enviado | [sesiones/2026-08-22-optin-match-7-michelle-kinndle.md](sesiones/2026-08-22-optin-match-7-michelle-kinndle.md) |
 | 2026-08-22 ~17:36 CEST | Textos emails enviados + por qué no en Outlook 21/08; /guarda-sesion-y-demas | Aclaración `sent_copy` IMAP; volcado turnos 5–9; commit push main | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |
 | 2026-08-22 ~17:24 CEST | Enviar match-align paso 2 a 6 (auditoría) | 6 emails reply EmailerX; historiales + auditoría | [sesiones/2026-08-22-envio-match-align-6.md](sesiones/2026-08-22-envio-match-align-6.md) |
 | 2026-08-22 ~17:10 CEST | Flujo v0 2 pasos + auditoría opt-in/match-align inbox | FLUJO-v0.md + auditoría; 6 listos paso 2; historiales | [sesiones/2026-08-22-flujo-v0-auditoria-match-align.md](sesiones/2026-08-22-flujo-v0-auditoria-match-align.md) |

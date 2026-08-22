@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-22 ~17:01 CEST | /guarda-sesion-y-demas | README match-align v2 + volcado sesión; push main | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
 | 2026-08-22 ~17:00 CEST | Mejoras match-align v2 (ref abstracta, NDA, patentes, idioma, Otro) | Schema v2 publicado + i18n ES en vivo | [sesiones/2026-08-22-match-align.md](sesiones/2026-08-22-match-align.md) |
 | 2026-08-22 ~17:00 CEST | Enviar opt-in Matías (EmailerX + IMAP sent) | Email ES a matiaserodriguezrivas@gmail.com OK; copia Elementos enviados | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |
 | 2026-08-22 ~16:55 CEST | Email opt-in Matías ES en Outlook salida | Malentendido: borrador Outlook; corregido con envío EmailerX | [sesiones/2026-08-22-email-optin-matias-outlook.md](sesiones/2026-08-22-email-optin-matias-outlook.md) |

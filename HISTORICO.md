@@ -2,6 +2,7 @@
 
 | Fecha | Pedido | Hecho | Sesión |
 |-------|--------|-------|--------|
+| 2026-08-22 ~18:30 CEST | Pestaña Ficha match dashboard (perfiles completos) | Export `profiles` (30); UI master-detail; deploy VPS | [sesiones/2026-08-22-match-dashboard-ficha.md](sesiones/2026-08-22-match-dashboard-ficha.md) |
 | 2026-08-22 ~18:15 CEST | Columnas ordenables match dashboard | Sort asc/desc en 3 pestañas + ↑↓; deploy VPS | [sesiones/2026-08-22-match-dashboard-sort.md](sesiones/2026-08-22-match-dashboard-sort.md) |
 | 2026-08-22 ~18:10 CEST | Dashboard directorio + cobertura PB + seguridad | Pestaña Directorio (28); export submissions; auth ya activo; deploy VPS | [sesiones/2026-08-22-match-dashboard-directorio.md](sesiones/2026-08-22-match-dashboard-directorio.md) |
 | 2026-08-22 ~18:05 CEST | Basic Auth dashboard match pipeline | Apache Directory + htpasswd VPS; templates + MATCH-TRACKING; curl 401/200 OK | [sesiones/2026-08-22-match-dashboard-basic-auth.md](sesiones/2026-08-22-match-dashboard-basic-auth.md) |

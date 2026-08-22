@@ -24,14 +24,15 @@ Evitar «ERP» en UI y comunicación con la comunidad: sugiere contabilidad/empr
 | **Por match** | Pares curados (`matches`) |
 | **Por participante** | Pipeline por persona (`match_participants`) |
 | **Directorio** | Submissions nexus-input con `match_me` ∈ `yes`, `directory_only`, `you_only_no_intro` (sin pruebas), con emparejamiento si existe |
+| **Ficha** | Master-detail por persona: identidad, **todos** los campos nexus-input (etiquetas de `schema-en.json`), pipeline, **cuerpos completos** de `contact_events`, respuestas match-align |
 
-Cabeceras de columna ordenables (asc/desc por clic); compatible con búsqueda.
+Cabeceras de columna ordenables (asc/desc por clic) en las tres primeras pestañas; compatible con búsqueda en todas (en Ficha busca también cuerpos de email y campos del formulario).
 
 Regenerar JSON tras cambios en PB o en el seed del backfill. Con credenciales admin usa PocketBase; si falla, cae al seed (`--seed-only` fuerza seed).
 
 ### Seguridad
 
-`data.json` contiene **PII** (emails, WhatsApp). En producción el path `/match-dashboard/` exige **HTTP Basic Auth** (Apache `<Location>`). El formulario público y la API PB no se tocan.
+`data.json` contiene **PII** (emails, WhatsApp, cuerpos de email, respuestas de formularios). En producción el path `/match-dashboard/` exige **HTTP Basic Auth** (Apache `<Location>`). El formulario público y la API PB no se tocan.
 
 **Configuración (VPS):**
 
@@ -168,7 +169,7 @@ curl -s "$SYNERGIUM_FORMS_PB_URL/api/collections/contact_events/records?filter=m
 
 - `submissions` (nexus-input) = entrada al directorio.
 - `match_participants.submission` = enlace opcional cuando se conozca el `submission.id` por email.
-- `match-align` submissions **no** se enlazan aún en v0; el campo `match_reference` del form identifica el par.
+- `match-align` submissions **no** se enlazan aún en v0 en `match_participants`; el export las une por email y `match_reference` en la pestaña Ficha.
 
 ## Backfill
 

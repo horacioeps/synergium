@@ -150,6 +150,133 @@
       color: var(--muted);
     }
     .error { color: #a71d2a; }
+    .ficha-wrap {
+      display: flex;
+      height: calc(100vh - 160px);
+      background: var(--surface);
+    }
+    .ficha-list {
+      width: min(300px, 38vw);
+      flex-shrink: 0;
+      border-right: 1px solid var(--border);
+      overflow-y: auto;
+      background: var(--surface);
+    }
+    .ficha-list button {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 10px 14px;
+      border: none;
+      border-bottom: 1px solid var(--border);
+      background: transparent;
+      cursor: pointer;
+      font: inherit;
+      color: var(--text);
+    }
+    .ficha-list button:hover { background: var(--row-alt); }
+    .ficha-list button.active {
+      background: #e3ecf4;
+      border-left: 3px solid var(--accent);
+      padding-left: 11px;
+    }
+    .ficha-list .ficha-list-name {
+      display: block;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    .ficha-list .ficha-list-email {
+      display: block;
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+    .ficha-detail {
+      flex: 1;
+      overflow-y: auto;
+      padding: 16px 20px;
+      background: var(--bg);
+    }
+    .ficha-detail h2 {
+      margin: 0 0 4px;
+      font-size: 17px;
+    }
+    .ficha-detail .ficha-sub {
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 20px;
+    }
+    .ficha-section { margin-bottom: 24px; }
+    .ficha-section h3 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+      margin: 0 0 10px;
+      font-weight: 600;
+    }
+    .kv-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--surface);
+      font-size: 13px;
+    }
+    .kv-table th,
+    .kv-table td {
+      padding: 7px 10px;
+      border: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+    .kv-table th {
+      width: 34%;
+      background: #eef1f4;
+      font-weight: 600;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .email-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    .email-block .email-meta {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .email-block .email-subject {
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+    .email-block .email-body {
+      white-space: pre-wrap;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .ficha-empty {
+      padding: 40px 20px;
+      color: var(--muted);
+      text-align: center;
+    }
+    .ficha-pipeline-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 12px 14px;
+      margin-bottom: 10px;
+    }
+    .ficha-pipeline-card h4 {
+      margin: 0 0 8px;
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      .ficha-wrap { flex-direction: column; height: auto; max-height: calc(100vh - 160px); }
+      .ficha-list { width: 100%; max-height: 180px; border-right: none; border-bottom: 1px solid var(--border); }
+    }
     @media (max-width: 640px) {
       .meta { width: 100%; }
     }
@@ -165,18 +292,25 @@
       <button type="button" class="active" data-view="matches" role="tab">Por match</button>
       <button type="button" data-view="participants" role="tab">Por participante</button>
       <button type="button" data-view="directory" role="tab">Directorio</button>
+      <button type="button" data-view="ficha" role="tab">Ficha</button>
     </div>
     <div class="search-wrap">
       <input type="search" id="search" placeholder="Buscar nombre, email, eje, ref…" autocomplete="off">
     </div>
     <div class="meta" id="meta">Cargando…</div>
   </div>
-  <div class="table-wrap">
+  <div class="table-wrap" id="table-wrap">
     <table id="grid" hidden>
       <thead id="head"></thead>
       <tbody id="body"></tbody>
     </table>
     <div class="empty" id="placeholder">Cargando datos…</div>
+  </div>
+  <div class="ficha-wrap" id="ficha-wrap" hidden>
+    <div class="ficha-list" id="ficha-list" role="listbox" aria-label="Personas"></div>
+    <div class="ficha-detail" id="ficha-detail">
+      <div class="ficha-empty">Selecciona una persona de la lista.</div>
+    </div>
   </div>
 
   <script>
@@ -232,10 +366,12 @@
     let data = null;
     let view = "matches";
     let query = "";
+    let selectedFichaEmail = null;
     const sortState = {
       matches: { key: null, dir: "asc" },
       participants: { key: null, dir: "asc" },
       directory: { key: null, dir: "asc" },
+      ficha: { key: "person_name", dir: "asc" },
     };
 
     function esc(s) {
@@ -291,7 +427,146 @@
     function viewConfig() {
       if (view === "matches") return { cols: MATCH_COLS, rows: data.matches || [] };
       if (view === "directory") return { cols: DIR_COLS, rows: data.directory || [] };
+      if (view === "ficha") return { cols: [], rows: data.profiles || [] };
       return { cols: PART_COLS, rows: data.participants || [] };
+    }
+
+    function profileSearchText(p) {
+      const bits = [
+        p.person_name, p.person_email, p.country, p.institution, p.city,
+        p.match_me_label, p.whatsapp,
+      ];
+      (p.nexus_form || []).forEach((f) => bits.push(f.label, f.value));
+      (p.pipeline || []).forEach((pl) => {
+        bits.push(pl.match_reference, pl.paired_with_email, pl.axis, pl.current_step);
+      });
+      (p.contact_events || []).forEach((ev) => {
+        bits.push(ev.event_type, ev.subject, ev.body, ev.notes, ev.match_reference);
+      });
+      (p.match_align || []).forEach((ma) => {
+        bits.push(ma.match_reference);
+        (ma.fields || []).forEach((f) => bits.push(f.label, f.value));
+      });
+      return bits.filter(Boolean).join(" ").toLowerCase();
+    }
+
+    function filteredProfiles() {
+      const rows = data.profiles || [];
+      const sort = sortState.ficha;
+      let filtered = query
+        ? rows.filter((p) => profileSearchText(p).includes(query.toLowerCase()))
+        : rows;
+      if (sort.key) filtered = sortRows(filtered, sort.key, sort.dir);
+      return filtered;
+    }
+
+    function kvTable(rows) {
+      if (!rows || !rows.length) return '<p class="ficha-empty">Sin datos.</p>';
+      return '<table class="kv-table"><tbody>' + rows.map((r) =>
+        `<tr><th>${esc(r.label)}</th><td>${esc(r.value).replace(/\n/g, "<br>")}</td></tr>`
+      ).join("") + "</tbody></table>";
+    }
+
+    function renderFichaDetail(p) {
+      const identity = [
+        { label: "Nombre", value: p.person_name },
+        { label: "Email", value: p.person_email },
+        { label: "WhatsApp", value: p.whatsapp },
+        { label: "País", value: p.country },
+        { label: "Ciudad", value: p.city },
+        { label: "Institución", value: p.institution },
+        { label: "Match me", value: p.match_me_label || p.match_me },
+        { label: "Alta formulario", value: p.submitted_at },
+        { label: "Origen", value: p.nexus_source },
+      ].filter((r) => r.value);
+
+      let pipelineHtml = "";
+      if (p.pipeline && p.pipeline.length) {
+        pipelineHtml = p.pipeline.map((pl) => {
+          const rows = [
+            { label: "Match", value: pl.match_reference || (pl.match_number ? `#${pl.match_number}` : "") },
+            { label: "Eje", value: pl.axis },
+            { label: "Lado", value: (pl.side || "").toUpperCase() },
+            { label: "Paso persona", value: pl.current_step },
+            { label: "Paso match", value: pl.match_current_step },
+            { label: "Emparejamiento", value: pl.pairing_status },
+            { label: "Método", value: pl.pairing_method },
+            { label: "Con", value: pl.paired_with_name ? `${pl.paired_with_name} <${pl.paired_with_email}>` : pl.paired_with_email },
+            { label: "Propuesto", value: pl.pairing_proposed_at },
+            { label: "Expediente", value: pl.expediente_path },
+          ].filter((r) => r.value);
+          return `<div class="ficha-pipeline-card"><h4>${esc(pl.match_reference || `Match #${pl.match_number || "?"}`)}</h4>${kvTable(rows)}</div>`;
+        }).join("");
+      } else {
+        pipelineHtml = '<p class="ficha-empty">Sin participación en pipeline curado.</p>';
+      }
+
+      let emailsHtml = "";
+      if (p.contact_events && p.contact_events.length) {
+        emailsHtml = p.contact_events.map((ev) => {
+          const meta = [
+            ev.sent_at || "—",
+            ev.event_type,
+            ev.direction,
+            ev.channel,
+            ev.match_reference ? `ref: ${ev.match_reference}` : "",
+          ].filter(Boolean).join(" · ");
+          const body = ev.body || ev.notes || "(sin cuerpo)";
+          return `<div class="email-block">
+            <div class="email-meta">${esc(meta)}</div>
+            ${ev.subject ? `<div class="email-subject">${esc(ev.subject)}</div>` : ""}
+            <div class="email-body">${esc(body)}</div>
+          </div>`;
+        }).join("");
+      } else {
+        emailsHtml = '<p class="ficha-empty">Sin eventos de contacto.</p>';
+      }
+
+      let alignHtml = "";
+      if (p.match_align && p.match_align.length) {
+        alignHtml = p.match_align.map((ma, i) =>
+          `<div class="ficha-pipeline-card"><h4>Brief ${i + 1}${ma.match_reference ? ` · ${esc(ma.match_reference)}` : ""}${ma.submitted_at ? ` · ${esc(ma.submitted_at)}` : ""}</h4>${kvTable(ma.fields)}</div>`
+        ).join("");
+      } else {
+        alignHtml = '<p class="ficha-empty">Sin respuestas match-align.</p>';
+      }
+
+      return `
+        <h2>${esc(p.person_name || p.person_email)}</h2>
+        <p class="ficha-sub"><a href="mailto:${esc(p.person_email)}">${esc(p.person_email)}</a>${p.institution ? ` · ${esc(p.institution)}` : ""}${p.country ? ` · ${esc(p.country)}` : ""}</p>
+        <div class="ficha-section"><h3>Identidad</h3>${kvTable(identity)}</div>
+        <div class="ficha-section"><h3>Formulario nexus-input</h3>${kvTable(p.nexus_form)}</div>
+        <div class="ficha-section"><h3>Pipeline</h3>${pipelineHtml}</div>
+        <div class="ficha-section"><h3>Emails y contacto (${(p.contact_events || []).length})</h3>${emailsHtml}</div>
+        <div class="ficha-section"><h3>Match-align</h3>${alignHtml}</div>
+      `;
+    }
+
+    function renderFicha() {
+      const listEl = document.getElementById("ficha-list");
+      const detailEl = document.getElementById("ficha-detail");
+      const profiles = filteredProfiles();
+
+      if (!profiles.length) {
+        listEl.innerHTML = "";
+        detailEl.innerHTML = '<div class="ficha-empty">Sin resultados para la búsqueda.</div>';
+        return;
+      }
+
+      if (!selectedFichaEmail || !profiles.some((p) => p.person_email === selectedFichaEmail)) {
+        selectedFichaEmail = profiles[0].person_email;
+      }
+
+      listEl.innerHTML = profiles.map((p) => {
+        const active = p.person_email === selectedFichaEmail ? " active" : "";
+        return `<button type="button" class="${active.trim()}" data-email="${esc(p.person_email)}" role="option" aria-selected="${p.person_email === selectedFichaEmail}">
+          <span class="ficha-list-name">${esc(p.person_name || p.person_email)}</span>
+          <span class="ficha-list-email">${esc(p.person_email)}</span>
+        </button>`;
+      }).join("");
+
+      const current = profiles.find((p) => p.person_email === selectedFichaEmail) || profiles[0];
+      detailEl.innerHTML = renderFichaDetail(current);
     }
 
     function sortValue(val, key) {
@@ -327,6 +602,24 @@
 
     function render() {
       if (!data) return;
+
+      const tableWrap = document.getElementById("table-wrap");
+      const fichaWrap = document.getElementById("ficha-wrap");
+      const isFicha = view === "ficha";
+
+      tableWrap.hidden = isFicha;
+      fichaWrap.hidden = !isFicha;
+
+      if (isFicha) {
+        renderFicha();
+        const stats = data.stats || {};
+        const total = (data.profiles || []).length;
+        const shown = filteredProfiles().length;
+        document.getElementById("meta").textContent =
+          `${shown}/${total} fichas · ${data.source} · ${data.exported_at || ""} · ${stats.events || 0} eventos`;
+        return;
+      }
+
       const { cols, rows } = viewConfig();
       const sort = sortState[view];
       const filtered = query
@@ -396,6 +689,18 @@
     document.getElementById("head").addEventListener("click", (e) => {
       const th = e.target.closest("th[data-key]");
       if (th) toggleSort(th.dataset.key);
+    });
+
+    document.getElementById("ficha-list").addEventListener("click", (e) => {
+      const btn = e.target.closest("button[data-email]");
+      if (!btn) return;
+      selectedFichaEmail = btn.dataset.email;
+      renderFicha();
+      document.querySelectorAll("#ficha-list button").forEach((b) => {
+        const on = b.dataset.email === selectedFichaEmail;
+        b.classList.toggle("active", on);
+        b.setAttribute("aria-selected", on ? "true" : "false");
+      });
     });
 
     load();

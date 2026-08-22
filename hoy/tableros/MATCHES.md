@@ -23,7 +23,7 @@ Excluye a las 8 personas del top 4. Pool restante `match_me=yes` ≈ 14. Curado 
 |---|-----|-----|-----------------|--------|
 | **5** | Erdoğan Aldemir (TR) ↔ Antonio Jesús Fernández García (ES) | Medical imaging / deep learning | EN + ES | Opt-in **enviado** 2026-08-21 | [clientes/matches/erdogan-antonio/](../../clientes/matches/erdogan-antonio/) |
 | **6** | Karen Villalba (CO) ↔ E. Verónica Romo López (CL) | Educación / inclusión / arte-educación | ES | Opt-in **enviado** 2026-08-21 | [clientes/matches/karen-veronica/](../../clientes/matches/karen-veronica/) |
-| **7** | Michelle Viera Romero (EC) ↔ Kinndle Blanco Peña (CR) | Sostenibilidad / ambiente / One Health | ES (ambas either) | Opt-in **pendiente** (borrador) | [clientes/matches/michelle-kinndle/](../../clientes/matches/michelle-kinndle/) |
+| **7** | Michelle Viera Romero (EC) ↔ Kinndle Blanco Peña (CR) | Sostenibilidad / ambiente / One Health | ES (ambas either) | Opt-in **enviado** 2026-08-22 | [clientes/matches/michelle-kinndle/](../../clientes/matches/michelle-kinndle/) |
 
 **Dashboard:** [Pipeline de matching](https://forms.synergium.net/match-dashboard/) · local: `producto/forms/deploy/pb_public/match-dashboard/` · doc: [MATCH-TRACKING.md](../../producto/forms/docs/MATCH-TRACKING.md)
 
